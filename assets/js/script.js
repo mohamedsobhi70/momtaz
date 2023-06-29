@@ -9,6 +9,7 @@ if ($(".best-teacher-carousel").length > 0) {
             0: {
                 margin: 24,
                 items: 1.5,
+                stagePadding: 24,
                 // center: true,
             },
             600: {
@@ -36,17 +37,17 @@ if ($(".categories-carousel").length > 0) {
     $('.categories-carousel').owlCarousel({
         nav: false,
         dots: false,
-        loop: true,
         rtl: true,
+        autoWidth: true,
         responsive: {
             0: {
-                items: 2,
+                margin: 16,
             },
             600: {
-                items: 4
+                margin: 16,
             },
             1024: {
-                items: 7
+                margin: 36,
             }
         }
     });
