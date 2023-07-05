@@ -67,19 +67,28 @@ if ($(".testimonials-carousel").length > 0) {
         nav: false,
         dots: false,
         rtl: true,
+        autoWidth: true,
         autoHeight: true,
         responsive: {
             0: {
+
+                autoWidth: false,
+                autoHeight: false,
                 items: 1.2,
                 center: true,
+                loop:true,
                 margin: 16,
             },
             600: {
-                items: 2,
+                autoWidth: false,
+                autoHeight: false,
+                center: true,
+                loop:true,
+                items: 1.5,
                 margin: 24,
             },
             1024: {
-                items: 3,
+                items: 2.2,
                 margin: 30,
             }
         }
@@ -92,6 +101,32 @@ if ($(".testimonials-carousel").length > 0) {
     $('.testimonials .prevBtn').click(function () {
         $('.testimonials-carousel').trigger('prev.owl.carousel');
     })
+}
+
+if ($(".popularteacher-carousel").length > 0) {
+
+    $('.popularteacher-carousel').owlCarousel({
+        nav: false,
+        dots: false,
+        rtl: true,
+        autoWidth: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        center: true,
+        responsive: {
+            0: {
+                margin: 16,
+            },
+            600: {
+                margin: 24,
+            },
+            1024: {
+                margin: 30,
+            }
+        }
+    });
 }
 
 
@@ -223,4 +258,35 @@ if ($(".confirm-digit").length) {
      * It catches the value pasted on the first field and spread it into the inputs.
      */
     in1.addEventListener('input', splitNumber);
+}
+
+// filters modals
+if ($(".filters").length) {
+    $(".filter-btn").on("click", function () {
+        $(this).siblings(".filters").addClass("active")
+    })
+    $(".close-filter-btn").on("click", function () {
+        $(this).closest(".filters").removeClass("active")
+    })
+}
+
+
+// dropdown lists
+if ($(".drop-down").length > 0) {
+
+    $(".drop-down").on("click", function () {
+        $(this).parent().find(".drop-down-items").slideToggle(300);
+        if ($(this).parent().find(".drop-down-icon")) {
+            $(this).parent().find(".drop-down-icon").toggleClass("open");
+        }
+    })
+}
+
+// paly video 
+if ($(".play-vid").length > 0) {
+    $(".play-vid").on("click", function () {
+        let vid = $(this).parent().siblings("video");
+        $("video").trigger('pause');
+        vid.trigger('play');
+    })
 }
