@@ -26,15 +26,20 @@
         <div class="flex flex-col">
 
             <!-- Start header  -->
-            <header class="p-8 flex items-center gap-8 justify-between">
+            <header class="py-6 px-[30px] lg:p-8 flex items-center gap-8 justify-between bg-[#FAF8FE] lg:bg-white">
 
                 <!-- Logo  -->
-                <a href="index.html" class="">
+                <a href="index.html" class="hidden lg:block">
                     <img src="assets/images/logo.png" width="106" height="46" alt="Logo">
+                </a>
+                <!-- bach to home  -->
+                <a href="index.html" class="lg:hidden">
+                    <img src="assets/images/right-arrow.svg" width="24" height="24" alt="arrow">
                 </a>
 
                 <!-- skip button  -->
-                <a href="#" class="text-sm leading-5 py-3 px-6 rounded-xl flex items-center gap-2 bordered-btn">
+                <a href="#"
+                    class="hidden text-sm leading-5 py-3 px-6 rounded-xl lg:flex items-center gap-2 bordered-btn">
                     تخطي
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -53,13 +58,13 @@
             <!-- =============================================================== -->
 
             <!-- Start Confirm your phone -->
-            <div class="h-full px-[100px] flex flex-col justify-center gap-8">
+            <div class="h-full  px-[30px] lg:px-[100px] flex flex-col lg:justify-center lg:gap-8">
 
-                <div class="flex flex-col gap-3">
-                    <h2 class="text-[#111322] text-[32px] leading-normal font-semibold">
+                <div class="flex flex-col gap-2 lg:gap-3 py-6 lg:py-0">
+                    <h2 class="text-[#111322] text-2xl lg:text-[32px] leading-normal lg:leading-normal font-semibold">
                         تأكيد رقم هاتفك
                     </h2>
-                    <p class="text-[#667085] text-base leading-normal font-medium">
+                    <p class="text-[#667085] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
                         قمنا بأرسال رسالة إلي
                         <span class="text-[#090129]">99612343221</span>
                         <a href="register.html" class="">
@@ -71,24 +76,24 @@
 
                 <form action="">
                     <div class="flex flex-col gap-8">
-                        <div class="flex flex-col gap-6">
-                            <div class="flex flex-col gap-[18px]">
-                                <div class="grid grid-cols-6 gap-2 confirm-digit">
+                        <div class="flex flex-col pb-4 lg:pb-0 gap-5 lg:gap-6">
+                            <div class="flex flex-col lg:gap-[18px]">
+                                <div class="grid grid-cols-6 gap-3 lg:gap-2 confirm-digit py-4 lg:py-0">
                                     <input type="text" name="otc-1" id="otc-1" maxlength="1" placeholder="-"
-                                        class="py-3 px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-2xl leading-normal font-medium flex justify-center items-center text-center">
+                                        class="p-4 lg:py-3 lg:px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-sm lg:text-2xl leading-normal lg:leading-normal font-medium flex justify-center items-center text-center">
                                     <input type="text" name="otc-2" id="otc-2" maxlength="1" placeholder="-"
-                                        class="py-3 px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-2xl leading-normal font-medium flex justify-center items-center text-center">
+                                        class="p-4 lg:py-3 lg:px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-sm lg:text-2xl leading-normal lg:leading-normal font-medium flex justify-center items-center text-center">
                                     <input type="text" name="otc-3" id="otc-3" maxlength="1" placeholder="-"
-                                        class="py-3 px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-2xl leading-normal font-medium flex justify-center items-center text-center">
+                                        class="p-4 lg:py-3 lg:px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-sm lg:text-2xl leading-normal lg:leading-normal font-medium flex justify-center items-center text-center">
                                     <input type="text" name="otc-4" id="otc-4" maxlength="1" placeholder="-"
-                                        class="py-3 px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-2xl leading-normal font-medium flex justify-center items-center text-center">
+                                        class="p-4 lg:py-3 lg:px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-sm lg:text-2xl leading-normal lg:leading-normal font-medium flex justify-center items-center text-center">
                                     <input type="text" name="otc-5" id="otc-5" maxlength="1" placeholder="-"
-                                        class="py-3 px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-2xl leading-normal font-medium flex justify-center items-center text-center">
+                                        class="p-4 lg:py-3 lg:px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-sm lg:text-2xl leading-normal lg:leading-normal font-medium flex justify-center items-center text-center">
                                     <input type="text" name="otc-6" id="otc-6" maxlength="1" placeholder="-"
-                                        class="py-3 px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-2xl leading-normal font-medium flex justify-center items-center text-center">
+                                        class="p-4 lg:py-3 lg:px-6 rounded-[14px] border border-[#DCDFEA] placeholder:text-[#667085] text-sm lg:text-2xl leading-normal lg:leading-normal font-medium flex justify-center items-center text-center">
                                 </div>
 
-                                <div class="flex justify-between items-center">
+                                <div class="flex justify-between items-center pt-4 lg:pt-0">
 
                                     <span class="text-[#344054] text-sm leading-normal font-medium">
                                         لم تصلك رسالة؟
@@ -119,7 +124,7 @@
             <!-- =============================================================== -->
 
             <!-- Start footer  -->
-            <footer class="p-8 flex items-center gap-8 justify-between">
+            <footer class="p-8 hidden lg:flex items-center gap-8 justify-between">
                 <!-- privacy policy  -->
                 <ul class="flex items-center gap-6">
                     <li class="">

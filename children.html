@@ -60,105 +60,56 @@
             <!-- Start form -->
             <div class="h-full px-[30px] lg:px-[100px] flex flex-col lg:justify-center lg:gap-8">
 
-                <div class="flex flex-col gap-2 lg:gap-3 py-6 lg:p-0">
-                    <h2 class="text-[#111322] text-2xl lg:text-[32px] leading-normal font-semibold">تسجيل حساب جديد</h2>
-                    <p class="text-[#667085] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                        من فضلك أضف بياناتك حتي يمكننا الأستمرار.
+                <div class="flex flex-col lg:items-center gap-2 lg:gap-3 py-6 lg:p-0">
+                    <h2 class="text-[#111322] text-2xl lg:text-[32px] leading-normal font-semibold lg:text-center">
+                        أضف أطفالك
+                    </h2>
+                    <p
+                        class="text-[#667085] text-sm lg:text-base leading-normal lg:leading-normal font-medium lg:text-center">
+                        بحد أقصي 4 أطفال في هذه المرحلة.
                     </p>
                 </div>
 
-                <form action="confirm-phone.html">
-                    <div class="flex flex-col gap-6">
+                <form action="" class="h-full lg:h-auto">
+                    <div class="flex flex-col lg:gap-8 h-full lg:h-auto">
 
-                        <div class="flex flex-col gap-4 lg:gap-8 py-4 lg:py-0">
+                        <div
+                            class="flex flex-col lg:flex-row gap-4 lg:gap-12 lg:items-center lg:justify-center py-4 lg:py-0 h-full lg:h-auto">
 
-                            <!-- full name  -->
-                            <div class="flex flex-col gap-2">
-                                <label for="full-name" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                    الأسم كامل
-                                </label>
-                                <div class="relative">
-                                    <img src="assets/images/user-icon.svg" width="20" height="20" alt="username"
-                                        class="absolute right-3 top-1/2 -translate-y-1/2">
-                                    <input type="text" name="full-name" id="full-name" placeholder="أضف أسمك" required
-                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 lg:py-3 pr-10 text-sm leading-5 placeholder:text-[#7D89B0]">
+                            <div
+                                class="flex lg:flex-col items-center gap-4 border border-[#E6E6EA] p-4 lg:p-0 rounded-2xl lg:rounded-none lg:border-none">
+                                <div class="w-12 lg:w-36 h-12 lg:h-36 rounded-full bg-[#EFF1F5] flex lg:items-center justify-center overflow-hidden"
+                                    id="personal-pic-container">
+                                    <img src="assets/images/child.jpg" class="w-full h-full object-cover" width="144"
+                                        height="145" alt="child">
                                 </div>
-                            </div>
-
-                            <!-- phone  -->
-                            <div class="flex flex-col gap-2">
-                                <label for="phone-num" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                    رقم الهاتف
-                                </label>
-                                <div class="relative">
-                                    <img src="assets/images/phone-icon.svg" width="20" height="20" alt="username"
-                                        class="absolute right-3 top-1/2 -translate-y-1/2">
-                                    <input type="text" name="phone-num" id="phone-num" placeholder="123xxxxx" required
-                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 lg:py-3 pr-10 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                </div>
-                            </div>
-
-                            <!-- phone  -->
-                            <div class="flex flex-col gap-2">
-                                <label for="password" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                    الرقم السري
-                                </label>
                                 <div class="flex flex-col gap-1">
-                                    <div class="relative">
-                                        <img src="assets/images/lock-icon.svg" width="20" height="20" alt="username"
-                                            class="absolute right-3 top-1/2 -translate-y-1/2">
-                                        <input type="password" name="password" id="password" placeholder="رقمك السري"
-                                            required
-                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 lg:py-3 px-10 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                        <img src="assets/images/showpass-icon.svg" width="20" height="20" alt="username"
-                                            class="absolute left-3 top-1/2 -translate-y-1/2 cursor-pointer show-password">
-                                    </div>
-                                    <span class="text-[#7D89B0] text-xs leading-normal">
-                                        علي الأقل يجب أن يكون 8 أحرف أو أرقام
-                                    </span>
+                                    <a href="#"
+                                        class="text-[#101828] text-sm lg:text-lg leading-normal lg:leading-normal font-semibold">
+                                        جميلة </a>
+                                    <span class="text-[#8E8A9D] text-xs leading-normal lg:hidden">الصف الثاني
+                                        الابتدائي</span>
                                 </div>
                             </div>
-
+                            <a href="add-child.html"
+                                class="flex lg:flex-col justify-center items-center gap-4 border border-[] p-4 lg:p-0 rounded-2xl lg:rounded-none lg:border-none">
+                                <sapn
+                                    class="lg:w-36 lg:h-36 rounded-full lg:border lg:border-[#DCDFEA] flex items-center justify-center overflow-hidden"
+                                    id="personal-pic-container">
+                                    <img src="assets/images/add-square.svg" class="w-6 lg:w-8" width="32" height="32"
+                                        alt="add-child">
+                                </sapn>
+                                <span
+                                    class="text-[#101828] text-sm lg:text-lg leading-normal lg:leading-normal font-semibold">
+                                    أضف طفل
+                                </span>
+                            </a>
                         </div>
 
                         <!-- Submit  -->
-                        <div class="flex flex-col gap-[22px]">
-                            <input type="submit" value="سجل حسابك"
-                                class="py-4 px-6 text-sm leading-5 font-medium secondary-btn rounded-xl text-center cursor-pointer focus:outline-0">
-
-                            <span class="border-t border-[#EDF0F2] relative">
-                                <span
-                                    class="bg-white px-[22px] absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-[#475467] text-xs leading-normal font-semibold">
-                                    أو
-                                </span>
-                            </span>
-
-                            <div class="grid grid-cols-3 gap-3 lg:gap-4">
-                                <a href="#"
-                                    class="p-4 lg:p-3 rounded-xl border border-[#DCDFEA] flex justify-center items-center">
-                                    <img src="assets/images/twitter.png" width="20" height="20" alt="twitter">
-                                    <span class="sr-only">telegram Icon</span>
-                                </a>
-                                <a href="#"
-                                    class="p-4 lg:p-3 rounded-xl border border-[#DCDFEA] flex justify-center items-center">
-                                    <img src="assets/images/faceboock.png" width="20" height="20" alt="faceboock">
-                                    <span class="sr-only">telegram Icon</span>
-                                </a>
-                                <a href="#"
-                                    class="p-4 lg:p-3 rounded-xl border border-[#DCDFEA] flex justify-center items-center">
-                                    <img src="assets/images/google.png" width="20" height="20" alt="google.png">
-                                    <span class="sr-only">telegram Icon</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Login if you have account -->
-                        <div class="flex justify-center items-center gap-1">
-                            <span class="text-[#5D6B98] text-sm leading-normal font-medium">هل لديك حساب بالفعل ؟</span>
-                            <a href="login.html"
-                                class="link-btn group flex items-center gap-2 text-[#3A3454] text-sm leading-normal font-medium">
-                                تسجيل دخول
-                            </a>
+                        <div class="flex flex-col gap-2 py-4 lg:p-0">
+                            <input type="submit" value="تسجيل حساب"
+                                class="py-4 px-6 lg:text-sm lg:leading-5 leading-normal font-medium secondary-btn rounded-xl text-center cursor-pointer focus:outline-0">
                         </div>
 
                     </div>
@@ -246,19 +197,20 @@
 
         <!-- Register Second (left) Section  -->
         <div class="hidden lg:flex flex-col items-center justify-center gap-16 px-8 bg-[#3A3454]">
-            <img src="assets/images/register.png" width="486" height="442" alt="register" />
+            <img src="assets/images/cuate.png" width="400" height="442" alt="register" />
 
             <div class="flex flex-col items-center gap-8 max-w-[512px]">
                 <div class="flex flex-col items-center gap-6">
-                    <h2 class="text-center text-[#D1B6F1] text-[40px] leading-normal font-semibold">تابع تقارير طفلك
+                    <h2 class="text-center text-[#D1B6F1] text-[40px] leading-normal font-semibold">
+                        تواصل مع الالاف المعلمين!
                     </h2>
                     <p class="text-center text-[#B9C0D4] text-base leading-normal font-medium">
-                        من خلال منصتنا يرسل لك المعلم بشكل دوري تقارير عن حالة الطفل الدراسية وتقدمه داخل المنصة.
-                    </p>
+                        العثور علي المعلمين ذو الخبرة أصبح أسهل بكثير تضم منصتنا العديد من المعلمين علي مستوي المملكة
+                        ولديهم خبرة كبيرة في مجال التعليم. </p>
                 </div>
                 <div class="p-2 flex items-center gap-2">
-                    <span class="bg-[#D5F379] h-1.5 rounded-full w-10"></span>
                     <span class="bg-[#5D6B98] h-1.5 rounded-full w-10"></span>
+                    <span class="bg-[#D5F379] h-1.5 rounded-full w-10"></span>
                     <span class="bg-[#5D6B98] h-1.5 rounded-full w-10"></span>
                 </div>
             </div>

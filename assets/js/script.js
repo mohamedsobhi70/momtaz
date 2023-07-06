@@ -76,14 +76,14 @@ if ($(".testimonials-carousel").length > 0) {
                 autoHeight: false,
                 items: 1.2,
                 center: true,
-                loop:true,
+                loop: true,
                 margin: 16,
             },
             600: {
                 autoWidth: false,
                 autoHeight: false,
                 center: true,
-                loop:true,
+                loop: true,
                 items: 1.5,
                 margin: 24,
             },
@@ -289,4 +289,13 @@ if ($(".play-vid").length > 0) {
         $("video").trigger('pause');
         vid.trigger('play');
     })
+}
+
+// change personal image on register (add location Step)
+if (document.getElementById("personal-pic-container")) {
+    var loadFile = function (event) {
+        var image = document.querySelector("#personal-pic-container img");
+        image.src = URL.createObjectURL(event.target.files[0]);
+        image.classList.add("w-full", "h-full", "object-cover")
+    };
 }

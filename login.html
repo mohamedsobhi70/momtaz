@@ -26,35 +26,40 @@
         <div class="flex flex-col">
 
             <!-- Start header  -->
-            <header class="p-8 ">
+            <header class="py-6 px-[30px] lg:p-8 flex items-center gap-8 justify-between bg-[#FAF8FE] lg:bg-white">
 
                 <!-- Logo  -->
-                <a href="index.html" class="">
+                <a href="index.html" class="hidden lg:block">
                     <img src="assets/images/logo.png" width="106" height="46" alt="Logo">
                 </a>
+                <!-- bach to home  -->
+                <a href="index.html" class="lg:hidden">
+                    <img src="assets/images/right-arrow.svg" width="24" height="24" alt="arrow">
+                </a>
+
             </header>
             <!-- End header  -->
 
             <!-- =============================================================== -->
 
             <!-- Start form -->
-            <div class="h-full px-[100px] flex flex-col justify-center gap-8">
+            <div class="h-full  px-[30px] lg:px-[100px] flex flex-col lg:justify-center lg:gap-8">
 
-                <div class="flex flex-col gap-3">
-                    <h2 class="text-[#111322] text-[32px] leading-normal font-semibold">
+                <div class="flex flex-col gap-2 lg:gap-3 py-6 lg:py-0">
+                    <h2 class="text-[#111322] text-2xl lg:text-[32px] leading-normal lg:leading-normal font-semibold">
                         تسجيل دخول
                     </h2>
-                    <p class="text-[#667085] text-base leading-normal font-medium">
+                    <p class="text-[#667085] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
                         من فضلك أضف بياناتك حتي يمكننا الأستمرار.
                     </p>
                 </div>
 
                 <form action="">
-                    <div class="flex flex-col gap-6">
+                    <div class="flex flex-col lg:gap-6">
 
-                        <div class="flex flex-col gap-8">
+                        <div class="flex flex-col gap-4 lg:gap-8 py-4 lg:py-0">
 
-                            <!-- phone  -->
+                            <!-- Phone  -->
                             <div class="flex flex-col gap-2">
                                 <label for="phone-num" class="text-[#4A5578] text-xs leading-normal font-medium">
                                     رقم الهاتف
@@ -67,7 +72,7 @@
                                 </div>
                             </div>
 
-                            <!-- phone  -->
+                            <!-- Password  -->
                             <div class="flex flex-col gap-2">
                                 <label for="password" class="text-[#4A5578] text-xs leading-normal font-medium">
                                     كلمة المرور
@@ -82,7 +87,7 @@
                                         <img src="assets/images/showpass-icon.svg" width="20" height="20" alt="username"
                                             class="absolute left-3 top-1/2 -translate-y-1/2 cursor-pointer show-password">
                                     </div>
-                                    <a href="#" class="text-[#7D89B0] text-xs leading-normal text-left">
+                                    <a href="forget-password.html" class="text-[#7D89B0] text-xs leading-normal text-left">
                                         نسيت كلمة المرور؟
                                     </a>
                                 </div>
@@ -91,7 +96,7 @@
                         </div>
 
                         <!-- Submit  -->
-                        <div class="flex flex-col gap-[22px]">
+                        <div class="flex flex-col gap-[22px] py-4 lg:py-0">
                             <input type="submit" value="تسجيل دخول"
                                 class="py-4 px-6 text-sm leading-5 font-medium secondary-btn rounded-xl text-center cursor-pointer focus:outline-0">
 
@@ -102,7 +107,7 @@
                                 </span>
                             </span>
 
-                            <div class="grid lg:grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-4">
                                 <a href="#"
                                     class="p-3 rounded-xl border border-[#DCDFEA] flex justify-center items-center">
                                     <img src="assets/images/twitter.png" width="20" height="20" alt="twitter">
@@ -122,7 +127,7 @@
                         </div>
 
                         <!-- Login if you have account -->
-                        <div class="flex justify-center items-center gap-1">
+                        <div class="flex justify-center items-center gap-1 py-4 lg:py-0">
                             <span class="text-[#5D6B98] text-sm leading-normal font-medium">
                                 ليس لديك حساب ؟
                             </span>
@@ -141,7 +146,7 @@
             <!-- =============================================================== -->
 
             <!-- Start footer  -->
-            <footer class="p-8 flex items-center gap-8 justify-between">
+            <footer class="p-8 hidden lg:flex items-center gap-8 justify-between">
                 <!-- privacy policy  -->
                 <ul class="flex items-center gap-6">
                     <li class="">
