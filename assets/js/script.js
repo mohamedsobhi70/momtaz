@@ -311,3 +311,31 @@ if (document.getElementById("personal-pic-container")) {
         image.classList.add("w-full", "h-full", "object-cover")
     };
 }
+
+
+// choose teachers for compare
+if ($(".teacher-card")) {
+    let teachers = document.querySelectorAll(".teacher-card");
+    teachers.forEach(el => {
+
+        el.addEventListener("click", function () {
+            let teacherName = el.querySelector(".teacher-name").innerHTML,
+                teacherPic = el.querySelector(".teacher-img").innerHTML,
+                comTaechers = document.querySelector(".teacher-compare");
+
+            document.querySelector(".compare-box").classList.remove("hidden")
+            if (comTaechers.children.length < 2) {
+                comTaechers.innerHTML +=
+                    `<div class="teacher-compare-item overflow-hidden rounded-lg flex flex-col">
+                        <div class="teacher-img h-[116px] w-[171px]">
+                             ${teacherPic}
+                         </div>
+                        <h2 class="teacher-name bg-white text-center text-xs leading-normal p-3">
+                         ${teacherName}
+                         </h2>
+                    </div>`
+
+            }
+        })
+    })
+}
