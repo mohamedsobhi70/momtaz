@@ -315,13 +315,13 @@ if (document.getElementById("personal-pic-container")) {
 
 // choose teachers for compare
 if ($(".teacher-card")) {
-    let teachers = document.querySelectorAll(".teacher-card");
+    let teachers = document.querySelectorAll(".teacher-card"),
+    comTaechers = document.querySelector(".teacher-compare");
     teachers.forEach(el => {
 
         el.addEventListener("click", function () {
             let teacherName = el.querySelector(".teacher-name").innerHTML,
-                teacherPic = el.querySelector(".teacher-img").innerHTML,
-                comTaechers = document.querySelector(".teacher-compare");
+                teacherPic = el.querySelector(".teacher-img").innerHTML;
 
             document.querySelector(".compare-box").classList.remove("hidden")
             if (comTaechers.children.length < 2) {
@@ -338,4 +338,10 @@ if ($(".teacher-card")) {
             }
         })
     })
+
+    $(".close-compare").on("click", function () {
+        document.querySelector(".compare-box").classList.add("hidden");
+        comTaechers.innerHTML =""
+    })
+
 }
