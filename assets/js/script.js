@@ -288,6 +288,8 @@ if ($(".play-vid").length > 0) {
         let vid = $(this).parent().siblings("video");
         $("video").trigger('pause');
         vid.trigger('play');
+        vid.attr('controls',"true");
+        vid.siblings(".play-overlay").addClass("hidden");
     })
 }
 
