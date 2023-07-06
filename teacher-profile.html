@@ -46,7 +46,7 @@
                     <a href="index.html" class="nav-item">
                         الرئيسية
                     </a>
-                    <a href="index.html" class="nav-item active">
+                    <a href="index.html" class="nav-item">
                         المعلمين
                     </a>
                     <div class="nav-item flex items-center gap-2 cursor-pointer">
@@ -125,7 +125,7 @@
         </div>
 
         <section>
-            <div class="container">
+            <div class="container border-b border-[#E6E6EA]">
                 <div class=" flex items-center gap-[30px] py-8">
                     <div class="w-24 h-24 rounded-2xl overflow-hidden">
                         <img src="assets/images/pop-teacher-1.jpg" width="" height="" alt="teacher profile image">
@@ -181,6 +181,123 @@
             </div>
         </section>
 
+
+        <section>
+            <div class="container grid lg:grid-cols-3 py-8 gap-[30px]">
+                <div class="py-8 flex flex-col gap-6">
+                    <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                        حولك
+                    </h2>
+
+                    <div class="rounded-3xl overflow-hidden relative">
+                        <div
+                            class="play-overlay absolute w-full h-full top-0 left-0 bg-[#0000004D] flex justify-center items-center z-[1]">
+                            <button type="button" aria-label="play Video" class="play-vid">
+                                <img src="assets/images/play-circle.svg" width="48" height="48" alt="Play Video">
+                            </button>
+                        </div>
+                        <video preload="auto" poster="assets/images/poster-1.png" class="h-full w-full object-cover">
+                            <source src="assets/images/vid.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="border border-[#E2E8F0] rounded-3xl p-8 flex flex-col gap-6">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                                أحجز الأن
+                            </h2>
+                            <p class="text-[#8E8A9D] text-lg leading-[180%]">
+                                خصم 50% عند أول حجز لك علي المنصة.
+                            </p>
+
+                        </div>
+                        <div class="flex flex-col gap-3">
+
+                            <a href="#"
+                                class="text-sm leading-5 py-4 px-8 rounded-2xl secondary-btn flex items-center justify-center gap-2">
+                                حجز شهري
+                            </a>
+
+                            <a href="#"
+                                class="text-sm leading-5 py-4 px-8 rounded-2xl bordered-btn flex items-center justify-center gap-2">
+                                حجز حصة تجريبية
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="border border-[#E2E8F0] rounded-3xl p-8 flex flex-col gap-6">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                                شارك ملف المعلم
+                            </h2>
+                            <p class="text-[#8E8A9D] text-lg leading-[180%]">
+                                عند مشاركتك ملف المعلم وعند حجز حصة ستحصل علي كوبون خصم!
+                            </p>
+
+                        </div>
+
+                        <a href="#"
+                            class="text-sm leading-5 py-4 px-8 rounded-2xl bordered-btn flex items-center justify-center gap-2">
+                            شارك الأن
+                        </a>
+
+                    </div>
+                </div>
+                <div class="lg:col-span-2 flex flex-col">
+
+                    <div class="p-8 flex flex-col gap-8 border-b border-[#E6E6EA]">
+                        <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                            نبذة تعريفية
+                        </h2>
+                        <p class="text-[#5A5570] text-base leading-[180%]">
+                            مرحباً، أنا سعيد أبو السعود مدرس خبرة أكثر من +7 سنوات في التدريس للمنهج السعودي وخاصة
+                            المواد العلمية والرياضة مثل ( الكيمياء - الفيزياء - الرياضة البحته ) ودرست لأكثر من +20,000
+                            طالب علي مستوي المملكة في خلال رحلتي والصفوف الدراسية للمراحل العمرية الكبيرة ( إعدادي و
+                            ثانوي ) يمكنك التواصل معي في أي وقت لبدء الحجز.
+                        </p>
+                    </div>
+                    <!-- ======================================================== -->
+
+                    <!-- location  -->
+                    <div class="p-8 flex flex-col gap-8 border-b border-[#E6E6EA]">
+                        <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                            موقعك الجغرافي
+                        </h2>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="flex flex-col gap-1.5">
+                                <span class="text-[#8E8A9D] text-sm leading-normal">
+                                    الدولة
+                                </span>
+                                <p class="text-[#090129] text-base leading-normal font-medium">
+                                    المملكة العربية السعودية
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-1.5">
+                                <span class="text-[#8E8A9D] text-sm leading-normal">
+                                    المحافظة
+                                </span>
+                                <p class="text-[#090129] text-base leading-normal font-medium">
+                                    الرياض
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-1.5">
+                                <span class="text-[#8E8A9D] text-sm leading-normal">
+                                    الحي
+                                </span>
+                                <p class="text-[#090129] text-base leading-normal font-medium">
+                                    التعاون
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
     </main>
     <!-- End Momtaz MAin Page Content  -->
 
