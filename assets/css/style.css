@@ -756,6 +756,10 @@ video {
   height: 116px;
 }
 
+.h-2\/4 {
+  height: 50%;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -964,6 +968,10 @@ video {
 
 .gap-\[22px\] {
   gap: 22px;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
 }
 
 .overflow-hidden {
