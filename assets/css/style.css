@@ -853,6 +853,14 @@ video {
   width: 100vw;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[418px\] {
+  width: 418px;
+}
+
 .max-w-\[512px\] {
   max-width: 512px;
 }
@@ -1438,6 +1446,11 @@ video {
   line-height: 1rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1588,6 +1601,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .opacity-10 {
@@ -2112,6 +2129,10 @@ select{
 
   .lg\:w-\[640px\] {
     width: 640px;
+  }
+
+  .lg\:w-\[418px\] {
+    width: 418px;
   }
 
   .lg\:basis-2\/3 {
