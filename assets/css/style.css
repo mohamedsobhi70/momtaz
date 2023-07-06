@@ -672,6 +672,10 @@ video {
   top: 1.25rem;
 }
 
+.top-24 {
+  top: 6rem;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -1991,6 +1995,22 @@ select{
 @media (min-width: 1024px) {
   .lg\:static {
     position: static;
+  }
+
+  .lg\:sticky {
+    position: sticky;
+  }
+
+  .lg\:top-24 {
+    top: 6rem;
+  }
+
+  .lg\:top-20 {
+    top: 5rem;
+  }
+
+  .lg\:top-16 {
+    top: 4rem;
   }
 
   .lg\:col-span-2 {

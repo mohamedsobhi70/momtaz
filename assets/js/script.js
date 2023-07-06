@@ -152,7 +152,7 @@ if ($(".teacher-rating-carousel").length > 0) {
                 margin: 16,
             },
             600: {
-                items: 1,
+                items: 2,
                 margin: 16,
             },
             1024: {
