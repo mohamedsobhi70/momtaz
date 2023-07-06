@@ -1,13 +1,1 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="streamline:ecology-science-dna-biology-experiment-lab-science" clip-path="url(#clip0_1080_64955)">
-<g id="Group">
-<path id="Vector" d="M46.1714 17.8285C51.1087 19.9384 56.6615 20.1017 61.7143 18.2857M18.2857 61.7142C20.1001 56.6456 19.9368 51.0793 17.8286 46.1257C16.1784 42.1814 15.7319 37.8372 16.5453 33.6397C17.3588 29.4423 19.3958 25.5793 22.4 22.5371C25.4796 19.4893 29.3926 17.4215 33.6457 16.5942" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_2" d="M30.1715 47.4056C34.4452 46.5715 38.3751 44.4872 41.4629 41.4171M41.4629 41.4171C44.4723 38.3781 46.5129 34.515 47.3266 30.3162C48.1404 26.1174 47.6906 21.7717 46.0343 17.8285C43.969 12.8738 43.8547 7.32116 45.7143 2.28564M41.4629 41.4171L22.5829 22.5371M2.28577 45.7142C7.34064 43.8896 12.9023 44.0695 17.8286 46.2171" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_1080_64955">
-<rect width="64" height="64" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#a)"><path d="M46.171 17.828a21.257 21.257 0 0 0 15.543.458M18.286 61.714a21.394 21.394 0 0 0-.457-15.588A21.67 21.67 0 0 1 22.4 22.537a21.943 21.943 0 0 1 11.246-5.943"/><path d="M30.172 47.406a21.989 21.989 0 0 0 11.29-5.989m0 0a21.623 21.623 0 0 0 4.572-23.589 21.257 21.257 0 0 1-.32-15.542m-4.251 39.131-18.88-18.88M2.286 45.714a21.028 21.028 0 0 1 15.543.503"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h64v64H0z"/></clipPath></defs></svg>
