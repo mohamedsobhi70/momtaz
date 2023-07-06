@@ -105,9 +105,9 @@
     <!-- Start Momtaz MAin Page Content  -->
     <main>
 
-        <div class="bg-[#FAF8FE]">
-            <div class="py-8 container">
-                <a href="#" class="text-sm leading-5 link-btn group hidden lg:flex items-center gap-2">
+        <div class="lg:bg-[#FAF8FE]">
+            <div class="py-6 lg:py-8 px-[30px] lg:px-0 container">
+                <a href="#" class="text-sm leading-5 link-btn group flex items-center gap-2">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             class="group-hover:stroke-[#090129] group-active:stroke-[#8E8A9D] transition-all duration-300 "
@@ -118,27 +118,34 @@
                             d="M3.49813 12L20.3281 12" stroke="#090129" stroke-width="2" stroke-miterlimit="10"
                             stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    العودة الي ملف المعلم
+                    <span class="hidden lg:block">
+                        العودة الي ملف المعلم
+                    </span>
                 </a>
             </div>
 
         </div>
 
         <section>
-            <div class="container border-b border-[#E6E6EA]">
-                <div class=" flex items-center gap-[30px] py-8">
-                    <div class="w-24 h-24 rounded-2xl overflow-hidden">
-                        <img src="assets/images/pop-teacher-1.jpg" width="" height="" alt="teacher profile image">
+            <div class="w-screen h-52 bg-cover bg-center lg:hidden"
+                style="background-image: url(assets/images/account-cover.jpg);"></div>
+            <div class="container border-b border-[#E6E6EA] -mt-16 lg:mt-0 pb-6 lg:pb-0">
+                <div class=" flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-[30px] lg:py-8 px-[30px] lg:px-0">
+                    <div
+                        class="w-32 lg:w-24 h-32 lg:h-24 rounded-[50px] lg:rounded-2xl overflow-hidden border-4 border-white ">
+                        <img src="assets/images/pop-teacher-1.jpg" class="w-full h-full object-cover" width="312"
+                            height="312" alt="teacher profile image">
                     </div>
 
                     <div class="flex flex-col gap-1 flex-1">
-                        <div class="flex justify-between items-center gap-3">
-                            <h2 class="text-[#090129] text-2xl leading-normal font-semibold">
+                        <div class="flex justify-between items-center gap-2 lg:gap-3">
+                            <h2
+                                class="text-[#090129] text-xl lg:text-2xl leading-normal lg:leading-normal font-semibold">
                                 عبدالرحمن مصطفي عبد الجواد
                             </h2>
 
                             <a href="#"
-                                class="text-sm leading-5 py-3 px-6 rounded-xl secondary-btn flex items-center justify-center gap-2">
+                                class="text-sm leading-5 py-3 px-6 rounded-xl secondary-btn hidden lg:flex items-center justify-center gap-2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <mask id="path-1-inside-1_1824_73688" fill="white">
@@ -171,9 +178,16 @@
                                 مشاركة ملف المعلم
                             </a>
                         </div>
-                        <p class="text-[#8E8A9D] text-xl leading-normal ">
-                            مدرس رياضيات
-                        </p>
+                        <div class="flex flex-col gap-1">
+                            <p
+                                class="text-[#8E8A9D] text-base leading-normal lg:text-xl lg:leading-normal font-medium lg:font-normal">
+                                مدرس رياضيات
+                            </p>
+
+                            <span class="lg:hidden text-[#8E8A9D] text-sm leading-normal">
+                                07 سنوات خبرة
+                            </span>
+                        </div>
                     </div>
 
                 </div>
@@ -183,28 +197,34 @@
 
 
         <section>
-            <div class="container grid lg:grid-cols-3 py-8 gap-[30px]">
-                <div class="py-8 flex flex-col gap-6">
-                    <h2 class="text-[#090129] text-2xl leading-normal font-medium">
-                        حولك
+            <div class="container lg:grid lg:grid-cols-3 lg:py-8 gap-[30px]">
+                <div class="pt-8 lg:py-8 flex flex-col gap-6">
+                    <h2
+                        class="px-[30px] lg:px-0 text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                        عن المعلم
                     </h2>
 
-                    <div class="rounded-3xl overflow-hidden relative">
-                        <div
-                            class="play-overlay absolute w-full h-full top-0 left-0 bg-[#0000004D] flex justify-center items-center z-[1]">
-                            <button type="button" aria-label="play Video" class="play-vid">
-                                <img src="assets/images/play-circle.svg" width="48" height="48" alt="Play Video">
-                            </button>
+                    <div class=" px-8 lg:px-0">
+                        <div class="rounded-3xl overflow-hidden relative">
+                            <div
+                                class="play-overlay absolute w-full h-full top-0 left-0 bg-[#0000004D] flex justify-center items-center z-[1]">
+                                <button type="button" aria-label="play Video" class="play-vid">
+                                    <img src="assets/images/play-circle.svg" width="48" height="48" alt="Play Video">
+                                </button>
+                            </div>
+                            <video preload="auto" poster="assets/images/poster-1.png"
+                                class="h-full w-full object-cover">
+                                <source src="assets/images/vid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                        <video preload="auto" poster="assets/images/poster-1.png" class="h-full w-full object-cover">
-                            <source src="assets/images/vid.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
                     </div>
 
-                    <div class="border border-[#E2E8F0] rounded-3xl p-8 flex flex-col gap-6">
-                        <div class="flex flex-col gap-2">
-                            <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                    <div
+                        class="border-b lg:border border-[#E2E8F0] lg:rounded-3xl px-[30px] py-8 lg:p-8 flex flex-col gap-6 fixed w-full bg-white z-[2] lg:static bottom-0">
+                        <div class="hidden lg:flex flex-col gap-2">
+                            <h2
+                                class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
                                 أحجز الأن
                             </h2>
                             <p class="text-[#8E8A9D] text-lg leading-[180%]">
@@ -228,19 +248,22 @@
 
                     </div>
 
-                    <div class="border border-[#E2E8F0] rounded-3xl p-8 flex flex-col gap-6">
-                        <div class="flex flex-col gap-2">
-                            <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                    <div
+                        class="border-b border-t lg:border border-[#E2E8F0] lg:rounded-3xl px-[30px] py-8 lg:p-8 flex flex-col gap-6">
+                        <div class="flex flex-col gap-6 lg:gap-2">
+                            <h2
+                                class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
                                 شارك ملف المعلم
                             </h2>
-                            <p class="text-[#8E8A9D] text-lg leading-[180%]">
+                            <p
+                                class="text-[#667085] lg:text-[#8E8A9D] text-sm lg:text-lg leading-[180%] lg:leading-[180%]">
                                 عند مشاركتك ملف المعلم وعند حجز حصة ستحصل علي كوبون خصم!
                             </p>
 
                         </div>
 
                         <a href="#"
-                            class="text-sm leading-5 py-4 px-8 rounded-2xl bordered-btn flex items-center justify-center gap-2">
+                            class="text-base lg:text-sm leading-normal lg:leading-5 py-4 px-8 rounded-2xl bordered-btn flex items-center justify-center gap-2">
                             شارك الأن
                         </a>
 
@@ -248,11 +271,13 @@
                 </div>
                 <div class="lg:col-span-2 flex flex-col">
 
-                    <div class="p-8 flex flex-col gap-8 border-b border-[#E6E6EA]">
-                        <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                    <div class="px-[30px] py-8 lg:p-8 flex flex-col gap-6 lg:gap-8 border-b border-[#E6E6EA]">
+                        <h2
+                            class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
                             نبذة تعريفية
                         </h2>
-                        <p class="text-[#5A5570] text-base leading-[180%]">
+                        <p
+                            class="text-[#667085] lg:text-[#5A5570] text-sm lg:text-base leading-[180%] lg:leading-[180%]">
                             مرحباً، أنا سعيد أبو السعود مدرس خبرة أكثر من +7 سنوات في التدريس للمنهج السعودي وخاصة
                             المواد العلمية والرياضة مثل ( الكيمياء - الفيزياء - الرياضة البحته ) ودرست لأكثر من +20,000
                             طالب علي مستوي المملكة في خلال رحلتي والصفوف الدراسية للمراحل العمرية الكبيرة ( إعدادي و
@@ -261,17 +286,19 @@
                     </div>
                     <!-- ======================================================== -->
 
-                    <!-- location  -->
-                    <div class="p-8 flex flex-col gap-8 border-b border-[#E6E6EA]">
-                        <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                    <!-- Location  -->
+                    <div class="px-[30px] py-8 lg:p-8 flex flex-col gap-6 lg:gap-8 border-b border-[#E6E6EA]">
+                        <h2
+                            class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
                             موقعك الجغرافي
                         </h2>
-                        <div class="grid grid-cols-3 gap-4">
+                        <div class="grid lg:grid-cols-3 gap-3 lg:gap-4">
                             <div class="flex flex-col gap-1.5">
                                 <span class="text-[#8E8A9D] text-sm leading-normal">
                                     الدولة
                                 </span>
-                                <p class="text-[#090129] text-base leading-normal font-medium">
+                                <p
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
                                     المملكة العربية السعودية
                                 </p>
                             </div>
@@ -279,7 +306,8 @@
                                 <span class="text-[#8E8A9D] text-sm leading-normal">
                                     المحافظة
                                 </span>
-                                <p class="text-[#090129] text-base leading-normal font-medium">
+                                <p
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
                                     الرياض
                                 </p>
                             </div>
@@ -287,10 +315,295 @@
                                 <span class="text-[#8E8A9D] text-sm leading-normal">
                                     الحي
                                 </span>
-                                <p class="text-[#090129] text-base leading-normal font-medium">
+                                <p
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
                                     التعاون
                                 </p>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience  -->
+                    <div class="px-[30px] py-8 lg:p-8 flex flex-col gap-6 lg:gap-8 border-b border-[#E6E6EA]">
+                        <h2
+                            class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                            خبراتك
+                        </h2>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-start gap-6">
+                                <span class="text-[#090129] leading-normal font-medium">01</span>
+                                <div class="flex flex-col gap-1.5">
+                                    <h2 class="text-[#090129] text-base leading-normal font-normal">
+                                        مدرسة رياضيات للمرحلة الاعدادية
+                                    </h2>
+                                    <span class="text-[#090129] text-xs leading-normal">
+                                        مدرسة التوفيقية للغات
+                                    </span>
+                                    <p class="text-[#5A5570] text-sm leading-[180%]">
+                                        وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير
+                                        عن فترة الخبرة
+                                    </p>
+                                    <span class="text-[#8E8A9D] text-xs leading-normal">
+                                        فبراير 2018 إلي الان
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="border-t border-[#E6E6EA]"></span>
+                            <div class="flex items-start gap-6">
+                                <span class="text-[#090129] leading-normal font-medium">02</span>
+                                <div class="flex flex-col gap-1.5">
+                                    <h2 class="text-[#090129] text-base leading-normal font-normal">
+                                        مدرسة رياضيات للمرحلة الاعدادية
+                                    </h2>
+                                    <span class="text-[#090129] text-xs leading-normal">
+                                        مدرسة التوفيقية للغات
+                                    </span>
+                                    <p class="text-[#5A5570] text-sm leading-[180%]">
+                                        وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير
+                                        عن فترة الخبرة
+                                    </p>
+                                    <span class="text-[#8E8A9D] text-xs leading-normal">
+                                        فبراير 2018 إلي الان
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rating  -->
+                    <div
+                        class="px-[30px] py-8 lg:p-8 flex flex-col gap-6 lg:gap-8 border-b border-[#E6E6EA] teacher-rating">
+                        <div class="flex items-center justify-between">
+                            <h2
+                                class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                                التقييمات
+                            </h2>
+
+                            <!-- arrows & show more btn  -->
+                            <div class="flex justify-center items-center gap-5">
+                                <!-- next & prev Buttons  -->
+                                <div class="flex items-center gap-[18px] justify-center lg:justify-end">
+                                    <button title="owlnav" type="button"
+                                        class="prevBtn group p-3 bordered-btn rounded-xl">
+                                        <img src="assets/images/right-arrow.svg" width="20" height="20"
+                                            alt="right arrow">
+                                    </button>
+                                    <button title="owlnav" type="button"
+                                        class="nxtBtn group p-3 bordered-btn rounded-xl">
+                                        <img src="assets/images/left-arrow.svg" width="20" height="20" alt="left arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-6 lg:gap-12 ">
+
+                            <!-- testimonial section  -->
+                            <div class="owl-carousel owl-theme teacher-rating-carousel">
+
+                                <!-- testimonial item  -->
+                                <div
+                                    class="item p-6 rounded-3xl border flex flex-col items-center gap-[18px] border-[#E2E8F0] bg-white">
+                                    <div class="flex flex-col gap-2 items-center">
+                                        <div class="w-16 h-16">
+                                            <img src="assets/images/testimonials-1.png"
+                                                class="w-full h-full object-cover" width="96" height="96"
+                                                alt="testimonials-1">
+                                        </div>
+                                        <h2 class="text-[#23262F] text-lg leading-normal font-medium">
+                                            فاطمة علي أحمد
+                                        </h2>
+                                    </div>
+
+                                    <div class="flex flex-col items-center gap-4">
+                                        <p class="text-[#4A5578] text-sm leading-normal text-center">
+                                            من أفضل المعلمين علي الاطلاق من أفضل تعلمت منه الكثير وأجتزت اخبتاراتي في
+                                            المدرسة مع أعلي النتائج
+                                            شاهد المزيد..
+                                        </p>
+
+                                        <div
+                                            class="flex justify-center items-center gap-2 text-[#1E293B] text-xs leading-normal">
+                                            <img src="assets/images/yel-star.svg" width="16" height="16" alt="Star">
+                                            4,5
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- testimonial item  -->
+                                <div
+                                    class="item p-6 rounded-3xl border flex flex-col items-center gap-[18px] border-[#E2E8F0] bg-white">
+                                    <div class="flex flex-col gap-2 items-center">
+                                        <div class="w-16 h-16">
+                                            <img src="assets/images/testimonials-1.png"
+                                                class="w-full h-full object-cover" width="96" height="96"
+                                                alt="testimonials-1">
+                                        </div>
+                                        <h2 class="text-[#23262F] text-lg leading-normal font-medium">
+                                            خالد أسامة نصر
+                                        </h2>
+                                    </div>
+
+                                    <div class="flex flex-col items-center gap-4">
+                                        <p class="text-[#4A5578] text-sm leading-normal text-center">
+                                            من أفضل المعلمين علي الاطلاق من أفضل تعلمت منه الكثير وأجتزت اخبتاراتي في
+                                            المدرسة مع أعلي النتائج
+                                            شاهد المزيد..
+                                        </p>
+
+                                        <div
+                                            class="flex justify-center items-center gap-2 text-[#1E293B] text-xs leading-normal">
+                                            <img src="assets/images/yel-star.svg" width="16" height="16" alt="Star">
+                                            4,5
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Related Teachers  -->
+                    <div
+                        class="px-[30px] py-8 lg:p-8 flex flex-col gap-6 lg:gap-8 related-teacher">
+                        <div class="flex items-center justify-between">
+                            <h2
+                                class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                                معلمين ذات صلة
+                            </h2>
+
+                            <!-- arrows & show more btn  -->
+                            <div class="flex justify-center items-center gap-5">
+                                <!-- next & prev Buttons  -->
+                                <div class="flex items-center gap-[18px] justify-center lg:justify-end">
+                                    <button title="owlnav" type="button"
+                                        class="prevBtn group p-3 bordered-btn rounded-xl">
+                                        <img src="assets/images/right-arrow.svg" width="20" height="20"
+                                            alt="right arrow">
+                                    </button>
+                                    <button title="owlnav" type="button"
+                                        class="nxtBtn group p-3 bordered-btn rounded-xl">
+                                        <img src="assets/images/left-arrow.svg" width="20" height="20" alt="left arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-6 lg:gap-12 ">
+
+                            <!-- Related Teacers section  -->
+                            <div class="owl-carousel owl-theme related-teacher-carousel">
+
+
+                                <!-- Related Teacers item  -->
+                                <div class="item flex flex-col gap-4 items-center">
+                                    <div class="w-32 h-32 rounded-[50px] overflow-hidden">
+                                        <img src="assets/images/pop-teacher-4.jpg" class="w-full h-full object-cover"
+                                            width="96" height="96" alt="testimonials-1">
+                                    </div>
+
+                                    <div class="flex flex-col gap-2 items-start">
+                                        <h2 class="text-[#090129] text-sm leading-normal font-medium">
+                                            <a href="teacher-profile.html">
+                                                أ/ محمد مسعد خالد
+                                            </a>
+                                        </h2>
+                                        <p class="text-[#5A5570] text-xs leading-normal">
+                                            الرياضيات
+                                        </p>
+                                        <div
+                                            class="flex justify-center items-center gap-2 text-[#1E293B] text-xs leading-normal">
+                                            <img src="assets/images/yel-star.svg" width="16" height="16" alt="Star">
+                                            4,5
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- Related Teacers item  -->
+                                <div class="item flex flex-col gap-4 items-center">
+                                    <div class="w-32 h-32 rounded-[50px] overflow-hidden">
+                                        <img src="assets/images/pop-teacher-1.jpg" class="w-full h-full object-cover"
+                                            width="96" height="96" alt="testimonials-1">
+                                    </div>
+
+                                    <div class="flex flex-col gap-2 items-start">
+                                        <h2 class="text-[#090129] text-sm leading-normal font-medium">
+                                            <a href="teacher-profile.html">
+                                                أ/ محمد مسعد خالد
+                                            </a>
+                                        </h2>
+                                        <p class="text-[#5A5570] text-xs leading-normal">
+                                            الرياضيات
+                                        </p>
+                                        <div
+                                            class="flex justify-center items-center gap-2 text-[#1E293B] text-xs leading-normal">
+                                            <img src="assets/images/yel-star.svg" width="16" height="16" alt="Star">
+                                            4,5
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- Related Teacers item  -->
+                                <div class="item flex flex-col gap-4 items-center">
+                                    <div class="w-32 h-32 rounded-[50px] overflow-hidden">
+                                        <img src="assets/images/pop-teacher-2.jpg" class="w-full h-full object-cover"
+                                            width="96" height="96" alt="testimonials-1">
+                                    </div>
+
+                                    <div class="flex flex-col gap-2 items-start">
+                                        <h2 class="text-[#090129] text-sm leading-normal font-medium">
+                                            <a href="teacher-profile.html">
+                                                أ/ محمد مسعد خالد
+                                            </a>
+                                        </h2>
+                                        <p class="text-[#5A5570] text-xs leading-normal">
+                                            الرياضيات
+                                        </p>
+                                        <div
+                                            class="flex justify-center items-center gap-2 text-[#1E293B] text-xs leading-normal">
+                                            <img src="assets/images/yel-star.svg" width="16" height="16" alt="Star">
+                                            4,5
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- Related Teacers item  -->
+                                <div class="item flex flex-col gap-4 items-center">
+                                    <div class="w-32 h-32 rounded-[50px] overflow-hidden">
+                                        <img src="assets/images/pop-teacher-3.jpg" class="w-full h-full object-cover"
+                                            width="96" height="96" alt="testimonials-1">
+                                    </div>
+
+                                    <div class="flex flex-col gap-2 items-start">
+                                        <h2 class="text-[#090129] text-sm leading-normal font-medium">
+                                            <a href="teacher-profile.html">
+                                                أ/ محمد مسعد خالد
+                                            </a>
+                                        </h2>
+                                        <p class="text-[#5A5570] text-xs leading-normal">
+                                            الرياضيات
+                                        </p>
+                                        <div
+                                            class="flex justify-center items-center gap-2 text-[#1E293B] text-xs leading-normal">
+                                            <img src="assets/images/yel-star.svg" width="16" height="16" alt="Star">
+                                            4,5
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
 

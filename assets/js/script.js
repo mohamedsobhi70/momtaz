@@ -140,6 +140,68 @@ if ($(".teacher-search-carousel").length > 0) {
     });
 }
 
+if ($(".teacher-rating-carousel").length > 0) {
+
+    $('.teacher-rating-carousel').owlCarousel({
+        nav: false,
+        dots: false,
+        rtl: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 16,
+            },
+            600: {
+                items: 1,
+                margin: 16,
+            },
+            1024: {
+                items: 2,
+                margin: 24,
+            }
+        }
+    });
+    // Go to the next item
+    $('.teacher-rating .nxtBtn').click(function () {
+        $('.teacher-rating-carousel').trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('.teacher-rating .prevBtn').click(function () {
+        $('.teacher-rating-carousel').trigger('prev.owl.carousel');
+    })
+}
+
+if ($(".related-teacher-carousel").length > 0) {
+
+    $('.related-teacher-carousel').owlCarousel({
+        nav: false,
+        dots: false,
+        rtl: true,
+        responsive: {
+            0: {
+                items: 2,
+                margin: 16,
+            },
+            600: {
+                items: 3,
+                margin: 16,
+            },
+            1024: {
+                items: 4,
+                margin: 24,
+            }
+        }
+    });
+    // Go to the next item
+    $('.related-teacher .nxtBtn').click(function () {
+        $('.related-teacher-carousel').trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('.related-teacher .prevBtn').click(function () {
+        $('.related-teacher-carousel').trigger('prev.owl.carousel');
+    })
+}
+
 
 // Annab Accordion Component
 if ($(".mom-accordion").length) {
@@ -312,11 +374,10 @@ if (document.getElementById("personal-pic-container")) {
     };
 }
 
-
 // choose teachers for compare
 if ($(".teacher-card")) {
     let teachers = document.querySelectorAll(".teacher-card"),
-    comTaechers = document.querySelector(".teacher-compare");
+        comTaechers = document.querySelector(".teacher-compare");
     teachers.forEach(el => {
 
         el.addEventListener("click", function () {
@@ -341,7 +402,7 @@ if ($(".teacher-card")) {
 
     $(".close-compare").on("click", function () {
         document.querySelector(".compare-box").classList.add("hidden");
-        comTaechers.innerHTML =""
+        comTaechers.innerHTML = ""
     })
 
 }
