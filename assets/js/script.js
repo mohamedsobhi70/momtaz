@@ -1,3 +1,15 @@
+// mobile Menu Show - Hidden 
+if ($(".mobile-menu").length > 0) {
+    $(".mobile-menu-btn").on("click", function () {
+        $(".mobile-menu").addClass("active")
+    })
+    $(".mobile-menu-close").on("click", function () {
+        $(".mobile-menu").removeClass("active")
+    })
+}
+
+
+// sliders 
 if ($(".best-teacher-carousel").length > 0) {
 
     $('.best-teacher-carousel').owlCarousel({
