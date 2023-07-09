@@ -40,58 +40,130 @@
             </button>
 
             <!-- navigation  -->
-            <div class=" hidden lg:flex justify-between flex-1">
-                <!-- Navigation Bar -->
-                <nav class="flex items-center gap-6 header-nav">
-                    <a href="index.html" class="nav-item active">
-                        الرئيسية
-                    </a>
-                    <a href="teachers.html" class="nav-item">
-                        المعلمين
-                    </a>
-                    <div class="nav-item flex items-center gap-2 cursor-pointer">
-                        المواد العلمية
-                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.2154 12.5415L11.782 7.1082C11.1404 6.46654 10.0904 6.46654 9.44871 7.1082L4.01538 12.5415"
-                                stroke="#8E8A9D" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <a href="about-us.html" class="nav-item">
-                        من نحن
-                    </a>
-                    <a href="index.html" class="nav-item">
-                        الدعم الفني
-                    </a>
+            <div class="mobile-menu">
 
-                </nav>
-
-                <!-- login - register  -->
-                <div class="flex items-center gap-3">
-                    <!-- Login  -->
-                    <a href="login.html" class="text-sm leading-5 py-3 px-6 rounded-xl secondary-btn">
-                        تسجيل دخول
-                    </a>
-
-                    <!-- Register  -->
-                    <a href="register.html" class="text-sm leading-5 py-3 px-6 rounded-xl bordered-btn">
-                        حساب جديد ؟
-                    </a>
-                    <!--   -->
-                    <a href="#" class="text-sm leading-5 link-btn group flex items-center gap-2">
-                        للمعلمين
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                class="group-hover:stroke-[#090129] group-active:stroke-[#8E8A9D] transition-all duration-300 "
-                                d="M7.97508 4.94189L2.91675 10.0002L7.97508 15.0586" stroke="#3A3454"
-                                stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                class="group-hover:stroke-[#090129] group-active:stroke-[#8E8A9D] transition-all duration-300 "
-                                d="M17.0834 10H3.05835" stroke="#3A3454" stroke-width="1.25" stroke-miterlimit="10"
+                <!-- close btn  -->
+                <div class="bg-[#FAF8FE] py-6 px-[30px] lg:p-0 flex lg:hidden">
+                    <button type=" button" class="mobile-menu-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#090129" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#090129" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                stroke="#090129" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
+                        <span class="sr-only">Close Mobile Menu Icon</span>
+                    </button>
+                </div>
+                <div
+                    class="flex flex-col lg:flex-row lg:justify-between w-full flex-1 overflow-y-scroll lg:overflow-y-visible">
+                    <!-- Navigation Bar -->
+                    <nav
+                        class="flex flex-col lg:flex-row lg:items-center lg:gap-6 header-nav px-[30px] lg:p-0 pt-4 lg:pt-0">
+                        <a href="index.html" class="nav-item flex items-center gap-4 active">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                الرئيسية
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <a href="teachers.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                المعلمين
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <div class="nav-item flex items-center gap-2 cursor-pointer justify-between">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                المواد العلمية
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                            <svg class="hidden lg:block" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.2154 12.5415L11.782 7.1082C11.1404 6.46654 10.0904 6.46654 9.44871 7.1082L4.01538 12.5415"
+                                    stroke="#8E8A9D" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <a href="about-us.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                من نحن
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <a href="index.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                الدعم الفني
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+
+                    </nav>
+
+                    <!-- login - register  -->
+                    <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3 px-[30px] lg:p-0 pb-4 lg:pb-0">
+                        <!-- Login  -->
+                        <a href="login.html"
+                            class="flex items-center gap-4 border-b border-[#E6E6EA] lg:border-none text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:py-3 lg:px-6 lg:rounded-xl lg:secondary-btn">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                تسجيل دخول
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+
+                        <!-- Register  -->
+                        <a href="register.html"
+                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:py-3 lg:px-6 lg:rounded-xl lg:bordered-btn">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                حساب جديد ؟
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+
+                        <!-- For Teachers  -->
+                        <a href="#"
+                            class="gap-4 border-b border-[#E6E6EA] lg:border-none text-[#5A5570] lg:text-sm leading-normal lg:leading-5 lg:link-btn group flex items-center lg:gap-2 py-4 lg:py-0">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                للمعلمين
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                            <svg class="hidden lg:block" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    class="group-hover:stroke-[#090129] group-active:stroke-[#8E8A9D] transition-all duration-300 "
+                                    d="M7.97508 4.94189L2.91675 10.0002L7.97508 15.0586" stroke="#3A3454"
+                                    stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    class="group-hover:stroke-[#090129] group-active:stroke-[#8E8A9D] transition-all duration-300 "
+                                    d="M17.0834 10H3.05835" stroke="#3A3454" stroke-width="1.25" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:hidden py-4 px-[30px] lg:px-0">
+                    <a href="#"
+                        class="text-sm leading-5 py-4 px-6 rounded-xl bordered-btn flex items-center justify-center gap-2">
+                        <img src="assets/images/message-question.svg" width="24" height="24" alt="message question">
+                        تواصل مع الدعم
                     </a>
                 </div>
             </div>

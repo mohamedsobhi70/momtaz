@@ -400,7 +400,7 @@ if ($(".teacher-card")) {
             if (comTaechers.children.length < 2) {
                 comTaechers.innerHTML +=
                     `<div class="teacher-compare-item overflow-hidden rounded-lg flex flex-col">
-                        <div class="teacher-img h-[116px] w-[171px]">
+                        <div class="teacher-img">
                              ${teacherPic}
                          </div>
                         <h2 class="teacher-name bg-white text-center text-xs leading-normal p-3">
