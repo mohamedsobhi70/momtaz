@@ -44,7 +44,7 @@
 
                 <!-- close btn  -->
                 <div class="bg-[#FAF8FE] py-6 px-[30px] lg:p-0 flex lg:hidden">
-                    <button type=" button" class="mobile-menu-close">
+                    <button type="button" class="mobile-menu-close">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#090129" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -181,8 +181,9 @@
         <section>
             <div class="w-screen h-52 bg-cover bg-center lg:hidden"
                 style="background-image: url(assets/images/account-cover.jpg);"></div>
-            <div class="container border-b border-[#E6E6EA] -mt-16 lg:mt-0 pb-6 lg:pb-0">
-                <div class=" flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-[30px] lg:py-8 px-[30px] lg:px-0">
+            <div class="container -mt-16 lg:mt-0 pb-6 lg:pb-0">
+                <div
+                    class="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-[30px] lg:pb-8 lg:pt-12 px-[30px] lg:px-0">
                     <div
                         class="w-32 lg:w-24 h-32 lg:h-24 rounded-[50px] lg:rounded-[38px] overflow-hidden border-4 border-white ">
                         <img src="assets/images/pop-teacher-1.jpg" class="w-full h-full object-cover" width="312"
@@ -195,11 +196,17 @@
                                 class="text-[#090129] text-xl lg:text-2xl leading-normal lg:leading-normal font-semibold">
                                 عبدالرحمن مصطفي عبد الجواد
                             </h2>
+                            <div class="hidden lg:flex gap-6 items-center">
+                                <a href="#"
+                                    class="text-sm leading-5 py-4 px-8 rounded-2xl primary-btn flex items-center justify-center gap-2">
+                                    حجز
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/share.svg" width="24" height="24" alt="share">
+                                    <span class="sr-only">Share Icon</span>
+                                </a>
+                            </div>
 
-                            <a href="#" class="hidden lg:flex">
-                                <img src="assets/images/share.svg" width="24" height="24" alt="share">
-                                <span class="sr-only">Share Icon</span>
-                            </a>
                         </div>
                         <div class="flex flex-col gap-1">
                             <p
@@ -220,13 +227,8 @@
 
 
         <section>
-            <div class="container lg:grid lg:grid-cols-3 items-start lg:py-8 gap-[30px]">
-                <div class="pt-8 lg:py-8 flex flex-col gap-6 lg:sticky lg:top-16">
-                    <h2
-                        class="px-[30px] lg:px-0 text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
-                        عن المعلم
-                    </h2>
-
+            <div class="container lg:grid lg:grid-cols-3 items-start lg:pb-8 lg:pt-4 gap-[30px]">
+                <div class="pt-8 lg:py-0 flex flex-col gap-6 lg:sticky lg:top-16">
                     <div class=" px-8 lg:px-0">
                         <div class="rounded-3xl overflow-hidden relative">
                             <div
@@ -244,7 +246,7 @@
                     </div>
 
                     <div
-                        class="border-b lg:border border-[#E2E8F0] lg:rounded-3xl px-[30px] py-8 lg:p-8 flex flex-col gap-6 fixed w-full bg-white z-[2] lg:static bottom-0">
+                        class=" border-b lg:border lg:border-t-[6px] border-[#E2E8F0] backdrop:blur-sm lg:border-[#D1B6F1] lg:rounded-3xl px-[30px] py-8 lg:p-8 flex flex-col gap-6 fixed w-full bg-white lg:bg-[#faf8fee0] z-[2] lg:static bottom-0">
                         <div class="hidden lg:flex flex-col gap-2">
                             <h2
                                 class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
@@ -258,7 +260,7 @@
                         <div class="flex flex-col gap-3">
 
                             <a href="#"
-                                class="text-sm leading-5 py-4 px-8 rounded-2xl secondary-btn flex items-center justify-center gap-2">
+                                class="text-sm leading-5 py-4 px-8 rounded-2xl primary-btn flex items-center justify-center gap-2">
                                 حجز شهري
                             </a>
 
@@ -272,7 +274,7 @@
                     </div>
 
                     <div
-                        class="border-b border-t lg:border border-[#E2E8F0] lg:rounded-3xl px-[30px] py-8 lg:p-8 flex flex-col gap-6">
+                        class="border-t lg:border border-[#E2E8F0] lg:rounded-3xl px-[30px] py-8 lg:p-8 flex flex-col gap-6 bg-white">
                         <div class="flex flex-col gap-6 lg:gap-2">
                             <h2
                                 class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
@@ -294,100 +296,105 @@
                 </div>
                 <div class="lg:col-span-2 flex flex-col">
 
-                    <div class="px-[30px] py-8 lg:p-8 flex flex-col gap-6 lg:gap-8 border-b border-[#E6E6EA]">
-                        <h2
-                            class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
-                            نبذة تعريفية
-                        </h2>
-                        <p
-                            class="text-[#667085] lg:text-[#5A5570] text-sm lg:text-base leading-[180%] lg:leading-[180%]">
-                            مرحباً، أنا سعيد أبو السعود مدرس خبرة أكثر من +7 سنوات في التدريس للمنهج السعودي وخاصة
-                            المواد العلمية والرياضة مثل ( الكيمياء - الفيزياء - الرياضة البحته ) ودرست لأكثر من +20,000
-                            طالب علي مستوي المملكة في خلال رحلتي والصفوف الدراسية للمراحل العمرية الكبيرة ( إعدادي و
-                            ثانوي ) يمكنك التواصل معي في أي وقت لبدء الحجز.
-                        </p>
-                    </div>
-                    <!-- ======================================================== -->
-
-                    <!-- Location  -->
-                    <div class="px-[30px] py-8 lg:p-8 flex flex-col gap-6 lg:gap-8 border-b border-[#E6E6EA]">
-                        <h2
-                            class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
-                            موقعك الجغرافي
-                        </h2>
-                        <div class="grid lg:grid-cols-3 gap-3 lg:gap-4">
-                            <div class="flex flex-col gap-1.5">
-                                <span class="text-[#8E8A9D] text-sm leading-normal">
-                                    الدولة
-                                </span>
-                                <p
-                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                    المملكة العربية السعودية
-                                </p>
-                            </div>
-                            <div class="flex flex-col gap-1.5">
-                                <span class="text-[#8E8A9D] text-sm leading-normal">
-                                    المحافظة
-                                </span>
-                                <p
-                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                    الرياض
-                                </p>
-                            </div>
-                            <div class="flex flex-col gap-1.5">
-                                <span class="text-[#8E8A9D] text-sm leading-normal">
-                                    الحي
-                                </span>
-                                <p
-                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                    التعاون
-                                </p>
-                            </div>
+                    <div class="flex flex-col lg:gap-6">
+                        <div class="px-[30px] py-8 lg:p-10 flex flex-col gap-6 lg:gap-4 lg:bg-[#F9F9FB] lg:rounded-3xl">
+                            <h2
+                                class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                                نبذة تعريفية
+                            </h2>
+                            <p
+                                class="text-[#667085] lg:text-[#5A5570] text-sm lg:text-base leading-[180%] lg:leading-[180%]">
+                                مرحباً، أنا سعيد أبو السعود مدرس خبرة أكثر من +7 سنوات في التدريس للمنهج السعودي وخاصة
+                                المواد العلمية والرياضة مثل ( الكيمياء - الفيزياء - الرياضة البحته ) ودرست لأكثر من
+                                +20,000
+                                طالب علي مستوي المملكة في خلال رحلتي والصفوف الدراسية للمراحل العمرية الكبيرة ( إعدادي و
+                                ثانوي ) يمكنك التواصل معي في أي وقت لبدء الحجز.
+                            </p>
                         </div>
-                    </div>
+                        <!-- ======================================================== -->
 
-                    <!-- Experience  -->
-                    <div class="px-[30px] py-8 lg:p-8 flex flex-col gap-6 lg:gap-8 border-b border-[#E6E6EA]">
-                        <h2
-                            class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
-                            خبراتك
-                        </h2>
-                        <div class="flex flex-col gap-4">
-                            <div class="flex items-start gap-6">
-                                <span class="text-[#090129] leading-normal font-medium">01</span>
-                                <div class="flex flex-col gap-1.5">
-                                    <h2 class="text-[#090129] text-base leading-normal font-normal">
-                                        مدرسة رياضيات للمرحلة الاعدادية
-                                    </h2>
-                                    <span class="text-[#090129] text-xs leading-normal">
-                                        مدرسة التوفيقية للغات
-                                    </span>
-                                    <p class="text-[#5A5570] text-sm leading-[180%]">
-                                        وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير
-                                        عن فترة الخبرة
-                                    </p>
-                                    <span class="text-[#8E8A9D] text-xs leading-normal">
-                                        فبراير 2018 إلي الان
-                                    </span>
+                        <!-- Experience  -->
+                        <div class="px-[30px] py-8 lg:p-10 flex flex-col gap-6 lg:gap-4 lg:bg-[#F9F9FB] lg:rounded-3xl">
+                            <h2
+                                class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                                خبراتك
+                            </h2>
+                            <div class="flex flex-col gap-4">
+                                <div class="flex items-start gap-6">
+                                    <span class="text-[#090129] leading-normal font-medium">01</span>
+                                    <div class="flex flex-col gap-1.5">
+                                        <h2 class="text-[#090129] text-base leading-normal font-normal">
+                                            مدرسة رياضيات للمرحلة الاعدادية
+                                        </h2>
+                                        <span class="text-[#090129] text-xs leading-normal">
+                                            مدرسة التوفيقية للغات
+                                        </span>
+                                        <p class="text-[#5A5570] text-sm leading-[180%]">
+                                            وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف
+                                            قصير
+                                            عن فترة الخبرة
+                                        </p>
+                                        <span class="text-[#8E8A9D] text-xs leading-normal">
+                                            فبراير 2018 إلي الان
+                                        </span>
+                                    </div>
+                                </div>
+                                <span class="border-t border-[#E6E6EA]"></span>
+                                <div class="flex items-start gap-6">
+                                    <span class="text-[#090129] leading-normal font-medium">02</span>
+                                    <div class="flex flex-col gap-1.5">
+                                        <h2 class="text-[#090129] text-base leading-normal font-normal">
+                                            مدرسة رياضيات للمرحلة الاعدادية
+                                        </h2>
+                                        <span class="text-[#090129] text-xs leading-normal">
+                                            مدرسة التوفيقية للغات
+                                        </span>
+                                        <p class="text-[#5A5570] text-sm leading-[180%]">
+                                            وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف
+                                            قصير
+                                            عن فترة الخبرة
+                                        </p>
+                                        <span class="text-[#8E8A9D] text-xs leading-normal">
+                                            فبراير 2018 إلي الان
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            <span class="border-t border-[#E6E6EA]"></span>
-                            <div class="flex items-start gap-6">
-                                <span class="text-[#090129] leading-normal font-medium">02</span>
+                        </div>
+
+                        <!-- Location  -->
+                        <div class="px-[30px] py-8 lg:p-10 flex flex-col gap-6 lg:gap-4 lg:bg-[#F9F9FB] lg:rounded-3xl">
+                            <h2
+                                class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                                موقعك الجغرافي
+                            </h2>
+                            <div class="grid lg:grid-cols-3 gap-3 lg:gap-4">
                                 <div class="flex flex-col gap-1.5">
-                                    <h2 class="text-[#090129] text-base leading-normal font-normal">
-                                        مدرسة رياضيات للمرحلة الاعدادية
-                                    </h2>
-                                    <span class="text-[#090129] text-xs leading-normal">
-                                        مدرسة التوفيقية للغات
+                                    <span class="text-[#8E8A9D] text-sm leading-normal">
+                                        الدولة
                                     </span>
-                                    <p class="text-[#5A5570] text-sm leading-[180%]">
-                                        وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير عن فترة الخبرة وصف قصير
-                                        عن فترة الخبرة
+                                    <p
+                                        class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                        المملكة العربية السعودية
                                     </p>
-                                    <span class="text-[#8E8A9D] text-xs leading-normal">
-                                        فبراير 2018 إلي الان
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <span class="text-[#8E8A9D] text-sm leading-normal">
+                                        المحافظة
                                     </span>
+                                    <p
+                                        class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                        الرياض
+                                    </p>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <span class="text-[#8E8A9D] text-sm leading-normal">
+                                        الحي
+                                    </span>
+                                    <p
+                                        class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                        التعاون
+                                    </p>
                                 </div>
                             </div>
                         </div>
