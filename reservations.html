@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momtaz</title>
+    <meta name="description" content="description">
+    <!-- google font Readex Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-Readex">
+
+    <!-- Start Momtaz Header  -->
+    <header class="sticky top-0 bg-white z-40">
+        <div class="container flex items-center justify-between gap-12 py-4 lg:py-3 px-[30px] lg:p-x sticky top-0">
+
+            <!-- logo  -->
+            <a href="index.html" class="shrink-0" aria-label="Logo">
+                <img src="assets/images/logo.png" width="96" height="42" alt="">
+                <span class="sr-only">Momtaz Logo</span>
+            </a>
+
+            <!-- mobile menu btn  -->
+            <button class="mobile-menu-btn lg:hidden" aria-label="menu-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 9H20" stroke="#090129" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M4 15H20" stroke="#090129" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <span class="sr-only">Mobile Menu</span>
+            </button>
+
+            <!-- navigation  -->
+            <div class="mobile-menu">
+
+                <!-- close btn  -->
+                <div class="bg-[#FAF8FE] py-6 px-[30px] lg:p-0 flex lg:hidden">
+                    <button type="button" class="mobile-menu-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#090129" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#090129" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                stroke="#090129" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="sr-only">Close Mobile Menu Icon</span>
+                    </button>
+                </div>
+                <div
+                    class="flex flex-col lg:flex-row lg:justify-between w-full flex-1 overflow-y-scroll lg:overflow-y-visible">
+                    <!-- Navigation Bar -->
+                    <nav
+                        class="flex flex-col lg:flex-row lg:items-center lg:gap-6 header-nav px-[30px] lg:p-0 pt-4 lg:pt-0">
+                        <a href="index.html" class="nav-item flex items-center gap-4 active">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                الرئيسية
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <a href="teachers.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                المعلمين
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <div class="nav-item flex items-center gap-2 cursor-pointer justify-between">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                المواد العلمية
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                            <svg class="hidden lg:block" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.2154 12.5415L11.782 7.1082C11.1404 6.46654 10.0904 6.46654 9.44871 7.1082L4.01538 12.5415"
+                                    stroke="#8E8A9D" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <a href="about-us.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                من نحن
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <a href="index.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                الدعم الفني
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+
+                    </nav>
+
+                    <!-- login - register  -->
+                    <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3 px-[30px] lg:p-0 pb-4 lg:pb-0">
+                        <!-- Login  -->
+                        <a href="login.html"
+                            class="flex items-center gap-4 border-b border-[#E6E6EA] lg:border-none text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:py-3 lg:px-6 lg:rounded-xl lg:secondary-btn">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                تسجيل دخول
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+
+                        <!-- Register  -->
+                        <a href="register.html"
+                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:py-3 lg:px-6 lg:rounded-xl lg:bordered-btn">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                حساب جديد ؟
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+
+                        <!-- For Teachers  -->
+                        <a href="#"
+                            class="gap-4 border-b border-[#E6E6EA] lg:border-none text-[#5A5570] lg:text-sm leading-normal lg:leading-5 lg:link-btn group flex items-center lg:gap-2 py-4 lg:py-0">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <span class="flex-1">
+                                للمعلمين
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                            <svg class="hidden lg:block" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    class="group-hover:stroke-[#090129] group-active:stroke-[#8E8A9D] transition-all duration-300 "
+                                    d="M7.97508 4.94189L2.91675 10.0002L7.97508 15.0586" stroke="#3A3454"
+                                    stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    class="group-hover:stroke-[#090129] group-active:stroke-[#8E8A9D] transition-all duration-300 "
+                                    d="M17.0834 10H3.05835" stroke="#3A3454" stroke-width="1.25" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:hidden py-4 px-[30px] lg:px-0">
+                    <a href="#"
+                        class="text-sm leading-5 py-4 px-6 rounded-xl bordered-btn flex items-center justify-center gap-2">
+                        <img src="assets/images/message-question.svg" width="24" height="24" alt="message question">
+                        تواصل مع الدعم
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- End Momtaz Header  -->
+
+    <!-- =============================================================== -->
+
+    <!-- Start Momtaz MAin Page Content  -->
+    <main>
+        <!-- Start Page Title Section  -->
+        <section class="py-6 lg:py-12 px-[30px] lg:px-0 lg:bg-[#FAF8FE]">
+            <div class="container flex items-end gap-4">
+                <div class="flex flex-col gap-4 flex-1">
+                    <a href="teacher-profile.html"
+                        class="hidden lg:flex items-center gap-2 text-[#5A5570] text-sm leading-normal">
+                        <img src="assets/images/right-arrow.svg" width="24" height="24" alt="arrow">
+                        العودة الي ملف المعلم
+                    </a>
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <h2 class="text-[#090129] text-2xl lg:text-[32px] leading-normal lg:leading-normal font-medium">
+                            الحجز مع المعلم
+                        </h2>
+                        <p class="text-[#5A5570] text-sm lg:text-base leading-normal lg:leading-normal">
+                            خطوات أختيارية بسيطة للحجز مع المعلم.
+                        </p>
+                    </div>
+                </div>
+                <a href="messages.html"
+                    class="hidden lg:flex items-center gap-2 border-b border-[#E6E6EA] lg:border-none text-black l leading-normal py-4 px-8 rounded-2xl secondary-btn">
+                    <img src="assets/images/message.svg" width="24" height="24" alt="arrow">
+                    <span class="flex-1">
+                        تواصل مع المعلم
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!-- End Page Title Section  -->
+
+
+        <section class="py-6 lg:pt-16 lg:pb-32">
+            <div class="container grid lg:grid-cols-3 gap-8 lg:gap-[30px]">
+
+                <div class="col-span-1 px-[30px] lg:px-0">
+                    <div
+                        class="rounded-2xl border border-[#E6E6EA] p-4 flex items-center gap-4 lg:Lgap-6 lg:sticky lg:top-24">
+                        <div class="w-14 lg:w-16 h-14 lg:h-16 rounded-3xl overflow-hidden">
+                            <img src="assets/images/pop-teacher-1.jpg" class="w-full h-full object-cover" width="64"
+                                height="64" alt="teacher">
+                        </div>
+
+                        <div class="flex-1 flex flex-col gap-1">
+                            <h3 class="text-[#090129] text-base leading-normal font-semibold">
+                                مينا رافت لوكاس
+                            </h3>
+                            <p class="hidden lg:block text-[#8E8A9D] text-sm leading-5">
+                                أستاذ لغة عربية
+                            </p>
+                            <div class="flex items-center gap-2">
+                                <span class="text-[#FAC515] flex items-center gap-1 text-sm leading-normal font-medium">
+                                    <img src="assets/images/yel-star.svg" width="16" height="16" alt="star">
+                                    5.0
+                                </span>
+                                <span class="text-[#8E8A9D] text-xs leading-normal">
+                                    (412 تقييم)
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <form action="parent-booknow.html" class="lg:col-span-2 flex flex-col gap-8 lg:gap-12">
+                    <div class="choose-child px-[30px] lg:px-0">
+                        <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-2">
+                                <h3
+                                    class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal  font-semibold lg:font-medium">
+                                    أختيار الطلاب
+                                </h3>
+                                <p class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                    من فضلك، أختر الطلاب الذي تريد الحجز له مع المعلم.
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4 items-center">
+                                <label
+                                    class="border border-[#DCDFEA] rounded-2xl p-4 lg:px-6 flex items-center gap-3 lg:gap-4 transition-all duration-300 cursor-pointer">
+                                    <input type="checkbox" name="choose-child" value="option-1" id="input-1"
+                                        class="choice form-checkbox peer">
+                                    <span
+                                        class="flex-1 text-[#8E8A9D] text-sm lg:text-lg leading-normal lg:leading-normal line-clamp-1 peer-checked:text-[#090129] transition-all duration-300">أحمد</span>
+                                    <img src="assets/images/child.jpg" class="hidden lg:block rounded-xl" width="32"
+                                        height="32" alt="child">
+                                </label>
+                                <label
+                                    class="border border-[#DCDFEA] rounded-2xl p-4 lg:px-6 flex items-center gap-3 lg:gap-4 transition-all duration-300 cursor-pointer">
+                                    <input type="checkbox" name="choose-child" value="option-2" id="input-2"
+                                        class="choice form-checkbox peer">
+                                    <span
+                                        class="flex-1 text-[#8E8A9D] text-sm lg:text-lg leading-normal lg:leading-normal line-clamp-1 peer-checked:text-[#090129] transition-all duration-300">محمد</span>
+                                    <img src="assets/images/child.jpg" class="hidden lg:block rounded-xl" width="32"
+                                        height="32" alt="child">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- step will be appear after the prev is selected -->
+                    <div class="res-type px-[30px] lg:px-0 hidden">
+                        <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-2">
+                                <h3
+                                    class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal  font-semibold lg:font-medium">
+                                    نوع الحجز
+                                </h3>
+                                <p class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                    من فضلك، أختر نوع الحجز المناسب لك.
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col gap-4">
+                                <label
+                                    class="border border-[#DCDFEA] rounded-2xl p-4 lg:px-6 flex items-start gap-4 transition-all duration-300 cursor-pointer">
+                                    <input type="radio" name="choose-type" value="option-1" id="input-3"
+                                        class="choice form-radio mt-1  peer">
+                                    <span
+                                        class="flex flex-col gap-1 lg:gap-2 flex-1 text-[#8E8A9D] peer-checked:text-[#090129] peer-checked:font-bold">
+                                        <span class="flex items-center">
+                                            <span
+                                                class="flex-1 text-sm lg:text-lg leading-normal lg:leading-normal transition-all duration-300">
+                                                حجز حصة تجريبية
+                                            </span>
+                                            <span
+                                                class="flex items-center gap-1 text-[#8E8A9D] text-xs leading-normal font-normal">
+                                                <img src="assets/images/clock.svg" width="12" height="12" alt="clock">
+                                                ٦٠ دقيقة
+                                            </span>
+                                        </span>
+
+                                        <span class="text-[#8E8A9D] text-sm left-5 font-normal">
+                                            وصف مختصر
+                                        </span>
+
+                                        <span class="price pt-1 flex items-center gap-1 font-normal">
+                                            <span class="text-[#7839EE] text-xl leading-normal font-semibold">200
+                                            </span>
+                                            <span class="text-[#8E8A9D] text-xs leading-normal">ريال </span>
+                                        </span>
+                                    </span>
+                                </label>
+
+                                <label
+                                    class="border border-[#DCDFEA] rounded-2xl p-4 lg:px-6 flex items-start gap-4 transition-all duration-300 cursor-pointer">
+                                    <input type="radio" name="choose-type" value="option-2" id="input-4"
+                                        class="choice form-radio mt-1 peer monthly">
+                                    <span
+                                        class="flex flex-col gap-1 lg:gap-2 flex-1 text-[#8E8A9D] peer-checked:text-[#090129] peer-checked:font-bold">
+                                        <span class="flex items-center">
+                                            <span
+                                                class="flex-1 text-sm lg:text-lg leading-normal lg:leading-normal transition-all duration-300">
+                                                حجز شهري
+                                            </span>
+                                            <span
+                                                class="flex items-center gap-1 text-[#8E8A9D] text-xs leading-normal font-normal">
+                                                <img src="assets/images/clock.svg" width="12" height="12" alt="clock">
+                                                ٦٠ دقيقة
+                                            </span>
+                                        </span>
+                                        <span class="text-[#8E8A9D] text-sm left-5 font-normal">
+                                            وصف مختصر
+                                        </span>
+                                        <span class="price pt-1 flex items-center gap-1 font-normal">
+                                            <span class="text-[#8E8A9D] text-xs leading-normal">تبدأ من </span>
+                                            <span class="text-[#7839EE] text-xl leading-normal font-semibold">200
+                                            </span>
+                                            <span class="text-[#090129] text-xs leading-normal">ريال شهريا </span>
+                                        </span>
+                                    </span>
+                                </label>
+
+                                <label
+                                    class="border border-[#DCDFEA] rounded-2xl p-4 lg:px-6 flex items-start gap-4 transition-all duration-300 cursor-pointer">
+                                    <input type="radio" name="choose-type" value="option-3" id="option-5"
+                                        class="choice form-radio mt-1  peer">
+                                    <span
+                                        class="flex flex-col gap-1 lg:gap-2 flex-1 text-[#8E8A9D] peer-checked:text-[#090129] peer-checked:font-bold">
+                                        <span class="flex items-center">
+                                            <span
+                                                class="flex-1 text-sm lg:text-lg leading-normal lg:leading-normal transition-all duration-300">
+                                                مراجعة نهائية
+                                            </span>
+                                            <span
+                                                class="flex items-center gap-1 text-[#8E8A9D] text-xs leading-normal font-normal">
+                                                <img src="assets/images/clock.svg" width="12" height="12" alt="clock">
+                                                ٦٠ دقيقة
+                                            </span>
+                                        </span>
+                                        <span class="text-[#8E8A9D] text-sm left-5 font-normal">
+                                            وصف مختصر
+                                        </span>
+
+                                        <span class="price pt-1 flex items-center gap-1 font-normal">
+                                            <span class="text-[#7839EE] text-xl leading-normal font-semibold">200
+                                            </span>
+                                            <span class="text-[#8E8A9D] text-xs leading-normal">ريال </span>
+                                        </span>
+                                    </span>
+                                </label>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- step will be appear after the prev is == Monthly Plan== selected -->
+                    <div class="res-class-num px-[30px] lg:px-0 hidden">
+                        <div
+                            class="fixed lg:static top-0 left-0 h-screen w-full lg:w-auto lg:h-auto flex items-end backdrop-blur-[10px] bg-[#5a55704d] lg:backdrop-blur-none">
+                            <div
+                                class="flex flex-col lg:gap-6 bg-white w-full rounded-t-lg lg:rounded-none overflow-hidden">
+                                <div class="flex flex-col lg:gap-2">
+                                    <div class="py-[5px] flex lg:hidden justify-center">
+                                        <span class="block w-9 h-[5px] rounded-full bg-[#B3B0BD]"></span>
+                                    </div>
+                                    <div class="flex items-center gap-3 py-4 px-[30px] lg:p-0">
+                                        <h3
+                                            class="flex-1 text-[#090129] text-lg lg:text-2xl leading-normal lg:leading-normal  font-semibold lg:font-medium">
+                                            أختر الباقة الشهرية المناسبة لك
+                                        </h3>
+                                        <button type="button" class="lg:hidden">
+                                            <img src="assets/images/x-close.svg" class="close-class-num" width="24"
+                                                height="24" alt="close">
+                                        </button>
+                                    </div>
+                                    <p
+                                        class="px-[30px] lg:px-0 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                        من فضلك، أختر عدد الحصص خلال الشهر.
+                                    </p>
+                                </div>
+
+                                <div class="grid grid-cols-3 gap-2 lg:gap-4 px-[30px] lg:px-0 pt-4 lg:pt-0">
+                                    <label
+                                        class="h-fit border border-[#DCDFEA] rounded-2xl p-3 lg:py-4 lg:px-6 flex flex-col lg:flex-row items-center lg:items-start gap-3 lg:gap-4 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="number" value="option-1" id="input-6"
+                                            class="form-radio mt-1 choice peer">
+                                        <span
+                                            class="flex flex-col gap-3 flex-1 text-[#8E8A9D] peer-checked:text-[#090129] peer-checked:font-bold">
+                                            <span class="flex items-center">
+                                                <span
+                                                    class="flex-1 flex items-center gap-3 text-lg leading-normal transition-all duration-300">
+                                                    <span
+                                                        class="text-[#090129] text-[40px] lg:text-lg leading-none lg:leading-normal">
+                                                        1
+                                                    </span>
+                                                    <span class="text-[11px] lg:text-lg">
+                                                        حصة أسبوعيا
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="price flex items-center gap-1 font-normal">
+                                                <span
+                                                    class="text-[#7839EE] text-base lg:text-xl leading-normal font-semibold">
+                                                    200
+                                                </span>
+                                                <span class="text-[#8E8A9D] text-[11px] lg:text-xs leading-normal">ريال
+                                                    شهريا</span>
+                                            </span>
+                                        </span>
+                                    </label>
+
+                                    <label
+                                        class="h-fit border border-[#DCDFEA] rounded-2xl p-3 lg:py-4 lg:px-6 flex flex-col lg:flex-row items-center lg:items-start gap-3 lg:gap-4 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="number" value="option-7" id="input-7"
+                                            class="form-radio mt-1 choice peer">
+                                        <span
+                                            class="flex flex-col gap-3 flex-1 text-[#8E8A9D] peer-checked:text-[#090129] peer-checked:font-bold">
+                                            <span class="flex items-center">
+                                                <span
+                                                    class="flex-1 flex items-center gap-3 text-lg leading-normal transition-all duration-300">
+                                                    <span
+                                                        class="text-[#090129] text-[40px] lg:text-lg leading-none lg:leading-normal">
+                                                        2
+                                                    </span>
+                                                    <span class="text-[11px] lg:text-lg">
+                                                        حصة أسبوعيا
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="price flex items-center gap-1 font-normal">
+                                                <span
+                                                    class="text-[#7839EE] text-base lg:text-xl leading-normal font-semibold">
+                                                    200
+                                                </span>
+                                                <span class="text-[#8E8A9D] text-[11px] lg:text-xs leading-normal">ريال
+                                                    شهريا</span>
+                                            </span>
+                                        </span>
+                                    </label>
+
+                                    <label
+                                        class="h-fit border border-[#DCDFEA] rounded-2xl p-3 lg:py-4 lg:px-6 flex flex-col lg:flex-row items-center lg:items-start gap-3 lg:gap-4 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="number" value="option-8" id="input-8"
+                                            class="form-radio mt-1 choice peer">
+                                        <span
+                                            class="flex flex-col gap-3 flex-1 text-[#8E8A9D] peer-checked:text-[#090129] peer-checked:font-bold">
+                                            <span class="flex items-center">
+                                                <span
+                                                    class="flex-1 flex items-center gap-3 text-lg leading-normal transition-all duration-300">
+                                                    <span
+                                                        class="text-[#090129] text-[40px] lg:text-lg leading-none lg:leading-normal">
+                                                        3
+                                                    </span>
+                                                    <span class="text-[11px] lg:text-lg">
+                                                        حصة أسبوعيا
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="price flex items-center gap-1 font-normal">
+                                                <span
+                                                    class="text-[#7839EE] text-base lg:text-xl leading-normal font-semibold">
+                                                    200
+                                                </span>
+                                                <span class="text-[#8E8A9D] text-[11px] lg:text-xs leading-normal">ريال
+                                                    شهريا</span>
+                                            </span>
+                                        </span>
+                                    </label>
+
+                                </div>
+                                <div class="py-4 px-[30px] lg:p-0">
+                                    <button disabled
+                                        class="choose-class-time secondary-btn py-4 px-8 flex items-center justify-center w-full rounded-2xl">
+                                        اختر المواعيد
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- step will be appear after the prev is == Only One == selected -->
+                    <div class="choose-clase-date-time px-[30px] lg:px-0 hidden">
+                        <div
+                            class="fixed lg:static top-0 left-0 h-screen w-full lg:w-auto lg:h-auto flex items-end backdrop-blur-[10px] bg-[#5a55704d] lg:backdrop-blur-none">
+                            <div
+                                class="flex px-[30px] flex-col gap-6 bg-white w-full rounded-t-lg lg:rounded-none overflow-hidden">
+
+                                <div class="flex flex-col lg:gap-2">
+                                    <div class="py-[5px] flex lg:hidden justify-center">
+                                        <span class="block w-9 h-[5px] rounded-full bg-[#B3B0BD]"></span>
+                                    </div>
+                                    <div class="flex items-center gap-3 py-4 lg:p-0">
+                                        <h3
+                                            class="flex-1 text-[#090129] text-lg lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                                            اختر موعد اليوم
+                                        </h3>
+                                        <button type="button" class="lg:hidden">
+                                            <img src="assets/images/x-close.svg" class="close-class-num" width="24"
+                                                height="24" alt="close">
+                                        </button>
+                                    </div>
+
+                                    <p class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                        من فضلك، اختر اليوم والساعة
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <input type="datetime-local" name="clase-date-time" id="clase-date-time"
+                                        class="datetime-inpt transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 cursor-pointer">
+                                </div>
+                                <div class="pb-4 lg:p-0">
+                                    <input type="submit" value="إحجز الان!"
+                                        class="secondary-btn py-4 px-8 flex items-center justify-center w-full rounded-2xl">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- step first date-->
+                    <div class="res-select-time px-[30px] lg:px-0 hidden">
+                        <div
+                            class="fixed top-0 left-0 h-screen w-full flex items-end lg:items-center lg:justify-center backdrop-blur-[10px] bg-[#5a55704d] lg:backdrop-blur-none">
+                            <div
+                                class="flex flex-col lg:gap-6 bg-white w-full lg:w-[660px] rounded-t-lg lg:rounded-2xl overflow-hidden lg:p-6">
+                                <div class="flex flex-col lg:gap-2">
+                                    <div class="py-[5px] flex lg:hidden justify-center">
+                                        <span class="block w-9 h-[5px] rounded-full bg-[#B3B0BD]"></span>
+                                    </div>
+                                    <div class="flex items-center gap-3 py-4 px-[30px] lg:p-0">
+                                        <button type="button" class="close-res-select-time">
+                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 18.5L15 12.5L9 6.5" stroke="#667085" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <h3
+                                            class="flex-1 text-[#090129] text-lg lg:text-2xl leading-normal lg:leading-normal  font-semibold lg:font-medium">
+                                            اختر موعد اليوم الاول
+                                        </h3>
+                                        <div class="flex gap-1 items-center">
+                                            <span class="w-2.5 h-1 rounded-full bg-[#7839EE]"></span>
+                                            <span class="w-2.5 h-1 rounded-full bg-[#E6E6EA]"></span>
+                                        </div>
+                                    </div>
+                                    <p
+                                        class="px-[30px] lg:px-0 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                        من فضلك، اختر اليوم والساعة
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="grid grid-cols-3 gap-2 pt-4 lg:pt-0 px-[30px] lg:px-0 h-[324px] lg:h-auto overflow-y-scroll lg:overflow-y-visible">
+                                    <div class="col-span-1 flex flex-col gap-2">
+                                        <label
+                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                            <input type="radio" name="f-day" id="day-11" class="hidden peer">
+                                            يوم الاثنين
+                                        </label>
+                                        <label
+                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                            <input type="radio" name="f-day" id="day-12" class="hidden peer">
+                                            يوم الثلاثاء
+                                        </label>
+                                        <label
+                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                            <input type="radio" name="f-day" id="day-13" class="hidden peer">
+                                            يوم الاربعاء
+                                        </label>
+                                        <label
+                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                            <input type="radio" name="f-day" id="day-14" class="hidden peer">
+                                            يوم الخميس
+                                        </label>
+                                    </div>
+                                    <div class="col-span-2">
+                                        <div class="flex flex-col gap-2">
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-11" class="hidden peer">
+                                                من 10:00 صـ إلي 11:30 صـ
+                                            </label>
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-12" class="hidden peer">
+                                                من 11:30 صـ إلي 01:00 مـ
+                                            </label>
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-13" class="hidden peer">
+                                                من 01:00 مـ إلي 02:30 مـ
+                                            </label>
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-14" class="hidden peer">
+                                                من 02:30 صـ إلي 04:00 مـ
+                                            </label>
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-15" class="hidden peer">
+                                                من 10:00 صـ إلي 11:30 صـ
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="py-4 px-[30px] lg:p-0">
+                                    <button disabled
+                                        class="choose-sec-time secondary-btn py-4 px-8 flex items-center justify-center w-full rounded-2xl">
+                                        حدد مواعيد اليوم التالي
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second date  -->
+                    <div class="res-select-sec-time px-[30px] lg:px-0 hidden">
+                        <div
+                            class="fixed top-0 left-0 h-screen w-full flex items-end lg:items-center lg:justify-center backdrop-blur-[10px] bg-[#5a55704d] lg:backdrop-blur-none">
+                            <div
+                                class="flex flex-col lg:gap-6 bg-white w-full lg:w-[660px] rounded-t-lg lg:rounded-2xl overflow-hidden lg:p-6">
+                                <div class="flex flex-col lg:gap-2">
+                                    <div class="py-[5px] flex lg:hidden justify-center">
+                                        <span class="block w-9 h-[5px] rounded-full bg-[#B3B0BD]"></span>
+                                    </div>
+                                    <div class="flex items-center gap-3 py-4 px-[30px] lg:p-0">
+                                        <button type="button" class="close-res-select-sec-time">
+                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 18.5L15 12.5L9 6.5" stroke="#667085" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <h3
+                                            class="flex-1 text-[#090129] text-lg lg:text-2xl leading-normal lg:leading-normal  font-semibold lg:font-medium">
+                                            اختر موعد اليوم الثاني
+                                        </h3>
+                                        <div class="flex gap-1 items-center">
+                                            <span class="w-2.5 h-1 rounded-full bg-[#7839EE]"></span>
+                                            <span class="w-2.5 h-1 rounded-full bg-[#7839EE]"></span>
+                                        </div>
+                                    </div>
+                                    <p
+                                        class="px-[30px] lg:px-0 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                        من فضلك، اختر اليوم والساعة
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="grid grid-cols-3 gap-2 pt-4 lg:pt-0 px-[30px] lg:px-0 h-[324px] lg:h-auto overflow-y-scroll lg:overflow-y-visible">
+                                    <div class="col-span-1 flex flex-col gap-2">
+                                        <label
+                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                            <input type="radio" name="f-day" id="day-21" class="hidden peer">
+                                            يوم الاثنين
+                                        </label>
+                                        <label
+                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                            <input type="radio" name="f-day" id="day-22" class="hidden peer">
+                                            يوم الثلاثاء
+                                        </label>
+                                        <label
+                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                            <input type="radio" name="f-day" id="day-23" class="hidden peer">
+                                            يوم الاربعاء
+                                        </label>
+                                        <label
+                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                            <input type="radio" name="f-day" id="day-24" class="hidden peer">
+                                            يوم الخميس
+                                        </label>
+                                    </div>
+                                    <div class="col-span-2">
+                                        <div class="flex flex-col gap-2">
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-21" class="hidden peer">
+                                                من 10:00 صـ إلي 11:30 صـ
+                                            </label>
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-22" class="hidden peer">
+                                                من 11:30 صـ إلي 01:00 مـ
+                                            </label>
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-23" class="hidden peer">
+                                                من 01:00 مـ إلي 02:30 مـ
+                                            </label>
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-24" class="hidden peer">
+                                                من 02:30 صـ إلي 04:00 مـ
+                                            </label>
+                                            <label
+                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="f-time" id="time-25" class="hidden peer">
+                                                من 10:00 صـ إلي 11:30 صـ
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="py-4 px-[30px] lg:p-0">
+                                    <input type="submit" value="إحجز الان!"
+                                        class="secondary-btn py-4 px-8 flex items-center justify-center w-full rounded-2xl">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- step will be appear after the prev is selected -->
+                    <!-- <div class="res-checkout px-[30px] lg:px-0 hidden">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex flex-col gap-2">
+                                    <h3
+                                        class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal  font-semibold lg:font-medium">
+                                        الخطوة الأخيرة، الدفع
+                                    </h3>
+                                    <p class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                        من فضلك أختر طريقة الدفع التي تناسبك أولا.
+                                    </p>
+                                </div>
+
+                                <div class="">
+                                    <div class="flex flex-col gap-4 accordion-container">
+                                        <div
+                                            class="choose-payment border border-[#E2E2E9] rounded-2xl overflow-hidden p-6">
+                                            <div class="flex items-center gap-4">
+                                                <input type="radio" class="form-radio" name="choose-payment-method"
+                                                    checked id="visa">
+                                                <label for="visa"
+                                                    class="text-[#090129] text-lg leading-normal flex-1 cursor-pointer">بطاقة
+                                                    بنكية</label>
+
+                                                <div class="flex items-center gap-2">
+                                                    <img src="assets/images/visa.png" width="51" height="36"
+                                                        alt="payment method">
+                                                    <img src="assets/images/master.png" width="51" height="36"
+                                                        alt="payment method">
+                                                    <img src="assets/images/mada.png" width="51" height="36"
+                                                        alt="payment method">
+                                                </div>
+                                            </div>
+                                            <div class="choose-payment-content pt-6">
+                                                <div class="flex flex-col gap-6">
+                                                    <div class="flex flex-col gap-4">
+                                                        <input type="text" name="card-name" id="card-name"
+                                                            placeholder="اسم حامل البطاقة"
+                                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-2xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                                        <input type="text" name="card-number" id="card-number"
+                                                            placeholder="رقم البطاقة"
+                                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-2xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+                                                            <input type="text" name="card-date" id="card-date"
+                                                                placeholder="تاريخ الانتهاء"
+                                                                class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-2xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                                            <input type="text" name="card-cvv" id="card-cvv"
+                                                                placeholder="CVV"
+                                                                class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-2xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="#"
+                                                        class="flex items-center justify-center gap-4 border-b border-[#E6E6EA] leading-normal font-medium py-4 px-8 rounded-2xl secondary-btn">
+                                                        أدفع الأن 936 ريال سعودي
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="choose-payment border border-[#E2E2E9] rounded-2xl overflow-hidden p-6">
+                                            <div class="flex items-center gap-4">
+                                                <input type="radio" class="form-radio" name="choose-payment-method"
+                                                    id="applepay">
+                                                <label for="applepay"
+                                                    class="text-[#090129] text-lg leading-normal flex-1 cursor-pointer">إبل
+                                                    باي</label>
+                                                <img src="assets/images/applepay.png" width="51" height="36"
+                                                    alt="payment method">
+                                            </div>
+                                            <div class="choose-payment-content pt-6 hidden">
+                                                <input type="text" name="card-name1" id="card-name1"
+                                                    placeholder="اسم حامل البطاقة"
+                                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-2xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div> -->
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <!-- End Momtaz MAin Page Content  -->
+
+    <!-- =============================================================== -->
+
+    <!-- Start Momtaz footer  -->
+    <footer>
+
+        <div class="bg-[#FAF8FE] lg:px-0">
+            <div class="container py-16 grid lg:grid-cols-4 gap-16 px-[30px]">
+
+                <div class="flex flex-col gap-6">
+                    <!-- logo  -->
+                    <img src="assets/images/footer-logo.png" width="136" height="60" alt="Momtaz Logo">
+                    <p class="text-[#5D6B98] leading-normal">
+                        أكبر منصة للتعليم في المملكة العربية السعودية بأفضل باقة مدرسيين في جميع التخصصات.
+                    </p>
+                </div>
+
+                <!--footer links  -->
+                <div class="grid lg:grid-cols-3 gap-8 col-span-3">
+
+                    <!-- Important Links  -->
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-[#8E8A9D] text-sm leading-normal">أهم الروابط</h2>
+                        <ul class="flex flex-col gap-4">
+                            <li>
+                                <a href="#"
+                                    class="text-[#090129] leading-normal font-medium transition-all duration-300 hover:text-[#BEA6DB]">
+                                    الصفحة الرئيسية
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-[#090129] leading-normal font-medium transition-all duration-300 hover:text-[#BEA6DB]">
+                                    المواد العلمية
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-[#090129] leading-normal font-medium transition-all duration-300 hover:text-[#BEA6DB]">
+                                    تجارب المستخدمين
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Platform usage  -->
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-[#8E8A9D] text-sm leading-normal">استخدام المنصة</h2>
+                        <ul class="flex flex-col gap-4">
+                            <li>
+                                <a href="#"
+                                    class="text-[#090129] leading-normal font-medium transition-all duration-300 hover:text-[#BEA6DB]">
+                                    كيف تسخدم المنصة؟
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-[#090129] leading-normal font-medium transition-all duration-300 hover:text-[#BEA6DB]">
+                                    مزايا المنصة
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-[#090129] leading-normal font-medium transition-all duration-300 hover:text-[#BEA6DB]">
+                                    الأسئلة الشائعة
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- More Links  -->
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-[#8E8A9D] text-sm leading-normal"> روابط أخري</h2>
+                        <ul class="flex flex-col gap-4">
+                            <li>
+                                <a href="#"
+                                    class="text-[#090129] leading-normal font-medium transition-all duration-300 hover:text-[#BEA6DB]">
+                                    من نحن ؟
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-[#090129] leading-normal font-medium transition-all duration-300 hover:text-[#BEA6DB]">
+                                    تواصل معنا
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#090129] lg:px-0">
+            <div class="container flex flex-col lg:flex-row gap-6 items-center justify-between py-6">
+
+                <!-- Copyrights -->
+                <p class="text-[#DCDFEA] text-sm leading-normal">
+                    كل الحقوق محفوظة @المنصة 2023
+                </p>
+                <!-- Social Media Links  -->
+                <ul class="flex items-center gap-6">
+                    <li>
+                        <a href="#" aria-label="twitter">
+                            <img src="assets/images/twitter.svg" width="24" height="24" alt="twitter">
+                            <span class="sr-only">twitter Icon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="linkedin">
+                            <img src="assets/images/linkedin.svg" width="24" height="24" alt="linkedin">
+                            <span class="sr-only">linkedin Icon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="facebook">
+                            <img src="assets/images/facebook.svg" width="24" height="24" alt="facebook">
+                            <span class="sr-only">Facebook Icon</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Momtaz footer  -->
+
+    <!-- scripts -->
+    <script src="assets/js/jquiry.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

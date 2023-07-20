@@ -418,3 +418,155 @@ if ($(".teacher-card")) {
     })
 
 }
+
+if ($(".res-sec").length > 0) {
+    const input = $(".res-sec .choice");
+    input.on("change", function (e) {
+        e.preventDefault();
+        if (input.is(':checked')) {
+            let nextSection = $(this).closest(".res-sec").next();
+            if (nextSection) {
+                nextSection.css("display", "block");
+            }
+        }
+    })
+
+    $('.select-1 select').on('change', function () {
+        var allSelected = true;
+        // Check if all select inputs in select-1 div have a selected value
+        $('.select-1 select').each(function () {
+            if ($(this).val() === null) {
+                allSelected = false;
+                return false; // Exit the loop early if any select is not selected
+            }
+        });
+
+        // Show/hide the select-2 div based on the selection status
+        if (allSelected) {
+            $('.select-2').removeClass("hidden");
+        } else {
+            $('.select-2').addClass("hidden")
+        }
+    });
+    $('.select-2 select').on('change', function () {
+        var allSelected = true;
+        // Check if all select inputs in select-2 div have a selected value
+        $('.select-1 select').each(function () {
+            if ($(this).val() === null) {
+                allSelected = false;
+                return false; // Exit the loop early if any select is not selected
+            }
+        });
+
+        // Show/hide the res-checkout div based on the selection status
+        if (allSelected) {
+            $('.res-checkout').removeClass("hidden");
+        } else {
+            $('.res-checkout').addClass("hidden")
+        }
+    });
+
+
+
+}
+if ($('.choose-payment input[type="radio"]').length > 0) {
+    $('.choose-payment input[type="radio"]').change(function () {
+        $('.choose-payment .choose-payment-content').slideUp(400);
+        $(this).closest(".choose-payment").find(".choose-payment-content").slideDown(400);
+    });
+}
+
+
+if ($(".choose-child")) {
+    let chooseChildInpt = $(".choose-child input");
+    chooseChildInpt.on("change", function () {
+        if (chooseChildInpt.is(':checked')) {
+            $(".res-type").removeClass("hidden");
+        }
+        else {
+            $(".choose-child").siblings().addClass("hidden");
+        }
+    });
+
+    let choosMonthInpt = $(".res-type input.monthly");
+    let choosOneDayInpt = $(".res-type input:not(.monthly)");
+
+    choosMonthInpt.on("change", function () {
+        if (choosMonthInpt.is(':checked')) {
+            $(".res-class-num").removeClass("hidden");
+            $(".choose-clase-date-time").addClass("hidden");
+
+        }
+        else {
+            $(".res-class-num").addClass("hidden");
+            $(".choose-clase-date-time").removeClass("hidden");
+        }
+    });
+
+    choosOneDayInpt.on("change", function () {
+        if (choosOneDayInpt.is(':checked')) {
+            $(".choose-clase-date-time").removeClass("hidden");
+            $(".res-class-num").addClass("hidden");
+        }
+        else {
+            $(".choose-clase-date-time").addClass("hidden");
+            $(".res-class-num").removeClass("hidden");
+        }
+    });
+
+    $(".datetime-inpt").on("change", function () {
+        $(".single-book-now").prop("disabled", false);
+    });
+
+    let chooseClassInpt = $(".res-class-num input");
+
+    chooseClassInpt.on("change", function () {
+        if (chooseClassInpt.is(':checked')) {
+            $(".choose-class-time").prop("disabled", false);
+        }
+        else {
+            $(".choose-class-time").prop("disabled", true);
+        }
+    });
+    let chooseFecTime = $(".res-select-time input");
+
+    chooseFecTime.on("change", function () {
+        if (chooseFecTime.is(':checked')) {
+            $(".choose-sec-time").prop("disabled", false);
+        }
+        else {
+            $(".choose-sec-time").prop("disabled", true);
+        }
+    });
+
+
+
+
+    $(".choose-class-time").on("click", function (e) {
+        e.preventDefault();
+        $(".res-select-time").removeClass("hidden");
+    });
+
+
+    $(".choose-sec-time").on("click", function (e) {
+        e.preventDefault();
+        $(".res-select-sec-time").removeClass("hidden");
+    });
+
+
+    $(".close-class-num").on("click", function (e) {
+        e.preventDefault()
+        $(".res-class-num").addClass("hidden");
+        $(".choose-clase-date-time").addClass("hidden");
+    });
+
+    $(".close-res-select-time").on("click", function (e) {
+        e.preventDefault()
+        $(".res-select-time").addClass("hidden");
+    });
+    
+    $(".close-res-select-sec-time").on("click", function (e) {
+        e.preventDefault()
+        $(".res-select-sec-time").addClass("hidden");
+    });
+}
