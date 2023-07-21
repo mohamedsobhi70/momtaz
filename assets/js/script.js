@@ -151,36 +151,50 @@ if ($(".teacher-search-carousel").length > 0) {
         margin: 8,
     });
 }
-
 if ($(".teacher-rating-carousel").length > 0) {
 
-    $('.teacher-rating-carousel').owlCarousel({
-        nav: false,
-        dots: false,
-        rtl: true,
-        responsive: {
-            0: {
-                items: 1,
-                margin: 16,
-            },
-            600: {
-                items: 2,
-                margin: 16,
-            },
-            1024: {
-                items: 2,
-                margin: 24,
+    function postsCarousel() {
+        let checkWidth = $(window).width();
+        let owlPost = $(".teacher-rating-carousel");
+        if (checkWidth < 767) {
+            if (typeof owlPost.data('owl.carousel') != 'undefined') {
+                owlPost.data('owl.carousel').destroy();
             }
+            owlPost.removeClass('owl-carousel');
+        } else if (checkWidth > 768) {
+            owlPost.owlCarousel({
+                nav: false,
+                dots: false,
+                rtl: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 16,
+                    },
+                    600: {
+                        items: 2,
+                        margin: 16,
+                    },
+                    1024: {
+                        items: 2,
+                        margin: 24,
+                    }
+                }
+            });
+            // Go to the next item
+            $('.teacher-rating .nxtBtn').click(function () {
+                $('.teacher-rating-carousel').trigger('next.owl.carousel');
+            })
+            // Go to the previous item
+            $('.teacher-rating .prevBtn').click(function () {
+                $('.teacher-rating-carousel').trigger('prev.owl.carousel');
+            })
         }
-    });
-    // Go to the next item
-    $('.teacher-rating .nxtBtn').click(function () {
-        $('.teacher-rating-carousel').trigger('next.owl.carousel');
-    })
-    // Go to the previous item
-    $('.teacher-rating .prevBtn').click(function () {
-        $('.teacher-rating-carousel').trigger('prev.owl.carousel');
-    })
+    }
+
+    postsCarousel();
+    $(window).resize(postsCarousel);
+
 }
 
 if ($(".related-teacher-carousel").length > 0) {
@@ -191,16 +205,22 @@ if ($(".related-teacher-carousel").length > 0) {
         rtl: true,
         responsive: {
             0: {
-                items: 2,
+                items: 1.2,
                 margin: 16,
+                stagePadding: 30,
+
             },
             600: {
                 items: 3,
                 margin: 16,
+                stagePadding: 30,
+
             },
             1024: {
                 items: 4,
                 margin: 24,
+                stagePadding: 0,
+
             }
         }
     });
@@ -213,7 +233,6 @@ if ($(".related-teacher-carousel").length > 0) {
         $('.related-teacher-carousel').trigger('prev.owl.carousel');
     })
 }
-
 
 // Annab Accordion Component
 if ($(".mom-accordion").length) {
@@ -564,7 +583,7 @@ if ($(".choose-child")) {
         e.preventDefault()
         $(".res-select-time").addClass("hidden");
     });
-    
+
     $(".close-res-select-sec-time").on("click", function (e) {
         e.preventDefault()
         $(".res-select-sec-time").addClass("hidden");
