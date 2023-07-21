@@ -178,7 +178,7 @@
     <main>
 
         <!-- Start Page Title Section  -->
-        <section class="py-6 lg:py-12 px-[30px] lg:px-0 bg-[#FAF8FE]">
+        <section class="hidden lg:block py-6 lg:py-12 px-[30px] lg:px-0 bg-[#FAF8FE]">
             <div class="container flex flex-col gap-4">
 
                 <a href="teacher-profile.html" class="flex items-center gap-2 text-[#5A5570] text-sm leading-normal">
@@ -186,10 +186,10 @@
                     العودة الي ملف المعلم
                 </a>
                 <div class="container flex flex-col gap-4">
-                    <h2 class="text-[#090129] text-2xl lg:text-[32px] leading-normal lg:leading-normal font-medium">
+                    <h2 class="text-[#090129] text-[32px] leading-normal font-medium">
                         الرسائل
                     </h2>
-                    <p class="text-[#5A5570] text-sm lg:text-base leading-normal lg:leading-normal">
+                    <p class="text-[#5A5570] text-base leading-normal">
                         التحكم الكلي في إعدادت المنصة بشكل عام.
                     </p>
                 </div>
@@ -200,192 +200,38 @@
 
         <!-- =============================================================== -->
         <!-- Start Page Title Section  -->
-        <section class="py-8 lg:py-16 px-[30px] lg:px-0">
-            <div class="container grid lg:grid-cols-3 gap-[30px] tabs">
-                <!-- Chats  -->
-                <div class="lg:px-4 lg:sticky top-20 lg:border border-[#E6E6EA] rounded-2xl flex flex-col h-fit">
-
-                    <!-- =============================================================== -->
-                    <!--========  here you can add isavailable Class if Available . this will show avaliable badge -->
-                    <!--========  also you can add new-message Class if there is a new new message . this will show message num badge -->
-                    <!-- =============================================================== -->
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item isavailable">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/child.jpg" class="rounded-2xl" width="48" height="48" alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
-                            </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
-                                </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item new-message">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف مهند
-                                    يوسف مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    الساعة 11:00 صباحاً
-                                </span>
-                            </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
-                                </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item ">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
-                            </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
-                                </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item isavailable new-message">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
-                            </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
-                                </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
-                            </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
-                                </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item new-message">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
-                            </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
-                                </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-
-                </div>
-
+        <section class="pb-8 lg:py-16">
+            <div class="container">
                 <!-- Messages  -->
-                <div class="hidden lg:block lg:col-span-2 h-fit">
-                    <div class="message-container tab-content">
-                        <div class="flex flex-col lg:gap-6 lg:p-6">
-                            <!-- message to  -->
-                            <div class="flex items-center gap-4 py-3 lg:py-0 bg-[#FAF8FE]">
+                <div class="fixed h-screen w-full lg:w-auto top-0 left-0 lg:static lg:h-fit bg-white z-50 lg:z-auto">
+                    <div class="message-container">
+                        <div class="flex flex-col lg:gap-6 lg:p-6 h-screen">
+                            <!-- teacher info  -->
+                            <div class="flex items-center gap-3 lg:gap-4 py-3 px-[30px] lg:p-0 bg-[#FAF8FE] lg:bg-white">
+                                <a href="#" onclick="window.history.back()">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699" stroke="#090129"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3.5 12H20.33" stroke="#090129" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
                                 <div class="rounded-2xl lg:rounded-3xl overflow-hidden w-12 lg:w-16 h-12 lg:h-16 ">
                                     <img src="assets/images/pop-teacher-5.jpg" class="w-full h-full object-cover"
                                         width="64" height="64" alt="teacher">
                                 </div>
                                 <div class="flex flex-col gap-1">
-                                    <h3 class="text-[#090129] text-sm lg:text-xl leading-normal lg:leading-normal font-semibold">يوسف محمد</h3>
-                                    <p class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-5">نشط منذ 03 دقائق.</p>
+                                    <h3
+                                        class="text-[#090129] text-sm lg:text-xl leading-normal lg:leading-normal font-semibold">
+                                        يوسف محمد</h3>
+                                    <p class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-5">نشط منذ 03
+                                        دقائق.</p>
                                 </div>
                             </div>
 
-                            <div class="lg:border-t border-b border-[#E6E6EA] lg:py-6">
+                            <div class="lg:border-t lg:border-b border-[#E6E6EA] lg:py-6 flex-1 overflow-y-auto">
                                 <div class="message-item from-me">
 
                                     <span class="text-[#090129] text-xs leading-normal font-medium">انت</span>
@@ -445,7 +291,7 @@
                             </div>
 
                             <!-- send message  -->
-                            <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-4 py-3 px-4 lg:px-0">
                                 <!-- send  -->
                                 <button class="cursor-pointer">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"

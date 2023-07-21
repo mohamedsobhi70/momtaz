@@ -1293,6 +1293,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1713,6 +1717,10 @@ video {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pr-10 {
@@ -2313,9 +2321,14 @@ select {
 
 .message-container {
   border-radius: 1.5rem;
-  border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(230 230 234 / var(--tw-border-opacity));
+}
+
+@media (min-width: 1024px) {
+  .message-container {
+    border-width: 1px;
+  }
 }
 
 .message-item {
@@ -2341,10 +2354,18 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(241 232 251 / var(--tw-bg-opacity));
   padding: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  line-height: 1.5;
   --tw-text-opacity: 1;
   color: rgb(9 1 41 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .message-item .message-content {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 .message-item.to-me .message-content {
@@ -2600,6 +2621,10 @@ label:has(> input.choice:checked) {
     top: 6rem;
   }
 
+  .lg\:z-auto {
+    z-index: auto;
+  }
+
   .lg\:order-last {
     order: 9999;
   }
@@ -2671,6 +2696,11 @@ label:has(> input.choice:checked) {
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .lg\:w-16 {
@@ -2900,6 +2930,10 @@ label:has(> input.choice:checked) {
 
   .lg\:border-b {
     border-bottom-width: 1px;
+  }
+
+  .lg\:border-t {
+    border-top-width: 1px;
   }
 
   .lg\:border-t-\[6px\] {
