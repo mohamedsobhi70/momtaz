@@ -2242,8 +2242,15 @@ select {
 }
 
 .teacher-compare-item .teacher-img {
-  height: 116px;
-  width: 171px;
+  height: 5rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .teacher-compare-item .teacher-img {
+    height: 116px;
+    width: 171px;
+  }
 }
 
 /* chat item  */
