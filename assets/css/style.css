@@ -556,7 +556,7 @@ video {
   }
 }
 
-.header-nav .nav-item {
+header .nav-item {
   position: relative;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
@@ -570,25 +570,25 @@ video {
   transition-duration: 300ms;
 }
 
-.header-nav .nav-item::before {
+header .nav-item::before {
   content: var(--tw-content);
   display: none;
 }
 
-.header-nav .nav-item:hover {
+header .nav-item:hover {
   padding-bottom: 1rem;
   --tw-text-opacity: 1;
   color: rgb(9 1 41 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
-  .header-nav .nav-item {
+  header .nav-item {
     border-style: none;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 
-  .header-nav .nav-item::before {
+  header .nav-item::before {
     visibility: hidden;
     position: absolute;
     bottom: 0.5rem;
@@ -610,11 +610,11 @@ video {
     content: var(--tw-content);
   }
 
-  .header-nav .nav-item:hover {
+  header .nav-item:hover {
     padding-top: 0.5rem;
   }
 
-  .header-nav .nav-item:hover::before {
+  header .nav-item:hover::before {
     visibility: visible;
     width: 1.5rem;
     opacity: 1;
@@ -623,19 +623,36 @@ video {
   }
 }
 
-.header-nav .nav-item.active {
+header .nav-item.prf-menu::before {
+  content: var(--tw-content);
+  display: none;
+}
+
+header .nav-item.prf-menu:hover {
+  --tw-text-opacity: 1;
+  color: rgb(9 1 41 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  header .nav-item.prf-menu:hover {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+header .nav-item.active {
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(9 1 41 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
-  .header-nav .nav-item.active {
+  header .nav-item.active {
     padding-top: 0.5rem;
     padding-bottom: 1rem;
   }
 
-  .header-nav .nav-item.active::before {
+  header .nav-item.active::before {
     visibility: visible;
     width: 1.5rem;
     content: var(--tw-content);
@@ -766,6 +783,10 @@ video {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .fixed {
@@ -1018,6 +1039,10 @@ video {
   height: 350px;
 }
 
+.h-\[44px\] {
+  height: 44px;
+}
+
 .h-\[515px\] {
   height: 515px;
 }
@@ -1117,6 +1142,10 @@ video {
 
 .w-\[277px\] {
   width: 277px;
+}
+
+.w-\[44px\] {
+  width: 44px;
 }
 
 .w-fit {
@@ -1380,6 +1409,10 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-4 {
@@ -1950,6 +1983,11 @@ video {
   color: rgb(209 182 241 / var(--tw-text-opacity));
 }
 
+.text-\[\#D92D20\] {
+  --tw-text-opacity: 1;
+  color: rgb(217 45 32 / var(--tw-text-opacity));
+}
+
 .text-\[\#DCDFEA\] {
   --tw-text-opacity: 1;
   color: rgb(220 223 234 / var(--tw-text-opacity));
@@ -1973,6 +2011,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .opacity-10 {
@@ -2447,6 +2489,20 @@ label:has(> input.choice:checked) {
   .teacher-rating-carousel .item:last-of-type {
     border-width: 1px;
   }
+}
+
+.profile-menu.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .profile-menu.active {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    padding-top: 2.5rem;
+  }
 
   .lg\:secondary-btn {
     --tw-bg-opacity: 1;
@@ -2597,6 +2653,10 @@ label:has(> input.choice:checked) {
 }
 
 @media (min-width: 1024px) {
+  .lg\:invisible {
+    visibility: hidden;
+  }
+
   .lg\:static {
     position: static;
   }
@@ -2609,6 +2669,10 @@ label:has(> input.choice:checked) {
     position: sticky;
   }
 
+  .lg\:left-0 {
+    left: 0px;
+  }
+
   .lg\:top-16 {
     top: 4rem;
   }
@@ -2619,6 +2683,10 @@ label:has(> input.choice:checked) {
 
   .lg\:top-24 {
     top: 6rem;
+  }
+
+  .lg\:top-\[110\%\] {
+    top: 110%;
   }
 
   .lg\:z-auto {
@@ -2863,6 +2931,10 @@ label:has(> input.choice:checked) {
     gap: 18px;
   }
 
+  .lg\:gap-\[22px\] {
+    gap: 22px;
+  }
+
   .lg\:gap-\[30px\] {
     gap: 30px;
   }
@@ -3014,6 +3086,10 @@ label:has(> input.choice:checked) {
     padding: 1rem;
   }
 
+  .lg\:p-5 {
+    padding: 1.25rem;
+  }
+
   .lg\:p-6 {
     padding: 1.5rem;
   }
@@ -3114,6 +3190,10 @@ label:has(> input.choice:checked) {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:pt-12 {
@@ -3235,9 +3315,18 @@ label:has(> input.choice:checked) {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
+  .lg\:opacity-0 {
+    opacity: 0;
+  }
+
   .lg\:backdrop-blur-none {
     --tw-backdrop-blur: blur(0);
     -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
             backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  }
+
+  .lg\:hover\:bg-\[\#F1E8FB\]:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 232 251 / var(--tw-bg-opacity));
   }
 }

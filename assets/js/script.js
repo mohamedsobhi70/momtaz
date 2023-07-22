@@ -8,6 +8,16 @@ if ($(".mobile-menu").length > 0) {
     })
 }
 
+//profile menu - Show - Hide - Desctop Screen
+if ($(".profile-menu-btn").length > 0) {
+    $(".profile-menu-btn").on("mouseenter", function () {
+        $(".profile-menu").addClass("active")
+    }).on("mouseleave", function () {
+        $(".profile-menu").removeClass("active")
+    })
+}
+
+
 
 // sliders 
 if ($(".best-teacher-carousel").length > 0) {
@@ -22,15 +32,17 @@ if ($(".best-teacher-carousel").length > 0) {
                 margin: 24,
                 items: 1.5,
                 stagePadding: 24,
-                // center: true,
             },
             600: {
                 margin: 24,
-                items: 2
+                items: 2,
+                stagePadding: 24,
             },
             1024: {
                 margin: 24,
-                items: 4
+                items: 4,
+                stagePadding: 0,
+
             }
         }
     });
@@ -74,6 +86,26 @@ if ($(".categories-carousel").length > 0) {
 }
 
 if ($(".testimonials-carousel").length > 0) {
+    function calcTestItm() {
+        const items = document.querySelectorAll('.testimonials-carousel .item');
+        items.forEach((item) => {
+            if ($(window).width() > 1024) {
+                const paragraph = item.querySelector('p');
+                const textLength = paragraph.textContent.length;
+                const smallWidth = 396; // set the width for items with small content
+                const bigWidth = 640; // set the width for items with big content
+                const threshold = 300; // set the threshold for the length of the text
+                const width = textLength > threshold ? bigWidth : smallWidth; // determine the width based on text length
+                item.style.width = `${width}px`; // set the width for the item
+            } else {
+                item.style.width = `auto`; // set the width to auto we dont need in mob
+            }
+        })
+
+    }
+    calcTestItm();
+    $(window).resize(calcTestItm)
+
 
     $('.testimonials-carousel').owlCarousel({
         nav: false,
