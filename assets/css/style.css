@@ -785,10 +785,6 @@ header .nav-item.active {
   border-width: 0;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .fixed {
   position: fixed;
 }
@@ -2013,10 +2009,6 @@ header .nav-item.active {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .opacity-10 {
   opacity: 0.1;
 }
@@ -2498,10 +2490,7 @@ label:has(> input.choice:checked) {
 
 @media (min-width: 1024px) {
   .profile-menu.active {
-    position: absolute;
-    left: 0px;
     top: 100%;
-    padding-top: 2.5rem;
   }
 
   .lg\:secondary-btn {
@@ -2673,10 +2662,6 @@ label:has(> input.choice:checked) {
     left: 0px;
   }
 
-  .lg\:top-16 {
-    top: 4rem;
-  }
-
   .lg\:top-20 {
     top: 5rem;
   }
@@ -2685,8 +2670,12 @@ label:has(> input.choice:checked) {
     top: 6rem;
   }
 
-  .lg\:top-\[110\%\] {
-    top: 110%;
+  .lg\:top-\[90\%\] {
+    top: 90%;
+  }
+
+  .lg\:top-\[80\%\] {
+    top: 80%;
   }
 
   .lg\:z-auto {
@@ -2956,6 +2945,10 @@ label:has(> input.choice:checked) {
     row-gap: 1.5rem;
   }
 
+  .lg\:overflow-hidden {
+    overflow: hidden;
+  }
+
   .lg\:overflow-y-visible {
     overflow-y: visible;
   }
@@ -3192,10 +3185,6 @@ label:has(> input.choice:checked) {
     padding-top: 0px;
   }
 
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
   .lg\:pt-12 {
     padding-top: 3rem;
   }
@@ -3214,6 +3203,10 @@ label:has(> input.choice:checked) {
 
   .lg\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .lg\:pt-7 {
+    padding-top: 1.75rem;
   }
 
   .lg\:pt-\[100px\] {
