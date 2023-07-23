@@ -925,6 +925,10 @@ header .nav-item.active {
   z-index: 2;
 }
 
+.order-last {
+  order: 9999;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -935,6 +939,10 @@ header .nav-item.active {
 
 .col-span-3 {
   grid-column: span 3 / span 3;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
 }
 
 .-mt-16 {
@@ -1400,6 +1408,10 @@ header .nav-item.active {
   border-radius: 0.75rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-t-2xl {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -1459,6 +1471,11 @@ header .nav-item.active {
   border-color: rgb(220 223 234 / var(--tw-border-opacity));
 }
 
+.border-\[\#DFE9F5\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(223 233 245 / var(--tw-border-opacity));
+}
+
 .border-\[\#E2E2E9\] {
   --tw-border-opacity: 1;
   border-color: rgb(226 226 233 / var(--tw-border-opacity));
@@ -1486,6 +1503,16 @@ header .nav-item.active {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-\[\#12B76A\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(18 183 106 / var(--tw-border-opacity));
+}
+
+.border-\[\#F04438\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(240 68 56 / var(--tw-border-opacity));
 }
 
 .bg-\[\#00000033\] {
@@ -1610,6 +1637,20 @@ header .nav-item.active {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#ECFDF3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 253 243 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FEF3F2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 243 242 / var(--tw-bg-opacity));
 }
 
 .bg-about {
@@ -1887,6 +1928,11 @@ header .nav-item.active {
   color: #000000E5;
 }
 
+.text-\[\#05060A\] {
+  --tw-text-opacity: 1;
+  color: rgb(5 6 10 / var(--tw-text-opacity));
+}
+
 .text-\[\#090129\] {
   --tw-text-opacity: 1;
   color: rgb(9 1 41 / var(--tw-text-opacity));
@@ -2025,6 +2071,20 @@ header .nav-item.active {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#039855\] {
+  --tw-text-opacity: 1;
+  color: rgb(3 152 85 / var(--tw-text-opacity));
+}
+
+.text-\[\#F04438\] {
+  --tw-text-opacity: 1;
+  color: rgb(240 68 56 / var(--tw-text-opacity));
 }
 
 .opacity-10 {
@@ -2469,6 +2529,11 @@ label:has(> input.choice:checked) {
   background-color: rgb(250 248 254 / var(--tw-bg-opacity));
 }
 
+.choose-payment:has(input:checked) {
+  --tw-border-opacity: 1;
+  border-color: rgb(135 91 247 / var(--tw-border-opacity));
+}
+
 .teacher-rating-carousel .item {
   display: flex;
   gap: 1rem;
@@ -2734,12 +2799,20 @@ label:has(> input.choice:checked) {
     order: 9999;
   }
 
+  .lg\:order-none {
+    order: 0;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
 
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:row-span-2 {
+    grid-row: span 2 / span 2;
   }
 
   .lg\:mx-auto {
