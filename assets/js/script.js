@@ -528,7 +528,7 @@ if ($('.choose-payment input[type="radio"]').length > 0) {
 }
 
 
-if ($(".choose-child")) {
+if ($(".choose-child").length > 0) {
     let chooseChildInpt = $(".choose-child input");
     chooseChildInpt.on("change", function () {
         if (chooseChildInpt.is(':checked')) {
@@ -620,4 +620,31 @@ if ($(".choose-child")) {
         e.preventDefault()
         $(".res-select-sec-time").addClass("hidden");
     });
+}
+
+
+if ($(".edit-res-data").length > 0) {
+    $(".edit-btn").on("click", function (e) {
+        e.preventDefault();
+        $(this).closest(".edit-container").siblings(".choose-sec").removeClass("hidden");
+        $(this).closest(".edit-container").addClass("hidden");
+    })
+    $(".edit-first-date").on("click", function (e) {
+        e.preventDefault();
+        $(".add-first-dat").removeClass("hidden");
+    })
+    $(".edit-second-date").on("click", function (e) {
+        e.preventDefault();
+        $(".add-second-dat").removeClass("hidden");
+    })
+    
+    $(".close-res-select-time").on("click", function (e) {
+        e.preventDefault();
+        $(".add-first-dat").addClass("hidden");
+    })
+    $(".close-res-select-sec-time").on("click", function (e) {
+        e.preventDefault();
+        $(".add-second-dat").addClass("hidden");
+    })
+    
 }
