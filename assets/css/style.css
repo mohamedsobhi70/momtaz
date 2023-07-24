@@ -1537,6 +1537,11 @@ header .nav-item.active {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[\#BEA6DB\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(190 166 219 / var(--tw-border-opacity));
+}
+
 .bg-\[\#00000033\] {
   background-color: #00000033;
 }
@@ -1669,6 +1674,10 @@ header .nav-item.active {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
 }
 
 .bg-about {
@@ -1920,6 +1929,10 @@ header .nav-item.active {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .leading-5 {
@@ -2983,6 +2996,10 @@ label:has(> input.choice:checked) {
     width: auto;
   }
 
+  .lg\:w-1 {
+    width: 0.25rem;
+  }
+
   .lg\:basis-2\/3 {
     flex-basis: 66.666667%;
   }
@@ -3144,6 +3161,11 @@ label:has(> input.choice:checked) {
     border-radius: 0.75rem;
   }
 
+  .lg\:rounded-l-xl {
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+
   .lg\:border {
     border-width: 1px;
   }
@@ -3205,6 +3227,11 @@ label:has(> input.choice:checked) {
   .lg\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   }
 
   .lg\:bg-full {

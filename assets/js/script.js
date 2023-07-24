@@ -673,3 +673,12 @@ if ($(".child-title").length > 0) {
         }
     })
 }
+
+
+
+if ($("#personal-img").length > 0) {
+    var loadFile = function (event) {
+        var image = document.getElementById("personal-img");
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+}

@@ -248,13 +248,6 @@
                         </p>
                     </div>
                 </div>
-                <a href="parent-add-child-informations.html"
-                    class="hidden lg:flex items-center gap-2 text-black l leading-normal py-4 px-8 rounded-2xl secondary-btn">
-                    <span class="flex-1">
-                        أضف طفل جديد
-                    </span>
-                    <img src="assets/images/add-square.svg" width="24" height="24" alt="arrow">
-                </a>
             </div>
         </section>
         <!-- End Page Title Section  -->
@@ -262,15 +255,17 @@
         <!-- =============================================================== -->
         <!-- Start Page Title Section  -->
         <section class="py-6 lg:py-16 px-[30px] lg:px-0">
-            <div class="container flex flex-col gap-6">
-                <h2 class="text-[#090129] text-2xl leading-normal font-medium">
-                    أطفالك
-                </h2>
-                <div class="grid lg:grid-cols-3 gap-[30px] tabs">
-                    <!-- Your Childs  -->
-                    <div class="lg:sticky lg:top-20 hidden lg:flex flex-col gap-2 h-fit">
+            <div class="container grid lg:grid-cols-3 gap-4 lg:gap-[30px]">
+
+                <!-- Your Childs  -->
+                <div class="lg:sticky lg:top-20 hidden lg:flex flex-col gap-6 h-fit">
+                    <h2
+                        class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-medium hidden lg:block">
+                        أطفالك
+                    </h2>
+                    <div class="flex flex-col gap-2 ">
                         <!-- Child item  -->
-                        <div class="child-item cursor-pointer tab-item active" data-child="child-1">
+                        <div class="child-item">
                             <div class="w-14 h-14 rounded-2xl overflow-hidden">
                                 <img src="assets/images/child.jpg" width="56" height="56" alt="child">
                             </div>
@@ -293,7 +288,7 @@
                             </svg>
                         </div>
                         <!-- Child item  -->
-                        <div class="child-item cursor-pointer tab-item" data-child="child-2">
+                        <div class="child-item">
                             <div class="w-14 h-14 rounded-2xl overflow-hidden">
                                 <img src="assets/images/child.jpg" width="56" height="56" alt="child">
                             </div>
@@ -316,7 +311,7 @@
                             </svg>
                         </div>
                         <!-- Child item  -->
-                        <div class="child-item cursor-pointer tab-item" data-child="child-3">
+                        <div class="child-item">
                             <div class="w-14 h-14 rounded-2xl overflow-hidden">
                                 <img src="assets/images/child.jpg" width="56" height="56" alt="child">
                             </div>
@@ -338,287 +333,71 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </div>
-                    </div>
-
-                    <!-- child-informations  -->
-                    <div class="lg:col-span-2 h-fit flex flex-col gap-4">
-                        <div class="tab-content transition-all duration-300 flex flex-col gap-4 lg:gap-6 p-4 lg:p-6 rounded-3xl border border-[#E6E6EA]"
-                            data-child="child-1">
-                            <div class="child-title flex items-center gap-4">
-                                <!-- Child img  -->
-                                <div
-                                    class="w-12 lg:w-16 h-12 lg:h-16 rounded-2xl lg:rounded-3xl overflow-hidden border border-[#E6E6EA]">
-                                    <img src="assets/images/child.jpg" width="64" height="64" alt="child">
-                                </div>
-
-                                <!-- Child name  -->
-                                <h3
-                                    class="text-[#090129] text-sm lg:text-xl leading-normal font-semibold flex-1 line-clamp-1">
-                                    محمد خالد علي السيد
-                                </h3>
-
-                                <a href="#"
-                                    class="text-sm leading-normal font-medium hidden lg:flex items-center gap-2 link-btn">
-                                    <img src="assets/images/edit-icon.png" width="20" height="20" alt="Edit icon">
-                                    تعديل
-                                </a>
-
-                                <div class="lg:hidden icn">
-                                    <img src="assets/images/collapse-arrow.svg" class="rotate-180" width="24"
-                                        height="24" alt="arrow">
-                                </div>
-                            </div>
-                            <div class="child-info-cntnt hidden lg:block">
-                                <div class="flex flex-col gap-5 lg:gap-6">
-
-                                    <div
-                                        class="flex flex-col lg:flex-row gap-5 pt-4 lg:py-6 border-t lg:border-b border-[#E6E6EA]">
-                                        <div class="flex-1 flex flex-col gap-1">
-                                            <span
-                                                class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                المرحلة التعليمية
-                                            </span>
-                                            <h4
-                                                class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                المرحلة الأبتدائية
-                                            </h4>
-                                        </div>
-
-                                        <div class="flex-1 flex flex-col gap-1">
-                                            <span
-                                                class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                الصف الدراسي
-                                            </span>
-                                            <h4
-                                                class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                الصف السادس
-                                            </h4>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1.5 lg:gap-3">
-                                        <p class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                            المواد العلمية يدرسها داخل المنصة
-                                        </p>
-                                        <div class="flex items-center gap-2">
-                                            <span
-                                                class="rounded-full lg:py-2 lg:px-4 lg:bg-[#EFF1F5] text-[#111322] text-xs leading-normal font-medium">
-                                                التاريخ
-                                            </span>
-                                            <span
-                                                class="rounded-full lg:py-2 lg:px-4 lg:bg-[#EFF1F5] text-[#111322] text-xs leading-normal font-medium">
-                                                اللغة العربية
-                                            </span>
-                                            <span
-                                                class="rounded-full lg:py-2 lg:px-4 lg:bg-[#EFF1F5] text-[#111322] text-xs leading-normal font-medium">
-                                                الرياضيات
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex lg:hidden gap-2 items-center">
-                                        <a href="parent-edit-child-informations.html"
-                                            class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-3 px-6 rounded-xl bordered-btn">
-                                            <img src="assets/images/edit.png" width="20" height="20" alt="edit">
-                                            تعديل
-                                        </a>
-                                        <a href="#"
-                                            class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-3 px-6 rounded-xl error-secondary-btn">
-                                            <img src="assets/images/trash.svg" width="20" height="20" alt="trash">
-                                            حذف
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="tab-content transition-all duration-300 flex flex-col gap-4 lg:gap-6 p-4 lg:p-6 rounded-3xl border border-[#E6E6EA]"
-                            data-child="child-2">
-                            <div class="child-title flex items-center gap-4">
-                                <!-- Child img  -->
-                                <div
-                                    class="w-12 lg:w-16 h-12 lg:h-16 rounded-2xl lg:rounded-3xl overflow-hidden border border-[#E6E6EA]">
-                                    <img src="assets/images/team-2.png" width="64" height="64" alt="child">
-                                </div>
-
-                                <!-- Child name  -->
-                                <h3
-                                    class="text-[#090129] text-sm lg:text-xl leading-normal font-semibold flex-1 line-clamp-1">
-                                    محمد خالد علي السيد
-                                </h3>
-
-                                <a href="#"
-                                    class="text-sm leading-normal font-medium hidden lg:flex items-center gap-2 link-btn">
-                                    <img src="assets/images/edit-icon.png" width="20" height="20" alt="Edit icon">
-                                    تعديل
-                                </a>
-
-                                <div class="lg:hidden icn">
-                                    <img src="assets/images/collapse-arrow.svg" class="rotate-180" width="24"
-                                        height="24" alt="arrow">
-                                </div>
-                            </div>
-                            <div class="child-info-cntnt hidden lg:block">
-                                <div class="flex flex-col gap-5 lg:gap-6">
-
-                                    <div
-                                        class="flex flex-col lg:flex-row gap-5 pt-4 lg:py-6 border-t lg:border-b border-[#E6E6EA]">
-                                        <div class="flex-1 flex flex-col gap-1">
-                                            <span
-                                                class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                المرحلة التعليمية
-                                            </span>
-                                            <h4
-                                                class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                المرحلة الأبتدائية
-                                            </h4>
-                                        </div>
-
-                                        <div class="flex-1 flex flex-col gap-1">
-                                            <span
-                                                class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                الصف الدراسي
-                                            </span>
-                                            <h4
-                                                class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                الصف السادس
-                                            </h4>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1.5 lg:gap-3">
-                                        <p class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                            المواد العلمية يدرسها داخل المنصة
-                                        </p>
-                                        <div class="flex items-center gap-2">
-                                            <span
-                                                class="rounded-full lg:py-2 lg:px-4 lg:bg-[#EFF1F5] text-[#111322] text-xs leading-normal font-medium">
-                                                التاريخ
-                                            </span>
-                                            <span
-                                                class="rounded-full lg:py-2 lg:px-4 lg:bg-[#EFF1F5] text-[#111322] text-xs leading-normal font-medium">
-                                                اللغة العربية
-                                            </span>
-                                            <span
-                                                class="rounded-full lg:py-2 lg:px-4 lg:bg-[#EFF1F5] text-[#111322] text-xs leading-normal font-medium">
-                                                الرياضيات
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="flex lg:hidden gap-2 items-center">
-                                        <a href="parent-edit-child-informations.html"
-                                            class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-3 px-6 rounded-xl bordered-btn">
-                                            <img src="assets/images/edit.png" width="20" height="20" alt="edit">
-                                            تعديل
-                                        </a>
-                                        <a href="#"
-                                            class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-3 px-6 rounded-xl error-secondary-btn">
-                                            <img src="assets/images/trash.svg" width="20" height="20" alt="trash">
-                                            حذف
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-content transition-all duration-300 flex flex-col gap-4 lg:gap-6 p-4 lg:p-6 rounded-3xl border border-[#E6E6EA]"
-                            data-child="child-3">
-                            <div class="child-title flex items-center gap-4">
-                                <!-- Child img  -->
-                                <div
-                                    class="w-12 lg:w-16 h-12 lg:h-16 rounded-2xl lg:rounded-3xl overflow-hidden border border-[#E6E6EA]">
-                                    <img src="assets/images/team-1.png" width="64" height="64" alt="child">
-                                </div>
-
-                                <!-- Child name  -->
-                                <h3
-                                    class="text-[#090129] text-sm lg:text-xl leading-normal font-semibold flex-1 line-clamp-1">
-                                    محمد خالد علي السيد
-                                </h3>
-
-                                <a href="#"
-                                    class="text-sm leading-normal font-medium hidden lg:flex items-center gap-2 link-btn">
-                                    <img src="assets/images/edit-icon.png" width="20" height="20" alt="Edit icon">
-                                    تعديل
-                                </a>
-
-                                <div class="lg:hidden icn">
-                                    <img src="assets/images/collapse-arrow.svg" class="rotate-180" width="24"
-                                        height="24" alt="arrow">
-                                </div>
-                            </div>
-                            <div class="child-info-cntnt hidden lg:block">
-                                <div class="flex flex-col gap-5 lg:gap-6">
-
-                                    <div
-                                        class="flex flex-col lg:flex-row gap-5 pt-4 lg:py-6 border-t lg:border-b border-[#E6E6EA]">
-                                        <div class="flex-1 flex flex-col gap-1">
-                                            <span
-                                                class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                المرحلة التعليمية
-                                            </span>
-                                            <h4
-                                                class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                المرحلة الأبتدائية
-                                            </h4>
-                                        </div>
-
-                                        <div class="flex-1 flex flex-col gap-1">
-                                            <span
-                                                class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                الصف الدراسي
-                                            </span>
-                                            <h4
-                                                class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                الصف السادس
-                                            </h4>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1.5 lg:gap-3">
-                                        <p class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                            المواد العلمية يدرسها داخل المنصة
-                                        </p>
-                                        <div class="flex items-center gap-2">
-                                            <span
-                                                class="rounded-full lg:py-2 lg:px-4 lg:bg-[#EFF1F5] text-[#111322] text-xs leading-normal font-medium">
-                                                التاريخ
-                                            </span>
-                                            <span
-                                                class="rounded-full lg:py-2 lg:px-4 lg:bg-[#EFF1F5] text-[#111322] text-xs leading-normal font-medium">
-                                                اللغة العربية
-                                            </span>
-                                            <span
-                                                class="rounded-full lg:py-2 lg:px-4 lg:bg-[#EFF1F5] text-[#111322] text-xs leading-normal font-medium">
-                                                الرياضيات
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="flex lg:hidden gap-2 items-center">
-                                        <a href="parent-edit-child-informations.html"
-                                            class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-3 px-6 rounded-xl bordered-btn">
-                                            <img src="assets/images/edit.png" width="20" height="20" alt="edit">
-                                            تعديل
-                                        </a>
-                                        <a href="#"
-                                            class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-3 px-6 rounded-xl error-secondary-btn">
-                                            <img src="assets/images/trash.svg" width="20" height="20" alt="trash">
-                                            حذف
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="parent-add-child-informations.html"
-                            class="flex lg:hidden items-center justify-center gap-2 text-black leading-normal py-4 px-8 rounded-2xl bordered-btn">
-                            <img src="assets/images/add-square.svg" width="24" height="24" alt="arrow">
-                            أضف طفل جديد
-                        </a>
 
                     </div>
                 </div>
+
+                <!-- child-informations  -->
+                <div class="lg:col-span-2 flex flex-col gap-4 lg:gap-6 h-fit">
+                    <h2 class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-medium">
+                        أضافة طالب جديد
+                    </h2>
+                    <div
+                        class="rounded-2xl border border-[#BEA6DB] bg-[#F9F9FB] flex flex-col gap-4 lg:gap-6 p-4 lg:p-6">
+
+                        <div class="flex items-center gap-4 py-2">
+                            <label
+                                class="bg-[#E6E6EA] w-12 h-12 lg:w-16 lg:h-16 rounded-2xl lg:rounded-3xl overflow-hidden">
+                                <img src="assets/images/gry.jpg" width="48" height="48"
+                                    class="w-full h-full object-cover" alt="img" id="personal-img">
+                                <input type="file" name="child-img" id="child-img" class="hidden"
+                                    onchange="loadFile(event)">
+                            </label>
+                            <span
+                                class="text-[#3A3454] text-xs leading-normal font-bold lg:text-base lg:leading-normal">تعيين
+                                صورة شخصية</span>
+                        </div>
+
+                        <div class="pt-4 border-t border-[#E6E6EA] flex flex-col gap-2">
+                            <div class="flex flex-col gap-2">
+                                <label for="child-name"
+                                    class="text-[#4A5578] text-xs leading-normal lg:text-base lg:leading-normal font-medium">
+                                    أسم الطالب
+                                </label>
+                                <input type="text" name="child-name" id="child-name" placeholder="أسم الطالب"
+                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="child-stage"
+                                    class="text-[#4A5578] text-xs leading-normal lg:text-base lg:leading-normal font-medium">
+                                    المرحلة التعليمية
+                                </label>
+                                <input type="text" name="child-stage" id="child-stage" placeholder="المرحلة التعليمية"
+                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="child-class"
+                                    class="text-[#4A5578] text-xs leading-normal lg:text-base lg:leading-normal font-medium">
+                                    الصف الدراسي
+                                </label>
+                                <input type="text" name="child-class" id="child-class" placeholder="الصف الدراسي"
+                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="py-4 bg-white grid grid-cols-2 gap-2 sticky bottom-0 lg:static">
+                        <a href="parent-edit-child-informations.html"
+                            class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-4 px-8 rounded-2xl secondary-btn">
+                            أضف الطالب
+                        </a>
+                        <a href="parent-edit-child-informations.html"
+                            class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-4 px-8 rounded-2xl bordered-btn">
+                            الغاء
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
         </section>
