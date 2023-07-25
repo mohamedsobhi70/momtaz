@@ -517,8 +517,6 @@ if ($(".res-sec").length > 0) {
         }
     });
 
-
-
 }
 if ($('.choose-payment input[type="radio"]').length > 0) {
     $('.choose-payment input[type="radio"]').change(function () {
@@ -664,6 +662,21 @@ if ($(".tabs").length > 0) {
     })
 }
 
+if ($(".sch-tabs").length > 0) {
+    $(".sch-tabs").each(function () {
+        let th = $(this);
+        th.find(`.sch-tabs-content`).addClass("hidden");
+        th.find(`.sch-tabs-content:first-of-type`).removeClass("hidden");
+        th.find(".sch-tabs-item").on("click", function () {
+            th.find(".sch-tabs-item").removeClass("active");
+            $(this).addClass("active");
+            let child = $(this).data("child");
+            th.find(".sch-tabs-content").addClass("hidden");
+            th.find(`.sch-tabs-content[data-child=${child}]`).removeClass("hidden");
+        })
+    })
+}
+
 if ($(".child-title").length > 0) {
     $(".child-title").on("click", function () {
         if ($(window).width() < 1024) {
@@ -676,17 +689,58 @@ if ($(".child-title").length > 0) {
 }
 
 if ($(".report-popup").length > 0) {
-    $(".show-report").on("click",function(){
+    $(".show-report").on("click", function () {
         $(".report-popup").addClass("active")
     })
-    $(".close-report-time").on("click",function(){
+    $(".close-report-time").on("click", function () {
         $(".report-popup").removeClass("active")
     })
 }
 
+if ($(".cancle-booking-popup").length > 0) {
+    $(".cancle-booking-btn").on("click", function () {
+        $(".cancle-booking-popup").addClass("active")
+    })
+    $(".close-cancle-booking").on("click", function () {
+        $(".cancle-booking-popup").removeClass("active")
+    })
+}
+
+if ($(".show-bill-popup").length > 0) {
+    $(".show-bill-btn").on("click", function () {
+        $(".show-bill-popup").addClass("active")
+    })
+    $(".close-show-bill").on("click", function () {
+        $(".show-bill-popup").removeClass("active")
+    })
+}
+if ($(".schedule-popup").length > 0) {
+    $(".open-schedule").on("click", function () {
+        $(".schedule-popup").addClass("active")
+    })
+    $(".close-schedule").on("click", function () {
+        $(".schedule-popup").removeClass("active")
+    })
+
+    $(".change-schedule-btn").on("click", function () {
+        $(".schedule-popup").removeClass("active")
+        $(".change-schedule-popup").addClass("active")
+    })
+    $(".close-change-schedule").on("click", function () {
+        $(".change-schedule-popup").removeClass("active")
+    })
+
+    $(".select-date-btn").on("click", function () {
+        $(".select-date-popup").addClass("active")
+        $(".change-schedule-popup").removeClass("active")
+    })
+    $(".close-select-date").on("click", function () {
+        $(".select-date-popup").removeClass("active")
+    })
+}
 
 if ($("#personal-img").length > 0) {
-    let loadFile = function (event) {
+    var loadFile = function (event) {
         var image = document.getElementById("personal-img");
         image.src = URL.createObjectURL(event.target.files[0]);
     };

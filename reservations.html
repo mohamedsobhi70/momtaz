@@ -21,24 +21,25 @@
 <body class="font-Readex">
 
     <!-- Start Momtaz Header  -->
-    <header class="sticky top-0 bg-white z-40">
-        <div class="container flex items-center justify-between gap-12 py-4 lg:py-3 px-[30px] lg:p-x sticky top-0">
-
-            <!-- logo  -->
-            <a href="index.html" class="shrink-0" aria-label="Logo">
-                <img src="assets/images/logo.png" width="96" height="42" alt="">
-                <span class="sr-only">Momtaz Logo</span>
-            </a>
+    <header class="sticky top-0 bg-[#FAF8FE] lg:bg-white z-40">
+        <div class=" container flex items-center justify-between gap-12 py-4 lg:py-3 px-[30px] lg:p-x relative">
 
             <!-- mobile menu btn  -->
             <button class="mobile-menu-btn lg:hidden" aria-label="menu-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 9H20" stroke="#090129" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M4 15H20" stroke="#090129" stroke-width="1.5" stroke-linecap="round" />
-                </svg>
+                <img src="assets/images/pop-teacher-5.jpg" class="rounded-xl" width="32" height="32" alt="profile">
                 <span class="sr-only">Mobile Menu</span>
             </button>
 
+            <!-- logo  -->
+            <a href="index.html" class="shrink-0" aria-label="Logo">
+                <img src="assets/images/logo.png" class="hidden lg:block" width="96" height="42" alt="">
+                <img src="assets/images/mob-logo.svg" class="lg:hidden" width="22" height="32" alt="">
+                <span class="sr-only">Momtaz Logo</span>
+            </a>
+
+            <span class="lg:hidden">
+
+            </span>
             <!-- navigation  -->
             <div class="mobile-menu">
 
@@ -62,7 +63,7 @@
                     <nav
                         class="flex flex-col lg:flex-row lg:items-center lg:gap-6 header-nav px-[30px] lg:p-0 pt-4 lg:pt-0">
                         <a href="index.html" class="nav-item flex items-center gap-4 active">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" height="24" alt="icon">
                             <span class="flex-1">
                                 الرئيسية
                             </span>
@@ -70,40 +71,42 @@
                                 alt="arrow">
                         </a>
                         <a href="teachers.html" class="nav-item flex items-center gap-4">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                            <img src="assets/images/user.svg" class="lg:hidden" width="24" height="24" alt="icon">
                             <span class="flex-1">
                                 المعلمين
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <div class="nav-item flex items-center gap-2 cursor-pointer justify-between">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                        <a href="schedule.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/note.svg" class="lg:hidden" width="24" height="24" alt="icon">
                             <span class="flex-1">
-                                المواد العلمية
-                            </span>
-                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
-                                alt="arrow">
-                            <svg class="hidden lg:block" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.2154 12.5415L11.782 7.1082C11.1404 6.46654 10.0904 6.46654 9.44871 7.1082L4.01538 12.5415"
-                                    stroke="#8E8A9D" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <a href="about-us.html" class="nav-item flex items-center gap-4">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
-                            <span class="flex-1">
-                                من نحن
+                                جدول الحصص
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <a href="index.html" class="nav-item flex items-center gap-4">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                        <a href="parent-reports.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/tick-circle.svg" class="lg:hidden" width="24" height="24"
+                                alt="icon">
                             <span class="flex-1">
-                                الدعم الفني
+                                التقارير
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <a href="bookings.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/calendar.svg" class="lg:hidden" width="24" height="24" alt="icon">
+                            <span class="flex-1">
+                                الحجوزات
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <a href="parent-child-informations.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/people.svg" class="lg:hidden" width="24" height="24" alt="icon">
+                            <span class="flex-1">
+                                أطفالك
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
@@ -113,50 +116,100 @@
 
                     <!-- login - register  -->
                     <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3 px-[30px] lg:p-0 pb-4 lg:pb-0">
-                        <!-- Login  -->
-                        <a href="login.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] lg:border-none text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:py-3 lg:px-6 lg:rounded-xl lg:secondary-btn">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
-                            <span class="flex-1">
-                                تسجيل دخول
+                        <!-- Notifications  -->
+                        <a href="notifications.html"
+                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                            <img src="assets/images/notification.svg" class="w-6 lg:w-5" width="24" height="24"
+                                alt="icon">
+
+                            <span class="flex-1 lg:hidden">
+                                الاشعارات
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <!-- Messages  -->
+                        <a href="messages.html"
+                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                            <img src="assets/images/message.svg" class="w-6 lg:w-5" width="24" alt="icon">
+
+                            <span class="flex-1 lg:hidden">
+                                الرسائل
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
 
-                        <!-- Register  -->
-                        <a href="register.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:py-3 lg:px-6 lg:rounded-xl lg:bordered-btn">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
-                            <span class="flex-1">
-                                حساب جديد ؟
-                            </span>
-                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
-                                alt="arrow">
-                        </a>
+                        <!-- Profile  -->
+                        <div class="profile-menu-btn relative">
+                            <div
+                                class=" w-[44px] h-[44px] hidden lg:flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-0 lg:rounded-xl overflow-hidden lg:bordered-btn cursor-pointer">
+                                <img src="assets/images/pop-teacher-1.jpg" class="w-full h-full object-cover" width="44"
+                                    height="44" alt="icon">
+                            </div>
 
-                        <!-- For Teachers  -->
-                        <a href="for-teachers.html"
-                            class="gap-4 border-b border-[#E6E6EA] lg:border-none text-[#5A5570] lg:text-sm leading-normal lg:leading-5 lg:link-btn group flex items-center lg:gap-2 py-4 lg:py-0">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
-                            <span class="flex-1">
-                                للمعلمين
-                            </span>
-                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
-                                alt="arrow">
-                            <svg class="hidden lg:block" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    class="group-hover:stroke-[#090129] group-active:stroke-[#8E8A9D] transition-all duration-300 "
-                                    d="M7.97508 4.94189L2.91675 10.0002L7.97508 15.0586" stroke="#3A3454"
-                                    stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    class="group-hover:stroke-[#090129] group-active:stroke-[#8E8A9D] transition-all duration-300 "
-                                    d="M17.0834 10H3.05835" stroke="#3A3454" stroke-width="1.25" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </a>
+                            <div
+                                class="profile-menu transition-all duration-300 lg:pt-6 lg:absolute lg:left-0 lg:top-[80%] lg:invisible lg:opacity-0">
+                                <div
+                                    class="bg-white lg:rounded-3xl lg:p-5 lg:border border-[#DCDFEA] flex flex-col lg:gap-4">
+                                    <div class="hidden lg:flex items-center gap-5">
+                                        <div class="w-16 h-16 rounded-2xl overflow-hidden border-2 border-[#DCDFEA]">
+                                            <img src="assets/images/pop-teacher-1.jpg" width="64" height="64"
+                                                alt="profile pic">
+                                        </div>
+                                        <div class="flex flex-col gap-1.5">
+                                            <h2 class="text-[#111322] text-base leading-normal font-medium">
+                                                محمد خالد السيد
+                                            </h2>
+                                            <p class="text-[#7D89B0] text-sm leading-5">
+                                                khaledmohamed@gmail.com
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col lg:gap-[22px] lg:pt-4 lg:border-t border-[#E2E8F0]">
+                                        <a href="parent-profile.html"
+                                            class="nav-item prf-menu flex items-center gap-4 lg:gap-2 transition-all duration-300 lg:hover:bg-[#F1E8FB] lg:py-3 lg:px-4 lg:rounded-xl">
+                                            <img src="assets/images/profile.svg" width="24" height="24" alt="icon">
+                                            <span class="flex-1">
+                                                الملف الشخصي
+                                            </span>
+                                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24"
+                                                height="24" alt="arrow">
+                                        </a>
+                                        <a href="#"
+                                            class="nav-item prf-menu flex items-center gap-4 lg:gap-2 transition-all duration-300 lg:hover:bg-[#F1E8FB] lg:py-3 lg:px-4 lg:rounded-xl">
+                                            <img src="assets/images/setting.svg" width="24" height="24" alt="icon">
+                                            <span class="flex-1">
+                                                الأعدادات
+                                            </span>
+                                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24"
+                                                height="24" alt="arrow">
+                                        </a>
+                                        <a href="#"
+                                            class="nav-item prf-menu hidden lg:flex items-center gap-4 lg:gap-2 transition-all duration-300 lg:hover:bg-[#F1E8FB] lg:py-3 lg:px-4 lg:rounded-xl">
+                                            <img src="assets/images/message-question.svg" width="24" height="24"
+                                                alt="icon">
+                                            <span class="flex-1">
+                                                الدعم الفني
+                                            </span>
+                                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24"
+                                                height="24" alt="arrow">
+                                        </a>
+
+                                        <a href="#"
+                                            class="nav-item prf-menu flex items-center gap-4 lg:gap-2 transition-all duration-300 lg:hover:bg-[#F1E8FB] lg:py-3 lg:px-4 lg:rounded-xl">
+                                            <img src="assets/images/logout.svg" width="24" height="24" alt="icon">
+                                            <span class="flex-1 text-[#D92D20]">
+                                                تسجيل خروج
+                                            </span>
+                                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24"
+                                                height="24" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="lg:hidden py-4 px-[30px] lg:px-0">
