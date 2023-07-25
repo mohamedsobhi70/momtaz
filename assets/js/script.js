@@ -670,14 +670,23 @@ if ($(".child-title").length > 0) {
             $(this).siblings(".child-info-cntnt").slideToggle(300);
             $(this).find(".icn img").toggleClass("rotate-180");
             $(this).parent().toggleClass("bg-[#F9F9FB]");
+            $(this).parent().toggleClass("border-[#BEA6DB]");
         }
     })
 }
 
+if ($(".report-popup").length > 0) {
+    $(".show-report").on("click",function(){
+        $(".report-popup").addClass("active")
+    })
+    $(".close-report-time").on("click",function(){
+        $(".report-popup").removeClass("active")
+    })
+}
 
 
 if ($("#personal-img").length > 0) {
-    var loadFile = function (event) {
+    let loadFile = function (event) {
         var image = document.getElementById("personal-img");
         image.src = URL.createObjectURL(event.target.files[0]);
     };

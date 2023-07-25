@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momtaz - Home Page</title>
+    <title>Momtaz</title>
     <meta name="description" content="description">
     <!-- google font Readex Pro -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,7 @@
 </head>
 
 <body class="font-Readex">
+
     <!-- Start Momtaz Header  -->
     <header class="sticky top-0 bg-[#FAF8FE] lg:bg-white z-40">
         <div class=" container flex items-center justify-between gap-12 py-4 lg:py-3 px-[30px] lg:p-x relative">
@@ -61,7 +62,7 @@
                     <!-- Navigation Bar -->
                     <nav
                         class="flex flex-col lg:flex-row lg:items-center lg:gap-6 header-nav px-[30px] lg:p-0 pt-4 lg:pt-0">
-                        <a href="index.html" class="nav-item flex items-center gap-4 active">
+                        <a href="index.html" class="nav-item flex items-center gap-4">
                             <img src="assets/images/user.svg" class="lg:hidden" width="24" height="24" alt="icon">
                             <span class="flex-1">
                                 الرئيسية
@@ -69,7 +70,7 @@
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <a href="teachers.html" class="nav-item flex items-center gap-4">
+                        <a href="teachers.html" class="nav-item active flex items-center gap-4">
                             <img src="assets/images/user.svg" class="lg:hidden" width="24" height="24" alt="icon">
                             <span class="flex-1">
                                 المعلمين
@@ -229,22 +230,23 @@
 
     <!-- Start Momtaz MAin Page Content  -->
     <main>
-
         <!-- Start Page Title Section  -->
-        <section class="py-6 lg:py-12 px-[30px] lg:px-0 bg-[#FAF8FE]">
-            <div class="container flex flex-col gap-4">
-
-                <a href="teacher-profile.html" class="flex items-center gap-2 text-[#5A5570] text-sm leading-normal">
-                    <img src="assets/images/right-arrow.svg" width="24" height="24" alt="arrow">
-                    العودة الي ملف المعلم
-                </a>
-                <div class="container flex flex-col gap-4">
-                    <h2 class="text-[#090129] text-2xl lg:text-[32px] leading-normal lg:leading-normal font-medium">
-                        الرسائل
-                    </h2>
-                    <p class="text-[#5A5570] text-sm lg:text-base leading-normal lg:leading-normal">
-                        التحكم الكلي في إعدادت المنصة بشكل عام.
-                    </p>
+        <section class="py-6 lg:py-12 px-[30px] lg:px-0 lg:bg-[#FAF8FE]">
+            <div class="container flex items-end gap-4">
+                <div class="flex flex-col gap-4 flex-1">
+                    <a href="teacher-profile.html"
+                        class="flex items-center gap-2 text-[#5A5570] text-sm leading-normal">
+                        <img src="assets/images/right-arrow.svg" width="24" height="24" alt="arrow">
+                        العودة الي ملف المعلم
+                    </a>
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <h2 class="text-[#090129] text-2xl lg:text-[32px] leading-normal lg:leading-normal font-medium">
+                            التقارير
+                        </h2>
+                        <p class="text-[#5A5570] text-sm lg:text-base leading-normal lg:leading-normal">
+                            يمكنك مشاهدة التقارير الدورية لطلابك.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -253,278 +255,256 @@
 
         <!-- =============================================================== -->
         <!-- Start Page Title Section  -->
-        <section class="py-8 lg:py-16 px-[30px] lg:px-0">
-            <div class="container grid lg:grid-cols-3 gap-[30px] tabs">
-                <!-- Chats  -->
-                <div class="lg:px-4 lg:sticky top-20 lg:border border-[#E6E6EA] rounded-2xl flex flex-col h-fit">
-
-                    <!-- =============================================================== -->
-                    <!--========  here you can add isavailable Class if Available . this will show avaliable badge -->
-                    <!--========  also you can add new-message Class if there is a new new message . this will show message num badge -->
-                    <!-- =============================================================== -->
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item isavailable">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/child.jpg" class="rounded-2xl" width="48" height="48" alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
+        <section class="py-4 lg:py-16 px-[30px] lg:px-0">
+            <div class="container flex flex-col gap-6">
+                <h2 class="text-[#090129] text-2xl leading-normal font-medium hidden lg:block">
+                    أطفالك
+                </h2>
+                <div class="grid lg:grid-cols-3 gap-[30px]">
+                    <!-- Your Childs  -->
+                    <div class="lg:sticky lg:top-20 hidden lg:flex flex-col gap-2 h-fit">
+                        <!-- Child item  -->
+                        <a href="#" class="child-item">
+                            <div class="w-14 h-14 rounded-2xl overflow-hidden">
+                                <img src="assets/images/child.jpg" width="56" height="56" alt="child">
                             </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
+                            <!-- Child name  -->
+                            <div class="flex flex-col gap-1 flex-1">
+                                <h3 class="text-[#090129] text-base leading-normal font-semibold line-clamp-1">
+                                    محمد خالد علي السيد
+                                </h3>
+                                <p class="text-[#8E8A9D] text-sm left-5 line-clamp-1">
+                                    الصف الثاني الابتدائي
                                 </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
                             </div>
-                        </div>
-                    </a>
 
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item new-message">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف مهند
-                                    يوسف مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    الساعة 11:00 صباحاً
-                                </span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9998 19.92L8.47984 13.4C7.70984 12.63 7.70984 11.37 8.47984 10.6L14.9998 4.08002"
+                                    stroke="#090129" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <!-- Child item  -->
+                        <a href="#" class="child-item">
+                            <div class="w-14 h-14 rounded-2xl overflow-hidden">
+                                <img src="assets/images/child.jpg" width="56" height="56" alt="child">
                             </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
+                            <!-- Child name  -->
+                            <div class="flex flex-col gap-1 flex-1">
+                                <h3 class="text-[#090129] text-base leading-normal font-semibold line-clamp-1">
+                                    محمد خالد علي السيد
+                                </h3>
+                                <p class="text-[#8E8A9D] text-sm left-5 line-clamp-1">
+                                    الصف الثاني الابتدائي
                                 </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
                             </div>
-                        </div>
-                    </a>
 
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item ">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9998 19.92L8.47984 13.4C7.70984 12.63 7.70984 11.37 8.47984 10.6L14.9998 4.08002"
+                                    stroke="#090129" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <!-- Child item  -->
+                        <a href="#" class="child-item">
+                            <div class="w-14 h-14 rounded-2xl overflow-hidden">
+                                <img src="assets/images/child.jpg" width="56" height="56" alt="child">
                             </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
+                            <!-- Child name  -->
+                            <div class="flex flex-col gap-1 flex-1">
+                                <h3 class="text-[#090129] text-base leading-normal font-semibold line-clamp-1">
+                                    محمد خالد علي السيد
+                                </h3>
+                                <p class="text-[#8E8A9D] text-sm left-5 line-clamp-1">
+                                    الصف الثاني الابتدائي
                                 </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item isavailable new-message">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
-                            </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
-                                </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
-                            </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
-                                </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Chat item  -->
-                    <a href="message-page.html" class="chat-item new-message">
-                        <div class="img p-1 relative">
-                            <span class="availability"></span>
-                            <img src="assets/images/pop-teacher-1.jpg" class="rounded-2xl" width="48" height="48"
-                                alt="asd">
-                        </div>
-
-                        <div class="flex flex-col gap-0.5 flex-1">
-                            <div class="flex justify-between items-start gap-0.5">
-                                <h2 class="flex-1 text-[#090129] text-sm leading-normal line-clamp-1">مهند يوسف</h2>
-                                <span class="text-[#B3B0BD] text-[10px] leading-normal">
-                                    اليوم
-                                </span>
-                            </div>
-                            <div class="flex justify-between gap-0.5 items-start">
-                                <p class="flex-1 line-clamp-1 text-[#B3B0BD] text-xs leading-normal">
-                                    مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في ذلك !
-                                </p>
-                                <span class="new-message-badge">
-                                    1
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-
-
-                </div>
-
-                <!-- Messages  -->
-                <div class="hidden lg:block lg:col-span-2 h-fit">
-                    <div class="message-container tab-content">
-                        <div class="flex flex-col lg:gap-6 lg:p-6">
-                            <!-- message to  -->
-                            <div class="flex items-center gap-4 py-3 lg:py-0 bg-[#FAF8FE] lg:bg-transparent">
-                                <div class="rounded-2xl lg:rounded-3xl overflow-hidden w-12 lg:w-16 h-12 lg:h-16 ">
-                                    <img src="assets/images/pop-teacher-5.jpg" class="w-full h-full object-cover"
-                                        width="64" height="64" alt="teacher">
-                                </div>
-                                <div class="flex flex-col gap-1">
-                                    <h3
-                                        class="text-[#090129] text-sm lg:text-xl leading-normal lg:leading-normal font-semibold">
-                                        يوسف محمد</h3>
-                                    <p class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-5">نشط منذ 03
-                                        دقائق.</p>
-                                </div>
                             </div>
 
-                            <div class="lg:border-t border-b border-[#E6E6EA] lg:py-6">
-                                <div class="message-item from-me">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9998 19.92L8.47984 13.4C7.70984 12.63 7.70984 11.37 8.47984 10.6L14.9998 4.08002"
+                                    stroke="#090129" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
 
-                                    <span class="text-[#090129] text-xs leading-normal font-medium">انت</span>
-                                    <div class="message-content">
-                                        أهلا وسهلا يا أحمد، أكيد برسلك الأن علي التقويم الخاص بك في المنصة، لا تقلق
-                                        يابني
-                                    </div>
-                                    <span class="text-[#8E8A9D] text-xs leading-normal">منذ ساعة</span>
-                                </div>
-                                <div class="message-item to-me">
+                    <!-- child-informations  -->
+                    <div class="flex flex-col gap-4 lg:gap-6 lg:col-span-2 h-fit">
 
-                                    <span class="text-[#090129] text-xs leading-normal font-medium">أحمد عادل</span>
-                                    <div class="message-content">
-                                        مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في
-                                        ذلك
-                                        !
-                                    </div>
-                                    <div class="message-content">
-                                        أسف علي الازعاج
-                                    </div>
-                                    <span class="text-[#8E8A9D] text-xs leading-normal">منذ ساعة</span>
-                                </div>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-4">
+                                <form class="grid grid-cols-2 gap-2 lg:gap-4 items-center">
+                                    <select name="choose-child" id="choose-child"
+                                        class="rounded-xl p-3 text-sm leading-5 border border-[#DCDFEA]">
+                                        <option disabled selected>الطالب </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <select name="level" id="level"
+                                        class="rounded-xl p-3 text-sm leading-5 border border-[#DCDFEA]">
+                                        <option disabled selected>المدرس</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </form>
 
-                                <!-- devider -->
-                                <div class="py-2 flex justify-center relative">
+                                <div class="flex flex-col gap-2 lg:gap-4">
+
+                                    <!-- report item  -->
                                     <div
-                                        class="absolute left-0 top-1/2 -translate-y-1/2 w-full border-t border-[#E6E6EA]">
+                                        class="border border-[#E6E6EA] rounded-3xl p-4 flex flex-col gap-4 lg:bg-white">
+                                        <div class="flex items-center gap-4 child-title cursor-pointer">
+                                            <div class="w-12 h-12 lg:w-16 lg:h-16 rounded-2xl overflow-hidden">
+                                                <img src="assets/images/team-1.png" class="w-full h-full object-cover"
+                                                    width="64" height="64" alt="team">
+                                            </div>
+                                            <div class="flex flex-col gap-1 lg:gap-2">
+                                                <h3
+                                                    class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-normal ">
+                                                    الحصة الثانية - لغة عربية
+                                                </h3>
+                                                <p
+                                                    class="text-[#8E8A9D] text-xs leading-normal lg:text-base lg:leading-normal">
+                                                    أستاذ أبراهيم حسن
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="hidden lg:block child-info-cntnt">
+                                            <div class="pt-4 border-t border-[#E6E6EA] flex flex-col gap-4">
+                                                <div class="grid grid-cols-2 gap-2">
+                                                    <div class="flex flex-col gap-1 lg:gap-2">
+                                                        <span
+                                                            class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
+                                                            الطالب
+                                                        </span>
+                                                        <span
+                                                            class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-normal">
+                                                            مهند
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex flex-col gap-1 lg:gap-2">
+                                                        <span
+                                                            class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
+                                                            تاريخ التقرير
+                                                        </span>
+                                                        <span
+                                                            class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-normal">
+                                                            22 مارس، 2023
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <button type="button"
+                                                    class="show-report flex items-center justify-center gap-2 text-black text-sm leading-5 font-medium py-3 px-6 rounded-xl secondary-btn">
+                                                    <img src="assets/images/document-text.svg" class="lg:hidden"
+                                                        width="20" height="20" alt="edit">
+                                                    شاهد التقرير
+                                                </button>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <span class="block bg-white px-4 relative text-[#B3B0BD] text-sm leading-5">
-                                        السبت
-                                    </span>
+
+
                                 </div>
 
-                                <div class="message-item to-me">
+                                <div class="report-popup">
+                                    <div
+                                        class=" transition-all duration-300 bg-white lg:p-8 lg:w-[600px] rounded-t-2xl lg:rounded-2xl flex flex-col lg:gap-6">
+                                        <div class="flex items-center gap-3 justify-between py-4 px-[30px] lg:p-0">
+                                            <h3 class="text-[#090129] text-lg leading-normal font-semibold">
+                                                الحصة الثانية - لغة عربية
+                                            </h3>
+                                            <button type="button" class="close-report-time">
+                                                <img src="assets/images/x-close.svg" width="24" height="24"
+                                                    alt="close icon">
+                                                <span class="sr-only">Close Icon</span>
+                                            </button>
+                                        </div>
 
-                                    <span class="text-[#090129] text-xs leading-normal font-medium">أحمد عادل</span>
-                                    <div class="message-content">
-                                        مرحبا، أستاذي كيف حالك كنت أريد معرفة موعد الدرس القادم هل يمكنك مساعدتي في
-                                        ذلك
-                                        !
+                                        <div class="p-6 lg:p-0 flex flex-col gap-6">
+                                            <div class="flex flex-col gap-4">
+                                                <h4 class="text-[#090129] text-sm leading-normal font-medium">
+                                                    تقييم مهند
+                                                </h4>
+                                                <div class="flex flex-col gap-2">
+                                                    <div class="flex justify-between items-center gap-2">
+                                                        <p
+                                                            class="text-[#3A3454] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                                            مدي معرفة الطالب بالمادة العلمية
+                                                        </p>
+                                                        <span
+                                                            class="flex items-center gap-1 text-[#B3B0BD] leading-normal font-medium">
+                                                            <span class="text-[#090129]">3</span>
+                                                            <span>/</span>
+                                                            <span>5</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex justify-between items-center gap-2">
+                                                        <p
+                                                            class="text-[#3A3454] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                                            قدرة أستيعاب الطالب
+                                                        </p>
+                                                        <span
+                                                            class="flex items-center gap-1 text-[#B3B0BD] leading-normal font-medium">
+                                                            <span class="text-[#090129]">1</span>
+                                                            <span>/</span>
+                                                            <span>5</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex justify-between items-center gap-2">
+                                                        <p
+                                                            class="text-[#3A3454] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                                            مدي ألتزام الطالب
+                                                        </p>
+                                                        <span
+                                                            class="flex items-center gap-1 text-[#B3B0BD] leading-normal font-medium">
+                                                            <span class="text-[#090129]">5</span>
+                                                            <span>/</span>
+                                                            <span>5</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-y border-[#E6E6EA] py-6">
+                                                <div class="flex justify-between items-center gap-2">
+                                                    <p
+                                                        class="text-[#3A3454] text-sm lg:text-base leading-normal lg:leading-normal font-semibold">
+                                                        تقييم العام
+                                                    </p>
+                                                    <span
+                                                        class="flex items-center gap-1 text-[#B3B0BD] leading-normal font-medium">
+                                                        <span class="text-[#090129]">4</span>
+                                                        <span>/</span>
+                                                        <span>5</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <h4 class="text-[#090129] text-sm leading-normal">
+                                                    ملحوظات
+                                                </h4>
+                                                <p class="text-[#8E8A9D] text-sm leading-[180%]">
+                                                    الطالب جيد في أول حصة له والمؤشرات توضح أنه سيكون متوفق دراسياً عند
+                                                    الأستمرار معه في التعلم والمتابعة من خلال ومن خلال الوالدين
+                                                </p>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="message-content">
-                                        أسف علي الازعاج
-                                    </div>
-                                    <span class="text-[#8E8A9D] text-xs leading-normal">منذ ساعة</span>
                                 </div>
-
-                                <div class="message-item from-me">
-
-                                    <span class="text-[#090129] text-xs leading-normal font-medium">انت</span>
-                                    <div class="message-content">
-                                        أهلا وسهلا يا أحمد، أكيد برسلك الأن علي التقويم الخاص بك في المنصة، لا تقلق
-                                        يابني
-                                    </div>
-                                    <span class="text-[#8E8A9D] text-xs leading-normal">منذ ساعة</span>
-                                </div>
-                            </div>
-
-                            <!-- send message  -->
-                            <div class="flex items-center gap-4">
-                                <!-- send  -->
-                                <button class="cursor-pointer">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M27.711 4.29026C27.576 4.15593 27.4055 4.06293 27.2195 4.02218C27.0335 3.98144 26.8397 3.99465 26.661 4.06026L4.66098 12.0603C4.47125 12.1322 4.3079 12.2602 4.19263 12.4272C4.07736 12.5942 4.01562 12.7923 4.01562 12.9953C4.01562 13.1982 4.07736 13.3963 4.19263 13.5633C4.3079 13.7303 4.47125 13.8583 4.66098 13.9303L13.251 17.3603L19.591 11.0003L21.001 12.4103L14.631 18.7803L18.071 27.3703C18.1451 27.5563 18.2733 27.7159 18.4392 27.8282C18.605 27.9405 18.8007 28.0005 19.001 28.0003C19.2031 27.9961 19.3991 27.9308 19.5634 27.813C19.7276 27.6952 19.8523 27.5304 19.921 27.3403L27.921 5.34026C27.9891 5.16333 28.0055 4.97069 27.9684 4.78478C27.9312 4.59887 27.8419 4.42737 27.711 4.29026Z"
-                                            fill="#BEA6DB" />
-                                    </svg>
-                                </button>
-
-                                <input type="text" name="messg" id="messg"
-                                    class="flex-1 transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]"
-                                    placeholder="أكتب هنا كل ما تريد أرساله">
-
-                                <!-- attach file -->
-                                <label for="sendfile" class="cursor-pointer">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M13 13V19H11V13H5V11H11V5H13V11H19V13H13Z" fill="#B3B0BD" />
-                                    </svg>
-                                </label>
-
-                                <input type="file" name="sendfile" id="sendfile" class="hidden">
                             </div>
                         </div>
                     </div>
@@ -534,7 +514,7 @@
         </section>
         <!-- End Page Title Section  -->
 
-        <!-- =============================================================== -->
+
     </main>
     <!-- End Momtaz MAin Page Content  -->
 
