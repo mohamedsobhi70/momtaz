@@ -234,25 +234,23 @@ if ($(".related-teacher-carousel").length > 0) {
     $('.related-teacher-carousel').owlCarousel({
         nav: false,
         dots: false,
+        loop: true,
         rtl: true,
         responsive: {
             0: {
                 items: 1.2,
                 margin: 16,
                 stagePadding: 30,
-
             },
             600: {
                 items: 3,
                 margin: 16,
                 stagePadding: 30,
-
             },
             1024: {
                 items: 4,
                 margin: 24,
                 stagePadding: 0,
-
             }
         }
     });
@@ -714,6 +712,7 @@ if ($(".show-bill-popup").length > 0) {
         $(".show-bill-popup").removeClass("active")
     })
 }
+
 if ($(".schedule-popup").length > 0) {
     $(".open-schedule").on("click", function () {
         $(".schedule-popup").addClass("active")
@@ -744,4 +743,33 @@ if ($("#personal-img").length > 0) {
         var image = document.getElementById("personal-img");
         image.src = URL.createObjectURL(event.target.files[0]);
     };
+}
+
+if ($(".file-input").length > 0) {
+    $(".file-input").on("change", function () {
+        $(this).siblings(".file-name").html($(this).val().replace(/.*(\/|\\)/, ''))
+    })
+}
+
+
+if ($('label[for="demonstration-video"]').length > 0) {
+    const label = document.querySelector('label[for="demonstration-video"]');
+    const inputFile = document.querySelector('#demonstration-video');
+    label.addEventListener('dragover', (event) => {
+        event.preventDefault();
+    });
+    label.addEventListener('drop', (event) => {
+        event.preventDefault();
+        let file = event.dataTransfer.files[0];
+        inputFile.files = event.dataTransfer.files;
+        inputFile.dispatchEvent(new Event('change'));
+        handleFileSelect(file)
+    });
+    inputFile.addEventListener("change", (event) => {
+        event.preventDefault();
+        handleFileSelect(event.target.files[0])
+    })
+    function handleFileSelect(file) {
+        $(".dem-vide-name").html(file.name);
+    }
 }
