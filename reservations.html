@@ -599,7 +599,7 @@
                     </div>
 
                     <!-- step first date-->
-                    <div class="res-select-time px-[30px] lg:px-0 hidden">
+                    <div class="res-select-time px-[30px] lg:px-0">
                         <div
                             class="fixed top-0 left-0 h-screen w-full flex items-end lg:items-center lg:justify-center backdrop-blur-[10px] bg-[#5a55704d] lg:backdrop-blur-none">
                             <div
@@ -632,59 +632,113 @@
                                 </div>
 
                                 <div
-                                    class="grid grid-cols-3 gap-2 pt-4 lg:pt-0 px-[30px] lg:px-0 h-[324px] lg:h-auto overflow-y-scroll lg:overflow-y-visible">
+                                    class="choose-time-tabs grid grid-cols-3 gap-2 pt-4 lg:pt-0 px-[30px] lg:px-0 h-[324px] overflow-y-scroll">
                                     <div class="col-span-1 flex flex-col gap-2">
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-day" id="day-11" class="hidden peer">
+                                        <span data-itm="mo"
+                                            class="choose-time-tabs-item rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
                                             يوم الاثنين
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-day" id="day-12" class="hidden peer">
+                                        </span>
+                                        <span data-itm="tu"
+                                            class="choose-time-tabs-item rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
                                             يوم الثلاثاء
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-day" id="day-13" class="hidden peer">
+                                        </span>
+                                        <span data-itm="we"
+                                            class="choose-time-tabs-item rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
                                             يوم الاربعاء
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-day" id="day-14" class="hidden peer">
+                                        </span>
+                                        <span data-itm="th"
+                                            class="choose-time-tabs-item rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
                                             يوم الخميس
-                                        </label>
+                                        </span>
                                     </div>
                                     <div class="col-span-2">
-                                        <div class="flex flex-col gap-2">
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-11" class="hidden peer">
-                                                من 10:00 صـ إلي 11:30 صـ
-                                            </label>
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-12" class="hidden peer">
-                                                من 11:30 صـ إلي 01:00 مـ
-                                            </label>
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-13" class="hidden peer">
-                                                من 01:00 مـ إلي 02:30 مـ
-                                            </label>
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-14" class="hidden peer">
-                                                من 02:30 صـ إلي 04:00 مـ
-                                            </label>
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-15" class="hidden peer">
-                                                من 10:00 صـ إلي 11:30 صـ
-                                            </label>
+                                        <div class="hidden choose-time-tabs-content" data-itm="mo">
+                                            <div class="flex flex-col gap-2">
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-11" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-12" class="hidden peer">
+                                                    من 11:30 صـ إلي 01:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-13" class="hidden peer">
+                                                    من 01:00 مـ إلي 02:30 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-14" class="hidden peer">
+                                                    من 02:30 صـ إلي 04:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-15" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="hidden choose-time-tabs-content" data-itm="tu">
+                                            <div class="flex flex-col gap-2">
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-11" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-12" class="hidden peer">
+                                                    من 11:30 صـ إلي 01:00 مـ
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="hidden choose-time-tabs-content" data-itm="we">
+                                            <div class="flex flex-col gap-2">
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-12" class="hidden peer">
+                                                    من 11:30 صـ إلي 01:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-13" class="hidden peer">
+                                                    من 01:00 مـ إلي 02:30 مـ
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="hidden choose-time-tabs-content" data-itm="th">
+                                            <div class="flex flex-col gap-2">
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-11" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-12" class="hidden peer">
+                                                    من 11:30 صـ إلي 01:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-13" class="hidden peer">
+                                                    من 01:00 مـ إلي 02:30 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-14" class="hidden peer">
+                                                    من 02:30 صـ إلي 04:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="f-day" id="time-15" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="py-4 px-[30px] lg:p-0">
                                     <button disabled
@@ -730,56 +784,111 @@
                                 </div>
 
                                 <div
-                                    class="grid grid-cols-3 gap-2 pt-4 lg:pt-0 px-[30px] lg:px-0 h-[324px] lg:h-auto overflow-y-scroll lg:overflow-y-visible">
+                                    class="choose-time-tabs grid grid-cols-3 gap-2 pt-4 lg:pt-0 px-[30px] lg:px-0 h-[324px] overflow-y-scroll">
                                     <div class="col-span-1 flex flex-col gap-2">
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-day" id="day-21" class="hidden peer">
+                                        <span data-itm="mo"
+                                            class="choose-time-tabs-item rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
                                             يوم الاثنين
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-day" id="day-22" class="hidden peer">
+                                        </span>
+                                        <span data-itm="tu"
+                                            class="choose-time-tabs-item rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
                                             يوم الثلاثاء
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-day" id="day-23" class="hidden peer">
+                                        </span>
+                                        <span data-itm="we"
+                                            class="choose-time-tabs-item rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
                                             يوم الاربعاء
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-day" id="day-24" class="hidden peer">
+                                        </span>
+                                        <span data-itm="th"
+                                            class="choose-time-tabs-item rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
                                             يوم الخميس
-                                        </label>
+                                        </span>
                                     </div>
                                     <div class="col-span-2">
-                                        <div class="flex flex-col gap-2">
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-21" class="hidden peer">
-                                                من 10:00 صـ إلي 11:30 صـ
-                                            </label>
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-22" class="hidden peer">
-                                                من 11:30 صـ إلي 01:00 مـ
-                                            </label>
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-23" class="hidden peer">
-                                                من 01:00 مـ إلي 02:30 مـ
-                                            </label>
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-24" class="hidden peer">
-                                                من 02:30 صـ إلي 04:00 مـ
-                                            </label>
-                                            <label
-                                                class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                                <input type="radio" name="f-time" id="time-25" class="hidden peer">
-                                                من 10:00 صـ إلي 11:30 صـ
-                                            </label>
+                                        <div class="hidden choose-time-tabs-content" data-itm="mo">
+                                            <div class="flex flex-col gap-2">
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-11" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-12" class="hidden peer">
+                                                    من 11:30 صـ إلي 01:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-13" class="hidden peer">
+                                                    من 01:00 مـ إلي 02:30 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-14" class="hidden peer">
+                                                    من 02:30 صـ إلي 04:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-15" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="hidden choose-time-tabs-content" data-itm="tu">
+                                            <div class="flex flex-col gap-2">
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-11" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-12" class="hidden peer">
+                                                    من 11:30 صـ إلي 01:00 مـ
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="hidden choose-time-tabs-content" data-itm="we">
+                                            <div class="flex flex-col gap-2">
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-12" class="hidden peer">
+                                                    من 11:30 صـ إلي 01:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-13" class="hidden peer">
+                                                    من 01:00 مـ إلي 02:30 مـ
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="hidden choose-time-tabs-content" data-itm="th">
+                                            <div class="flex flex-col gap-2">
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-11" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-12" class="hidden peer">
+                                                    من 11:30 صـ إلي 01:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-13" class="hidden peer">
+                                                    من 01:00 مـ إلي 02:30 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-14" class="hidden peer">
+                                                    من 02:30 صـ إلي 04:00 مـ
+                                                </label>
+                                                <label
+                                                    class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                    <input type="radio" name="sday" id="time-15" class="hidden peer">
+                                                    من 10:00 صـ إلي 11:30 صـ
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
 
