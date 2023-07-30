@@ -760,9 +760,46 @@ if ($(".schedule-popup").length > 0) {
 
 if ($("#personal-img").length > 0) {
     var loadFile = function (event) {
-        var image = document.getElementById("personal-img");
+        let image = document.getElementById("personal-img");
         image.src = URL.createObjectURL(event.target.files[0]);
     };
+}
+// if ($("#cover-img").length > 0) {
+//     const fileInput = document.getElementById("cover-pic-inpt");
+//     fileInput.addEventListener("change", function (event) {
+
+//         let coverImg = document.getElementById("cover-img");
+
+//         const fileReader = new FileReader();
+//         const fileBlob = new Blob([fileReader.result], { type: "image/jpeg" })
+//         console.log(fileReader);
+//         // Change the src attribute of the img element to the Blob
+//         coverImg.src = URL.createObjectURL(fileBlob);
+//     })
+
+// }
+if ($("#cover-img").length > 0) {
+
+    const preview = document.getElementById('cover-img');
+    const file = document.getElementById('cover-pic-inpt');
+    file.addEventListener("change", function () {
+
+        const reader = new FileReader();
+        console.log(file);
+    
+        // listen for 'load' events on the FileReader
+        reader.addEventListener("load", function () {
+            // change the preview's src to be the "result" of reading the uploaded file (below)
+            preview.src = reader.result;
+        }, false);
+    
+        // if there's a file, tell the reader to read the data
+        // which triggers the load event above
+        if (file.files[0]) {
+            reader.readAsDataURL(file.files[0]);
+        }
+    })
+
 }
 
 if ($(".file-input").length > 0) {
@@ -770,8 +807,6 @@ if ($(".file-input").length > 0) {
         $(this).siblings(".file-name").html($(this).val().replace(/.*(\/|\\)/, ''))
     })
 }
-
-
 
 if ($('label[for="demonstration-video"]').length > 0) {
     const label = document.querySelector('label[for="demonstration-video"]');
@@ -794,3 +829,13 @@ if ($('label[for="demonstration-video"]').length > 0) {
         $(".dem-vide-name").html(file.name);
     }
 }
+
+if ($('.date-pick').length > 0) {
+    new Litepicker({
+        element: document.getElementById('end-date-1'),
+    });
+    new Litepicker({
+        element: document.getElementById('start-date-1'),
+    });
+}
+
