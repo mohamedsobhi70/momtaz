@@ -668,13 +668,28 @@ if ($(".tabs").length > 0) {
         })
     })
 }
+if ($(".booking-tabs").length > 0) {
+
+    $(".booking-tabs").each(function () {
+        let th = $(this);
+        th.find(`.booking-tab-content`).addClass("hidden");
+        th.find(`.booking-tab-content:first-of-type`).removeClass("hidden");
+
+        th.find(".booking-tab-item").on("click", function () {
+            th.find(".booking-tab-item").add("bordered-btn").removeClass("primary-btn").removeClass("active");
+            $(this).addClass("active").addClass("primary-btn").removeClass("bordered-btn");;
+            let booking = $(this).data("booking");
+            th.find(".booking-tab-content").addClass("hidden");
+            th.find(`.booking-tab-content[data-booking=${booking}]`).removeClass("hidden");
+        })
+    })
+}
 
 
 if ($(".choose-time-tabs").length > 0) {
 
     $(".choose-time-tabs").each(function () {
         let th = $(this);
-
         th.find('.choose-time-tabs-content').addClass("hidden");
         th.find('.choose-time-tabs-content:first-of-type').removeClass("hidden");
         th.find('.choose-time-tabs-item:first-of-type').addClass("active");
