@@ -2102,6 +2102,11 @@ header .nav-item.active {
   line-height: 1rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2295,6 +2300,10 @@ header .nav-item.active {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .opacity-10 {
@@ -3325,6 +3334,10 @@ label:has(> input.choice:checked) {
     gap: 52px;
   }
 
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .lg\:gap-x-5 {
     -moz-column-gap: 1.25rem;
          column-gap: 1.25rem;
@@ -3400,6 +3413,10 @@ label:has(> input.choice:checked) {
 
   .lg\:border-t-\[6px\] {
     border-top-width: 6px;
+  }
+
+  .lg\:border-b-0 {
+    border-bottom-width: 0px;
   }
 
   .lg\:border-none {
