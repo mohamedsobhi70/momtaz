@@ -265,10 +265,17 @@ if ($(".related-teacher-carousel").length > 0) {
 }
 
 // Annab Accordion Component
-if ($(".mom-accordion").length) {
+if ($(".mom-accordion").length > 0) {
     $(".mom-accordion").on("click", function () {
         $(this).find(".mom-accordion-content").slideToggle(300);
         $(this).find(".icon img").toggleClass("rotate");
+    })
+}
+// Annab Accordion Component
+if ($(".choose-lang-acc").length > 0) {
+    $(".choose-lang-tit").on("click", function () {
+        $(this).parent().find(".choose-lang-content").slideToggle(300);
+        $(this).parent().find(".icon img").toggleClass("rotate");
     })
 }
 
@@ -646,10 +653,12 @@ if ($(".edit-res-data").length > 0) {
 }
 
 if ($(".tabs").length > 0) {
+
     $(".tabs").each(function () {
         let th = $(this);
         th.find(`.tab-content`).addClass("lg:hidden");
         th.find(`.tab-content:first-of-type`).removeClass("lg:hidden");
+
         th.find(".tab-item").on("click", function () {
             th.find(".tab-item").removeClass("active");
             $(this).addClass("active");
@@ -786,13 +795,13 @@ if ($("#cover-img").length > 0) {
 
         const reader = new FileReader();
         console.log(file);
-    
+
         // listen for 'load' events on the FileReader
         reader.addEventListener("load", function () {
             // change the preview's src to be the "result" of reading the uploaded file (below)
             preview.src = reader.result;
         }, false);
-    
+
         // if there's a file, tell the reader to read the data
         // which triggers the load event above
         if (file.files[0]) {

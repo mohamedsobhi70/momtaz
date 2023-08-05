@@ -1041,6 +1041,14 @@ header .nav-item.active {
   top: 1.25rem;
 }
 
+.left-auto {
+  left: auto;
+}
+
+.right-0\.5 {
+  right: 0.125rem;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -1224,6 +1232,14 @@ header .nav-item.active {
   height: 100vh;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1327,6 +1343,10 @@ header .nav-item.active {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .max-w-\[512px\] {
@@ -1715,6 +1735,10 @@ header .nav-item.active {
   background-color: #0000004d;
 }
 
+.bg-\[\#00000099\] {
+  background-color: #00000099;
+}
+
 .bg-\[\#090129\] {
   --tw-bg-opacity: 1;
   background-color: rgb(9 1 41 / var(--tw-bg-opacity));
@@ -1847,8 +1871,8 @@ header .nav-item.active {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#00000099\] {
-  background-color: #00000099;
+.bg-\[\] {
+  background-color: ;
 }
 
 .bg-about {
@@ -1867,8 +1891,8 @@ header .nav-item.active {
   background-position: center;
 }
 
-.fill-cyan-100 {
-  fill: #cffafe;
+.bg-left {
+  background-position: left;
 }
 
 .object-cover {
@@ -1898,6 +1922,14 @@ header .nav-item.active {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
 }
 
 .px-0 {
@@ -2035,6 +2067,10 @@ header .nav-item.active {
   padding-right: 2.5rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .pr-\[30px\] {
   padding-right: 30px;
 }
@@ -2053,6 +2089,21 @@ header .nav-item.active {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pe-10 {
+  -webkit-padding-end: 2.5rem;
+          padding-inline-end: 2.5rem;
+}
+
+.pe-4 {
+  -webkit-padding-end: 1rem;
+          padding-inline-end: 1rem;
+}
+
+.pe-6 {
+  -webkit-padding-end: 1.5rem;
+          padding-inline-end: 1.5rem;
 }
 
 .text-left {
@@ -2312,6 +2363,10 @@ header .nav-item.active {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\] {
+  color: ;
+}
+
 .opacity-10 {
   opacity: 0.1;
 }
@@ -2340,6 +2395,10 @@ header .nav-item.active {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
 .line-clamp-1 {
@@ -2927,6 +2986,27 @@ label:has(> input.choice:checked) {
 
 .group:active .group-active\:stroke-\[\#8E8A9D\] {
   stroke: #8E8A9D;
+}
+
+.peer:checked ~ .peer-checked\:left-0 {
+  left: 0px;
+}
+
+.peer:checked ~ .peer-checked\:left-0\.5 {
+  left: 0.125rem;
+}
+
+.peer:checked ~ .peer-checked\:right-auto {
+  right: auto;
+}
+
+.peer:checked ~ .peer-checked\:bg-\[\] {
+  background-color: ;
+}
+
+.peer:checked ~ .peer-checked\:bg-\[\#BEA6DB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 166 219 / var(--tw-bg-opacity));
 }
 
 .peer:checked ~ .peer-checked\:font-bold {
