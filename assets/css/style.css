@@ -1029,11 +1029,6 @@ header .nav-item.active {
   grid-column: span 3 / span 3;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .-mt-16 {
   margin-top: -4rem;
 }
@@ -1360,12 +1355,12 @@ header .nav-item.active {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1474,10 +1469,6 @@ header .nav-item.active {
 
 .gap-\[30px\] {
   gap: 30px;
-}
-
-.self-center {
-  align-self: center;
 }
 
 .overflow-hidden {
@@ -2115,11 +2106,6 @@ header .nav-item.active {
   line-height: 1rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -2315,8 +2301,9 @@ header .nav-item.active {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
+.text-\[\#F5F8FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(245 248 255 / var(--tw-text-opacity));
 }
 
 .opacity-10 {
@@ -2971,18 +2958,14 @@ label:has(> input.choice:checked) {
   right: auto;
 }
 
-.peer:checked ~ .peer-checked\:bg-\[\#BEA6DB\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(190 166 219 / var(--tw-bg-opacity));
-}
-
-.peer:checked ~ .peer-checked\:bg-\[\] {
-  background-color: ;
-}
-
 .peer:checked ~ .peer-checked\:bg-\[\#090129\] {
   --tw-bg-opacity: 1;
   background-color: rgb(9 1 41 / var(--tw-bg-opacity));
+}
+
+.peer:checked ~ .peer-checked\:bg-\[\#BEA6DB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 166 219 / var(--tw-bg-opacity));
 }
 
 .peer:checked ~ .peer-checked\:font-bold {
@@ -2992,10 +2975,6 @@ label:has(> input.choice:checked) {
 .peer:checked ~ .peer-checked\:text-\[\#090129\] {
   --tw-text-opacity: 1;
   color: rgb(9 1 41 / var(--tw-text-opacity));
-}
-
-.peer:checked ~ .peer-checked\:text-\[\] {
-  color: ;
 }
 
 .peer:checked ~ .peer-checked\:text-\[\#F5F8FF\] {
@@ -3265,6 +3244,10 @@ label:has(> input.choice:checked) {
     flex-basis: 66.666667%;
   }
 
+  .lg\:cursor-auto {
+    cursor: auto;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3311,6 +3294,10 @@ label:has(> input.choice:checked) {
 
   .lg\:gap-1 {
     gap: 0.25rem;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:gap-12 {
@@ -3363,10 +3350,6 @@ label:has(> input.choice:checked) {
 
   .lg\:gap-\[52px\] {
     gap: 52px;
-  }
-
-  .lg\:gap-10 {
-    gap: 2.5rem;
   }
 
   .lg\:gap-x-5 {
@@ -3438,16 +3421,16 @@ label:has(> input.choice:checked) {
     border-bottom-width: 1px;
   }
 
+  .lg\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
   .lg\:border-t {
     border-top-width: 1px;
   }
 
   .lg\:border-t-\[6px\] {
     border-top-width: 6px;
-  }
-
-  .lg\:border-b-0 {
-    border-bottom-width: 0px;
   }
 
   .lg\:border-none {
@@ -3788,11 +3771,6 @@ label:has(> input.choice:checked) {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
-  }
-
-  .first-letter\:lg\:text-sm::first-letter {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .lg\:hover\:bg-\[\#F1E8FB\]:hover {
