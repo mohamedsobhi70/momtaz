@@ -1029,6 +1029,11 @@ header .nav-item.active {
   grid-column: span 3 / span 3;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .-mt-16 {
   margin-top: -4rem;
 }
@@ -1359,6 +1364,10 @@ header .nav-item.active {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1465,6 +1474,10 @@ header .nav-item.active {
 
 .gap-\[30px\] {
   gap: 30px;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-hidden {
@@ -2963,6 +2976,15 @@ label:has(> input.choice:checked) {
   background-color: rgb(190 166 219 / var(--tw-bg-opacity));
 }
 
+.peer:checked ~ .peer-checked\:bg-\[\] {
+  background-color: ;
+}
+
+.peer:checked ~ .peer-checked\:bg-\[\#090129\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 1 41 / var(--tw-bg-opacity));
+}
+
 .peer:checked ~ .peer-checked\:font-bold {
   font-weight: 700;
 }
@@ -2970,6 +2992,15 @@ label:has(> input.choice:checked) {
 .peer:checked ~ .peer-checked\:text-\[\#090129\] {
   --tw-text-opacity: 1;
   color: rgb(9 1 41 / var(--tw-text-opacity));
+}
+
+.peer:checked ~ .peer-checked\:text-\[\] {
+  color: ;
+}
+
+.peer:checked ~ .peer-checked\:text-\[\#F5F8FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(245 248 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 574px) {
@@ -3757,6 +3788,11 @@ label:has(> input.choice:checked) {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+  }
+
+  .first-letter\:lg\:text-sm::first-letter {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:hover\:bg-\[\#F1E8FB\]:hover {
