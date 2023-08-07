@@ -724,8 +724,7 @@ if ($(".child-title").length > 0) {
         if ($(window).width() < 1024) {
             $(this).siblings(".child-info-cntnt").slideToggle(300);
             $(this).find(".icn img").toggleClass("rotate-180");
-            $(this).parent().toggleClass("bg-[#F9F9FB]");
-            $(this).parent().toggleClass("border-[#BEA6DB]");
+            $(this).parent().toggleClass("bg-[#F9F9FB]").toggleClass("border-[#BEA6DB]").toggleClass("border-[#E6E6EA]");
         }
     })
 }

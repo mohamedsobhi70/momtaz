@@ -2056,6 +2056,10 @@ header .nav-item.active {
   font-family: Readex Pro, sans-serif;
 }
 
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2286,6 +2290,11 @@ header .nav-item.active {
   color: rgb(240 68 56 / var(--tw-text-opacity));
 }
 
+.text-\[\#F5F8FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(245 248 255 / var(--tw-text-opacity));
+}
+
 .text-\[\#FAC515\] {
   --tw-text-opacity: 1;
   color: rgb(250 197 21 / var(--tw-text-opacity));
@@ -2301,9 +2310,8 @@ header .nav-item.active {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#F5F8FF\] {
-  --tw-text-opacity: 1;
-  color: rgb(245 248 255 / var(--tw-text-opacity));
+.text-\[\] {
+  color: ;
 }
 
 .opacity-10 {
