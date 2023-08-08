@@ -1188,6 +1188,10 @@ header .nav-item.active {
   height: 100vh;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1295,6 +1299,18 @@ header .nav-item.active {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-1\/5 {
+  width: 20%;
 }
 
 .max-w-\[512px\] {
@@ -2054,10 +2070,6 @@ header .nav-item.active {
 
 .font-Readex {
   font-family: Readex Pro, sans-serif;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
