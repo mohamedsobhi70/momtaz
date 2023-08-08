@@ -245,33 +245,6 @@
         <section class="py-6 lg:py-16 px-[30px] lg:px-0">
             <div class="container flex flex-col gap-4">
 
-                <div class="flex items-center gap-4 p-4 lg:p-6 border border-[#E6E6EA] rounded-2xl">
-                    <div class="flex flex-col gap-2 flex-1">
-                        <div class="flex flex-col">
-                            <h2
-                                class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                حجز حصة تجريبية
-                            </h2>
-                            <p class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                حصة فردية
-                            </p>
-                        </div>
-                        <p class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                            40 ريال - ساعتين
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <button type="button">
-                            <img src="assets/images/edit.svg" width="24" height="24" alt="Edit Icon">
-                            <span class="sr-only">Edit Icon</span>
-                        </button>
-                        <button type="button">
-                            <img src="assets/images/trash-1.svg" width="24" height="24" alt="Delete Icon">
-                            <span class="sr-only">Delete Icon</span>
-                        </button>
-                    </div>
-                </div>
-
                 <div
                     class="booking-tabs flex flex-col gap-2 lg:gap-4 p-4 lg:p-6 border border-[#BEA6DB] rounded-2xl bg-[#F9F9FB]">
                     <div class="flex flex-col gap-2">
@@ -304,7 +277,7 @@
                                                 name="classname">
                                         </div>
                                     </div>
-                                     <div class="flex flex-col gap-2">
+                                    <div class="flex flex-col gap-2">
                                         <label for="duration1"
                                             class="text-[#4A5578] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
                                             مدة الحصة
@@ -343,7 +316,7 @@
                             </div>
                             <div class="booking-tab-content" data-booking="it-2">
                                 <div class="flex flex-col gap-2 lg:gap-4">
-                                   
+
                                     <div class="flex flex-col gap-2">
                                         <label for="duration"
                                             class="text-[#4A5578] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
@@ -417,13 +390,16 @@
                         </div>
                     </div>
                 </div>
-
-                <a href="taecher-add-stage.html"
-                    class="flex lg:hidden items-center justify-center gap-2 text-black leading-normal font-medium py-4 px-8 rounded-2xl bordered-btn">
-                    <img src="assets/images/add-square.svg" width="24" height="24" alt="arrow">
-                    أضف المرحلة التعليمية
-                </a>
-
+                <div class="flex flex-col gap-2 py-4 lg:py-0 bg-white sticky bottom-0 lg:static">
+                    <a href="taecher-classes-pricing.html"
+                        class="flex items-center justify-center gap-2 text-black leading-normal font-medium py-4 px-8 rounded-2xl secondary-btn">
+                        حفظ
+                    </a>
+                    <a href="taecher-classes-pricing.html"
+                        class="flex items-center justify-center gap-2 text-black leading-normal font-medium py-4 px-8 rounded-2xl bordered-btn">
+                        الغاء
+                    </a>
+                </div>
             </div>
 
         </section>
