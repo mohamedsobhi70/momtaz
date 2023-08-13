@@ -853,12 +853,23 @@ if ($('label[for="demonstration-video"]').length > 0) {
     }
 }
 
-if ($('.date-pick').length > 0) {
-    new Litepicker({
-        element: document.getElementById('end-date-1'),
-    });
-    new Litepicker({
-        element: document.getElementById('start-date-1'),
+if ($("#start-date-1").length > 0) {
+    let picker = new Litepicker({
+        element: document.getElementById('start-date-1')
     });
 }
-
+if ($("#end-date-1").length > 0) {
+    let picker = new Litepicker({
+        element: document.getElementById('end-date-1')
+    });
+}
+if ($("#start-date-2").length > 0) {
+    let picker = new Litepicker({
+        element: document.getElementById('start-date-2')
+    });
+}
+if ($("#end-date-2").length > 0) {
+    let picker = new Litepicker({
+        element: document.getElementById('end-date-2')
+    });
+}
