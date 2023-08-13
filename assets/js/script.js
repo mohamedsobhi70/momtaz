@@ -853,23 +853,27 @@ if ($('label[for="demonstration-video"]').length > 0) {
     }
 }
 
-if ($("#start-date-1").length > 0) {
-    let picker = new Litepicker({
-        element: document.getElementById('start-date-1')
-    });
+if ($(".date-pick").length > 0) {
+    $(".date-pick").each(function () {
+        let picker = new Litepicker({
+            element: $(this)[0]
+        });
+    })
+
+
 }
-if ($("#end-date-1").length > 0) {
-    let picker = new Litepicker({
-        element: document.getElementById('end-date-1')
-    });
-}
-if ($("#start-date-2").length > 0) {
-    let picker = new Litepicker({
-        element: document.getElementById('start-date-2')
-    });
-}
-if ($("#end-date-2").length > 0) {
-    let picker = new Litepicker({
-        element: document.getElementById('end-date-2')
-    });
-}
+// if ($("#end-date-1").length > 0) {
+//     let picker = new Litepicker({
+//         element: document.getElementById('end-date-1')
+//     });
+// }
+// if ($("#start-date-2").length > 0) {
+//     let picker = new Litepicker({
+//         element: document.getElementById('start-date-2')
+//     });
+// }
+// if ($("#end-date-2").length > 0) {
+//     let picker = new Litepicker({
+//         element: document.getElementById('end-date-2')
+//     });
+// }
