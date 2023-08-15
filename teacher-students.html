@@ -62,31 +62,24 @@
                     <!-- Navigation Bar -->
                     <nav
                         class="flex flex-col lg:flex-row lg:items-center lg:gap-6 header-nav px-[30px] lg:p-0 pt-4 lg:pt-0">
-                        <a href="index.html" class="nav-item flex items-center gap-4 active">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" height="24" alt="icon">
+                        <a href="teacher-schedule.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/calendar.svg" class="lg:hidden" width="24" height="24" alt="icon">
                             <span class="flex-1">
-                                الرئيسية
+                                أجندة العمل
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <a href="teachers.html" class="nav-item flex items-center gap-4">
-                            <img src="assets/images/user.svg" class="lg:hidden" width="24" height="24" alt="icon">
+                        <a href="teacher-bookings.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/tick-circle.svg" class="lg:hidden" width="24" height="24"
+                                alt="icon">
                             <span class="flex-1">
-                                المعلمين
+                                الحجوزات
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <a href="schedule.html" class="nav-item flex items-center gap-4">
-                            <img src="assets/images/note.svg" class="lg:hidden" width="24" height="24" alt="icon">
-                            <span class="flex-1">
-                                جدول الحصص
-                            </span>
-                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
-                                alt="arrow">
-                        </a>
-                        <a href="parent-reports.html" class="nav-item flex items-center gap-4">
+                        <a href="teacher-reports.html" class="nav-item flex items-center gap-4">
                             <img src="assets/images/tick-circle.svg" class="lg:hidden" width="24" height="24"
                                 alt="icon">
                             <span class="flex-1">
@@ -95,18 +88,26 @@
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <a href="bookings.html" class="nav-item flex items-center gap-4">
-                            <img src="assets/images/calendar.svg" class="lg:hidden" width="24" height="24" alt="icon">
+                        <a href="teacher-students.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/people.svg" class="lg:hidden" width="24" height="24" alt="icon">
                             <span class="flex-1">
-                                الحجوزات
+                                طلابك
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <a href="parent-child-informations.html" class="nav-item flex items-center gap-4">
-                            <img src="assets/images/people.svg" class="lg:hidden" width="24" height="24" alt="icon">
+                        <a href="taecher-stages.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/flash.svg" class="lg:hidden" width="24" height="24" alt="icon">
                             <span class="flex-1">
-                                أطفالك
+                                المراحل والمواد
+                            </span>
+                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                alt="arrow">
+                        </a>
+                        <a href="taecher-classes-pricing.html" class="nav-item flex items-center gap-4">
+                            <img src="assets/images/shop.svg" class="lg:hidden" width="24" height="24" alt="icon">
+                            <span class="flex-1">
+                                المنتجات والتسعير
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
@@ -187,7 +188,7 @@
                                                 height="24" alt="arrow">
                                         </a>
                                         <a href="#"
-                                            class="nav-item prf-menu hidden lg:flex items-center gap-4 lg:gap-2 transition-all duration-300 lg:hover:bg-[#F1E8FB] lg:py-3 lg:px-4 lg:rounded-xl">
+                                            class="nav-item prf-menu flex items-center gap-4 lg:gap-2 transition-all duration-300 lg:hover:bg-[#F1E8FB] lg:py-3 lg:px-4 lg:rounded-xl">
                                             <img src="assets/images/message-question.svg" width="24" height="24"
                                                 alt="icon">
                                             <span class="flex-1">
@@ -211,13 +212,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="lg:hidden py-4 px-[30px] lg:px-0">
-                    <a href="#"
-                        class="text-sm leading-5 py-4 px-6 rounded-xl bordered-btn flex items-center justify-center gap-2">
-                        <img src="assets/images/message-question.svg" width="24" height="24" alt="message question">
-                        تواصل مع الدعم
-                    </a>
                 </div>
             </div>
 
@@ -389,7 +383,96 @@
                         </div>
 
                     </div>
+                  
+                    <div
+                        class="transition-all duration-300 flex flex-col gap-4 lg:gap-6 p-4 lg:p-6 rounded-3xl border border-[#E6E6EA]">
+                        <div class="child-title flex items-center gap-4">
+                            <!-- Child img  -->
+                            <div
+                                class="w-12 lg:w-16 h-12 lg:h-16 rounded-2xl lg:rounded-3xl overflow-hidden border border-[#E6E6EA]">
+                                <img src="assets/images/child.jpg" width="64" height="64" alt="child">
+                            </div>
 
+                            <!-- Child name  -->
+                            <div class="flex flex-col gap-1 flex-1 ">
+                                <h3 class="text-[#090129] text-sm lg:text-xl leading-normal font-semibold line-clamp-1">
+                                    محمد خالد علي السيد
+                                </h3>
+                                <p class="text-[#8E8A9D] text-xs lg:text-sm leading-normal">
+                                    كود : 120
+                                </p>
+                            </div>
+                            <a href="parent-edit-child-informations.html"
+                                class="text-sm leading-normal font-medium hidden lg:flex items-center gap-2 link-btn">
+                                <img src="assets/images/edit-icon.png" width="20" height="20" alt="Edit icon">
+                                تعديل
+                            </a>
+
+                            <div class="lg:hidden icn">
+                                <img src="assets/images/collapse-arrow.svg" class="rotate-180" width="24" height="24"
+                                    alt="arrow">
+                            </div>
+                        </div>
+                        <div class="child-info-cntnt hidden lg:block">
+                            <div class="flex flex-col gap-5 lg:gap-6">
+                                <div
+                                    class="grid grid-cols-2 gap-5 py-4 lg:pt-6 lg:pb-0 border-t border-b lg:border-b-0 border-[#E6E6EA]">
+                                    <div class="flex-1 flex flex-col gap-1">
+                                        <span
+                                            class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
+                                            المرحلة التعليمية
+                                        </span>
+                                        <h4
+                                            class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
+                                            المرحلة الأبتدائية
+                                        </h4>
+                                    </div>
+
+                                    <div class="flex-1 flex flex-col gap-1">
+                                        <span
+                                            class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
+                                            الصف الدراسي
+                                        </span>
+                                        <h4
+                                            class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
+                                            الصف السادس
+                                        </h4>
+                                    </div>
+
+                                    <div class="flex-1 flex flex-col gap-1 col-span-2">
+                                        <span
+                                            class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
+                                            ولي الأمر
+                                        </span>
+                                        <h4
+                                            class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium flex justify-between items-center">
+                                            يوسف محمود التهامي
+                                            <a href="tel:123-456-7890"
+                                                class="flex items-center gap-2 text-[#039855] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
+                                                اتصال
+                                                <img src="assets/images/call.png" width="16" height="16"
+                                                    alt="call icon">
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="flex lg:hidden gap-2 items-center">
+                                    <a href="#"
+                                        class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-3 px-6 rounded-xl bordered-btn">
+                                        <img src="assets/images/edit.png" width="20" height="20" alt="edit">
+                                        تعديل
+                                    </a>
+                                    <a href="#"
+                                        class="flex-1 flex items-center justify-center gap-2 text-sm leading-normal font-medium py-3 px-6 rounded-xl error-secondary-btn">
+                                        <img src="assets/images/trash.svg" width="20" height="20" alt="trash">
+                                        حذف
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
