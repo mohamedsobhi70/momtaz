@@ -859,9 +859,26 @@ if ($(".date-pick").length > 0) {
             element: $(this)[0]
         });
     })
-
-
 }
+if ($("#one-class-date-picker").length > 0) {
+    $(function () {
+          $(function () {
+            $("#one-class-date-picker").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                firstDay: 5,
+                monthNames: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
+                monthNamesShort: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
+                dayNames: ["ح", "ن", "ث", "ر", "خ", "ج", "س"],
+                dayNamesShort: ["ح", "ن", "ث", "ر", "خ", "ج", "س"],
+                dayNamesMin: ["ح", "ن", "ث", "ر", "خ", "ج", "س"],
+                isRTL: true,
+            });
+        });
+    });
+}
+
+
 // if ($("#end-date-1").length > 0) {
 //     let picker = new Litepicker({
 //         element: document.getElementById('end-date-1')

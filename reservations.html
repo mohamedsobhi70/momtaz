@@ -15,6 +15,7 @@
     <!-- styles  -->
     <link rel="stylesheet" href="assets/css/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/jqueryui.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -560,11 +561,13 @@
                     </div>
 
                     <!-- step will be appear after the prev is == Only One == selected -->
-                    <div class="choose-clase-date-time px-[30px] lg:px-0 hidden">
+                    <div class="choose-clase-date-time px-[30px] lg:px-0">
                         <div
-                            class="fixed lg:static top-0 left-0 h-screen w-full lg:w-auto lg:h-auto flex items-end backdrop-blur-[10px] bg-[#5a55704d] lg:backdrop-blur-none">
+                            class="fixed z-50 top-0 left-0 h-screen w-full flex items-end lg:items-center lg:justify-center backdrop-blur-[10px] bg-[#5a55704d] lg:backdrop-blur-none">
+                           <form>
+
                             <div
-                                class="flex px-[30px] flex-col gap-6 bg-white w-full rounded-t-lg lg:rounded-none overflow-hidden">
+                                class="flex px-[30px] flex-col lg:gap-6 bg-white w-full lg:w-[600px] lg:p-5 rounded-t-lg lg:rounded-2xl overflow-y-scroll max-h-full overflow-hidden">
 
                                 <div class="flex flex-col lg:gap-2">
                                     <div class="py-[5px] flex lg:hidden justify-center">
@@ -573,28 +576,56 @@
                                     <div class="flex items-center gap-3 py-4 lg:p-0">
                                         <h3
                                             class="flex-1 text-[#090129] text-lg lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
-                                            اختر موعد اليوم
+                                            اختر موعد الحصة
                                         </h3>
-                                        <button type="button" class="lg:hidden">
+                                        <button type="button">
                                             <img src="assets/images/x-close.svg" class="close-class-num" width="24"
                                                 height="24" alt="close">
                                         </button>
                                     </div>
-
-                                    <p class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                        من فضلك، اختر اليوم والساعة
-                                    </p>
                                 </div>
-                                <div class="">
-                                    <input type="datetime-local" name="clase-date-time" id="clase-date-time"
-                                        class="datetime-inpt transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 cursor-pointer">
+                                <div class="flex flex-col gap-4 pb-4">
+                                    <div class="" id="one-class-date-picker">
+                                        <!-- <input type="datetime-local" name="clase-date-time" id="clase-date-time"
+                                            class="datetime-inpt transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 cursor-pointer"> -->
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <h4
+                                            class="flex-1 text-[#090129] text-base leading-normal font-semibold">
+                                            اختر الموعد
+                                        </h4>
+                                        <div class="flex flex-col gap-2">
+                                            <label class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="one-class" id="one-class-1" class="hidden peer">
+                                                من 10:00 صـ إلي 11:30 صـ
+                                            </label>
+                                            <label class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="one-class" id="one-class-2" class="hidden peer">
+                                                من 11:30 صـ إلي 01:00 مـ
+                                            </label>
+                                            <label class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="one-class" id="one-class-3" class="hidden peer">
+                                                من 01:00 مـ إلي 02:30 مـ
+                                            </label>
+                                            <label class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="one-class" id="one-class-4" class="hidden peer">
+                                                من 02:30 صـ إلي 04:00 مـ
+                                            </label>
+                                            <label class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
+                                                <input type="radio" name="one-class" id="one-class-5" class="hidden peer">
+                                                من 10:00 صـ إلي 11:30 صـ
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pb-4 lg:p-0">
-                                    <input type="submit" value="إحجز الان!"
+                                <div class="py-4 lg:p-0 bg-white sticky bottom-0 lg:static">
+                                    <input type="submit" value="تأكيد الموعد"
                                         class="secondary-btn py-4 px-8 flex items-center justify-center w-full rounded-2xl">
                                 </div>
 
                             </div>
+                           </form>
+
                         </div>
                     </div>
 
@@ -1035,6 +1066,7 @@
     <!-- scripts -->
     <script src="assets/js/jquiry.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/jqueryui.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

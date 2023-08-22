@@ -2902,6 +2902,69 @@ label:has(> input.choice:checked) {
   opacity: 1;
 }
 
+.ui-widget.ui-widget-content {
+  border: none;
+  width: 100%;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group,
+.ui-datepicker-rtl .ui-datepicker-buttonpane,
+.ui-datepicker-next,
+.ui-datepicker-prev {
+  display: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: 1px solid transparent;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border-radius: 12px;
+  border: 1px solid #d1b6f1;
+  color: #090129;
+  background: #faf8fe;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 80px;
+  padding: 0 15px;
+  background: transparent;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  border: none;
+  background: transparent;
+}
+
+.ui-widget {
+  font-family: inherit;
+}
+
 @media (min-width: 1024px) {
   .lg\:secondary-btn {
     --tw-bg-opacity: 1;
