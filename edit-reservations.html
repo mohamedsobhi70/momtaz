@@ -86,7 +86,7 @@
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <a href="teacher-reports.html" class="nav-item flex items-center gap-4">
+                        <a href="parent-reports.html" class="nav-item flex items-center gap-4">
                             <img src="assets/images/tick-circle.svg" class="lg:hidden" width="24" height="24"
                                 alt="icon">
                             <span class="flex-1">
@@ -292,7 +292,7 @@
                 </div>
 
                 <form class="lg:col-span-2 flex flex-col gap-8 lg:gap-12 edit-res-data">
-                    <div class="px-[30px] lg:px-0">
+                    <div class="px-[30px] lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-8">
                         <div class="flex flex-col gap-6">
                             <div class="flex flex-col gap-2">
                                 <h3
@@ -303,27 +303,30 @@
                                     من فضلك، أختر الطلاب الذي تريد الحجز له مع المعلم.
                                 </p>
                             </div>
-
-                            <div class="grid grid-cols-2 gap-4 items-center">
-                                <label
-                                    class="border border-[#DCDFEA] rounded-2xl p-4 lg:px-6 flex items-center gap-3 lg:gap-4 transition-all duration-300 cursor-pointer">
-                                    <input type="checkbox" name="choose-child" value="option-1" id="input-1"
-                                        class="choice form-checkbox peer">
-                                    <span
-                                        class="flex-1 text-[#8E8A9D] text-sm lg:text-lg leading-normal lg:leading-normal line-clamp-1 peer-checked:text-[#090129] transition-all duration-300">أحمد</span>
-                                    <img src="assets/images/child.jpg" class="hidden lg:block rounded-xl" width="32"
-                                        height="32" alt="child">
-                                </label>
-                                <label
-                                    class="border border-[#DCDFEA] rounded-2xl p-4 lg:px-6 flex items-center gap-3 lg:gap-4 transition-all duration-300 cursor-pointer">
-                                    <input type="checkbox" name="choose-child" value="option-2" id="input-2"
-                                        class="choice form-checkbox peer">
-                                    <span
-                                        class="flex-1 text-[#8E8A9D] text-sm lg:text-lg leading-normal lg:leading-normal line-clamp-1 peer-checked:text-[#090129] transition-all duration-300">محمد</span>
-                                    <img src="assets/images/child.jpg" class="hidden lg:block rounded-xl" width="32"
-                                        height="32" alt="child">
-                                </label>
+                            <select required name="choose-child" id="choose-child"
+                                class="border border-[#DCDFEA] rounded-2xl p-4  text-[#111322] text-sm leading-5">
+                                <option value="" disabled selected>أختيار الطلاب</option>
+                                <option value="1">انس محمد</option>
+                                <option value="2">محمد انس</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-2">
+                                <h3
+                                    class="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal  font-semibold lg:font-medium">
+                                    المادة العملية
+                                </h3>
+                                <p class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                    أختر المادة العملية
+                                </p>
                             </div>
+
+                            <select required name="choose-sub" id="choose-sub"
+                                class="border border-[#DCDFEA] rounded-2xl p-4  text-[#111322] text-sm leading-5">
+                                <option value="" disabled selected>أختر المادة العملية</option>
+                                <option value="1">الرياضيات</option>
+                                <option value="2">الرياضيات</option>
+                            </select>
                         </div>
                     </div>
 
@@ -715,8 +718,15 @@
                                             </label>
                                         </div>
                                     </div>
-
                                 </div>
+                                <p
+                                    class="border border-[#DDF594] bg-[#FBFEF2] rounded-2xl py-4 px-5 text-black text-sm leading-normal font-medium">
+                                    برجاء العلم ان تاريخ أول حصة سيكون الثلاثاء ١٤ يوليو ٢٠٢٣ الساعه ١:٠٠ م
+                                </p>
+                                <button
+                                    class="flex items-center justify-center text-center gap-2 text-black leading-normal py-4 px-8 rounded-2xl secondary-btn">
+                                    حدد موعد اليوم التالي
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -809,6 +819,11 @@
                                     </div>
 
                                 </div>
+
+                                <button
+                                    class="flex items-center justify-center text-center gap-2 text-black leading-normal py-4 px-8 rounded-2xl secondary-btn">
+                                    حدد موعد اليوم التالي
+                                </button>
                             </div>
                         </div>
                     </div>
