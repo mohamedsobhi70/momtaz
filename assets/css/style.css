@@ -1029,6 +1029,10 @@ header .nav-item.active {
   grid-column: span 3 / span 3;
 }
 
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
 .-mt-16 {
   margin-top: -4rem;
 }
@@ -1496,6 +1500,10 @@ header .nav-item.active {
   row-gap: 2rem;
 }
 
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1626,6 +1634,10 @@ header .nav-item.active {
   border-top-width: 1px;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-\[\#090129\] {
   --tw-border-opacity: 1;
   border-color: rgb(9 1 41 / var(--tw-border-opacity));
@@ -1718,6 +1730,10 @@ header .nav-item.active {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .bg-\[\#00000033\] {
@@ -2388,6 +2404,10 @@ header .nav-item.active {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .opacity-10 {
@@ -3613,6 +3633,11 @@ a.ui-button:active,
   .lg\:border-\[\#E2E8F0\] {
     --tw-border-opacity: 1;
     border-color: rgb(226 232 240 / var(--tw-border-opacity));
+  }
+
+  .lg\:border-\[\#E6E6EA\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(230 230 234 / var(--tw-border-opacity));
   }
 
   .lg\:bg-\[\#090129\] {

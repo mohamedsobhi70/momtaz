@@ -119,7 +119,7 @@
                     <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3 px-[30px] lg:p-0 pb-4 lg:pb-0">
                         <!-- Notifications  -->
                         <a href="notifications.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                            class="flex items-center gap-4 border-b lg:border border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
                             <img src="assets/images/notification.svg" class="w-6 lg:w-5" width="24" height="24"
                                 alt="icon">
 
@@ -131,7 +131,7 @@
                         </a>
                         <!-- Messages  -->
                         <a href="messages.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                            class="flex items-center gap-4 border-b lg:border border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
                             <img src="assets/images/message.svg" class="w-6 lg:w-5" width="24" alt="icon">
 
                             <span class="flex-1 lg:hidden">
@@ -243,500 +243,451 @@
         <!-- =============================================================== -->
         <!-- Start Page Title Section  -->
         <section class="py-6 lg:py-16 px-[30px] lg:px-0">
-            <div class="container flex flex-col gap-[30px]">
-                <!--   -->
-                <div class="flex flex-col gap-10">
-                    <div class="flex flex-col gap-4 lg:gap-6">
-                        <h2 class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-nor0mal font-semibold">
-                            بأنتظار الموافقة علي الطلب
-                        </h2>
-                        <div class="flex flex-col gap-4">
-                            <div
-                                class="transition-all duration-300 flex flex-col gap-4 lg:gap-6 p-4 lg:p-6 rounded-3xl border border-[#E6E6EA]">
-                                <div class="child-title flex items-center gap-4">
-                                    <!-- Child img  -->
-                                    <div
-                                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-2xl lg:rounded-3xl overflow-hidden border border-[#E6E6EA]">
-                                        <img src="assets/images/child.jpg" width="64" height="64" alt="child">
-                                    </div>
+            <div class="container flex flex-col gap-6">
+                <!-- <h2 class="text-[#090129] text-2xl leading-normal font-medium">
+                    أطفالك
+                </h2> -->
+                <div class="grid lg:grid-cols-3 gap-[30px] sch-tabs">
+                    <!-- Your Childs  -->
+                    <div
+                        class="lg:sticky lg:top-20 flex flex-wrap lg:flex-col gap-2 h-fit p-2 lg:p-0 border border-[#e6e6ea] lg:border-none rounded-2xl lg:rounded-none">
+                        <!-- Child item  -->
+                        <div class="child-item border-transparent lg:border-[#E6E6EA] cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4 sch-tabs-item justify-between active"
+                            data-child="child-1">
+                            <h3
+                                class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold line-clamp-1">
+                                الحالية
+                            </h3>
+                            <svg class="hidden lg:block" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9998 19.92L8.47984 13.4C7.70984 12.63 7.70984 11.37 8.47984 10.6L14.9998 4.08002"
+                                    stroke="#090129" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- Child item  -->
+                        <div class="child-item border-transparent lg:border-[#E6E6EA] cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4 sch-tabs-item justify-between"
+                            data-child="child-2">
+                            <h3
+                                class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold line-clamp-1">
+                                المنتهية
+                            </h3>
+                            <svg class="hidden lg:block" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9998 19.92L8.47984 13.4C7.70984 12.63 7.70984 11.37 8.47984 10.6L14.9998 4.08002"
+                                    stroke="#090129" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- Child item  -->
+                        <div class="child-item border-transparent lg:border-[#E6E6EA] cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4 sch-tabs-item justify-between"
+                            data-child="child-3">
+                            <h3
+                                class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold line-clamp-1">
+                                الملغاة
+                            </h3>
+                            <svg class="hidden lg:block" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9998 19.92L8.47984 13.4C7.70984 12.63 7.70984 11.37 8.47984 10.6L14.9998 4.08002"
+                                    stroke="#090129" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
 
-                                    <!-- Child name  -->
+                    <!-- child-informations  -->
+                    <div class="lg:col-span-2 h-fit flex flex-col gap-4">
+                        <div class="sch-tabs-content flex flex-col gap-3 lg:gap-2" data-child="child-1">
+                            <!-- accordin item  -->
+                            <div class="mom-accordion p-4 rounded-2xl border border-[#E6E6EA]">
+                                <div class="flex gap-4 items-start cursor-pointer">
                                     <div class="flex flex-col gap-1 flex-1">
-                                        <h3
-                                            class="text-[#090129] text-base lg:text-xl leading-normal font-semibold line-clamp-1">
+                                        <h3 class="text-[#090129] text-base leading-normal font-semibold">
                                             مهند يوسف
                                         </h3>
-                                        <p
-                                            class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal line-clamp-1">
-                                            حجز شهري
+                                        <p class="text-[#8E8A9D] text-xs leading-normal">
+                                            حجز شهري - ٢ حصة أسبوعيا
                                         </p>
                                     </div>
-
-                                    <div class="lg:hidden icn">
-                                        <img src="assets/images/collapse-arrow.svg" class="rotate-180" width="24"
-                                            height="24" alt="arrow">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-[#090129] text-base leading-normal font-semibold">
+                                            499.0 ر.س
+                                        </span>
+                                        <div class="icon">
+                                            <img class="rotate" src="assets/images/collapse-arrow.svg" width="24"
+                                                height="24" alt="arrow down">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="child-info-cntnt hidden lg:block">
-                                    <div class="flex flex-col gap-5 lg:gap-6">
-                                        <div
-                                            class="flex flex-col lg:flex-row gap-4 pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    الباقة الشهرية
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    (3) حصص
-                                                </h4>
-                                            </div>
-
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    أيام الحصص الأسبوعية
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    الأثنين / الثلاثاء / الأربعاء
-                                                </h4>
-                                            </div>
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    مدة الحصة
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    60 دقيقة
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col gap-4 pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    سعر الشهر
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    1,200 ر.س
-                                                </p>
-                                            </div>
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    مصاريف إدارية
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    264 ر.س
-                                                </p>
-                                            </div>
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    بروموكود
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    - 400 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex items-center justify-between pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <h4 class="text-[#090129] text-lg leading-normal font-semibold">
-                                                الأجمالي
+                                <div class="mom-accordion-content hidden pt-4">
+                                    <div class="border-t border-[#DFE9F5] py-4 grid grid-cols-6 gap-4">
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                مواعيد الحصص (اسبوعيا)
                                             </h4>
-                                            <p
-                                                class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-semibold">
-                                                936 ر.س
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الاثنين 2:00 م والاربعاء 1:00 م
                                             </p>
                                         </div>
-                                        <button type="button"
-                                            class="cancle-booking-btn flex items-center justify-center gap-2 text-xs leading-normal font-medium py-3 px-5 rounded-xl error-secondary-btn">
-                                            إلغاء الحجز
-                                        </button>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                مدة الحصة
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                60 دقيقة
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="col-span-6 lg:col-span-2 flex flex-col gap-1.5 order-last lg:order-none">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                60 دقيقة
+                                            </h4>
+                                            <p
+                                                class="text-[#090129] text-xs leading-normal font-medium flex items-center gap-4">
+                                                يوسف محمد علي
+                                                <a href="#" class="font-medium text-[#039855] flex items-center gap-2">
+                                                    <img src="assets/images/call.png" alt="">
+                                                    اتصال
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                المرحلة التعليمية
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الثانوية
+                                            </p>
+                                        </div>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                المادة التعليمية
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الجبر
+                                            </p>
+                                        </div>
+                                        <div class="col-span-6 flex flex-col gap-1.5 order-last">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                عنوان الطالب
+                                            </h4>
+                                            <p
+                                                class="text-[#090129] text-xs leading-normal font-medium flex flex-wrap items-center gap-x-4 gap-y-2">
+                                                شارع الملك فهد، حي العليا، الرياض، رقم المبنى 33، الدور 5، الشقة 1
+                                                <a href="#"
+                                                    class="flex items-center gap-2 text-[#7839EE] text-[11px] leading-normal">
+                                                    <img src="assets/images/map.png" width="20" height="20" alt="map">
+                                                    اضغط على الرابط لفتح الخرائط
+                                                </a>
+                                            </p>
+                                        </div>
                                     </div>
+
+                                    <a href="#"
+                                        class="error-secondary-btn rounded-2xl py-3 px-6 flex items-center justify-center text-center gap-2">
+                                        <img src="assets/images/close-circleerr.png" width="20" height="20"
+                                            alt="Close Icon">
+                                        ألغاء الحجز
+                                    </a>
                                 </div>
                             </div>
-                            <div
-                                class="transition-all duration-300 flex flex-col gap-4 lg:gap-6 p-4 lg:p-6 rounded-3xl border border-[#E6E6EA]">
-                                <div class="child-title flex items-center gap-4">
-                                    <!-- Child img  -->
-                                    <div
-                                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-2xl lg:rounded-3xl overflow-hidden border border-[#E6E6EA]">
-                                        <img src="assets/images/child.jpg" width="64" height="64" alt="child">
-                                    </div>
-
-                                    <!-- Child name  -->
+                            <!-- accordin item  -->
+                            <div class="mom-accordion p-4 rounded-2xl border border-[#E6E6EA]">
+                                <div class="flex gap-4 items-start cursor-pointer">
                                     <div class="flex flex-col gap-1 flex-1">
-                                        <h3
-                                            class="text-[#090129] text-base lg:text-xl leading-normal font-semibold line-clamp-1">
+                                        <h3 class="text-[#090129] text-base leading-normal font-semibold">
                                             مهند يوسف
                                         </h3>
-                                        <p
-                                            class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal line-clamp-1">
-                                            حجز شهري
+                                        <p class="text-[#8E8A9D] text-xs leading-normal">
+                                            حجز شهري - ٢ حصة أسبوعيا
                                         </p>
                                     </div>
-
-                                    <div class="lg:hidden icn">
-                                        <img src="assets/images/collapse-arrow.svg" class="rotate-180" width="24"
-                                            height="24" alt="arrow">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-[#090129] text-base leading-normal font-semibold">
+                                            499.0 ر.س
+                                        </span>
+                                        <div class="icon">
+                                            <img class="rotate" src="assets/images/collapse-arrow.svg" width="24"
+                                                height="24" alt="arrow down">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="child-info-cntnt hidden lg:block">
-                                    <div class="flex flex-col gap-5 lg:gap-6">
-                                        <div
-                                            class="flex flex-col lg:flex-row gap-4 pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    الباقة الشهرية
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    (3) حصص
-                                                </h4>
-                                            </div>
-
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    أيام الحصص الأسبوعية
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    الأثنين / الثلاثاء / الأربعاء
-                                                </h4>
-                                            </div>
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    مدة الحصة
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    60 دقيقة
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col gap-4 pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    سعر الشهر
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    1,200 ر.س
-                                                </p>
-                                            </div>
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    مصاريف إدارية
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    264 ر.س
-                                                </p>
-                                            </div>
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    بروموكود
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    - 400 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex items-center justify-between pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <h4 class="text-[#090129] text-lg leading-normal font-semibold">
-                                                الأجمالي
+                                <div class="mom-accordion-content hidden pt-4">
+                                    <div class="border-t border-[#DFE9F5] py-4 grid grid-cols-6 gap-4">
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                مواعيد الحصص (اسبوعيا)
                                             </h4>
-                                            <p
-                                                class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-semibold">
-                                                936 ر.س
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الاثنين 2:00 م والاربعاء 1:00 م
                                             </p>
                                         </div>
-                                        <button type="button"
-                                            class="cancle-booking-btn flex items-center justify-center gap-2 text-xs leading-normal font-medium py-3 px-5 rounded-xl error-secondary-btn">
-                                            إلغاء الحجز
-                                        </button>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                مدة الحصة
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                60 دقيقة
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="col-span-6 lg:col-span-2 flex flex-col gap-1.5 order-last lg:order-none">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                60 دقيقة
+                                            </h4>
+                                            <p
+                                                class="text-[#090129] text-xs leading-normal font-medium flex items-center gap-4">
+                                                يوسف محمد علي
+                                                <a href="#" class="font-medium text-[#039855] flex items-center gap-2">
+                                                    <img src="assets/images/call.png" alt="">
+                                                    اتصال
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                المرحلة التعليمية
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الثانوية
+                                            </p>
+                                        </div>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                المادة التعليمية
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الجبر
+                                            </p>
+                                        </div>
+                                        <div class="col-span-6 flex flex-col gap-1.5 order-last">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                عنوان الطالب
+                                            </h4>
+                                            <p
+                                                class="text-[#090129] text-xs leading-normal font-medium flex flex-wrap items-center gap-x-4 gap-y-2">
+                                                شارع الملك فهد، حي العليا، الرياض، رقم المبنى 33، الدور 5، الشقة 1
+                                                <a href="#"
+                                                    class="flex items-center gap-2 text-[#7839EE] text-[11px] leading-normal">
+                                                    <img src="assets/images/map.png" width="20" height="20" alt="map">
+                                                    اضغط على الرابط لفتح الخرائط
+                                                </a>
+                                            </p>
+                                        </div>
                                     </div>
+
+                                    <a href="#"
+                                        class="error-secondary-btn rounded-2xl py-3 px-6 flex items-center justify-center text-center gap-2">
+                                        <img src="assets/images/close-circleerr.png" width="20" height="20"
+                                            alt="Close Icon">
+                                        ألغاء الحجز
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col gap-4 lg:gap-6">
-                        <h2 class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-nor0mal font-semibold">
-                            الحجوزات
-                        </h2>
-                        <div class="flex flex-col gap-4">
-                            <div
-                                class="transition-all duration-300 flex flex-col gap-4 lg:gap-6 p-4 lg:p-6 rounded-3xl border border-[#E6E6EA]">
-                                <div class="child-title flex items-center gap-4">
-                                    <!-- Child img  -->
-                                    <div
-                                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-2xl lg:rounded-3xl overflow-hidden border border-[#E6E6EA]">
-                                        <img src="assets/images/child.jpg" width="64" height="64" alt="child">
-                                    </div>
 
-                                    <!-- Child name  -->
+                        <div class="sch-tabs-content flex flex-col gap-3 lg:gap-2" data-child="child-2">
+                            <div class="mom-accordion p-4 rounded-2xl border border-[#E6E6EA]">
+                                <div class="flex gap-4 items-start cursor-pointer">
                                     <div class="flex flex-col gap-1 flex-1">
-                                        <h3
-                                            class="text-[#090129] text-base lg:text-xl leading-normal font-semibold line-clamp-1">
+                                        <h3 class="text-[#090129] text-base leading-normal font-semibold">
                                             مهند يوسف
                                         </h3>
-                                        <p
-                                            class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal line-clamp-1">
-                                            حجز شهري
+                                        <p class="text-[#8E8A9D] text-xs leading-normal">
+                                            حجز شهري - ٢ حصة أسبوعيا
                                         </p>
                                     </div>
-
-                                    <div class="lg:hidden icn">
-                                        <img src="assets/images/collapse-arrow.svg" class="rotate-180" width="24"
-                                            height="24" alt="arrow">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-[#090129] text-base leading-normal font-semibold">
+                                            499.0 ر.س
+                                        </span>
+                                        <div class="icon">
+                                            <img class="rotate" src="assets/images/collapse-arrow.svg" width="24"
+                                                height="24" alt="arrow down">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="child-info-cntnt hidden lg:block">
-                                    <div class="flex flex-col gap-5 lg:gap-6">
-                                        <div
-                                            class="flex flex-col lg:flex-row gap-4 pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    الباقة الشهرية
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    (3) حصص
-                                                </h4>
-                                            </div>
-
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    أيام الحصص الأسبوعية
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    الأثنين / الثلاثاء / الأربعاء
-                                                </h4>
-                                            </div>
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    مدة الحصة
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    60 دقيقة
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col gap-4 pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    سعر الشهر
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    1,200 ر.س
-                                                </p>
-                                            </div>
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    مصاريف إدارية
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    264 ر.س
-                                                </p>
-                                            </div>
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    بروموكود
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    - 400 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex items-center justify-between pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <h4 class="text-[#090129] text-lg leading-normal font-semibold">
-                                                الأجمالي
+                                <div class="mom-accordion-content hidden pt-4">
+                                    <div class="border-t border-[#DFE9F5] py-4 grid grid-cols-6 gap-4">
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                مواعيد الحصص (اسبوعيا)
                                             </h4>
-                                            <p
-                                                class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-semibold">
-                                                936 ر.س
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الاثنين 2:00 م والاربعاء 1:00 م
                                             </p>
                                         </div>
-                                        <button type="button"
-                                            class="cancle-booking-btn flex items-center justify-center gap-2 text-xs leading-normal font-medium py-3 px-5 rounded-xl error-secondary-btn">
-                                            إلغاء الحجز
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="transition-all duration-300 flex flex-col gap-4 lg:gap-6 p-4 lg:p-6 rounded-3xl border border-[#E6E6EA]">
-                                <div class="child-title flex items-center gap-4">
-                                    <!-- Child img  -->
-                                    <div
-                                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-2xl lg:rounded-3xl overflow-hidden border border-[#E6E6EA]">
-                                        <img src="assets/images/child.jpg" width="64" height="64" alt="child">
-                                    </div>
-
-                                    <!-- Child name  -->
-                                    <div class="flex flex-col gap-1 flex-1">
-                                        <h3
-                                            class="text-[#090129] text-base lg:text-xl leading-normal font-semibold line-clamp-1">
-                                            مهند يوسف
-                                        </h3>
-                                        <p
-                                            class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal line-clamp-1">
-                                            حجز شهري
-                                        </p>
-                                    </div>
-
-                                    <div class="lg:hidden icn">
-                                        <img src="assets/images/collapse-arrow.svg" class="rotate-180" width="24"
-                                            height="24" alt="arrow">
-                                    </div>
-                                </div>
-                                <div class="child-info-cntnt hidden lg:block">
-                                    <div class="flex flex-col gap-5 lg:gap-6">
-                                        <div
-                                            class="flex flex-col lg:flex-row gap-4 pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    الباقة الشهرية
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    (3) حصص
-                                                </h4>
-                                            </div>
-
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    أيام الحصص الأسبوعية
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    الأثنين / الثلاثاء / الأربعاء
-                                                </h4>
-                                            </div>
-                                            <div class="flex-1 flex flex-col gap-1">
-                                                <span
-                                                    class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                                    مدة الحصة
-                                                </span>
-                                                <h4
-                                                    class="text-[#090129] text-xs lg:text-base leading-normal lg:leading-normal font-medium">
-                                                    60 دقيقة
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col gap-4 pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    سعر الشهر
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    1,200 ر.س
-                                                </p>
-                                            </div>
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    مصاريف إدارية
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    264 ر.س
-                                                </p>
-                                            </div>
-                                            <div class="flex items-center justify-between gap-2">
-                                                <h4
-                                                    class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    بروموكود
-                                                </h4>
-                                                <p
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    - 400 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex items-center justify-between pt-4 lg:pt-6 border-t border-[#E6E6EA]">
-                                            <h4 class="text-[#090129] text-lg leading-normal font-semibold">
-                                                الأجمالي
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                مدة الحصة
                                             </h4>
-                                            <p
-                                                class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-semibold">
-                                                936 ر.س
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                60 دقيقة
                                             </p>
                                         </div>
-                                        <button type="button"
-                                            class="cancle-booking-btn flex items-center justify-center gap-2 text-xs leading-normal font-medium py-3 px-5 rounded-xl error-secondary-btn">
-                                            إلغاء الحجز
-                                        </button>
+                                        <div
+                                            class="col-span-6 lg:col-span-2 flex flex-col gap-1.5 order-last lg:order-none">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                60 دقيقة
+                                            </h4>
+                                            <p
+                                                class="text-[#090129] text-xs leading-normal font-medium flex items-center gap-4">
+                                                يوسف محمد علي
+                                                <a href="#" class="font-medium text-[#039855] flex items-center gap-2">
+                                                    <img src="assets/images/call.png" alt="">
+                                                    اتصال
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                المرحلة التعليمية
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الثانوية
+                                            </p>
+                                        </div>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                المادة التعليمية
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الجبر
+                                            </p>
+                                        </div>
+                                        <div class="col-span-6 flex flex-col gap-1.5 order-last">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                عنوان الطالب
+                                            </h4>
+                                            <p
+                                                class="text-[#090129] text-xs leading-normal font-medium flex flex-wrap items-center gap-x-4 gap-y-2">
+                                                شارع الملك فهد، حي العليا، الرياض، رقم المبنى 33، الدور 5، الشقة 1
+                                                <a href="#"
+                                                    class="flex items-center gap-2 text-[#7839EE] text-[11px] leading-normal">
+                                                    <img src="assets/images/map.png" width="20" height="20" alt="map">
+                                                    اضغط على الرابط لفتح الخرائط
+                                                </a>
+                                            </p>
+                                        </div>
                                     </div>
+
+                                    <a href="#"
+                                        class="error-secondary-btn rounded-2xl py-3 px-6 flex items-center justify-center text-center gap-2">
+                                        <img src="assets/images/close-circleerr.png" width="20" height="20"
+                                            alt="Close Icon">
+                                        ألغاء الحجز
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="py-4 sticky bottom-0 lg:hidden bg-white">
-                        <a href="teacher-student-evaluation.html"
-                            class="w-full flex items-center justify-center gap-2 leading-normal font-medium py-4 px-8 rounded-2xl secondary-btn">
-                            تقييم الأن
-                        </a>
-                    </div>
-                    <!-- Start popups -->
-                    <div class="cancle-booking-popup px-[30px]">
-                        <div
-                            class="bg-white p-6 lg:p-8 w-full lg:w-[600px] rounded-2xl flex flex-col items-center gap-6">
-                            <img src="assets/images/cancle-boking.png" class="w-24" width="479" height="456"
-                                alt="cancle-boking">
-                            <div class="flex flex-col items-center gap-2 lg:gap-3">
-                                <h3 class="text-[#090129] text-base leading-normal font-semibold text-center">
-                                    هل أنت متأكد من الغاء الحجز ؟
-                                </h3>
-                                <p class="text-[#5A5570] text-sm leading-5 text-center">
-                                    أنت علي وشك الغاء الحجز.
-                                </p>
-                            </div>
-                            <div class="flex flex-col gap-2 w-full">
-                                <a href="#"
-                                    class="flex items-center justify-center gap-2 text-sm leading-5 font-medium py-3 px-6 rounded-xl error-btn">
-                                    نعم ، أريد الألغاء
-                                </a>
-                                <button type="button"
-                                    class="close-cancle-booking flex items-center justify-center gap-2 text-[#111322] text-sm leading-5 font-medium py-3 px-6 rounded-xl bordered-btn">
-                                    لا، شكراً
-                                </button>
+
+                        <div class="sch-tabs-content flex flex-col gap-3 lg:gap-2" data-child="child-3">
+                            <div class="mom-accordion p-4 rounded-2xl border border-[#E6E6EA]">
+                                <div class="flex gap-4 items-start cursor-pointer">
+                                    <div class="flex flex-col gap-1 flex-1">
+                                        <h3 class="text-[#090129] text-base leading-normal font-semibold">
+                                            مهند يوسف
+                                        </h3>
+                                        <p class="text-[#8E8A9D] text-xs leading-normal">
+                                            حجز شهري - ٢ حصة أسبوعيا
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-[#090129] text-base leading-normal font-semibold">
+                                            499.0 ر.س
+                                        </span>
+                                        <div class="icon">
+                                            <img class="rotate" src="assets/images/collapse-arrow.svg" width="24"
+                                                height="24" alt="arrow down">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mom-accordion-content hidden pt-4">
+                                    <div class="border-t border-[#DFE9F5] py-4 grid grid-cols-6 gap-4">
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                مواعيد الحصص (اسبوعيا)
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الاثنين 2:00 م والاربعاء 1:00 م
+                                            </p>
+                                        </div>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                مدة الحصة
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                60 دقيقة
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="col-span-6 lg:col-span-2 flex flex-col gap-1.5 order-last lg:order-none">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                60 دقيقة
+                                            </h4>
+                                            <p
+                                                class="text-[#090129] text-xs leading-normal font-medium flex items-center gap-4">
+                                                يوسف محمد علي
+                                                <a href="#" class="font-medium text-[#039855] flex items-center gap-2">
+                                                    <img src="assets/images/call.png" alt="">
+                                                    اتصال
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                المرحلة التعليمية
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الثانوية
+                                            </p>
+                                        </div>
+                                        <div class="col-span-3 lg:col-span-2 flex flex-col gap-1.5">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                المادة التعليمية
+                                            </h4>
+                                            <p class="text-[#090129] text-xs leading-normal font-medium">
+                                                الجبر
+                                            </p>
+                                        </div>
+                                        <div class="col-span-6 flex flex-col gap-1.5 order-last">
+                                            <h4 class="text-[#8E8A9D] text-xs leading-normal">
+                                                عنوان الطالب
+                                            </h4>
+                                            <p
+                                                class="text-[#090129] text-xs leading-normal font-medium flex flex-wrap items-center gap-x-4 gap-y-2">
+                                                شارع الملك فهد، حي العليا، الرياض، رقم المبنى 33، الدور 5، الشقة 1
+                                                <a href="#"
+                                                    class="flex items-center gap-2 text-[#7839EE] text-[11px] leading-normal">
+                                                    <img src="assets/images/map.png" width="20" height="20" alt="map">
+                                                    اضغط على الرابط لفتح الخرائط
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <a href="#"
+                                        class="error-secondary-btn rounded-2xl py-3 px-6 flex items-center justify-center text-center gap-2">
+                                        <img src="assets/images/close-circleerr.png" width="20" height="20"
+                                            alt="Close Icon">
+                                        ألغاء الحجز
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="py-4 sticky bottom-0 lg:static bg-white">
+                            <a href="#"
+                                class="flex lg:hidden items-center justify-center gap-2 text-black leading-normal py-4 px-8 rounded-2xl secondary-btn">
+                                <img src="assets/images/add-square.svg" width="24" height="24" alt="arrow">
+                                مزامنة مع التقويم
+                            </a>
+                        </div>
+
                     </div>
-                    <!-- End popups  -->
                 </div>
             </div>
 

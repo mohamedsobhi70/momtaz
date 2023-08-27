@@ -266,10 +266,13 @@ if ($(".related-teacher-carousel").length > 0) {
 
 // Annab Accordion Component
 if ($(".mom-accordion").length > 0) {
-    $(".mom-accordion").on("click", function () {
+    $(".mom-accordion").on("click", function (e) {
         $(this).find(".mom-accordion-content").slideToggle(300);
         $(this).find(".icon img").toggleClass("rotate");
     })
+    $(".mom-accordion-content").click(function (e) {
+        e.stopPropagation();
+    });
 }
 // Annab Accordion Component
 if ($(".choose-lang-acc").length > 0) {
