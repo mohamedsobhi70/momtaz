@@ -119,7 +119,7 @@
                     <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3 px-[30px] lg:p-0 pb-4 lg:pb-0">
                         <!-- Notifications  -->
                         <a href="notifications.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                            class="flex items-center gap-4 border-b lg:border border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
                             <img src="assets/images/notification.svg" class="w-6 lg:w-5" width="24" height="24"
                                 alt="icon">
 
@@ -131,7 +131,7 @@
                         </a>
                         <!-- Messages  -->
                         <a href="messages.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                            class="flex items-center gap-4 border-b lg:border border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
                             <img src="assets/images/message.svg" class="w-6 lg:w-5" width="24" alt="icon">
 
                             <span class="flex-1 lg:hidden">
@@ -243,122 +243,158 @@
         <!-- =============================================================== -->
         <!-- Start  Section  -->
         <section class="py-6 lg:py-16 px-[30px] lg:px-0">
-            <div class="container flex flex-col gap-8">
+            <div class="container grid lg:grid-cols-3 gap-8 lg:gap-[30px]">
 
-
-                <div class="flex flex-col gap-4 lg:gap-6">
+                <div class="lg:col-span-1 flex flex-col gap-4 lg:gap-6">
                     <h2 class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-semibold">
                         الأعدادات
                     </h2>
-                    <div class="flex flex-col gap-4 p-4 lg:p-6 border border-[#BEA6DB] rounded-2xl bg-[#F9F9FB]">
+                    <div class="flex flex-col gap-4 p-4 lg:p-6 border border-[#DCDFEA] rounded-2xl bg-[#FCFCFD]">
 
                         <div class="flex flex-col gap-2">
-                            <label for="duration"
-                                class="text-[#4A5578] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                المدة
+                            <label for="duration" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                مدة الحصة
                             </label>
-                            <div class="flex items-center gap-3 rounded-2xl border border-[#DCDFEA] bg-white p-4">
-                                <input type="text"
-                                    class="text-sm leading-normal placeholder:text-[#7D89B0] flex-1 w-full"
-                                    placeholder="1" id="duration" name="duration">
-                                <select name="duration-select" id="duration-select"
-                                    class="bg-left pe-6 text-[#7D89B0] text-sm leading-normal">
-                                    <option value="1">ساعة</option>
-                                    <option value="2">دقيقة</option>
-                                </select>
+                            <div class="flex flex-col gap-1">
+                                <div class="flex items-center gap-3 rounded-2xl border border-[#DCDFEA] bg-white p-4">
+                                    <input type="text"
+                                        class="text-sm leading-normal placeholder:text-[#7D89B0] flex-1 w-full"
+                                        placeholder="أدخل مدة الحصة مثال 1.5" id="duration" name="duration">
+                                    <select name="duration-select" id="duration-select"
+                                        class="bg-left pe-6 text-[#7D89B0] text-sm leading-normal">
+                                        <option value="1">ساعة</option>
+                                        <option value="2">دقيقة</option>
+                                    </select>
+                                </div>
+                                <p class="text-[#7D89B0] text-xs leading-normal">
+                                    هذا نص تلميح لمساعدة المستخدم.
+                                </p>
                             </div>
                         </div>
 
                         <div class="flex flex-col gap-2">
-                            <label for="break"
-                                class="text-[#4A5578] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                الفواصل بين كل موعد
+                            <label for="break" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                الفواصل بين الحصص
                             </label>
-                            <div class="flex items-center gap-3 rounded-2xl border border-[#DCDFEA] bg-white p-4">
-                                <input type="text"
-                                    class="text-sm leading-normal placeholder:text-[#7D89B0] flex-1 w-full"
-                                    placeholder="1" id="break" name="break">
-                                <select name="break-select" id="break-select"
-                                    class="bg-left pe-6 text-[#7D89B0] text-sm leading-normal">
-                                    <option value="1">ساعة</option>
-                                    <option value="2">دقيقة</option>
-                                </select>
+                            <div class="flex flex-col gap-1">
+                                <div class="flex items-center gap-3 rounded-2xl border border-[#DCDFEA] bg-white p-4">
+                                    <input type="text"
+                                        class="text-sm leading-normal placeholder:text-[#7D89B0] flex-1 w-full"
+                                        placeholder="مثال 30" id="break" name="break">
+                                    <select name="break-select" id="break-select"
+                                        class="bg-left pe-6 text-[#7D89B0] text-sm leading-normal">
+                                        <option value="1">ساعة</option>
+                                        <option value="2">دقيقة</option>
+                                    </select>
+                                </div>
+                                <p class="text-[#7D89B0] text-xs leading-normal">
+                                    هذا نص تلميح لمساعدة المستخدم.
+                                </p>
                             </div>
                         </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="break-1" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                الفواصل بين الحصص
+                            </label>
+                            <div class="flex flex-col gap-1">
+                                <div class="flex items-center gap-3 rounded-2xl border border-[#F04438] bg-white p-4">
+                                    <input type="text"
+                                        class="text-sm leading-normal placeholder:text-[#7D89B0] flex-1 w-full"
+                                        placeholder="مثال 30" id="break-1" name="break-1">
+                                    <select name="break-1-select" id="break-1-select"
+                                        class="bg-left pe-6 text-[#7D89B0] text-sm leading-normal">
+                                        <option value="1">ساعة</option>
+                                        <option value="2">دقيقة</option>
+                                    </select>
+                                </div>
+                                <p class="text-[#F04438] text-xs leading-normal">
+                                    يرجي إدخال الفواصل بين الحصص
+                                </p>
+                            </div>
+                        </div>
+
                         <div class="flex flex-col gap-2 choose-lang-acc">
                             <div class="flex flex-col gap-2">
                                 <h2
                                     class="text-[#4A5578] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
                                     الأجازات المتكررة
                                 </h2>
-                                <div
-                                    class="flex flex-col gap-4 border cursor-pointer border-[#E6E6EA] rounded-2xl p-4 lg:px-6  bg-white icon text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                    <div class="flex items-center justify-between gap-1 choose-lang-tit">
-                                        الجمعة
-                                        <img src="assets/images/arrow-down.svg" alt="arrow">
-                                    </div>
 
-                                    <div class="choose-lang-content hidden border-t border-[#E6E6EA] pt-4">
-                                        <div class="flex flex-col gap-5">
-                                            <div class="flex items-center gap-4">
-                                                <input type="checkbox" name="v-days" id="sat"
-                                                    class="form-checkbox cursor-pointer">
-                                                <label for="sat"
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
-                                                    السبت
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center gap-4">
-                                                <input type="checkbox" name="v-days" id="sun"
-                                                    class="form-checkbox cursor-pointer">
-                                                <label for="sun"
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
-                                                    الأحد
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center gap-4">
-                                                <input type="checkbox" name="v-days" id="mon"
-                                                    class="form-checkbox cursor-pointer">
-                                                <label for="mon"
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
-                                                    الاثنين
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center gap-4">
-                                                <input type="checkbox" name="v-days" id="tus"
-                                                    class="form-checkbox cursor-pointer">
-                                                <label for="tus"
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
-                                                    الثلاثاء
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center gap-4">
-                                                <input type="checkbox" name="v-days" id="wed"
-                                                    class="form-checkbox cursor-pointer">
-                                                <label for="wed"
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
-                                                    الأربعاء
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center gap-4">
-                                                <input type="checkbox" name="v-days" id="thu"
-                                                    class="form-checkbox cursor-pointer">
-                                                <label for="thu"
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
-                                                    الخميس
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center gap-4">
-                                                <input type="checkbox" name="v-days" id="fri"
-                                                    class="form-checkbox cursor-pointer">
-                                                <label for="fri"
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
-                                                    الجمعة
-                                                </label>
-                                            </div>
-
+                                <div class="flex flex-col gap-1">
+                                    <div
+                                        class="flex flex-col gap-4 border cursor-pointer border-[#E6E6EA] rounded-2xl p-4 lg:px-6  bg-white icon text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                        <div
+                                            class="flex items-center justify-between gap-1 choose-lang-tit text-[#7D89B0]">
+                                            الجمعة, السبت
+                                            <img src="assets/images/arrow-down.svg" alt="arrow">
                                         </div>
+
+                                        <div class="choose-lang-content hidden border-t border-[#E6E6EA] pt-4">
+                                            <div class="flex flex-col gap-5">
+                                                <div class="flex items-center gap-4">
+                                                    <input type="checkbox" name="v-days" id="sat"
+                                                        class="form-checkbox cursor-pointer">
+                                                    <label for="sat"
+                                                        class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
+                                                        السبت
+                                                    </label>
+                                                </div>
+                                                <div class="flex items-center gap-4">
+                                                    <input type="checkbox" name="v-days" id="sun"
+                                                        class="form-checkbox cursor-pointer">
+                                                    <label for="sun"
+                                                        class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
+                                                        الأحد
+                                                    </label>
+                                                </div>
+                                                <div class="flex items-center gap-4">
+                                                    <input type="checkbox" name="v-days" id="mon"
+                                                        class="form-checkbox cursor-pointer">
+                                                    <label for="mon"
+                                                        class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
+                                                        الاثنين
+                                                    </label>
+                                                </div>
+                                                <div class="flex items-center gap-4">
+                                                    <input type="checkbox" name="v-days" id="tus"
+                                                        class="form-checkbox cursor-pointer">
+                                                    <label for="tus"
+                                                        class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
+                                                        الثلاثاء
+                                                    </label>
+                                                </div>
+                                                <div class="flex items-center gap-4">
+                                                    <input type="checkbox" name="v-days" id="wed"
+                                                        class="form-checkbox cursor-pointer">
+                                                    <label for="wed"
+                                                        class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
+                                                        الأربعاء
+                                                    </label>
+                                                </div>
+                                                <div class="flex items-center gap-4">
+                                                    <input type="checkbox" name="v-days" id="thu"
+                                                        class="form-checkbox cursor-pointer">
+                                                    <label for="thu"
+                                                        class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
+                                                        الخميس
+                                                    </label>
+                                                </div>
+                                                <div class="flex items-center gap-4">
+                                                    <input type="checkbox" name="v-days" id="fri"
+                                                        class="form-checkbox cursor-pointer">
+                                                    <label for="fri"
+                                                        class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal cursor-pointer">
+                                                        الجمعة
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
+                                    <p class="text-[#7D89B0] text-xs leading-normal">
+                                        هذا نص تلميح لمساعدة المستخدم.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -379,154 +415,284 @@
                     </div>
 
                 </div>
-                <div class="flex flex-col gap-4">
-                    <div class="flex flex-col gap-2 lg:gap-3">
-                        <h2 class="text-[#101828] text-base lg:text-lg leading-normal lg:leading-normal font-semibold">
-                            حدد مواعيدك المتاحة
-                        </h2>
-                        <p class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
-                            أضف ساعات العمل المتاحة لكل يوم من أيام الأسبوع
-                        </p>
-                    </div>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3">
-                        <div class="rounded-2xl p-4 border border-[#E6E6EA] flex items-center gap-2 justify-between">
-                            <h3 class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal">
-                                يوم السبت
-                            </h3>
-                            <button
-                                class="text-[#3A3454] text-xs lg:text-sm lg:leading-normal leading-normal show-report">
-                                اعداد
-                            </button>
-                        </div>
-                        <div class="rounded-2xl p-4 border border-[#E6E6EA] flex items-center gap-2 justify-between">
-                            <h3 class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal">
-                                يوم الأحد
-                            </h3>
-                            <button
-                                class="text-[#3A3454] text-xs lg:text-sm lg:leading-normal leading-normal show-report">
-                                اعداد
-                            </button>
-                        </div>
-                        <div class="rounded-2xl p-4 border border-[#E6E6EA] flex items-center gap-2 justify-between">
-                            <h3 class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal">
-                                يوم الأثنين
-                            </h3>
-                            <button
-                                class="text-[#3A3454] text-xs lg:text-sm lg:leading-normal leading-normal show-report">
-                                اعداد
-                            </button>
-                        </div>
-                        <div class="rounded-2xl p-4 border border-[#E6E6EA] flex items-center gap-2 justify-between">
-                            <h3 class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal">
-                                يوم الثلاثاء
-                            </h3>
-                            <button
-                                class="text-[#3A3454] text-xs lg:text-sm lg:leading-normal leading-normal show-report">
-                                اعداد
-                            </button>
-                        </div>
-                        <div class="rounded-2xl p-4 border border-[#E6E6EA] flex items-center gap-2 justify-between">
-                            <h3 class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal">
-                                يوم الأربعاء
-                            </h3>
-                            <button
-                                class="text-[#3A3454] text-xs lg:text-sm lg:leading-normal leading-normal show-report">
-                                اعداد
-                            </button>
-                        </div>
-                        <div class="rounded-2xl p-4 border border-[#E6E6EA] flex items-center gap-2 justify-between">
-                            <h3 class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal">
-                                يوم الخميس
-                            </h3>
-                            <button
-                                class="text-[#3A3454] text-xs lg:text-sm lg:leading-normal leading-normal show-report">
-                                اعداد
-                            </button>
-                        </div>
-                        <div class="rounded-2xl p-4 border border-[#E6E6EA] flex items-center gap-2 justify-between">
-                            <h3 class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal">
-                                يوم الجمعة
-                            </h3>
-                            <button
-                                class="text-[#3A3454] text-xs lg:text-sm lg:leading-normal leading-normal show-report">
-                                اعداد
-                            </button>
-                        </div>
-                    </div>
-                    <div class="report-popup">
-                        <div
-                            class="transition-all duration-300 bg-white lg:p-8 w-full lg:w-[600px] rounded-t-2xl lg:rounded-2xl flex flex-col lg:gap-6">
-                            <div class="flex items-center gap-3 justify-between py-4 px-[30px] lg:p-0">
-                                <h3 class="text-[#090129] text-lg leading-normal font-semibold">
-                                    مواعيدك المتاحة يوم السبت
+                <form class="lg:col-span-2 flex flex-col gap-6 lg:items-start">
+                    <h2 class="text-[#101828] text-base lg:text-lg leading-normal lg:leading-normal font-semibold">
+                        أيامك المتاحة
+                    </h2>
+
+                    <div class="flex flex-col gap-4 w-full">
+                        <div class="flex items-start gap-4">
+                            <input type="checkbox" name="day-sat" id="day-sat"
+                                class="form-checkbox mt-2 cursor-pointer">
+                            <div class="flex flex-col gap-1.5 flex-1">
+                                <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                    يوم السبت
                                 </h3>
-                                <button type="button" class="close-report-time">
-                                    <img src="assets/images/x-close.svg" width="24" height="24" alt="close icon">
-                                    <span class="sr-only">Close Icon</span>
-                                </button>
+                                <p class="text-[#090129] text-sm leading-normal font-medium">
+                                    اجازة
+                                </p>
+                                <a href="#" class="text-[#7839EE] text-[11px] leading-normal font-semibold">
+                                    + أضف موعد
+                                </a>
                             </div>
+                        </div>
 
-                            <div class="flex flex-col gap-3 lg:gap-4 w-full py-4 px-[30px] lg:p-0">
-                                <button
-                                    class="bordered-btn py-3 px-6 rounded-xl flex items-center justify-center gap-2 text-[#111322] text-sm leading-normal font-medium">
-                                    <img src="assets/images/add-square.svg" width="20" height="20" alt="add icon">
-                                    أضافة معاد
-                                </button>
-                                <div class="flex flex-col gap-4 p-4 border border-[#BEA6DB] bg-[#F9F9FB] rounded-2xl">
-                                    <div class="grid grid-cols-2 gap-2">
-                                        <div class="flex flex-col gap-2">
-                                            <label for="from-h1"
-                                                class="text-[#4A5578] text-xs leading-normal font-medium">
-                                                من الساعة
-                                            </label>
-                                            <input type="text" name="from-h1" id="from-h1" placeholder="10:30 صـ"
-                                                class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                        <!-- Sunday  -->
+                        <div class="flex items-start gap-4">
+                            <input type="checkbox" name="day-sun" id="day-sun" checked
+                                class="form-checkbox mt-2 cursor-pointer">
+                            <div class="flex flex-col gap-3 flex-1">
+                                <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                    يوم الأحد
+                                </h3>
+                                <div class="flex flex-col gap-4 border border-[#DCDFEA] bg-[#FCFCFD] rounded-lg p-4">
+                                    <div class="flex items-end gap-4">
+                                        <div class="grid grid-cols-2 gap-2 basis-11/12">
+                                            <div class="flex flex-col gap-2">
+                                                <label for="sun-from-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    من الساعة
+                                                </label>
+                                                <input type="text" name="sun-from-h1" id="sun-from-h1"
+                                                    placeholder="10:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <label for="sun-to-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    إلي الساعة
+                                                </label>
+                                                <input type="text" name="sun-to-h1" id="sun-to-h1"
+                                                    placeholder="11:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
                                         </div>
-                                        <div class="flex flex-col gap-2">
-                                            <label for="to-h1"
-                                                class="text-[#4A5578] text-xs leading-normal font-medium">
-                                                من الساعة
-                                            </label>
-                                            <input type="text" name="to-h1" id="to-h1" placeholder="11:30 صـ"
-                                                class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                        <div class="basis-1/12 p-2 flex items-center justify-center">
+
                                         </div>
                                     </div>
-                                    <button type="button"
-                                        class="error-secondary-btn py-3 px-6 rounded-xl flex items-center justify-center text-sm leading-5 font-medium">
-                                        ازالة
-                                    </button>
-                                </div>
-                                <div class="grid grid-cols-2 gap-2 p-4 border border-[#E6E6EA] bg-white rounded-2xl">
-                                    <div class="flex flex-col gap-2">
-                                        <label for="from-h1" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            من الساعة
-                                        </label>
-                                        <input type="text" name="from-h1" id="from-h1" placeholder="10:30 صـ"
-                                            class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                    <div class="flex items-end gap-4">
+                                        <div class="grid grid-cols-2 gap-2 basis-11/12">
+                                            <div class="flex flex-col gap-2">
+                                                <label for="sun-from-h2"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    من الساعة
+                                                </label>
+                                                <input type="text" name="sun-from-h2" id="sun-from-h2"
+                                                    placeholder="10:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <label for="sunto-h2"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    إلي الساعة
+                                                </label>
+                                                <input type="text" name="sunto-h2" id="sunto-h2" placeholder="11:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                        </div>
+                                        <div class="basis-1/12 p-2 flex items-center justify-center">
+                                            <a href="#" class="">
+                                                <img src="assets/images/trash.svg" width="24" height="24" alt="trash">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="to-h1" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            من الساعة
-                                        </label>
-                                        <input type="text" name="to-h1" id="to-h1" placeholder="11:30 صـ"
-                                            class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-2 gap-2 py-4 lg:p-0 bg-white ">
-                                    <button
-                                        class="bordered-btn py-4 px-8 rounded-2xl flex items-center justify-center gap-2 text-[#111322] text-base leading-normal font-medium">
-                                        أضافة موعد
-                                    </button>
-                                    <button
-                                        class="secondary-btn py-4 px-8 rounded-2xl flex items-center justify-center gap-2 text-[#111322] text-base leading-normal font-medium">
-                                        تاكيد
-                                    </button>
+                                    <a href="#" class="text-[#7839EE] text-[11px] leading-normal font-semibold">
+                                        + أضف موعد اخر
+                                    </a>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- monday  -->
+                        <div class="flex items-start gap-4">
+                            <input type="checkbox" name="day-mon" id="day-mon" checked
+                                class="form-checkbox mt-2 cursor-pointer">
+                            <div class="flex flex-col gap-3 flex-1">
+                                <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                    يوم الأثنين
+                                </h3>
+                                <div class="flex flex-col gap-4 border border-[#DCDFEA] bg-[#FCFCFD] rounded-lg p-4">
+                                    <div class="flex items-end gap-4">
+                                        <div class="grid grid-cols-2 gap-2 basis-11/12">
+                                            <div class="flex flex-col gap-2">
+                                                <label for="mon-from-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    من الساعة
+                                                </label>
+                                                <input type="text" name="mon-from-h1" id="mon-from-h1"
+                                                    placeholder="10:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <label for="mon-to-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    إلي الساعة
+                                                </label>
+                                                <input type="text" name="mon-to-h1" id="mon-to-h1"
+                                                    placeholder="11:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                        </div>
+                                        <div class="basis-1/12 p-2 flex items-center justify-center">
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[#7839EE] text-[11px] leading-normal font-semibold">
+                                        + أضف موعد اخر
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- tuesday  -->
+                        <div class="flex items-start gap-4">
+                            <input type="checkbox" name="day-tus" id="day-tus" checked
+                                class="form-checkbox mt-2 cursor-pointer">
+                            <div class="flex flex-col gap-3 flex-1">
+                                <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                    يوم الثلاثاء
+                                </h3>
+                                <div class="flex flex-col gap-4 border border-[#DCDFEA] bg-[#FCFCFD] rounded-lg p-4">
+                                    <div class="flex items-end gap-4">
+                                        <div class="grid grid-cols-2 gap-2 basis-11/12">
+                                            <div class="flex flex-col gap-2">
+                                                <label for="tus-from-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    من الساعة
+                                                </label>
+                                                <input type="text" name="tus-from-h1" id="tus-from-h1"
+                                                    placeholder="10:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <label for="tus-to-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    إلي الساعة
+                                                </label>
+                                                <input type="text" name="tus-to-h1" id="tus-to-h1"
+                                                    placeholder="11:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                        </div>
+                                        <div class="basis-1/12 p-2 flex items-center justify-center">
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[#7839EE] text-[11px] leading-normal font-semibold">
+                                        + أضف موعد اخر
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- wednesday  -->
+                        <div class="flex items-start gap-4">
+                            <input type="checkbox" name="day-wed" id="day-wed" checked
+                                class="form-checkbox mt-2 cursor-pointer">
+                            <div class="flex flex-col gap-3 flex-1">
+                                <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                    يوم الأربعاء
+                                </h3>
+                                <div class="flex flex-col gap-4 border border-[#DCDFEA] bg-[#FCFCFD] rounded-lg p-4">
+                                    <div class="flex items-end gap-4">
+                                        <div class="grid grid-cols-2 gap-2 basis-11/12">
+                                            <div class="flex flex-col gap-2">
+                                                <label for="wed-from-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    من الساعة
+                                                </label>
+                                                <input type="text" name="wed-from-h1" id="wed-from-h1"
+                                                    placeholder="10:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <label for="wed-to-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    إلي الساعة
+                                                </label>
+                                                <input type="text" name="wed-to-h1" id="wed-to-h1"
+                                                    placeholder="11:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                        </div>
+                                        <div class="basis-1/12 p-2 flex items-center justify-center">
+
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="text-[#7839EE] text-[11px] leading-normal font-semibold">
+                                        + أضف موعد اخر
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- thursday  -->
+                        <div class="flex items-start gap-4">
+                            <input type="checkbox" name="day-th" id="day-th" checked
+                                class="form-checkbox mt-2 cursor-pointer">
+                            <div class="flex flex-col gap-3 flex-1">
+                                <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                    يوم الخميس
+                                </h3>
+                                <div class="flex flex-col gap-4 border border-[#DCDFEA] bg-[#FCFCFD] rounded-lg p-4">
+                                    <div class="flex items-end gap-4">
+                                        <div class="grid grid-cols-2 gap-2 basis-11/12">
+                                            <div class="flex flex-col gap-2">
+                                                <label for="th-from-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    من الساعة
+                                                </label>
+                                                <input type="text" name="th-from-h1" id="th-from-h1"
+                                                    placeholder="10:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <label for="th-to-h1"
+                                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                                    إلي الساعة
+                                                </label>
+                                                <input type="text" name="th-to-h1" id="th-to-h1" placeholder="11:30 صـ"
+                                                    class="p-4 rounded-2xl border border-[#DCDFEA] text-sm leading-normal">
+                                            </div>
+                                        </div>
+                                        <div class="basis-1/12 p-2 flex items-center justify-center">
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[#7839EE] text-[11px] leading-normal font-semibold">
+                                        + أضف موعد اخر
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Friday  -->
+                        <div class="flex items-start gap-4">
+                            <input type="checkbox" name="day-sat" id="day-sat"
+                                class="form-checkbox mt-2 cursor-pointer">
+                            <div class="flex flex-col gap-1.5 flex-1">
+                                <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                    يوم الجمعة
+                                </h3>
+                                <p class="text-[#090129] text-sm leading-normal font-medium">
+                                    اجازة
+                                </p>
+                                <a href="#" class="text-[#7839EE] text-[11px] leading-normal font-semibold">
+                                    + أضف موعد
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                    <input type="submit" value="حفظ"
+                        class="py-4 px-8 lg:px-20 secondary-btn rounded-2xl cursor-pointer  text-black leading-normal font-medium">
+
+                </form>
             </div>
 
         </section>
