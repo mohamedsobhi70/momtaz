@@ -627,6 +627,7 @@ if ($(".choose-child").length > 0) {
 
 
 if ($(".edit-res-data").length > 0) {
+
     $(".edit-btn").on("click", function (e) {
         e.preventDefault();
         $(this).closest(".edit-container").siblings(".choose-sec").removeClass("hidden");
@@ -645,13 +646,31 @@ if ($(".edit-res-data").length > 0) {
         e.preventDefault();
         $(".add-first-dat").addClass("hidden");
     })
-    $(".close-res-select-sec-time").on("click", function (e) {
-        e.preventDefault();
-        $(".add-second-dat").addClass("hidden");
-    })
+
 
 }
 
+if ($(".add-first-dat").length > 0) {
+    $(".add-first-dat  > .fixed").on("click", function () {
+        $(".add-first-dat").addClass("hidden");
+    })
+    $(".add-first-dat > .fixed >div").click(function (e) {
+        e.stopPropagation();
+    });
+}
+if ($(".add-second-dat").length > 0) {
+    $(".add-second-dat  > .fixed").on("click", function () {
+        $(".add-second-dat").addClass("hidden");
+    })
+    $(".add-second-dat > .fixed >div").click(function (e) {
+        e.stopPropagation();
+    });
+
+    $(".close-res-select-sec-time").on("click", function (e) {
+        e.preventDefault();
+        $(".add-second-dat ").addClass("hidden");
+    })
+}
 if ($(".tabs").length > 0) {
 
     $(".tabs").each(function () {
@@ -862,7 +881,7 @@ if ($(".date-pick").length > 0) {
 }
 if ($("#one-class-date-picker").length > 0) {
     $(function () {
-          $(function () {
+        $(function () {
             $("#one-class-date-picker").datepicker({
                 changeMonth: true,
                 changeYear: true,

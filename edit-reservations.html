@@ -654,10 +654,9 @@
                                             class="flex-1 text-[#090129] text-lg lg:text-2xl leading-normal lg:leading-normal  font-semibold lg:font-medium">
                                             اختر موعد اليوم الاول
                                         </h3>
-                                        <div class="flex gap-1 items-center">
-                                            <span class="w-2.5 h-1 rounded-full bg-[#7839EE]"></span>
-                                            <span class="w-2.5 h-1 rounded-full bg-[#E6E6EA]"></span>
-                                        </div>
+                                        <button type="button" class="close-res-select-time">
+                                            <img src="assets/images/close.svg" width="24" height="24" alt="Close Icon">
+                                        </button>
                                     </div>
                                     <p
                                         class="px-[30px] lg:px-0 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
@@ -719,14 +718,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p
-                                    class="border border-[#DDF594] bg-[#FBFEF2] rounded-2xl py-4 px-5 text-black text-sm leading-normal font-medium">
-                                    برجاء العلم ان تاريخ أول حصة سيكون الثلاثاء ١٤ يوليو ٢٠٢٣ الساعه ١:٠٠ م
-                                </p>
-                                <button
-                                    class="flex items-center justify-center text-center gap-2 text-black leading-normal py-4 px-8 rounded-2xl secondary-btn">
-                                    حدد موعد اليوم التالي
-                                </button>
+                                <div class="py-2 px-6 lg:p-0">
+                                    <p
+                                        class="border border-[#DDF594] bg-[#FBFEF2] rounded-2xl py-4 px-5 text-black text-xs lg:text-sm leading-normal font-medium">
+                                        برجاء العلم ان تاريخ أول حصة سيكون الثلاثاء ١٤ يوليو ٢٠٢٣ الساعه ١:٠٠ م
+                                    </p>
+                                </div>
+                                <div class="py-4 px-6 lg:p-0">
+
+                                    <button
+                                        class="w-full flex items-center justify-center text-center gap-2 text-black leading-normal py-4 px-8 rounded-2xl secondary-btn">
+                                        حدد موعد اليوم التالي
+                                    </button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -753,10 +758,9 @@
                                             class="flex-1 text-[#090129] text-lg lg:text-2xl leading-normal lg:leading-normal  font-semibold lg:font-medium">
                                             اختر موعد اليوم الثاني
                                         </h3>
-                                        <div class="flex gap-1 items-center">
-                                            <span class="w-2.5 h-1 rounded-full bg-[#7839EE]"></span>
-                                            <span class="w-2.5 h-1 rounded-full bg-[#7839EE]"></span>
-                                        </div>
+                                        <button type="button" class="close-res-select-sec-time">
+                                            <img src="assets/images/close.svg" width="24" height="24" alt="Close Icon">
+                                        </button>
                                     </div>
                                     <p
                                         class="px-[30px] lg:px-0 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
@@ -819,22 +823,25 @@
                                     </div>
 
                                 </div>
-
-                                <button
-                                    class="flex items-center justify-center text-center gap-2 text-black leading-normal py-4 px-8 rounded-2xl secondary-btn">
-                                    حدد موعد اليوم التالي
-                                </button>
+                                <div class="py-2 px-6 lg:p-0">
+                                    <p
+                                        class="border border-[#DDF594] bg-[#FBFEF2] rounded-2xl py-4 px-5 text-black text-xs lg:text-sm leading-normal font-medium">
+                                        برجاء العلم ان تاريخ أول حصة سيكون الثلاثاء ١٤ يوليو ٢٠٢٣ الساعه ١:٠٠ م
+                                    </p>
+                                </div>
+                                <div class="py-4 px-6 lg:p-0">
+                                    <button
+                                        class="w-full flex items-center justify-center text-center gap-2 text-black leading-normal py-4 px-8 rounded-2xl secondary-btn">
+                                        حدد موعد اليوم التالي
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="sticky lg:static bottom-0 w-full py-4 px-[30px] bg-white lg:p-0">
-                        <a href="messages.html"
-                            class="flex items-center justify-center text-center gap-2 border-b border-[#E6E6EA] lg:border-none text-black l leading-normal py-4 px-8 rounded-2xl secondary-btn">
-                            <span class="flex-1">
-                                الدفع والحجز
-                            </span>
-                        </a>
+                        <input type="submit" value="الدفع والحجز"
+                            class="w-full flex items-center justify-center text-center gap-2 border-b border-[#E6E6EA] lg:border-none text-black l leading-normal py-4 px-8 rounded-2xl secondary-btn">
                     </div>
                 </form>
             </div>
