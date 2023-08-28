@@ -3053,7 +3053,7 @@ a.ui-button:active,
   line-height: 1rem;
 }
 
-.tagify__tag>div::before {
+.tagify__tag > div::before {
   display: none;
 }
 
@@ -4032,3 +4032,4 @@ a.ui-button:active,
     background-color: rgb(241 232 251 / var(--tw-bg-opacity));
   }
 }
+
