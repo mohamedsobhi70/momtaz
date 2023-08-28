@@ -1586,10 +1586,6 @@ header .nav-item.active {
   border-radius: 50px;
 }
 
-.rounded-\[55px\] {
-  border-radius: 55px;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -2820,6 +2816,10 @@ label:has(> input.choice:checked) {
   border-color: rgb(135 91 247 / var(--tw-border-opacity));
 }
 
+.reg-chkinpt:checked + label .perchkblc {
+  display: flex;
+}
+
 .date-labl:has(> input:checked),
 .choose-time-tabs-item.active {
   --tw-border-opacity: 1;
@@ -3033,6 +3033,28 @@ a.ui-button:active,
   border-radius: 20px;
 }
 
+.tagify {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tagify__tag {
+  margin: 0px;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 232 251 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.tagify__tag>div::before {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .lg\:secondary-btn {
     --tw-bg-opacity: 1;
@@ -3164,6 +3186,11 @@ a.ui-button:active,
   right: auto;
 }
 
+.peer:checked ~ .peer-checked\:border-\[\#875BF7\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(135 91 247 / var(--tw-border-opacity));
+}
+
 .peer:checked ~ .peer-checked\:bg-\[\#090129\] {
   --tw-bg-opacity: 1;
   background-color: rgb(9 1 41 / var(--tw-bg-opacity));
@@ -3176,6 +3203,10 @@ a.ui-button:active,
 
 .peer:checked ~ .peer-checked\:font-bold {
   font-weight: 700;
+}
+
+.peer:checked ~ .peer-checked\:font-semibold {
+  font-weight: 600;
 }
 
 .peer:checked ~ .peer-checked\:text-\[\#090129\] {

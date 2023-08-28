@@ -13,6 +13,7 @@
         rel="stylesheet">
 
     <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/tagify.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -36,34 +37,48 @@
 
             </header>
             <!-- End header  -->
-            <div class="grid grid-cols-3 py-4">
-                <div class="flex items-center justify-center flex-col gap-2 relative">
+            <div class="grid grid-cols-4 py-4 px-[30px] lg:px-0">
+                <div class="flex items-center flex-col gap-2 relative">
                     <span
                         class="bg-[#090129] text-white rounded-full relative w-8 h-8 flex items-center justify-center z-[1]">
                         1
                     </span>
-                    <h2 class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium">
-                        بيانات موقعك
+                    <h2
+                        class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium text-center">
+                        المعلومات الشخصية
                     </h2>
                 </div>
-                <div class="flex items-center justify-center flex-col gap-2 relative">
+                <div class="flex items-center flex-col gap-2 relative">
                     <span class="absolute h-0.5 bg-[#090129] w-full top-4 left-1/2"></span>
                     <span
                         class="bg-[#090129] text-white rounded-full relative w-8 h-8 flex items-center justify-center z-[1]">
                         2
                     </span>
-                    <h2 class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium">
-                        المستندات
+                    <h2
+                        class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium text-center">
+                        الخبرة والمستندات
                     </h2>
                 </div>
-                <div class="flex items-center justify-center flex-col gap-2 relative">
+                <div class="flex items-center flex-col gap-2 relative">
                     <span class="absolute h-0.5 bg-[#090129] w-full top-4 left-1/2"></span>
                     <span
                         class="bg-[#090129] text-white rounded-full relative w-8 h-8 flex items-center justify-center z-[1]">
                         3
                     </span>
-                    <h2 class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium">
-                        معلومات أضافية
+                    <h2
+                        class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium text-center">
+                        المراحل التعليمية
+                    </h2>
+                </div>
+                <div class="flex items-center flex-col gap-2 relative">
+                    <span class="absolute h-0.5 bg-[#DCDFEA] w-full top-4 left-1/2"></span>
+                    <span
+                        class="bg-[#DCDFEA] text-[#090129] rounded-full relative w-8 h-8 flex items-center justify-center z-[1]">
+                        4
+                    </span>
+                    <h2
+                        class="text-[#8E8A9D] text-xs leading-normal lg:text-sm lg:leading-normal font-medium text-center">
+                        الحساب البنكي
                     </h2>
                 </div>
 
@@ -147,7 +162,7 @@
         <!-- =============================================================== -->
 
         <!-- register form  -->
-        <div class="flex flex-col">
+        <form class="flex flex-col">
             <!-- Start header  -->
             <header
                 class="py-6 px-[30px] lg:p-8 hidden lg:flex items-center gap-8 justify-end bg-[#FAF8FE] lg:bg-transparent">
@@ -170,95 +185,146 @@
             <!-- =============================================================== -->
 
             <!-- Start form -->
-            <div class="h-full px-[30px] lg:px-[100px] flex flex-col lg:justify-center lg:gap-8">
+            <div class="h-full px-[30px] lg:px-[100px] lg:py-10 flex flex-col lg:gap-8">
 
-                <div class="flex flex-col lg:items-center gap-2 lg:gap-3 py-6 lg:p-0">
-                    <h2 class="text-[#111322] text-2xl lg:text-[32px] leading-normal font-semibold lg:text-center">
-                        معلومات أضافية
-                    </h2>
-                    <p
-                        class="text-[#667085] text-sm lg:text-base leading-normal lg:leading-normal font-medium lg:text-center">
-                        معلومات تعريفية ستساعدك علي الحصول علي الحجوزات بشكل أفضل .
-                    </p>
+                <div class="flex flex-col lg:justify-center lg:gap-8">
+                    <div class="flex flex-col lg:items-center gap-2 lg:gap-3 py-6 lg:p-0">
+                        <h2 class="text-[#111322] text-2xl lg:text-[32px] leading-normal font-semibold lg:text-center">
+                            المراحل والمواد العلمية
+                        </h2>
+                        <p
+                            class="text-[#667085] text-sm lg:text-base leading-normal lg:leading-normal font-medium lg:text-center">
+                            من فضلك، قم باختيار المراحل التعليمية التي تدرسها
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-4 lg:gap-x-5 lg:gap-6 py-4">
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-[#4A5578] text-xs leading-normal font-medium">
+                                المراحل التعليمية التي تدرسها، يمكن إختيار أكثر من مرحلة
+                            </h3>
+                            <div class="grid gap-4 grid-cols-2 lg:grid-cols-4">
+                                <div class="">
+                                    <input type="checkbox" name="stages" id="stages-1" class="hidden peer reg-chkinpt">
+                                    <label for="stages-1"
+                                        class="flex items-center gap-1 cursor-pointer border border-[#DCDFEA] peer-checked:border-[#875BF7] rounded-lg p-3 text-[#5A5570] text-sm leading-normal font-normal peer-checked:font-semibold transition-all duration-300">
+                                        <span
+                                            class="hidden perchkblc w-4 h-4 items-center justify-center bg-[#7839EE] rounded-full overflow-hidden">
+                                            <img src="assets/images/check.svg" width="11" height="11" alt="check">
+                                        </span>
+                                        رياض أطفال
+                                    </label>
+                                </div>
+                                <div class="">
+                                    <input type="checkbox" name="stages" id="stages-2" class="hidden peer reg-chkinpt">
+                                    <label for="stages-2"
+                                        class="flex items-center gap-1 cursor-pointer border border-[#DCDFEA] peer-checked:border-[#875BF7] rounded-lg p-3 text-[#5A5570] text-sm leading-normal font-normal peer-checked:font-semibold transition-all duration-300">
+                                        <span
+                                            class="hidden perchkblc w-4 h-4 items-center justify-center bg-[#7839EE] rounded-full overflow-hidden">
+                                            <img src="assets/images/check.svg" width="11" height="11" alt="check">
+                                        </span>
+                                        الإبتدائية
+                                    </label>
+                                </div>
+                                <div class="">
+                                    <input type="checkbox" name="stages" id="stages-3" class="hidden peer reg-chkinpt">
+                                    <label for="stages-3"
+                                        class="flex items-center gap-1 cursor-pointer border border-[#DCDFEA] peer-checked:border-[#875BF7] rounded-lg p-3 text-[#5A5570] text-sm leading-normal font-normal peer-checked:font-semibold transition-all duration-300">
+                                        <span
+                                            class="hidden perchkblc w-4 h-4 items-center justify-center bg-[#7839EE] rounded-full overflow-hidden">
+                                            <img src="assets/images/check.svg" width="11" height="11" alt="check">
+                                        </span>
+                                        المتوسطة
+                                    </label>
+                                </div>
+                                <div class="">
+                                    <input type="checkbox" name="stages" id="stages-4" class="hidden peer reg-chkinpt">
+                                    <label for="stages-4"
+                                        class="flex items-center gap-1 cursor-pointer border border-[#DCDFEA] peer-checked:border-[#875BF7] rounded-lg p-3 text-[#5A5570] text-sm leading-normal font-normal peer-checked:font-semibold transition-all duration-300">
+                                        <span
+                                            class="hidden perchkblc w-4 h-4 items-center justify-center bg-[#7839EE] rounded-full overflow-hidden">
+                                            <img src="assets/images/check.svg" width="11" height="11" alt="check">
+                                        </span>
+                                        الثانوية
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden st-courses-1">
+                            <div class="flex flex-col gap-3 tagfy">
+                                <label for="st-courses-1" class="text-[#111322] text-xs leading-normal font-semibold">
+                                    المواد العلمية التي تدرسها برياض الاطفال
+                                </label>
+                                <input name='st-courses-1' id="st-courses-1" value='الجغرفيا, التاريخ'
+                                    class="py-2 px-4 rounded-2xl border border-[#DCDFEA]">
+                                <p class="text-[#7D89B0] text-xs leading-normal">
+                                    يمكنك إضافة إلي ما يصل إلى 3 مواد
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hidden st-courses-2">
+
+                            <div class="flex flex-col gap-3 tagfy">
+                                <label for="st-courses-2" class="text-[#111322] text-xs leading-normal font-semibold">
+                                    المواد العلمية التي تدرسها بالمرحلة الإبتدائيه
+                                </label>
+                                <input name='st-courses-2' id="st-courses-2" value='الجغرفيا, التاريخ'
+                                    class="py-2 px-4 rounded-2xl border border-[#DCDFEA]">
+                                <p class="text-[#7D89B0] text-xs leading-normal">
+                                    يمكنك إضافة إلي ما يصل إلى 3 مواد
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hidden st-courses-3">
+                            <div class="flex flex-col gap-3 tagfy">
+                                <label for="st-courses-3" class="text-[#111322] text-xs leading-normal font-semibold">
+                                    المواد العلمية التي تدرسها بالمرحلة المتوسطة
+                                </label>
+                                <input name='st-courses-3' id="st-courses-3" value='الجغرفيا, التاريخ'
+                                    class="py-2 px-4 rounded-2xl border border-[#DCDFEA]">
+                                <p class="text-[#7D89B0] text-xs leading-normal">
+                                    يمكنك إضافة إلي ما يصل إلى 3 مواد
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden st-courses-4">
+                            <div class="flex flex-col gap-3 tagfy">
+                                <label for="st-courses-4" class="text-[#111322] text-xs leading-normal font-semibold">
+                                    المواد العلمية التي تدرسها بالمرحلة الثانوية
+                                </label>
+                                <input name='st-courses-4' id="st-courses-4" value='الجغرفيا, التاريخ'
+                                    class="py-2 px-4 rounded-2xl border border-[#DCDFEA]">
+                                <p class="text-[#7D89B0] text-xs leading-normal">
+                                    يمكنك إضافة إلي ما يصل إلى 3 مواد
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <form>
-                    <div class="flex flex-col lg:gap-8">
-                        <div class="flex flex-col gap-4 lg:gap-x-5 lg:gap-6 py-4">
-                            <div class="">
-                                <label for="demonstration-video"
-                                    class="border border-[#DCDFEA] rounded-2xl bg-white p-8 flex flex-col items-center gap-3">
-                                    <img src="assets/images/ved-icon.png" width="48" height="48" alt="video icon">
-                                    <span class="dem-vide-name"></span>
-                                    <span class="flex flex-col items-center gap-1">
-                                        <span class="flex items-center gap-1">
-                                            <span
-                                                class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                انقر للتحميل
-                                            </span>
-                                            <span
-                                                class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                أو اسحب الملف هنا
-                                            </span>
-                                        </span>
-                                        <span
-                                            class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                                            أقصي حجم للفيديو هو 5 ميجا بايت.
-                                        </span>
-                                    </span>
-                                </label>
-                                <input type="file" id="demonstration-video" name="demonstration-video" class="hidden" />
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <label for="academic-title" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                    المسمي الأكاديمي
-                                </label>
-                                <input type="text" name="academic-title" id="academic-title"
-                                    placeholder="مثال : معلم أول رياضيات"
-                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <label for="ex-years" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                    سنوات الخبرة
-                                </label>
-                                <input type="text" name="ex-years" id="ex-years" placeholder="سنوات الخبرة"
-                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <label for="about-you" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                    نبذة عنك
-                                </label>
-                                <textarea name="about-you" id="about-you" placeholder="نبذة عنك" rows="8"
-                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]"></textarea>
-                            </div>
-                        </div>
-
-
-                        <!-- Submit  -->
-                        <div class="flex flex-col gap-2 py-4 lg:p-0">
-                            <input type="submit" value="التالي"
-                                class="py-4 px-6 lg:text-sm lg:leading-5 leading-normal font-medium secondary-btn rounded-xl text-center cursor-pointer focus:outline-0">
-                            <a href="#"
-                                class="text-base leading-normal py-3 px-6 rounded-xl flex lg:hidden items-center justify-center gap-2 bordered-btn">
-                                تخطي
-                            </a>
-                        </div>
-
-                    </div>
-                </form>
+                <!-- Submit  -->
+                <div class="flex flex-col gap-2 py-4 lg:py-0 sticky lg:static bottom-0 bg-white">
+                    <input type="submit" value="التالي"
+                        class="py-4 px-6 lg:text-sm lg:leading-5 leading-normal font-medium secondary-btn rounded-xl text-center cursor-pointer focus:outline-0">
+                    <a href="#"
+                        class="text-base leading-normal py-3 px-6 rounded-xl flex lg:hidden items-center justify-center gap-2 bordered-btn">
+                        تخطي
+                    </a>
+                </div>
 
             </div>
-            <!-- End form -->
-
-
-
-        </div>
+        </form>
     </main>
 
     <!-- =============================================================== -->
 
     <!-- scripts -->
     <script src="assets/js/jquiry.js"></script>
+    <script src="assets/js/tagify.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

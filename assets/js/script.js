@@ -929,6 +929,68 @@ if ($("#one-class-date-picker").length > 0) {
     });
 }
 
+if ($(".tagfy").length > 0) {
+    let input = document.querySelector('input[name=st-courses-1]');
+    let input2 = document.querySelector('input[name=st-courses-2]');
+    let input3 = document.querySelector('input[name=st-courses-3]');
+    let input4 = document.querySelector('input[name=st-courses-4]');
+    // initialize Tagify on the above input node reference
+    new Tagify(input, {
+        maxTags: 3,
+    })
+    new Tagify(input2, {
+        maxTags: 3,
+    })
+    new Tagify(input3, {
+        maxTags: 3,
+    })
+    new Tagify(input4, {
+        maxTags: 3,
+    })
+
+}
+
+if ($('#stages-1').length > 0) {
+    $('#stages-1').on("change", function () {
+        if ($(this).is(":checked")) {
+            $(".st-courses-1").removeClass("hidden")
+        }
+        else {
+            $(".st-courses-1").addClass("hidden")
+        }
+    })
+}
+if ($('#stages-2').length > 0) {
+    $('#stages-2').on("change", function () {
+        if ($(this).is(":checked")) {
+            $(".st-courses-2").removeClass("hidden")
+        }
+        else {
+            $(".st-courses-2").addClass("hidden")
+        }
+    })
+}
+if ($('#stages-3').length > 0) {
+    $('#stages-3').on("change", function () {
+        if ($(this).is(":checked")) {
+            $(".st-courses-3").removeClass("hidden")
+        }
+        else {
+            $(".st-courses-3").addClass("hidden")
+        }
+    })
+}
+if ($('#stages-4').length > 0) {
+    $('#stages-4').on("change", function () {
+        if ($(this).is(":checked")) {
+            $(".st-courses-4").removeClass("hidden")
+        }
+        else {
+            $(".st-courses-4").addClass("hidden")
+        }
+    })
+}
+
 
 // if ($("#end-date-1").length > 0) {
 //     let picker = new Litepicker({
