@@ -3049,6 +3049,8 @@ a.ui-button:active,
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .tagify__tag>div::before {
