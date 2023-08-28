@@ -848,9 +848,17 @@ if ($("#cover-img").length > 0) {
 }
 
 if ($(".file-input").length > 0) {
-    $(".file-input").on("change", function () {
-        $(this).siblings(".file-name").html($(this).val().replace(/.*(\/|\\)/, ''))
+    $(".file-input").each(function () {
+        let th = $(this);
+        th.on("change", function () {
+            $(this).siblings(".file-name").html($(this).val().replace(/.*(\/|\\)/, ''));
+            $(this).siblings(".preview-btn").removeClass("hidden");
+        })
+        $(".preview-btn").on("click", function (e) {
+            e.preventDefault()
+        })
     })
+
 }
 
 if ($('label[for="demonstration-video"]').length > 0) {
@@ -872,6 +880,27 @@ if ($('label[for="demonstration-video"]').length > 0) {
     })
     function handleFileSelect(file) {
         $(".dem-vide-name").html(file.name);
+    }
+}
+if ($('label[for="personal-image"]').length > 0) {
+    const label = document.querySelector('label[for="personal-image"]');
+    const inputFile = document.querySelector('#personal-image');
+    label.addEventListener('dragover', (event) => {
+        event.preventDefault();
+    });
+    label.addEventListener('drop', (event) => {
+        event.preventDefault();
+        let file = event.dataTransfer.files[0];
+        inputFile.files = event.dataTransfer.files;
+        inputFile.dispatchEvent(new Event('change'));
+        handleFileSelect(file)
+    });
+    inputFile.addEventListener("change", (event) => {
+        event.preventDefault();
+        handleFileSelect(event.target.files[0])
+    })
+    function handleFileSelect(file) {
+        $(".dem-image-name").html(file.name);
     }
 }
 

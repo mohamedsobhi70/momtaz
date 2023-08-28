@@ -48,13 +48,13 @@
                     </h2>
                 </div>
                 <div class="flex items-center flex-col gap-2 relative">
-                    <span class="absolute h-0.5 bg-[#090129] w-full top-4 left-1/2"></span>
+                    <span class="absolute h-0.5 bg-[#DCDFEA] w-full top-4 left-1/2"></span>
                     <span
-                        class="bg-[#090129] text-white rounded-full relative w-8 h-8 flex items-center justify-center z-[1]">
+                        class="bg-[#DCDFEA] text-[#090129] rounded-full relative w-8 h-8 flex items-center justify-center z-[1]">
                         2
                     </span>
                     <h2
-                        class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium text-center">
+                        class="text-[#8E8A9D] text-xs leading-normal lg:text-sm lg:leading-normal font-medium text-center">
                         الخبرة والمستندات
                     </h2>
                 </div>
@@ -184,49 +184,63 @@
             <!-- =============================================================== -->
 
             <!-- Start form -->
-            <div class="h-full px-[30px] lg:px-[100px] lg:py-10">
+            <div class="h-full px-[30px] lg:px-[100px] lg:py-10 flex flex-col lg:gap-8">
+
                 <div class="flex flex-col lg:justify-center lg:gap-8">
                     <div class="flex flex-col lg:items-center gap-2 lg:gap-3 py-6 lg:p-0">
                         <h2 class="text-[#111322] text-2xl lg:text-[32px] leading-normal font-semibold lg:text-center">
-                            المسمى الأكاديمي والخبرة
+                            العنوان
                         </h2>
                         <p
                             class="text-[#667085] text-sm lg:text-base leading-normal lg:leading-normal font-medium lg:text-center">
-                            من فضلك، حدد المسمى الأكاديمي. ثم قم بتحديد عدد سنوات الخبرة وأضف نبذة مختصرة عنك.
+                            من خلال هذه المعلومات يمكن للمستخدمين التواصل معك بكل سهولة.
                         </p>
                     </div>
 
-                    <div class="flex flex-col gap-4 lg:gap-x-5 lg:gap-6 py-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-5 lg:gap-6 py-4">
                         <div class="flex flex-col gap-2">
-                            <label for="academic-title" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                المسمي الأكاديمي
+                            <label for="country" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                الدولة
                             </label>
-                            <input type="text" name="academic-title" id="academic-title"
-                                placeholder="مثال : معلم أول رياضيات"
-                                class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label for="ex-years" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                سنوات الخبرة
-                            </label>
-                            <select required name="experience" id="experience"
+                            <select required name="country" id="country"
                                 class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
-                                <option selected disabled>أختر عدد سنوات الخبرة</option>
-                                <option value="1">حديث تخرج (بدون خبرة)</option>
-                                <option value="2">خبرة لا تقل عن 3 سنوات</option>
-                                <option value="2">خبة لا تقل عن 3 سنوات فى رياض الأطفال</option>
-                                <option value="2">مبتدئ (1-5 سنوات)</option>
-                                <option value="2">متدرب</option>
-                                <option value="2">متقدم (خبرة أكثر من 10 سنوات)</option>
-                                <option value="2">متوسط (خبرة 5 -10 سنوات)</option>
+                                <option selected disabled> أختر الدولة</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
                             </select>
                         </div>
                         <div class="flex flex-col gap-2">
-                            <label for="about-you" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                نبذة مختصرة عنك
+                            <label for="nationality" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                الجنسية
                             </label>
-                            <textarea name="about-you" id="about-you" placeholder="نبذة عنك" rows="8"
-                                class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]"></textarea>
+                            <select required name="nationality" id="nationality"
+                                class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
+                                <option selected disabled> أختر الجنسية</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="city" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                المدينة
+                            </label>
+                            <select required name="city" id="city"
+                                class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
+                                <option selected disabled> أختر المدينة</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="region" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                الحي
+                            </label>
+                            <select required name="region" id="region"
+                                class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
+                                <option selected disabled> أختر الحي</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -234,98 +248,75 @@
                 <div class="flex flex-col lg:justify-center lg:gap-8">
                     <div class="flex flex-col lg:items-center gap-2 lg:gap-3 py-6 lg:p-0">
                         <h2 class="text-[#111322] text-2xl lg:text-[32px] leading-normal font-semibold lg:text-center">
-                            المستندات
+                            صورة و فيديو تعريفي عنك
                         </h2>
                         <p
                             class="text-[#667085] text-sm lg:text-base leading-normal lg:leading-normal font-medium lg:text-center">
-                            من فضلك، قم برفع أي مستند يثبت الهوية حتي يتم مراجعته.
+                            من فضلك، قم بإضافة صورة الملف الشخصي و فيديو تعريفي عنك
                         </p>
                     </div>
 
                     <div>
-                        <div class="flex flex-col lg:gap-8">
-                            <div class="flex flex-col">
-                                <div class="flex flex-col gap-4 lg:gap-x-5 lg:gap-6 py-4">
-                                    <div class="flex flex-col gap-2 lg:gap-1">
-                                        <span class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            الوجهه الأمامية من الهوية المدنية
-                                        </span>
-                                        <div
-                                            class="border border-[#DCDFEA] rounded-2xl px-4 py-3 flex items-center gap-3">
-                                            <label for="identity"
-                                                class="secondary-btn rounded-lg py-2 px-4 text-xs leading-normal font-medium">
-                                                اختر ملف
-                                            </label>
-                                            <span class="file-name text-[#7D89B0] text-sm leading-normal flex-1 line-clamp-1">
-                                                لم تقم باختيار ملف
-                                            </span>
-                                            <input type="file" class="hidden file-input" name="identity" id="identity">
-
-                                            <!-- preview Buttn  -->
-                                            <button class="hidden preview-btn">
+                        <div class="flex flex-col gap-4 lg:gap-6">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    صورة الملف الشخصي
+                                </h3>
+                                <div>
+                                    <label for="personal-image"
+                                        class="border border-[#DCDFEA] rounded-2xl bg-white p-8 flex flex-col items-center gap-3">
+                                        <img src="assets/images/ved-icon.png" width="48" height="48" alt="video icon">
+                                        <span class="dem-image-name"></span>
+                                        <span class="flex flex-col items-center gap-1">
+                                            <span class="flex items-center gap-1">
                                                 <span
-                                                    class="flex items-center gap-3 text-[#4A5578] text-xs leading-normal">
-                                                    معاينه
-                                                    <img src="assets/images/eye.svg" width="20" height="20"
-                                                        alt="eye icon">
+                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
+                                                    انقر لتحميل الصورة
                                                 </span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-2 lg:gap-1">
-                                        <span class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            الوجهه الخلفي من الهوية المدنية
-                                        </span>
-                                        <div
-                                            class="border border-[#DCDFEA] rounded-2xl px-4 py-3 flex items-center gap-3">
-                                            <label for="identity1"
-                                                class="secondary-btn rounded-lg py-2 px-4 text-xs leading-normal font-medium">
-                                                اختر ملف
-                                            </label>
+                                                <span
+                                                    class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                                    أو اسحب الملف هنا
+                                                </span>
+                                            </span>
                                             <span
-                                                class="file-name text-[#7D89B0] text-sm leading-normal flex-1 line-clamp-1">
-                                                لم تقم باختيار ملف
+                                                class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
+                                                أقصي حجم للصورة هو 5 ميجا بايت.
                                             </span>
-                                            <input type="file" class="hidden file-input" name="identity1"
-                                                id="identity1">
-
-                                            <!-- preview Buttn  -->
-                                            <button class="hidden preview-btn">
-                                                <span
-                                                    class="flex items-center gap-3 text-[#4A5578] text-xs leading-normal">
-                                                    معاينه
-                                                    <img src="assets/images/eye.svg" width="20" height="20"
-                                                        alt="eye icon">
-                                                </span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-2 lg:gap-1">
-                                        <span class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            الرخصة المهنية
                                         </span>
-                                        <div
-                                            class="border border-[#DCDFEA] rounded-2xl px-4 py-3 flex items-center gap-3">
-                                            <label for="license"
-                                                class="secondary-btn rounded-lg py-2 px-4 text-xs leading-normal font-medium">
-                                                اختر ملف
-                                            </label>
-                                            <span class="file-name text-[#7D89B0] text-sm leading-normal flex-1 line-clamp-1">
-                                                لم تقم باختيار ملف
-                                            </span>
-                                            <input type="file" class="hidden file-input" name="license" id="license">
+                                    </label>
+                                    <input type="file" id="personal-image" name="personal-image"
+                                        class="hidden">
+                                </div>
+                            </div>
 
-                                            <!-- preview Buttn  -->
-                                            <button class="hidden preview-btn">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    فيديو تعريفي
+                                </h3>
+                                <div>
+                                    <label for="demonstration-video"
+                                        class="border border-[#DCDFEA] rounded-2xl bg-white p-8 flex flex-col items-center gap-3">
+                                        <img src="assets/images/ved-icon.png" width="48" height="48" alt="video icon">
+                                        <span class="dem-vide-name"></span>
+                                        <span class="flex flex-col items-center gap-1">
+                                            <span class="flex items-center gap-1">
                                                 <span
-                                                    class="flex items-center gap-3 text-[#4A5578] text-xs leading-normal">
-                                                    معاينه
-                                                    <img src="assets/images/eye.svg" width="20" height="20"
-                                                        alt="eye icon">
+                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
+                                                    انقر لتحميل الفيديو
                                                 </span>
-                                            </button>
-                                        </div>
-                                    </div>
+                                                <span
+                                                    class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                                    أو اسحب الملف هنا
+                                                </span>
+                                            </span>
+                                            <span
+                                                class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
+                                                أقصى حجم للفيديو هو 5 ميجا بايت بالتوجه الرأسي (عمودي).
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <input type="file" id="demonstration-video" name="demonstration-video"
+                                        class="hidden">
                                 </div>
                             </div>
                         </div>
@@ -333,7 +324,7 @@
                 </div>
 
                 <!-- Submit  -->
-                <div class="flex flex-col gap-2 py-4 lg:p-0 sticky lg:static bottom-0 bg-white">
+                <div class="flex flex-col gap-2 py-4 lg:py-0 sticky lg:static bottom-0 bg-white">
                     <input type="submit" value="التالي"
                         class="py-4 px-6 lg:text-sm lg:leading-5 leading-normal font-medium secondary-btn rounded-xl text-center cursor-pointer focus:outline-0">
                     <a href="#"
