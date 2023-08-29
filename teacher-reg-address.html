@@ -264,25 +264,40 @@
                                 </h3>
                                 <div class="h-full">
                                     <label for="personal-image"
-                                        class="border border-[#DCDFEA] rounded-2xl bg-white p-8 flex flex-col items-center gap-3 h-full">
-                                        <img src="assets/images/ved-icon.png" width="48" height="48" alt="video icon">
-                                        <span class="dem-image-name"></span>
-                                        <span class="flex flex-col items-center gap-1">
-                                            <span class="flex items-center gap-1">
-                                                <span
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    انقر لتحميل الصورة
+                                        class="border border-[#DCDFEA] rounded-2xl bg-white p-8 h-full flex flex-col items-center justify-center">
+                                        <div class="flex flex-col items-center gap-3 choose-img-files">
+                                            <img src="assets/images/ved-icon.png" width="48" height="48"
+                                                alt="video icon">
+                                            <span class="flex flex-col items-center gap-1">
+                                                <span class="flex items-center gap-1">
+                                                    <span
+                                                        class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
+                                                        انقر لتحميل الصورة
+                                                    </span>
+                                                    <span
+                                                        class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                                        أو اسحب الملف هنا
+                                                    </span>
                                                 </span>
                                                 <span
-                                                    class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    أو اسحب الملف هنا
+                                                    class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal text-center">
+                                                    أقصي حجم للصورة هو 5 ميجا بايت.
                                                 </span>
                                             </span>
-                                            <span
-                                                class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal text-center">
-                                                أقصي حجم للصورة هو 5 ميجا بايت.
-                                            </span>
-                                        </span>
+                                        </div>
+                                        <div class="hidden" id="perimg-container">
+                                            <div class="flex flex-col items-center gap-3">
+                                                <div class="w-16 h-16 rounded-full overflow-hidden">
+                                                    <img src="" alt="" id="perimg" class="w-full h-full object-cover">
+                                                </div>
+                                                <span
+                                                    class="flex items-center gap-2 text-[#090129] text-xs leading-normal">
+                                                    <img src="assets/images/edit.png" width="20" height="20"
+                                                        alt="edit icon">
+                                                    تغيير
+                                                </span>
+                                            </div>
+                                        </div>
                                     </label>
                                     <input type="file" id="personal-image" name="personal-image" class="hidden">
                                 </div>
@@ -293,26 +308,44 @@
                                     فيديو تعريفي
                                 </h3>
                                 <div class="h-full">
+                                   
                                     <label for="demonstration-video"
-                                        class="border border-[#DCDFEA] rounded-2xl bg-white p-8 flex flex-col items-center gap-3 h-full">
-                                        <img src="assets/images/ved-icon.png" width="48" height="48" alt="video icon">
-                                        <span class="dem-vide-name"></span>
-                                        <span class="flex flex-col items-center gap-1">
-                                            <span class="flex items-center gap-1">
-                                                <span
-                                                    class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    انقر لتحميل الفيديو
+                                        class="border border-[#DCDFEA] rounded-2xl bg-white p-8 h-full flex flex-col items-center justify-center">
+                                        <div class="flex flex-col items-center gap-3 choose-vid-files">
+                                            <img src="assets/images/ved-icon.png" width="48" height="48"
+                                                alt="video icon">
+                                            <span class="flex flex-col items-center gap-1">
+                                                <span class="flex items-center gap-1">
+                                                    <span
+                                                        class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
+                                                        انقر لتحميل الفيديو
+                                                    </span>
+                                                    <span
+                                                        class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                                        أو اسحب الملف هنا
+                                                    </span>
                                                 </span>
                                                 <span
-                                                    class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                                    أو اسحب الملف هنا
+                                                    class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal text-center">
+                                                    أقصى حجم للفيديو هو 5 ميجا بايت بالتوجه الرأسي (عمودي).
                                                 </span>
                                             </span>
-                                            <span
-                                                class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal text-center">
-                                                أقصى حجم للفيديو هو 5 ميجا بايت بالتوجه الرأسي (عمودي).
-                                            </span>
-                                        </span>
+                                        </div>
+                                        <div class="hidden" id="pervid-container">
+                                            <div class="flex flex-col items-center gap-3">
+                                                <div class="w-16 h-16 rounded-full overflow-hidden">
+                                                    <video  id="pervid" class="w-full h-full object-cover" controls>
+                                                        <source  src="" type="video/mp4">
+                                                    </video>
+                                                </div>
+                                                <span
+                                                    class="flex items-center gap-2 text-[#090129] text-xs leading-normal">
+                                                    <img src="assets/images/edit.png" width="20" height="20"
+                                                        alt="edit icon">
+                                                    تغيير
+                                                </span>
+                                            </div>
+                                        </div>
                                     </label>
                                     <input type="file" id="demonstration-video" name="demonstration-video"
                                         class="hidden">

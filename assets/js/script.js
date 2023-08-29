@@ -862,47 +862,65 @@ if ($(".file-input").length > 0) {
 }
 
 if ($('label[for="demonstration-video"]').length > 0) {
-    const label = document.querySelector('label[for="demonstration-video"]');
-    const inputFile = document.querySelector('#demonstration-video');
+    let label = document.querySelector('label[for="demonstration-video"]');
+    let inputFile = document.querySelector('#demonstration-video');
+
     label.addEventListener('dragover', (event) => {
         event.preventDefault();
     });
+
     label.addEventListener('drop', (event) => {
         event.preventDefault();
         let file = event.dataTransfer.files[0];
-        inputFile.files = event.dataTransfer.files;
-        inputFile.dispatchEvent(new Event('change'));
-        handleFileSelect(file)
+        if (file && file.type.startsWith('video/')) {
+            inputFile.files = event.dataTransfer.files;
+            inputFile.dispatchEvent(new Event('change'));
+            handleFileSelect(file)
+        }
     });
     inputFile.addEventListener("change", (event) => {
         event.preventDefault();
-        handleFileSelect(event.target.files[0])
+        let file = event.target.files[0];
+        if (file && file.type.startsWith('video/')) {
+            handleFileSelect(file);
+        }
     })
     function handleFileSelect(file) {
-        $(".dem-vide-name").html(file.name);
+        $("#pervid-container").removeClass("hidden");
+        $(".choose-vid-files").addClass("hidden");
+        $("#pervid").attr("src", URL.createObjectURL(file))
     }
 }
 if ($('label[for="personal-image"]').length > 0) {
     const label = document.querySelector('label[for="personal-image"]');
     const inputFile = document.querySelector('#personal-image');
+
     label.addEventListener('dragover', (event) => {
         event.preventDefault();
     });
     label.addEventListener('drop', (event) => {
         event.preventDefault();
         let file = event.dataTransfer.files[0];
-        inputFile.files = event.dataTransfer.files;
-        inputFile.dispatchEvent(new Event('change'));
-        handleFileSelect(file)
+        if (file && file.type.startsWith('image/')) {
+            inputFile.files = event.dataTransfer.files;
+            inputFile.dispatchEvent(new Event('change'));
+            handleFileSelect(file)
+        }
     });
     inputFile.addEventListener("change", (event) => {
         event.preventDefault();
-        handleFileSelect(event.target.files[0])
+        let file = event.target.files[0];
+        if (file && file.type.startsWith('image/')) {
+            handleFileSelect(file);
+        }
     })
     function handleFileSelect(file) {
-        $(".dem-image-name").html(file.name);
+        $("#perimg-container").removeClass("hidden");
+        $(".choose-img-files").addClass("hidden");
+        $("#perimg").attr("src", URL.createObjectURL(file))
     }
 }
+
 
 if ($(".date-pick").length > 0) {
     $(".date-pick").each(function () {
@@ -975,7 +993,7 @@ if ($(".tagfy").length > 0) {
             enabled: 0,             // <- show suggestions on focus
             closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
         }
-        
+
     })
 
 }
