@@ -1058,3 +1058,34 @@ if ($('#stages-4').length > 0) {
 //         element: document.getElementById('end-date-2')
 //     });
 // }
+
+if ($(".teacher-nav-container").length > 0) {
+    $(".teacher-nav").on("click", function () {
+        $(".teacher-nav").removeClass("active");
+        $(this).addClass("active");
+    })
+}
+
+if ($(".teacher-nav-container").length > 0) {
+
+    $(window).on("scroll", function () {
+        let scrollPos = $(document).scrollTop() + $("body > header").innerHeight();
+        let sections = $('.naved-sec');
+        sections.each(function () {
+            let top = $(this).offset().top - 100;
+            let bottom = top + $(this).outerHeight();
+
+
+            if (scrollPos >= top && scrollPos <= bottom) {
+
+                let id = $(this).attr('id');
+
+                $('.teacher-nav[href="#' + id + '"]').addClass('active');
+            } else {
+                let id = $(this).attr('id');
+                $('.teacher-nav[href="#' + id + '"]').removeClass('active');
+            }
+        });
+    });
+
+}

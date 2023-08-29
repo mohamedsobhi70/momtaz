@@ -13,6 +13,7 @@
         rel="stylesheet">
 
     <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/tagify.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -118,29 +119,39 @@
                     <!-- login - register  -->
                     <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3 px-[30px] lg:p-0 pb-4 lg:pb-0">
                         <!-- Notifications  -->
-                        <a href="notifications.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
-                            <img src="assets/images/notification.svg" class="w-6 lg:w-5" width="24" height="24"
-                                alt="icon">
-
-                            <span class="flex-1 lg:hidden">
-                                الاشعارات
+                        <div class="relative">
+                            <a href="notifications.html"
+                                class="flex items-center gap-4 border-b lg:border border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                                <img src="assets/images/notification.svg" class="w-6 lg:w-5" width="24" height="24"
+                                    alt="icon">
+                                <span class="flex-1 lg:hidden">
+                                    الاشعارات
+                                </span>
+                                <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                    alt="arrow">
+                            </a>
+                            <span
+                                class="absolute -top-2 -right-2 rounded-full bg-[#C5221F] flex items-center justify-center w-5 h-5 text-white font-medium text-xs">
+                                1
                             </span>
-                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
-                                alt="arrow">
-                        </a>
+                        </div>
                         <!-- Messages  -->
-                        <a href="messages.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
-                            <img src="assets/images/message.svg" class="w-6 lg:w-5" width="24" alt="icon">
+                        <div class="relative">
+                            <a href="messages.html"
+                                class="flex items-center gap-4 border-b lg:border border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                                <img src="assets/images/message.svg" class="w-6 lg:w-5" width="24" alt="icon">
 
-                            <span class="flex-1 lg:hidden">
-                                الرسائل
+                                <span class="flex-1 lg:hidden">
+                                    الرسائل
+                                </span>
+                                <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                    alt="arrow">
+                            </a>
+                            <span
+                                class="absolute -top-2 -right-2 rounded-full bg-[#C5221F] flex items-center justify-center w-5 h-5 text-white font-medium text-xs">
+                                1
                             </span>
-                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
-                                alt="arrow">
-                        </a>
-
+                        </div>
                         <!-- Profile  -->
                         <div class="profile-menu-btn relative">
                             <div
@@ -222,10 +233,10 @@
     <!-- =============================================================== -->
 
     <!-- Start Momtaz MAin Page Content  -->
-    <main>
+    <form>
 
         <section class="overflow-x-hidden">
-            <div class="w-screen h-52 bg-cover bg-center lg:hidden relative">
+            <div class=" container h-[200px] bg-cover bg-center  relative">
                 <img src="assets/images/account-cover.jpg" width="390" height="200" class="w-full h-full object-cover"
                     alt="account cover" id="cover-img">
                 <input type="file" name="cover-pic-inpt" id="cover-pic-inpt" class="hidden">
@@ -234,11 +245,10 @@
                     <img src="assets/images/gallery-edit.svg" width="24" height="24" alt="gallery edit">
                 </label>
             </div>
-            <div class="container -mt-16 lg:mt-0 pb-6 lg:pb-0">
-                <div
-                    class="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-[30px] lg:pb-8 lg:pt-12 px-[30px] lg:px-0">
+            <div class="container -mt-16 lg: pb-6 lg:pb-0">
+                <div class="flex flex-col gap-6 px-[30px]">
                     <div id="personal-pic-container"
-                        class="w-32 lg:w-24 h-32 lg:h-24 rounded-[50px] lg:rounded-[38px] overflow-hidden border-4 border-white bg-white relative">
+                        class="w-32 h-32  rounded-[50px] lg:rounded-[38px] overflow-hidden border-4 border-white bg-white relative">
                         <img src="assets/images/pop-teacher-1.jpg" class="w-full h-full object-cover" width="312"
                             height="312" alt="teacher profile image">
                         <input type="file" name="personal-pic" id="personal-pic" class="hidden"
@@ -251,67 +261,218 @@
                     </div>
 
                     <div class="flex flex-col gap-1 flex-1">
-                        <h2
-                            class="text-[#090129] text-xl lg:text-2xl leading-normal lg:leading-normal font-semibold line-clamp-1">
+                        <h2 class="text-[#090129] text-xl leading-normal font-semibold line-clamp-1">
                             عبدالرحمن مصطفي عبد الجواد
                         </h2>
-                        <p
-                            class="text-[#8E8A9D] text-base leading-normal lg:text-xl lg:leading-normal font-medium lg:font-normal">
+                        <p class="text-[#8E8A9D] text-sm leading-normal font-medium lg:font-normal">
                             مدرس رياضيات
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section>
-            <div class="container lg:pb-8 lg:pt-4">
-                <div class="lg:col-span-2 flex flex-col">
-                    <div class="flex flex-col lg:gap-6">
-                        <!-- about You  -->
-                        <div class="px-[30px] py-8 lg:p-10 flex flex-col gap-6 lg:gap-4 lg:bg-[#F9F9FB] lg:rounded-3xl">
-                            <h2
-                                class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
-                                حولك
-                            </h2>
-                            <div class="flex flex-col gap-4">
-                                <div class="flex flex-col gap-2">
-                                    <label for="academic-title"
-                                        class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        المسمي الأكاديمي
-                                    </label>
-                                    <input type="text" name="academic-title" id="academic-title"
-                                        placeholder="مثال : معلم أول رياضيات"
-                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <label for="ex-years" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        سنوات الخبرة
-                                    </label>
-                                    <input type="text" name="ex-years" id="ex-years" placeholder="سنوات الخبرة"
-                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <label for="about-you" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        نبذة عنك
-                                    </label>
-                                    <textarea name="about-you" id="about-you" placeholder="نبذة عنك" rows="8"
-                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]"></textarea>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <h3 class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        نبذة عنك
-                                    </h3>
-                                    <label for="demonstration-video"
-                                        class="border border-[#DCDFEA] rounded-2xl bg-white p-8 flex flex-col items-center gap-3">
+            <div class="container lg:py-8 grid grid-cols-1 lg:grid-cols-4 gap-[30px]">
+                <aside class="hidden lg:block lg:col-span-1">
+                    <ul class="flex flex-col lg:sticky lg:top-24 teacher-nav-container">
+                        <li>
+                            <a href="#aboutYou" class="teacher-nav active">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1605 10.87C12.0605 10.86 11.9405 10.86 11.8305 10.87C9.45055 10.79 7.56055 8.84 7.56055 6.44C7.56055 3.99 9.54055 2 12.0005 2C14.4505 2 16.4405 3.99 16.4405 6.44C16.4305 8.84 14.5405 10.79 12.1605 10.87Z"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M7.1607 14.56C4.7407 16.18 4.7407 18.82 7.1607 20.43C9.9107 22.27 14.4207 22.27 17.1707 20.43C19.5907 18.81 19.5907 16.17 17.1707 14.56C14.4307 12.73 9.9207 12.73 7.1607 14.56Z"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                معلومات عنك
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nationality" class="teacher-nav">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.99961 3H8.99961C7.04961 8.84 7.04961 15.16 8.99961 21H7.99961"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M15 3C16.95 8.84 16.95 15.16 15 21" stroke="#5A5570" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3 16V15C8.84 16.95 15.16 16.95 21 15V16" stroke="#5A5570"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3 8.99961C8.84 7.04961 15.16 7.04961 21 8.99961" stroke="#292D32"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                الجنسية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#teach-location" class="teacher-nav">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 8.99953V14.9995C22 17.4995 21.5 19.2495 20.38 20.3795L14 13.9995L21.73 6.26953C21.91 7.05953 22 7.95953 22 8.99953Z"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M21.73 6.27L6.26999 21.73C3.25999 21.04 2 18.96 2 15V9C2 4 4 2 9 2H15C18.96 2 21.04 3.26 21.73 6.27Z"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M20.3795 20.38C19.2495 21.5 17.4995 22 14.9995 22H8.99954C7.95954 22 7.05953 21.91 6.26953 21.73L13.9995 14L20.3795 20.38Z"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.23929 7.97973C6.91929 5.04973 11.3193 5.04973 11.9993 7.97973C12.3893 9.69973 11.3093 11.1597 10.3593 12.0597C9.66928 12.7197 8.5793 12.7197 7.8793 12.0597C6.9293 11.1597 5.83929 9.69973 6.23929 7.97973Z"
+                                        stroke="#5A5570" stroke-width="1.5" />
+                                    <path d="M9.09412 8.7002H9.1031" stroke="#292D32" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                موقع التدريس
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experiences" class="teacher-nav">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.0008 22H16.0008C20.0208 22 20.7408 20.39 20.9508 18.43L21.7008 10.43C21.9708 7.99 21.2708 6 17.0008 6H7.0008C2.7308 6 2.0308 7.99 2.3008 10.43L3.0508 18.43C3.2608 20.39 3.9808 22 8.0008 22Z"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8 6V5.2C8 3.43 8 2 11.2 2H12.8C16 2 16 3.43 16 5.2V6" stroke="#5A5570"
+                                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M14 13V14C14 14.01 14 14.01 14 14.02C14 15.11 13.99 16 12 16C10.02 16 10 15.12 10 14.03V13C10 12 10 12 11 12H13C14 12 14 12 14 13Z"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M21.65 11C19.34 12.68 16.7 13.68 14 14.02" stroke="#5A5570"
+                                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M2.61914 11.2695C4.86914 12.8095 7.40914 13.7395 9.99914 14.0295"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                الخبرات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#stages" class="teacher-nav">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 16.7397V4.6697C22 3.4697 21.02 2.5797 19.83 2.6797H19.77C17.67 2.8597 14.48 3.9297 12.7 5.0497L12.53 5.1597C12.24 5.3397 11.76 5.3397 11.47 5.1597L11.22 5.0097C9.44 3.8997 6.26 2.8397 4.16 2.6697C2.97 2.5697 2 3.4697 2 4.6597V16.7397C2 17.6997 2.78 18.5997 3.74 18.7197L4.03 18.7597C6.2 19.0497 9.55 20.1497 11.47 21.1997L11.51 21.2197C11.78 21.3697 12.21 21.3697 12.47 21.2197C14.39 20.1597 17.75 19.0497 19.93 18.7597L20.26 18.7197C21.22 18.5997 22 17.6997 22 16.7397Z"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 5.49023V20.4902" stroke="#5A5570" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.75 8.49023H5.5" stroke="#5A5570" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8.5 11.4902H5.5" stroke="#5A5570" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                المراحل والمواد العلمية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#documents" class="teacher-nav">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 10V15C22 20 20 22 15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H14"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M22 10H18C15 10 14 9 14 6V2L22 10Z" stroke="#5A5570" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7 13H13" stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7 17H11" stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                المستندات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#bank-account" class="teacher-nav">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.5 13.7502C9.5 14.7202 10.25 15.5002 11.17 15.5002H13.05C13.85 15.5002 14.5 14.8202 14.5 13.9702C14.5 13.0602 14.1 12.7302 13.51 12.5202L10.5 11.4702C9.91 11.2602 9.51001 10.9402 9.51001 10.0202C9.51001 9.18023 10.16 8.49023 10.96 8.49023H12.84C13.76 8.49023 14.51 9.27023 14.51 10.2402"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 7.5V16.5" stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2"
+                                        stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M17 3V7H21" stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M22 2L17 7" stroke="#5A5570" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                الحساب البنكي
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="flex flex-col lg:gap-6 lg:col-span-3">
+                    <!-- about You  -->
+                    <div id="aboutYou"
+                        class="naved-sec px-[30px] py-8 lg:px-0 flex flex-col gap-6 border-b border-[#E6E6EA]">
+                        <h2 class="text-[#090129] text-base leading-normal font-semibold">
+                            معلومات عنك
+                        </h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label for="academic-title" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    المسمي الأكاديمي
+                                </label>
+                                <input type="text" name="academic-title" id="academic-title"
+                                    placeholder="مثال : معلم أول رياضيات"
+                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="experience" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    سنوات الخبرة
+                                </label>
+                                <select name="experience" id="experience"
+                                    class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
+                                    <option selected disabled>أختر عدد سنوات الخبرة</option>
+                                    <option value="1">حديث تخرج (بدون خبرة)</option>
+                                    <option value="2">خبرة لا تقل عن 3 سنوات</option>
+                                    <option value="2">خبة لا تقل عن 3 سنوات فى رياض الأطفال</option>
+                                    <option value="2">مبتدئ (1-5 سنوات)</option>
+                                    <option value="2">متدرب</option>
+                                    <option value="2">متقدم (خبرة أكثر من 10 سنوات)</option>
+                                    <option value="2">متوسط (خبرة 5 -10 سنوات)</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="about-you" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    وصف عن عملك
+                                </label>
+                                <textarea name="about-you" id="about-you" placeholder="وصف عن عملك" rows="8"
+                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]"></textarea>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    فيديو تعريفي
+                                </h3>
+                                <label for="demonstration-video"
+                                    class="border border-[#DCDFEA] rounded-2xl bg-white p-8 h-full flex flex-col items-center justify-center">
+                                    <div class="flex flex-col items-center gap-3 choose-vid-files">
                                         <img src="assets/images/ved-icon.png" width="48" height="48" alt="video icon">
-                                        <span class="dem-vide-name"></span>
                                         <span class="flex flex-col items-center gap-1">
                                             <span class="flex items-center gap-1">
                                                 <span
                                                     class="text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                                    انقر للتحميل
+                                                    انقر لتحميل الفيديو
                                                 </span>
                                                 <span
                                                     class="text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal">
@@ -319,293 +480,517 @@
                                                 </span>
                                             </span>
                                             <span
-                                                class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                                                أقصي حجم للفيديو هو 5 ميجا بايت.
+                                                class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal text-center">
+                                                أقصى حجم للفيديو هو 5 ميجا بايت بالتوجه الرأسي (عمودي).
                                             </span>
                                         </span>
-                                    </label>
-                                    <input type="file" id="demonstration-video" name="demonstration-video"
-                                        class="hidden" />
-                                </div>
+                                    </div>
+                                    <div class="hidden" id="pervid-container">
+                                        <div class="flex flex-col items-center gap-3">
+                                            <div class="w-16 h-16 rounded-full overflow-hidden">
+                                                <video id="pervid" class="w-full h-full object-cover" controls>
+                                                    <source src="" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <span class="flex items-center gap-2 text-[#090129] text-xs leading-normal">
+                                                <img src="assets/images/edit.png" width="20" height="20"
+                                                    alt="edit icon">
+                                                تغيير
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="file" id="demonstration-video" name="demonstration-video" class="hidden">
                             </div>
                         </div>
-                        <!-- ======================================================== -->
-                        <!-- Location  -->
-                        <div
-                            class="px-[30px] py-8 lg:p-10 flex flex-col gap-6 lg:gap-4 lg:bg-[#F9F9FB] lg:rounded-3xl border-t border-[#E6E6EA] lg:border-none">
-                            <h2
-                                class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
-                                الموقع
-                            </h2>
-                            <div class="flex flex-col gap-4">
-                                <div class="flex flex-col gap-2">
-                                    <label for="country" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        الدولة
-                                    </label>
-                                    <input type="text" name="country" id="country" placeholder="الدولة"
-                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <label for="city" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        المحافظة
-                                    </label>
-                                    <input type="text" name="city" id="city" placeholder="المحافظة"
-                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <label for="reg" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        الحي
-                                    </label>
-                                    <input type="text" name="reg" id="reg" placeholder="الحي"
-                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                </div>
+                    </div>
+                    <!-- ======================================================== -->
+                    <!-- nationality -->
+                    <div id="nationality"
+                        class="naved-sec px-[30px] py-8 lg:px-0 flex flex-col gap-6  border-b border-[#E6E6EA]">
+                        <h2 class="text-[#090129] text-base leading-normal font-semibold">
+                            الجنسية
+                        </h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label for="nationality" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    الجنسية
+                                </label>
+                                <select name="nationality" id="nationality"
+                                    class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
+                                    <option selected disabled>أختر الجنسية</option>
+                                    <option value="1">مصرى</option>
+                                    <option value="2">سعودى</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="country" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    الدولة
+                                </label>
+                                <select name="country" id="country"
+                                    class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
+                                    <option selected disabled>أختر الدولة</option>
+                                    <option value="1">مصر</option>
+                                    <option value="2">المملكة العربية السعودية</option>
+                                </select>
+                            </div>
 
-                            </div>
                         </div>
-                        <!-- ======================================================== -->
-                        <!-- documents  -->
-                        <div
-                            class="px-[30px] py-8 lg:p-10 flex flex-col gap-6 lg:gap-4 lg:bg-[#F9F9FB] lg:rounded-3xl border-t border-[#E6E6EA] lg:border-none">
-                            <h2
-                                class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
-                                المستندات
-                            </h2>
-                            <div class="flex flex-col gap-6">
-                                <div class="flex flex-col gap-2 lg:gap-1">
-                                    <span class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        الوجهه الأمامية من الهوية المدنية
-                                    </span>
-                                    <div class="border border-[#DCDFEA] rounded-2xl px-4 py-3 flex items-center gap-3">
-                                        <label for="identity"
-                                            class="secondary-btn rounded-lg py-2 px-4 text-xs leading-normal font-medium">
-                                            اختر ملف
-                                        </label>
-                                        <span class="file-name text-[#7D89B0] text-sm leading-normal">
-                                            لم تقم باختيار ملف
-                                        </span>
-                                        <input type="file" class="hidden file-input" name="identity" id="identity">
-                                    </div>
-                                </div>
-                                <div class="flex flex-col gap-2 lg:gap-1">
-                                    <span class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        الوجهه الخلفي من الهوية المدنية
-                                    </span>
-                                    <div class="border border-[#DCDFEA] rounded-2xl px-4 py-3 flex items-center gap-3">
-                                        <label for="identity1"
-                                            class="secondary-btn rounded-lg py-2 px-4 text-xs leading-normal font-medium">
-                                            اختر ملف
-                                        </label>
-                                        <span class="file-name text-[#7D89B0] text-sm leading-normal">
-                                            لم تقم باختيار ملف
-                                        </span>
-                                        <input type="file" class="hidden file-input" name="identity1" id="identity1">
-                                    </div>
-                                </div>
-                                <div class="flex flex-col gap-2 lg:gap-1">
-                                    <span class="text-[#4A5578] text-xs leading-normal font-medium">
-                                        الرخصة المهنية
-                                    </span>
-                                    <div class="border border-[#DCDFEA] rounded-2xl px-4 py-3 flex items-center gap-3">
-                                        <label for="license"
-                                            class="secondary-btn rounded-lg py-2 px-4 text-xs leading-normal font-medium">
-                                            اختر ملف
-                                        </label>
-                                        <span class="file-name text-[#7D89B0] text-sm leading-normal">
-                                            لم تقم باختيار ملف
-                                        </span>
-                                        <input type="file" class="hidden file-input" name="license" id="license">
-                                    </div>
-                                </div>
+                    </div>
+                    <!-- ======================================================== -->
+                    <!-- Location  -->
+                    <div id="teach-location"
+                        class="naved-sec px-[30px] py-8 lg:px-0 flex flex-col gap-6  border-b border-[#E6E6EA]">
+                        <h2 class="text-[#090129] text-base leading-normal font-semibold">
+                            الموقع
+                        </h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label for="city" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    المدينة
+                                </label>
+                                <select name="city" id="city"
+                                    class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
+                                    <option selected disabled>أختر المدينة </option>
+                                    <option value="1">الرياض</option>
+                                    <option value="2">الدوحة</option>
+                                </select>
                             </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="region" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    الحي
+                                </label>
+                                <select name="region" id="region"
+                                    class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
+                                    <option selected disabled>أختر الحي</option>
+                                    <option value="1">الطائف</option>
+                                    <option value="2">التعاون</option>
+                                </select>
+                            </div>
+
                         </div>
-                        <!-- ======================================================== -->
-                        <!-- Experience  -->
-                        <div
-                            class="px-[30px] py-8 lg:p-10 flex flex-col gap-6 lg:gap-4 lg:bg-[#F9F9FB] lg:rounded-3xl border-t border-[#E6E6EA] lg:border-none">
-                            <h2
-                                class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
-                                خبراتك
-                            </h2>
-                            <div class="flex flex-col gap-6">
-                                <div class="flex flex-col gap-4 p-4 lg:p-6 border border-[#E6E6EA] rounded-2xl">
-                                    <div class="flex flex-col gap-2">
-                                        <label for="job-title-1"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            اسم الوظيفة
-                                        </label>
-                                        <input type="text" name="job-title-1" id="job-title-1" placeholder="اسم الوظيفة"
-                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                    </div>
+                    <!-- ======================================================== -->
+                    <!-- Experience  -->
+                    <div id="experiences"
+                        class="naved-sec px-[30px] py-8 lg:px-0 flex flex-col gap-6  border-b border-[#E6E6EA]">
+                        <h2
+                            class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                            خبراتك
+                        </h2>
+                        <div class="flex flex-col gap-6">
+                            <div
+                                class="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 lg:p-6 border border-[#E6E6EA] rounded-2xl">
+                                <div class="flex flex-col gap-2 lg:col-span-2">
+                                    <label for="school-name-1"
+                                        class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        اسم المدرسه
+                                    </label>
+                                    <input type="text" name="school-name-1" id="school-name-1" placeholder="اسم المدرسه"
+                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label for="level-1" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        المرحلة التعليمية
+                                    </label>
+                                    <input type="text" name="level-1" id="level-1" placeholder="المرحلة التعليمية"
+                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label for="job-title-1" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        اسم الوظيفة
+                                    </label>
+                                    <input type="text" name="job-title-1" id="job-title-1" placeholder="اسم الوظيفة"
+                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                </div>
+                                <div class="flex flex-col gap-2 lg:col-span-2">
+                                    <label for="about-job-1" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        تفاصيل العمل
+                                    </label>
+                                    <textarea name="about-job-1" id="about-job-1" placeholder="نبذة عنك" rows="8"
+                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]"></textarea>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label for="start-date-1" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        تاريخ البدء
+                                    </label>
+                                    <div class="relative">
+                                        <input type="text" name="start-date-1" id="start-date-1"
+                                            placeholder="تاريخ البدء"
+                                            class="date-pick transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 pl-10 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                        <img src="assets/images/calendar-add.svg"
+                                            class="absolute left-3 top-1/2 -translate-y-1/2" width="20" height="20"
+                                            alt="calendar">
                                     </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="level-1" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            المرحلة التعليمية
-                                        </label>
-                                        <input type="text" name="level-1" id="level-1" placeholder="المرحلة التعليمية"
-                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                    </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="school-name-1"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            اسم المدرسه
-                                        </label>
-                                        <input type="text" name="school-name-1" id="school-name-1"
-                                            placeholder="اسم المدرسه"
-                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                    </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="about-job-1"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            تفاصيل العمل
-                                        </label>
-                                        <textarea name="about-job-1" id="about-job-1" placeholder="نبذة عنك" rows="8"
-                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]"></textarea>
-                                    </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="start-date-1"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            تاريخ البدء
-                                        </label>
-                                        <div class="relative">
-                                            <input type="text" name="start-date-1" id="start-date-1"
-                                                placeholder="تاريخ البدء"
-                                                class="date-pick transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 pl-10 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                            <img src="assets/images/calendar-add.svg"
-                                                class="absolute left-3 top-1/2 -translate-y-1/2" width="20" height="20"
-                                                alt="calendar">
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="end-date-1"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            تاريخ الانتهاء
-                                        </label>
-                                        <div class="relative">
-                                            <input type="text" name="end-date-1" id="end-date-1"
-                                                placeholder="تاريخ الانتهاء"
-                                                class="date-pick transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 pl-10 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                            <img src="assets/images/calendar-add.svg"
-                                                class="absolute left-3 top-1/2 -translate-y-1/2" width="20" height="20"
-                                                alt="calendar">
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <input type="checkbox" name="work-here-1" id="work-here-1" class="form-checkbox"
-                                            checked>
-                                        <label
-                                            class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium"
-                                            for="work-here-1">
-                                            اعمل هناك حاليا
-                                        </label>
-                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 lg:col-span-2">
+                                    <input type="checkbox" name="work-here-1" id="work-here-1" class="form-checkbox"
+                                        checked>
+                                    <label
+                                        class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium"
+                                        for="work-here-1">
+                                        اعمل هناك حاليا
+                                    </label>
+                                </div>
+                                <div class="flex lg:justify-end lg:col-span-2">
                                     <button type="button"
-                                        class="text-sm leading-normal error-secondary-btn py-3 px-6 rounded-xl flex items-center gap-2 justify-center">
+                                        class="text-sm w-full lg:w-auto leading-normal error-secondary-btn py-3 px-6 rounded-xl flex items-center gap-2 justify-center">
                                         <img src="assets/images/trash.svg" width="24" height="24" alt="trash">
                                         حذف
                                     </button>
                                 </div>
-                                <div class="flex flex-col gap-4 p-4 lg:p-6 border border-[#E6E6EA] rounded-2xl">
-                                    <div class="flex flex-col gap-2">
-                                        <label for="job-title-2"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            اسم الوظيفة
-                                        </label>
-                                        <input type="text" name="job-title-2" id="job-title-2" placeholder="اسم الوظيفة"
-                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                            </div>
+                            <div
+                                class="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 lg:p-6 border border-[#E6E6EA] rounded-2xl">
+                                <div class="flex flex-col gap-2 lg:col-span-2">
+                                    <label for="school-name-2"
+                                        class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        اسم المدرسه
+                                    </label>
+                                    <input type="text" name="school-name-2" id="school-name-2" placeholder="اسم المدرسه"
+                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label for="level-2" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        المرحلة التعليمية
+                                    </label>
+                                    <input type="text" name="level-2" id="level-2" placeholder="المرحلة التعليمية"
+                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label for="job-title-2" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        اسم الوظيفة
+                                    </label>
+                                    <input type="text" name="job-title-2" id="job-title-2" placeholder="اسم الوظيفة"
+                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                </div>
+                                <div class="flex flex-col gap-2 lg:col-span-2">
+                                    <label for="about-job-2" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        تفاصيل العمل
+                                    </label>
+                                    <textarea name="about-job-2" id="about-job-2" placeholder="نبذة عنك" rows="8"
+                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]"></textarea>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label for="start-date-2" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        تاريخ البدء
+                                    </label>
+                                    <div class="relative">
+                                        <input type="text" name="start-date-2" id="start-date-2"
+                                            placeholder="تاريخ البدء"
+                                            class="date-pick transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 pl-10 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                        <img src="assets/images/calendar-add.svg"
+                                            class="absolute left-3 top-1/2 -translate-y-1/2" width="20" height="20"
+                                            alt="calendar">
                                     </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="level-2" class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            المرحلة التعليمية
-                                        </label>
-                                        <input type="text" name="level-2" id="level-2" placeholder="المرحلة التعليمية"
-                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label for="end-date-2" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                        تاريخ الانتهاء
+                                    </label>
+                                    <div class="relative">
+                                        <input type="text" name="end-date-2" id="end-date-2"
+                                            placeholder="تاريخ الانتهاء"
+                                            class="date-pick transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 pl-10 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                        <img src="assets/images/calendar-add.svg"
+                                            class="absolute left-3 top-1/2 -translate-y-1/2" width="20" height="20"
+                                            alt="calendar">
                                     </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="school-name-2"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            اسم المدرسه
-                                        </label>
-                                        <input type="text" name="school-name-2" id="school-name-2"
-                                            placeholder="اسم المدرسه"
-                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                    </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="about-job-2"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            تفاصيل العمل
-                                        </label>
-                                        <textarea name="about-job-2" id="about-job-2" placeholder="نبذة عنك" rows="8"
-                                            class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 text-sm leading-5 placeholder:text-[#7D89B0]"></textarea>
-                                    </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="start-date-2"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            تاريخ البدء
-                                        </label>
-                                        <div class="relative">
-                                            <input type="text" name="start-date-2" id="start-date-2"
-                                                placeholder="تاريخ البدء"
-                                                class="date-pick transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 pl-10 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                            <img src="assets/images/calendar-add.svg"
-                                                class="absolute left-3 top-1/2 -translate-y-1/2" width="20" height="20"
-                                                alt="calendar">
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-2">
-                                        <label for="end-date-2"
-                                            class="text-[#4A5578] text-xs leading-normal font-medium">
-                                            تاريخ الانتهاء
-                                        </label>
-                                        <div class="relative">
-                                            <input type="text" name="end-date-2" id="end-date-2"
-                                                placeholder="تاريخ الانتهاء"
-                                                class="date-pick transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-3 pl-10 text-sm leading-5 placeholder:text-[#7D89B0]">
-                                            <img src="assets/images/calendar-add.svg"
-                                                class="absolute left-3 top-1/2 -translate-y-1/2" width="20" height="20"
-                                                alt="calendar">
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <input type="checkbox" name="work-here-2" id="work-here-2" class="form-checkbox"
-                                            checked>
-                                        <label
-                                            class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium"
-                                            for="work-here-2">
-                                            اعمل هناك حاليا
-                                        </label>
-                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 lg:col-span-2">
+                                    <input type="checkbox" name="work-here-2" id="work-here-2" class="form-checkbox">
+                                    <label
+                                        class="text-[#090129] text-xs leading-normal lg:text-sm lg:leading-normal font-medium"
+                                        for="work-here-2">
+                                        اعمل هناك حاليا
+                                    </label>
+                                </div>
+                                <div class="flex lg:justify-end lg:col-span-2">
                                     <button type="button"
-                                        class="text-sm leading-normal error-secondary-btn py-3 px-6 rounded-xl flex items-center gap-2 justify-center">
+                                        class="text-sm w-full lg:w-auto leading-normal error-secondary-btn py-3 px-6 rounded-xl flex items-center gap-2 justify-center">
                                         <img src="assets/images/trash.svg" width="24" height="24" alt="trash">
                                         حذف
                                     </button>
                                 </div>
+                            </div>
 
-                                <button type="button"
-                                    class="secondary-btn py-4 px-8 rounded-2xl flex items-center gap-2 justify-center leading-normal font-medium">
-                                    <img src="assets/images/add-square.svg" width="24" height="24" alt="add icon">
-                                    أضف وظيفة اخري
-                                </button>
+                            <button type="button"
+                                class="secondary-btn lg:w-fit py-4 px-8 rounded-2xl flex items-center gap-2 justify-center leading-normal font-medium">
+                                <img src="assets/images/add-square.svg" width="24" height="24" alt="add icon">
+                                أضف وظيفة اخري
+                            </button>
 
+                        </div>
+                    </div>
+                    <!-- ======================================================== -->
+                    <!-- stages -->
+                    <div id="stages"
+                        class="naved-sec px-[30px] py-8 lg:px-0 flex flex-col gap-6  border-b border-[#E6E6EA]">
+                        <h2
+                            class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                            المراحل والمواد العلمية
+                        </h2>
+                        <div class="flex flex-col gap-4 lg:gap-x-5 lg:gap-6">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    المراحل التعليمية التي تدرسها، يمكن إختيار أكثر من مرحلة
+                                </h3>
+                                <div class="grid gap-4 grid-cols-2 lg:grid-cols-4">
+                                    <div class="">
+                                        <input type="checkbox" name="stages" id="stages-1"
+                                            class="hidden peer reg-chkinpt">
+                                        <label for="stages-1"
+                                            class="flex items-center gap-1 cursor-pointer border border-[#DCDFEA] peer-checked:border-[#875BF7] rounded-lg p-3 text-[#5A5570] text-sm leading-normal font-normal peer-checked:font-semibold transition-all duration-300">
+                                            <span
+                                                class="hidden perchkblc w-4 h-4 items-center justify-center bg-[#7839EE] rounded-full overflow-hidden">
+                                                <img src="assets/images/check.svg" width="11" height="11" alt="check">
+                                            </span>
+                                            رياض أطفال
+                                        </label>
+                                    </div>
+                                    <div class="">
+                                        <input type="checkbox" name="stages" id="stages-2"
+                                            class="hidden peer reg-chkinpt">
+                                        <label for="stages-2"
+                                            class="flex items-center gap-1 cursor-pointer border border-[#DCDFEA] peer-checked:border-[#875BF7] rounded-lg p-3 text-[#5A5570] text-sm leading-normal font-normal peer-checked:font-semibold transition-all duration-300">
+                                            <span
+                                                class="hidden perchkblc w-4 h-4 items-center justify-center bg-[#7839EE] rounded-full overflow-hidden">
+                                                <img src="assets/images/check.svg" width="11" height="11" alt="check">
+                                            </span>
+                                            الإبتدائية
+                                        </label>
+                                    </div>
+                                    <div class="">
+                                        <input type="checkbox" name="stages" id="stages-3"
+                                            class="hidden peer reg-chkinpt">
+                                        <label for="stages-3"
+                                            class="flex items-center gap-1 cursor-pointer border border-[#DCDFEA] peer-checked:border-[#875BF7] rounded-lg p-3 text-[#5A5570] text-sm leading-normal font-normal peer-checked:font-semibold transition-all duration-300">
+                                            <span
+                                                class="hidden perchkblc w-4 h-4 items-center justify-center bg-[#7839EE] rounded-full overflow-hidden">
+                                                <img src="assets/images/check.svg" width="11" height="11" alt="check">
+                                            </span>
+                                            المتوسطة
+                                        </label>
+                                    </div>
+                                    <div class="">
+                                        <input type="checkbox" name="stages" id="stages-4"
+                                            class="hidden peer reg-chkinpt">
+                                        <label for="stages-4"
+                                            class="flex items-center gap-1 cursor-pointer border border-[#DCDFEA] peer-checked:border-[#875BF7] rounded-lg p-3 text-[#5A5570] text-sm leading-normal font-normal peer-checked:font-semibold transition-all duration-300">
+                                            <span
+                                                class="hidden perchkblc w-4 h-4 items-center justify-center bg-[#7839EE] rounded-full overflow-hidden">
+                                                <img src="assets/images/check.svg" width="11" height="11" alt="check">
+                                            </span>
+                                            الثانوية
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden st-courses-1">
+                                <div class="flex flex-col gap-3 tagfy">
+                                    <label for="st-courses-1"
+                                        class="text-[#111322] text-xs leading-normal font-semibold">
+                                        المواد العلمية التي تدرسها برياض الاطفال
+                                    </label>
+                                    <input name='st-courses-1' id="st-courses-1"
+                                        class="py-2 px-4 rounded-2xl border border-[#DCDFEA]">
+                                    <p class="text-[#7D89B0] text-xs leading-normal">
+                                        يمكنك إضافة إلي ما يصل إلى 3 مواد
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="hidden st-courses-2">
+
+                                <div class="flex flex-col gap-3 tagfy">
+                                    <label for="st-courses-2"
+                                        class="text-[#111322] text-xs leading-normal font-semibold">
+                                        المواد العلمية التي تدرسها بالمرحلة الإبتدائيه
+                                    </label>
+                                    <input name='st-courses-2' id="st-courses-2"
+                                        class="py-2 px-4 rounded-2xl border border-[#DCDFEA]">
+                                    <p class="text-[#7D89B0] text-xs leading-normal">
+                                        يمكنك إضافة إلي ما يصل إلى 3 مواد
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="hidden st-courses-3">
+                                <div class="flex flex-col gap-3 tagfy">
+                                    <label for="st-courses-3"
+                                        class="text-[#111322] text-xs leading-normal font-semibold">
+                                        المواد العلمية التي تدرسها بالمرحلة المتوسطة
+                                    </label>
+                                    <input name='st-courses-3' id="st-courses-3"
+                                        class="py-2 px-4 rounded-2xl border border-[#DCDFEA]">
+                                    <p class="text-[#7D89B0] text-xs leading-normal">
+                                        يمكنك إضافة إلي ما يصل إلى 3 مواد
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="hidden st-courses-4">
+                                <div class="flex flex-col gap-3 tagfy">
+                                    <label for="st-courses-4"
+                                        class="text-[#111322] text-xs leading-normal font-semibold">
+                                        المواد العلمية التي تدرسها بالمرحلة الثانوية
+                                    </label>
+                                    <input name='st-courses-4' id="st-courses-4"
+                                        class="py-2 px-4 rounded-2xl border border-[#DCDFEA]">
+                                    <p class="text-[#7D89B0] text-xs leading-normal">
+                                        يمكنك إضافة إلي ما يصل إلى 3 مواد
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <!-- ======================================================== -->
-                        <!-- Save and Cancle Buttons  -->
-                        <div
-                            class="flex items-center gap-2 lg:gap-4 py-4 bg-white px-[30px] lg:px-0 sticky lg:static bottom-0">
-                            <a href="#"
-                                class="bordered-btn flex-1 py-4 px-8 rounded-2xl flex items-center gap-2 justify-center leading-normal font-medium">
-                                الغاء
-                            </a>
-                            <a href="#"
-                                class="secondary-btn flex-1 py-4 px-8 rounded-2xl flex items-center gap-2 justify-center leading-normal font-medium">
-                                حفظ
-                            </a>
+                    </div>
+                    <!-- ======================================================== -->
+                    <!-- documents  -->
+                    <div id="documents"
+                        class="naved-sec px-[30px] py-8 lg:px-0 flex flex-col gap-6  border-b border-[#E6E6EA]">
+                        <h2
+                            class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                            المستندات
+                        </h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-4">
+                            <div class="flex flex-col gap-2 lg:gap-1">
+                                <span class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    الوجهه الأمامية من الهوية المدنية
+                                </span>
+                                <div class="border border-[#DCDFEA] rounded-2xl px-4 py-3 flex items-center gap-3">
+                                    <label for="identity"
+                                        class="secondary-btn rounded-lg py-2 px-4 text-xs leading-normal font-medium">
+                                        اختر ملف
+                                    </label>
+                                    <span class="file-name text-[#7D89B0] text-sm leading-normal flex-1 line-clamp-1">
+                                        لم تقم باختيار ملف
+                                    </span>
+                                    <input type="file" class="hidden file-input" name="identity" id="identity">
+
+                                    <!-- preview Buttn  -->
+                                    <button class="hidden preview-btn">
+                                        <span class="flex items-center gap-3 text-[#4A5578] text-xs leading-normal">
+                                            معاينه
+                                            <img src="assets/images/eye.svg" width="20" height="20" alt="eye icon">
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2 lg:gap-1">
+                                <span class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    الوجهه الخلفي من الهوية المدنية
+                                </span>
+                                <div class="border border-[#DCDFEA] rounded-2xl px-4 py-3 flex items-center gap-3">
+                                    <label for="identity1"
+                                        class="secondary-btn rounded-lg py-2 px-4 text-xs leading-normal font-medium">
+                                        اختر ملف
+                                    </label>
+                                    <span class="file-name text-[#7D89B0] text-sm leading-normal flex-1 line-clamp-1">
+                                        لم تقم باختيار ملف
+                                    </span>
+                                    <input type="file" class="hidden file-input" name="identity1" id="identity1">
+
+                                    <!-- preview Buttn  -->
+                                    <button class="hidden preview-btn">
+                                        <span class="flex items-center gap-3 text-[#4A5578] text-xs leading-normal">
+                                            معاينه
+                                            <img src="assets/images/eye.svg" width="20" height="20" alt="eye icon">
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2 lg:gap-1">
+                                <span class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    الرخصة المهنية
+                                </span>
+                                <div class="border border-[#DCDFEA] rounded-2xl px-4 py-3 flex items-center gap-3">
+                                    <label for="license"
+                                        class="secondary-btn rounded-lg py-2 px-4 text-xs leading-normal font-medium">
+                                        اختر ملف
+                                    </label>
+                                    <span class="file-name text-[#7D89B0] text-sm leading-normal flex-1 line-clamp-1">
+                                        لم تقم باختيار ملف
+                                    </span>
+                                    <input type="file" class="hidden file-input" name="license" id="license">
+
+                                    <!-- preview Buttn  -->
+                                    <button class="hidden preview-btn">
+                                        <span class="flex items-center gap-3 text-[#4A5578] text-xs leading-normal">
+                                            معاينه
+                                            <img src="assets/images/eye.svg" width="20" height="20" alt="eye icon">
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <!-- ======================================================== -->
+                    <!-- bank account -->
+                    <div id="bank-account" class="naved-sec px-[30px] py-8 lg:px-0 flex flex-col gap-6">
+                        <h2
+                            class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                            الحساب البنكي
+                        </h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <label for="full-name" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    الاسم القانوني
+                                </label>
+                                <div class="flex flex-col gap-1">
+                                    <input type="text" name="full-name" id="full-name"
+                                        placeholder="الاسم القانوني الكامل"
+                                        class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                                    <p class="text-[#7D89B0] text-xs leading-normal">
+                                        الاسم القانوني الكامل كما يظهر في بطاقة الهوية الوطنية.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="choosebank" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    اختر البنك
+                                </label>
+                                <select name="choosebank" id="choosebank"
+                                    class="border border-[#DCDFEA] rounded-2xl lg:rounded-lg p-4 lg:p-3 text-[#111322] text-sm leading-5 placeholder:text-red-50">
+                                    <option selected="" disabled="">اختر البنك</option>
+                                    <option value="1">Al-Rajhi Bank</option>
+                                    <option value="1">بنك القاهرة</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="iban-num" class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    رقم الحساب البنكي أو ال IBAN
+                                </label>
+                                <input type="text" name="iban-num" id="iban-num"
+                                    placeholder="أدخل رقم حسابك البنكي أو ال IBAN"
+                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="additional-informations"
+                                    class="text-[#4A5578] text-xs leading-normal font-medium">
+                                    معلومات إضافية (إختياري)
+                                </label>
+                                <textarea name="additional-informations" id="additional-informations"
+                                    placeholder="أدخل أي معلومات إضافية إذا كنت ترغب" rows="1"
+                                    class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full p-4 text-sm leading-5 placeholder:text-[#7D89B0]"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======================================================== -->
+                    <!-- Save and Cancle Buttons  -->
+                    <div class="px-[30px] py-8 lg:px-0 flex gap-4 sticky bottom-0 lg:static bg-white">
+                        <a href="#"
+                            class="bordered-btn w-full lg:w-auto py-4 px-8 rounded-2xl flex items-center gap-2 justify-center leading-normal font-medium">
+                            الغاء
+                        </a>
+                        <a href="#"
+                            class="secondary-btn w-full lg:w-auto py-4 px-8 rounded-2xl flex items-center gap-2 justify-center leading-normal font-medium">
+                            حفظ
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
+    </form>
     <!-- End Momtaz MAin Page Content  -->
 
     <!-- =============================================================== -->
@@ -736,6 +1121,7 @@
     <!-- scripts -->
     <script src="assets/js/jquiry.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="assets/js/tagify.js"></script>
     <script src="assets/js/lightpicker.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/script.js"></script>

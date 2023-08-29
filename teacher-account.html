@@ -119,7 +119,7 @@
                     <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3 px-[30px] lg:p-0 pb-4 lg:pb-0">
                         <!-- Notifications  -->
                         <a href="notifications.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                            class="flex items-center gap-4 border-b lg:border border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
                             <img src="assets/images/notification.svg" class="w-6 lg:w-5" width="24" height="24"
                                 alt="icon">
 
@@ -131,7 +131,7 @@
                         </a>
                         <!-- Messages  -->
                         <a href="messages.html"
-                            class="flex items-center gap-4 border-b border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
+                            class="flex items-center gap-4 border-b lg:border border-[#E6E6EA] text-[#5A5570] lg:text-sm leading-normal lg:leading-5 py-4 lg:p-3 lg:rounded-xl lg:bordered-btn">
                             <img src="assets/images/message.svg" class="w-6 lg:w-5" width="24" alt="icon">
 
                             <span class="flex-1 lg:hidden">
@@ -290,7 +290,6 @@
                     </div>
                 </div>
                 <div class="lg:col-span-2 flex flex-col">
-
                     <div class="flex flex-col lg:gap-6">
                         <div class="px-[30px] py-8 lg:p-10 flex flex-col gap-6 lg:gap-4 lg:bg-[#F9F9FB] lg:rounded-3xl">
                             <h2
@@ -363,12 +362,31 @@
                                     </span>
 
                                     <h3
-                                        class="flex-1 line-clamp-1 text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
+                                        class="flex-1 line-clamp-1 text-[#090129] text-xs leading-normal font-medium">
                                         الهوية المدنية ( الوجهه الأمامي )
                                     </h3>
-                                    <button type="button">
-                                        <img src="assets/images/more.svg" width="24" height="24" alt="more icon">
+                                    <button class="preview-btn">
+                                        <span class="flex items-center gap-3 text-[#4A5578] text-xs leading-normal">
+                                            معاينه
+                                            <img src="assets/images/eye.svg" width="20" height="20" alt="eye icon">
+                                        </span>
                                     </button>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 lg:gap-4 p-4 lg:p-6 bg-white rounded-2xl border border-[#E6E6EA]">
+                                    <span class="bg-[#F1E8FB] p-2 rounded-2xl flex items-center justify-center">
+                                        <img src="assets/images/clipboard-text.png" width="24" height="24"
+                                            alt="clipboard text icon">
+                                    </span>
+                                    <div class="flex flex-col">
+                                        <h3
+                                            class="flex-1 line-clamp-1 text-[#090129] text-xs leading-normal font-medium">
+                                            الهوية المدنية ( الوجهه الخلفي )
+                                        </h3>
+                                        <p class="text-[#7D89B0] text-xs leading-normal">
+                                            لم تقم برفع أي ملف، برجاء الضغط علي تعديل بالأعلى لرفع ملف
+                                        </p>
+                                    </div>
                                 </div>
                                 <div
                                     class="flex items-center gap-3 lg:gap-4 p-4 lg:p-6 bg-white rounded-2xl border border-[#E6E6EA]">
@@ -378,26 +396,14 @@
                                     </span>
 
                                     <h3
-                                        class="flex-1 line-clamp-1 text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                        الهوية المدنية ( الوجهه الخلفي )
-                                    </h3>
-                                    <button type="button">
-                                        <img src="assets/images/more.svg" width="24" height="24" alt="more icon">
-                                    </button>
-                                </div>
-                                <div
-                                    class="flex items-center gap-3 lg:gap-4 p-4 lg:p-6 bg-white rounded-2xl border border-[#E6E6EA]">
-                                    <span class="bg-[#F1E8FB] p-2 rounded-2xl flex items-center justify-center">
-                                        <img src="assets/images/clipboard-text.png" width="24" height="24"
-                                            alt="clipboard text icon">
-                                    </span>
-
-                                    <h3
-                                        class="flex-1 line-clamp-1 text-[#090129] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
+                                        class="flex-1 line-clamp-1 text-[#090129] text-xs leading-normal font-medium">
                                         الرخصة المهنية
                                     </h3>
-                                    <button type="button">
-                                        <img src="assets/images/more.svg" width="24" height="24" alt="more icon">
+                                    <button class="preview-btn">
+                                        <span class="flex items-center gap-3 text-[#4A5578] text-xs leading-normal">
+                                            معاينه
+                                            <img src="assets/images/eye.svg" width="20" height="20" alt="eye icon">
+                                        </span>
                                     </button>
                                 </div>
                             </div>
@@ -453,8 +459,46 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                        <!-- Bank Account  -->
+                        <div
+                            class="px-[30px] py-8 lg:p-10 flex flex-col gap-6 lg:bg-[#F9F9FB] lg:rounded-3xl border-t border-[#E6E6EA] lg:border-none">
+                            <h2
+                                class="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
+                                الحساب البنكي
+                            </h2>
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col gap-1.5">
+                                    <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                        الاسم القانوني
+                                    </h3>
+                                    <p class="text-[#090129] text-sm leading-normal font-medium">
+                                        مصطفي أحمد نوار
+                                    </p>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                        اسم البنك
+                                    </h3>
+                                    <p
+                                        class="text-[#090129] text-sm leading-normal font-medium flex items-center gap-3">
+                                        <img src="assets/images/raghi.svg" width="24" height="24" alt="raghi bank">
+                                        Al-Rajhi Bank
+                                    </p>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <h3 class="text-[#8E8A9D] text-sm leading-normal">
+                                        رقم الحساب البنكي أو ال IBAN
+                                    </h3>
+                                    <p class="text-[#090129] text-sm leading-normal font-medium">
+                                        12345678910111213
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         </section>
