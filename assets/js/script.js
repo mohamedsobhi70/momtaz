@@ -937,15 +937,45 @@ if ($(".tagfy").length > 0) {
     // initialize Tagify on the above input node reference
     new Tagify(input, {
         maxTags: 3,
+        whitelist: ["جغرافيا", "تاريخ"],
+        maxTags: 10,
+        dropdown: {
+            maxItems: 20,           // <- mixumum allowed rendered suggestions
+            classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
+            enabled: 0,             // <- show suggestions on focus
+            closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+        }
     })
     new Tagify(input2, {
         maxTags: 3,
+        whitelist: ["جغرافيا", "تاريخ"],
+        dropdown: {
+            maxItems: 20,           // <- mixumum allowed rendered suggestions
+            classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
+            enabled: 0,             // <- show suggestions on focus
+            closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+        }
     })
     new Tagify(input3, {
         maxTags: 3,
+        whitelist: ["جغرافيا", "تاريخ"],
+        dropdown: {
+            maxItems: 20,           // <- mixumum allowed rendered suggestions
+            classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
+            enabled: 0,             // <- show suggestions on focus
+            closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+        }
     })
     new Tagify(input4, {
         maxTags: 3,
+        whitelist: ["جغرافيا", "تاريخ"],
+        dropdown: {
+            maxItems: 20,           // <- mixumum allowed rendered suggestions
+            classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
+            enabled: 0,             // <- show suggestions on focus
+            closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+        }
+        
     })
 
 }
@@ -960,6 +990,7 @@ if ($('#stages-1').length > 0) {
         }
     })
 }
+
 if ($('#stages-2').length > 0) {
     $('#stages-2').on("change", function () {
         if ($(this).is(":checked")) {
@@ -970,6 +1001,7 @@ if ($('#stages-2').length > 0) {
         }
     })
 }
+
 if ($('#stages-3').length > 0) {
     $('#stages-3').on("change", function () {
         if ($(this).is(":checked")) {
@@ -980,6 +1012,7 @@ if ($('#stages-3').length > 0) {
         }
     })
 }
+
 if ($('#stages-4').length > 0) {
     $('#stages-4').on("change", function () {
         if ($(this).is(":checked")) {
