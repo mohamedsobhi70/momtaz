@@ -406,7 +406,7 @@ if ($(".confirm-digit").length) {
 // filters modals
 if ($(".filters").length) {
     $(".filter-btn").on("click", function () {
-        $(this).siblings(".filters").addClass("active")
+        $(".filters").addClass("active")
     })
     $(".close-filter-btn").on("click", function () {
         $(this).closest(".filters").removeClass("active")
@@ -680,7 +680,6 @@ if ($(".tabs").length > 0) {
         let th = $(this);
         th.find(`.tab-content`).addClass("lg:hidden");
         th.find(`.tab-content:first-of-type`).removeClass("lg:hidden");
-
         th.find(".tab-item").on("click", function () {
             th.find(".tab-item").removeClass("active");
             $(this).addClass("active");
@@ -1093,3 +1092,50 @@ if ($(".teacher-nav-container").length > 0) {
     })
 }
 
+if ($(".shed-carousel-container").length > 0) {
+    const carouselContainer = document.querySelector('.shed-carousel-container');
+    const carouselList = document.querySelector('.shed-tabs-carousel');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+
+    // Previous button click event
+    prevButton.addEventListener('click', function () {
+        carouselContainer.scrollBy({
+            left: -carouselContainer.offsetWidth,
+            behavior: 'smooth'
+        });
+    });
+
+    // Next button click event
+    nextButton.addEventListener('click', function () {
+        carouselContainer.scrollBy({
+            left: carouselContainer.offsetWidth,
+            behavior: 'smooth'
+        });
+    });
+
+    // ================================================
+
+    $(".shed-tabs").on("click", function () {
+        let th = $(this);
+        $(".shed-tabs").removeClass("active");
+        th.addClass("active");
+        $(".shed-items-container").addClass("hidden");
+        $(`.shed-items-container[data-shed=${th.attr("data-shed")}]`).removeClass("hidden");
+        $('.show-more').addClass("hidden");
+
+    })
+}
+
+if ($(".all-shed-items").length > 0) {
+    // Hide all .shed-items-container except the first three
+    $('.shed-items-container:gt(2)').addClass("hidden");
+
+    // Show/hide items when the .show-more button is clicked
+    $('.show-more').click(function () {
+        $('.shed-items-container:hidden:lt(3)').removeClass("hidden");
+        if ($('.shed-items-container:hidden').length === 0) {
+            $('.show-more').addClass("hidden");
+        }
+    });
+}

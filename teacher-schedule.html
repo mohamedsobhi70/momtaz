@@ -228,11 +228,12 @@
             <div class="container flex items-end gap-4">
                 <div class="flex flex-col gap-4 flex-1">
                     <div class="flex flex-col gap-2 lg:gap-4">
+
                         <h2 class="text-[#090129] text-2xl lg:text-[32px] leading-normal lg:leading-normal font-medium">
                             أجندة العمل
                         </h2>
                         <p class="text-[#5A5570] text-sm lg:text-base leading-normal lg:leading-normal">
-                            تحكم بمواعيدك في مكان واحد
+                            عرض وإدارة جميع حصصك القادمة والسابقة بسهولة، وامكانية مزامنة التقويم مع مواعيدك
                         </p>
                     </div>
                 </div>
@@ -249,302 +250,1011 @@
 
         <!-- =============================================================== -->
         <!-- Start Page Title Section  -->
-        <section class="py-6 lg:py-16 px-[30px] lg:px-0">
-            <div class="container flex flex-col gap-4 lg:gap-6">
+        <section>
+            <div class="container lg:py-8 grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-[30px]">
+                <aside class="lg:col-span-1 flex items-center gap-3 lg:block px-[30px] lg:px-0 relative">
+                    <button class="next-button lg:hidden group absolute top-1/2 -translate-y-1/2 right-2 z-[1]">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.93945 13.2797L10.2861 8.93306C10.7995 8.41973 10.7995 7.57973 10.2861 7.06639L5.93945 2.71973"
+                                stroke="#3A3454" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
 
-                <!-- child-informations  -->
-                <div class="flex flex-col gap-4">
-                    <div class="flex flex-col gap-3 lg:gap-2">
-                        <div
-                            class="flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
+                    <div
+                        class="lg:sticky lg:top-20 shed-carousel-container relative lg:overflow-x-visible overflow-x-scroll whitespace-nowrap">
+                        <ul class="shed-tabs-carousel p-0 m-0 lg:block flex">
+                            <li class="shed-tabs cursor-pointer active" data-shed="shed-1">
+                                <span class="hidden lg:block">
+                                    الجمعة
+                                </span>
+                                <span class="lg:hidden">
+                                    ج
+                                </span>
+                                <span class="lg:hidden">
+                                    25
+                                </span>
+                            </li>
+                            <li class="shed-tabs cursor-pointer" data-shed="shed-2">
+                                <span class="hidden lg:block">
+                                    السبت
+                                </span>
+                                <span class="lg:hidden">
+                                    س
+                                </span>
+                                <span class="lg:hidden">
+                                    26
+                                </span>
+                            </li>
+                            <li class="shed-tabs cursor-pointer " data-shed="shed-3">
+                                <span class="hidden lg:block">
+                                    الأحد
+                                </span>
+                                <span class="lg:hidden">
+                                    ح
+                                </span>
+                                <span class="lg:hidden">
+                                    27
+                                </span>
+                            </li>
+                            <li class="shed-tabs cursor-pointer" data-shed="shed-4">
+                                <span class="hidden lg:block">
+                                    الاثنين
+                                </span>
+                                <span class="lg:hidden">
+                                    ن
+                                </span>
+                                <span class="lg:hidden">
+                                    28
+                                </span>
+                            </li>
+                            <li class="shed-tabs cursor-pointer" data-shed="shed-5">
+                                <span class="hidden lg:block">
+                                    الثلاثاء
+                                </span>
+                                <span class="lg:hidden">
+                                    ت
+                                </span>
+                                <span class="lg:hidden">
+                                    29
+                                </span>
+                            </li>
+                            <li class="shed-tabs cursor-pointer" data-shed="shed-6">
+                                <span class="hidden lg:block">
+                                    الأربعاء
+                                </span>
+                                <span class="lg:hidden">
+                                    ر
+                                </span>
+                                <span class="lg:hidden">
+                                    30
+                                </span>
+                            </li>
+                            <li class="shed-tabs cursor-pointer" data-shed="shed-7">
+                                <span class="hidden lg:block">
+                                    الخميس
+                                </span>
+                                <span class="lg:hidden">
+                                    خ
+                                </span>
+                                <span class="lg:hidden">
+                                    31
+                                </span>
+                            </li>
+                            <li class="shed-tabs cursor-pointer" data-shed="shed-8">
+                                <span class="hidden lg:block">
+                                    الجمعة
+                                </span>
+                                <span class="lg:hidden">
+                                    ج
+                                </span>
+                                <span class="lg:hidden">
+                                    1
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="prev-button lg:hidden group absolute top-1/2 -translate-y-1/2 left-2 z-[1]">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.99925 13.2797L5.65258 8.93306C5.13924 8.41973 5.13924 7.57973 5.65258 7.06639L9.99925 2.71973"
+                                stroke="#3A3454" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </aside>
+                <div class="flex flex-col lg:gap-10 lg:col-span-3">
+                    <div class="lg:flex gap-4 hidden">
+                        <form class="relative flex-1">
+                            <input type="search" name="search-shed" id="search-shed" placeholder="البحث"
+                                class="transition-all duration-300 border border-[#DCDFEA] focus:outline-0 focus:border-[#953DF5] focus:shadow-input-focus rounded-xl w-full py-4 pe-10 ps-3 text-sm leading-5 placeholder:text-[#7D89B0]">
+                            <img src="assets/images/showpass-icon.svg" width="20" height="20" alt="username"
+                                class="absolute ltr:right-3 rtl:left-3 top-1/2 -translate-y-1/2 cursor-pointer show-password">
+                        </form>
+                        <button
+                            class="filter-btn flex items-center gap-2 py-4 px-8 rounded-2xl bordered-btn text-[#111322] text-base leading-normal font-medium">
+                            <img src="assets/images/setting-4.svg" width="24" height="24" alt="filter icon">
+                            فلتر
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col lg:gap-10 all-shed-items">
+                        <!-- friday  -->
+                        <div class="flex flex-col gap-4 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                            data-shed="shed-1">
+                            <h2 class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                الجمعة 25 أغسطس 2023
+                            </h2>
+
                             <div
-                                class="flex flex-col items-center px-0.5 py-1 bg-[#F9F9FB] border border-[#E6E6EA] rounded-lg w-[44px] lg:w-14">
-                                <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal font-medium">
-                                    الاحد
-                                </span>
-                                <span
-                                    class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-medium">
-                                    04
-                                </span>
-                            </div>
-                            <div class="flex-1 flex flex-col gap-1.5">
-                                <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                                    الصف الثاني الابتدائي
-                                </span>
-
-                                <h3
-                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                    ساره يوسف
-                                </h3>
-                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
-                                    <img src="assets/images/clock.svg" alt="">
-                                    من 01:00 مـ إلي 02:30 مـ
-                                </p>
-
-                            </div>
-                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
-                                alt="chevron left">
-                        </div>
-                        <div
-                            class="flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
-                            <div
-                                class="flex flex-col items-center px-0.5 py-1 bg-[#F9F9FB] border border-[#E6E6EA] rounded-lg w-[44px] lg:w-14">
-                                <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal font-medium">
-                                    الاحد
-                                </span>
-                                <span
-                                    class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-medium">
-                                    04
-                                </span>
-                            </div>
-                            <div class="flex-1 flex flex-col gap-1.5">
-                                <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                                    الصف الثاني الابتدائي
-                                </span>
-
-                                <h3
-                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                    ساره يوسف
-                                </h3>
-                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
-                                    <img src="assets/images/clock.svg" alt="">
-                                    من 01:00 مـ إلي 02:30 مـ
-                                </p>
-
-                            </div>
-                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
-                                alt="chevron left">
-                        </div>
-                        <div
-                            class="flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
-                            <div
-                                class="flex flex-col items-center px-0.5 py-1 bg-[#F9F9FB] border border-[#E6E6EA] rounded-lg w-[44px] lg:w-14">
-                                <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal font-medium">
-                                    الاحد
-                                </span>
-                                <span
-                                    class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-medium">
-                                    04
-                                </span>
-                            </div>
-                            <div class="flex-1 flex flex-col gap-1.5">
-                                <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                                    الصف الثاني الابتدائي
-                                </span>
-
-                                <h3
-                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                    ساره يوسف
-                                </h3>
-                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
-                                    <img src="assets/images/clock.svg" alt="">
-                                    من 01:00 مـ إلي 02:30 مـ
-                                </p>
-
-                            </div>
-                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
-                                alt="chevron left">
-                        </div>
-                    </div>
-
-
-                    <div class="py-4 sticky bottom-0 lg:static bg-white">
-                        <a href="#"
-                            class="flex lg:hidden items-center justify-center gap-2 text-black leading-normal py-4 px-8 rounded-2xl secondary-btn">
-                            <img src="assets/images/add-square.svg" width="24" height="24" alt="arrow">
-                            مزامنة مع التقويم
-                        </a>
-                    </div>
-
-                </div>
-                <!-- Start popups -->
-                <div class="schedule-popup">
-                    <div class="bg-white p-6 lg:p-8 w-full lg:w-[600px] rounded-2xl flex flex-col gap-6">
-                        <div class="flex items-center gap-3 justify-between">
-                            <h3
-                                class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-semibold">
-                                بيانات الموعد
-                            </h3>
-                            <button type="button" class="close-schedule">
-                                <img src="assets/images/x-close.svg" width="24" height="24" alt="close icon">
-                                <span class="sr-only">Close Icon</span>
-                            </button>
-                        </div>
-                        <div class="border border-[#E6E6EA] rounded-3xl p-4 flex flex-col gap-4">
-
-                            <div class="flex items-center gap-4">
-                                <div class="rounded-2xl overflow-hidden border border-[#E6E6EA]">
-                                    <img src="assets/images/team-3.png" width="48" height="48" alt="">
-                                </div>
-                                <div class="flex flex-col gap-1">
-                                    <p class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                        الأستاذ
-                                    </p>
-                                    <p
-                                        class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold">
-                                        مينا رافت لوكاس
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="pt-4 lg:pt-6 border-t border-[#DFE9F5] grid grid-cols-1 lg:grid-cols-2 gap-4">
-                                <div class="flex flex-col gap-2">
-                                    <p class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                        الساعة
-                                    </p>
-                                    <p class="text-[#090129] text-xs lg:text-base leading-normal font-medium">
-                                        10:00ص صباحا
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <p class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                        التاريخ
-                                    </p>
-                                    <p class="text-[#090129] text-xs lg:text-base leading-normal font-medium">
-                                        الاثنين 22 مارس ، 2023
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <p class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                        مدة الحصة
-                                    </p>
-                                    <p class="text-[#090129] text-xs lg:text-base leading-normal font-medium">
-                                        60 دقيقة
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <button type="button"
-                                class="change-schedule-btn flex items-center justify-center gap-4 border-b border-[#E6E6EA] leading-normal font-medium py-4 px-8 rounded-2xl bordered-btn">
-                                تغيير توقيت الموعد
-                            </button>
-                            <button type="button"
-                                class="flex items-center justify-center gap-4 border-b border-[#E6E6EA] leading-normal font-medium py-4 px-8 rounded-2xl error-secondary-btn">
-                                <img src="assets/images/close-square.svg" width="24" height="24" alt="close square">
-                                إلغاء الموعد
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="change-schedule-popup">
-                    <div class="bg-white p-6 lg:p-8 w-full lg:w-[600px] rounded-2xl flex flex-col gap-6">
-                        <div class="flex items-center gap-3 justify-between">
-                            <h3
-                                class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-semibold">
-                                تغيير الموعد
-                            </h3>
-                            <button type="button" class="close-change-schedule">
-                                <img src="assets/images/x-close.svg" width="24" height="24" alt="close icon">
-                                <span class="sr-only">Close Icon</span>
-                            </button>
-                        </div>
-                        <div class="flex flex-col gap-6">
-                            <div class="flex items-center gap-3">
-                                <input type="radio" name="change-sched" id="change-once" class="form-radio" checked>
-                                <label for="change-once" class="text-[#090129] text-base leading-normal">
-                                    تغيير موعد الحصة مرة واحدة
-                                </label>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <input type="radio" name="change-sched" id="change-all" class="form-radio">
-                                <label for="change-all" class="text-[#090129] text-base leading-normal">
-                                    تغيير موعد الحصة دائما
-                                </label>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <button type="button"
-                                class="select-date-btn flex-1 flex items-center justify-center gap-4 border-b border-[#E6E6EA] leading-normal font-medium py-4 px-8 rounded-2xl secondary-btn">
-                                متابعة
-                            </button>
-                            <button type="button"
-                                class="flex-1 flex items-center justify-center gap-4 border-b border-[#E6E6EA] leading-normal font-medium py-4 px-8 rounded-2xl bordered-btn">
-                                إلغاء
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="select-date-popup">
-                    <div class="bg-white p-6 lg:p-8 w-full lg:w-[600px] rounded-2xl flex flex-col gap-6">
-                        <div class="flex items-center gap-3 justify-between">
-                            <h3
-                                class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-semibold">
-                                تغيير الموعد
-                            </h3>
-                            <button type="button" class="close-select-date">
-                                <img src="assets/images/x-close.svg" width="24" height="24" alt="close icon">
-                                <span class="sr-only">Close Icon</span>
-                            </button>
-                        </div>
-                        <div class="flex flex-col gap-6">
-                            <div class="grid grid-cols-3 gap-2 h-[324px] lg:h-auto overflow-y-scroll">
-                                <div class="col-span-1 flex flex-col gap-2">
-                                    <label
-                                        class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-[13px] leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                        <input type="radio" name="f-day" id="day-11" class="hidden peer">
-                                        يوم الاثنين
-                                    </label>
-                                    <label
-                                        class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-[13px] leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                        <input type="radio" name="f-day" id="day-12" class="hidden peer">
-                                        يوم الثلاثاء
-                                    </label>
-                                    <label
-                                        class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-[13px] leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                        <input type="radio" name="f-day" id="day-13" class="hidden peer">
-                                        يوم الاربعاء
-                                    </label>
-                                    <label
-                                        class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-[13px] leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                        <input type="radio" name="f-day" id="day-14" class="hidden peer">
-                                        يوم الخميس
-                                    </label>
-                                </div>
-                                <div class="col-span-2">
-                                    <div class="flex flex-col gap-2">
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-time" id="time-11" class="hidden peer">
-                                            من 10:00 صـ إلي 11:30 صـ
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-time" id="time-12" class="hidden peer">
-                                            من 11:30 صـ إلي 01:00 مـ
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-time" id="time-13" class="hidden peer">
+                                class="border border-[#E8E8E8] divide-y divide-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col ">
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
                                             من 01:00 مـ إلي 02:30 مـ
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-time" id="time-14" class="hidden peer">
-                                            من 02:30 صـ إلي 04:00 مـ
-                                        </label>
-                                        <label
-                                            class="rounded-xl p-4 border border-[#E6E6EA] text-[#090129] text-sm leading-5 date-labl transition-all duration-300 cursor-pointer">
-                                            <input type="radio" name="f-time" id="time-15" class="hidden peer">
-                                            من 10:00 صـ إلي 11:30 صـ
-                                        </label>
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
                                     </div>
                                 </div>
 
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <button type="button"
-                                class="flex-1 flex items-center justify-center gap-4 border-b border-[#E6E6EA] leading-normal font-medium py-4 px-8 rounded-2xl secondary-btn">
-                                تغيير الموعد
+
+                        <!-- saturday  -->
+                        <div class="flex flex-col gap-4 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                            data-shed="shed-2">
+                            <h2 class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                السبت 26 أغسطس 2023
+                            </h2>
+
+                            <div
+                                class="border border-[#E8E8E8] divide-y divide-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col ">
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- sunday  -->
+                        <div class="flex flex-col gap-4 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                            data-shed="shed-3">
+                            <h2 class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                الأحد 27 أغسطس 2023
+                            </h2>
+
+                            <div
+                                class="border border-[#E8E8E8] divide-y divide-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col ">
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Monday  -->
+                        <div class="flex flex-col gap-4 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                            data-shed="shed-4">
+                            <h2 class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                الاثنين 28 أغسطس 2023
+                            </h2>
+
+                            <div
+                                class="border border-[#E8E8E8] divide-y divide-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col ">
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tuesday  -->
+                        <div class="flex flex-col gap-4 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                            data-shed="shed-5">
+                            <h2 class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                الثلاثاء 29 أغسطس 2023
+                            </h2>
+
+                            <div
+                                class="border border-[#E8E8E8] divide-y divide-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col ">
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wednsday  -->
+                        <div class="flex flex-col gap-4 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                            data-shed="shed-6">
+                            <h2 class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                الاربعاء 29 أغسطس 2023
+                            </h2>
+
+                            <div
+                                class="border border-[#E8E8E8] divide-y divide-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col ">
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thursday  -->
+                        <div class="flex flex-col gap-4 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                            data-shed="shed-7">
+                            <h2 class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                الخميس 30 أغسطس 2023
+                            </h2>
+
+                            <div
+                                class="border border-[#E8E8E8] divide-y divide-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col ">
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Friday  -->
+                        <div class="flex flex-col gap-4 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                            data-shed="shed-8">
+                            <h2 class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                الجمعة 1 سبتمبر 2023
+                            </h2>
+
+                            <div
+                                class="border border-[#E8E8E8] divide-y divide-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col ">
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div class="p-4 lg:p-6 flex items-center lg:items-start gap-4">
+                                    <div class="flex flex-col gap-1.5 flex-1">
+                                        <div
+                                            class="flex items-center gap-3 text-[#5A5570] text-xs lg:text-base leading-normal lg:leading-normal font-bold">
+                                            <img src="assets/images/clockblack.svg" width="20" height="20"
+                                                alt="clock icon">
+                                            من 01:00 مـ إلي 02:30 مـ
+                                        </div>
+                                        <h3
+                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                            ساره يوسف
+                                        </h3>
+                                        <div class="flex flex-col lg:flex-row gap-y-1.5 lg:items-center gap-x-3">
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/book.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                الصف الأول الثانوي - مادة الجبر
+                                            </div>
+                                            <div
+                                                class="flex items-end gap-1 text-[#5A5570] text-xs lg:text-sm leading-normal lg:leading-normal ">
+                                                <img src="assets/images/locationgry.svg" width="16" height="16"
+                                                    alt="clock icon">
+                                                حي العليا، الرياض
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-1">
+                                        <a href="https://www.google.com/maps/@30.0413816,31.4541988,6140m/data=!3m1!1e3!5m1!1e4?entry=ttu"
+                                            target="_blank" class="p-2.5">
+                                            <img src="assets/images/location.svg" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5 hidden lg:block">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center py-4 lg:py-0">
+                            <button class="text-[#7839EE] text-base leading-normal font-medium show-more">
+                                عرض المزيد ....
                             </button>
                         </div>
+
                     </div>
                 </div>
-                <!-- End popups  -->
             </div>
         </section>
         <!-- End Page Title Section  -->
 
+        <div
+            class="filters fixed flex items-end lg:items-center lg:justify-center bg-[#00000029] w-full h-full backdrop-blur-sm left-0 -bottom-full z-50 rounded-t-xl">
+            <div
+                class="flex flex-col bg-white min-h-[300px] max-h-[98%] w-screen lg:max-w-[600px] lg:h-[800px] lg:rounded-2xl transition-all duration-300 translate-y-24">
+
+                <div class="py-[5px] flex justify-center items-center">
+                    <span class="bg-[#B3B0BD] rounded-full h-[5px] w-9"></span>
+                </div>
+
+                <div class="py-6 px-[30px] flex gap-6 items-center border-b border-[#E6E6EA]">
+                    <h2 class="text-lg leading-normal font-semibold flex-1">التصفية</h2>
+                    <button type="button" aria-label="close filter" class="close-filter-btn">
+                        <img src="assets/images/x-close.svg" width="24" height="24" alt="close Icon">
+                    </button>
+                </div>
+
+                <div class="max-h-full overflow-y-scroll flex-1">
+
+                    <!-- Scientific article -->
+                    <div class="flex flex-col py-6 px-[30px] border-b border-[#E6E6EA]">
+                        <div class="flex gap-6 items-center drop-down">
+                            <h3 class="text-base leading-normal flex-1 font-medium">
+                                المادة العلمية
+                            </h3>
+                            <img src="assets/images/collapse-arrow.svg" class="drop-down-icon" width="20" height="20"
+                                alt="close Icon">
+                        </div>
+                        <div class="pt-8 flex flex-col gap-4 drop-down-items">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="arabic" id="arabic" class="form-checkbox peer">
+                                <label for="arabic"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">اللغة العربية</span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="french" id="french" class="form-checkbox peer">
+                                <label for="french"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">اللغة الفرنسية </span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="science" id="science" class="form-checkbox peer">
+                                <label for="science"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">العلوم </span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====================================================================== -->
+
+                    <!-- classrooms -->
+                    <div class="flex flex-col py-6 px-[30px] border-b border-[#E6E6EA]">
+
+                        <div class="flex gap-6 items-center drop-down">
+                            <h3 class="text-base leading-normal flex-1 font-medium">
+                                الصفوف الدراسية
+                            </h3>
+                            <img src="assets/images/collapse-arrow.svg" class="drop-down-icon" width="20" height="20"
+                                alt="close Icon">
+                        </div>
+
+                        <div class="pt-8 flex flex-col gap-4 drop-down-items">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="grade1" id="grade1" class="form-checkbox peer">
+                                <label for="grade1"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">الصف الأول</span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="grade2" id="grade2" class="form-checkbox peer">
+                                <label for="grade2"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">الصف الثاني</span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="grade3" id="grade3" class="form-checkbox peer">
+                                <label for="grade3"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">الصف الثالث</span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="grade4" id="grade4" class="form-checkbox peer">
+                                <label for="grade4"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">الصف الرابع</span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="grade5" id="grade5" class="form-checkbox peer">
+                                <label for="grade5"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">الصف الخامس</span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="grade6" id="grade6" class="form-checkbox peer">
+                                <label for="grade6"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">الصف السادس</span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ======================================================================   -->
+
+                    <!-- location -->
+                    <div class="flex flex-col py-6 px-[30px]">
+
+                        <div class="flex gap-6 items-center drop-down">
+                            <h3 class="text-base leading-normal flex-1 font-medium">
+                                الموقع
+                            </h3>
+                            <img src="assets/images/collapse-arrow.svg" class="drop-down-icon" width="20" height="20"
+                                alt="close Icon">
+                        </div>
+
+                        <div class="pt-8 flex flex-col gap-4 drop-down-items">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="gedah" id="gedah" class="form-checkbox peer">
+                                <label for="gedah"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">
+                                        جده
+                                    </span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" name="riyadh" id="riyadh" class="form-checkbox peer">
+                                <label for="riyadh"
+                                    class="text-[#8E8A9D] flex-1 flex items-center gap-3 peer-checked:text-[#090129] transition-all duration-300">
+                                    <span class="flex-1">
+                                        الرياض
+                                    </span>
+                                    <span>(20)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="py-4 px-[30px] grid grid-cols-2 gap-4">
+                    <a href="login.html" class="text-sm leading-5 py-4 px-8 rounded-2xl secondary-btn text-center">
+                        روية النتائج
+                    </a>
+
+                    <a href="register.html" class="text-sm leading-5 py-4 px-8 rounded-2xl bordered-btn text-center">
+                        مسح الكل
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </main>
     <!-- End Momtaz MAin Page Content  -->
 
