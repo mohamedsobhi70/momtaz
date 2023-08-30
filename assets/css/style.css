@@ -901,6 +901,10 @@ header .nav-item.active {
   left: -18rem;
 }
 
+.-right-2 {
+  right: -0.5rem;
+}
+
 .-right-52 {
   right: -13rem;
 }
@@ -911,6 +915,10 @@ header .nav-item.active {
 
 .-top-12 {
   top: -3rem;
+}
+
+.-top-2 {
+  top: -0.5rem;
 }
 
 .-top-24 {
@@ -995,14 +1003,6 @@ header .nav-item.active {
 
 .top-5 {
   top: 1.25rem;
-}
-
-.-right-2 {
-  right: -0.5rem;
-}
-
-.-top-2 {
-  top: -0.5rem;
 }
 
 .z-40 {
@@ -1385,6 +1385,18 @@ header .nav-item.active {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.scroll-mt-9 {
+  scroll-margin-top: 2.25rem;
+}
+
+.scroll-mt-10 {
+  scroll-margin-top: 2.5rem;
+}
+
+.scroll-mt-12 {
+  scroll-margin-top: 3rem;
 }
 
 .grid-cols-1 {
@@ -1829,6 +1841,11 @@ header .nav-item.active {
   background-color: rgb(190 166 219 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#C5221F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 34 31 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#D1B6F1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(209 182 241 / var(--tw-bg-opacity));
@@ -1942,11 +1959,6 @@ header .nav-item.active {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#C5221F\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(197 34 31 / var(--tw-bg-opacity));
 }
 
 .bg-about {
@@ -2434,10 +2446,6 @@ header .nav-item.active {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .opacity-10 {
@@ -3540,14 +3548,6 @@ a.ui-button:active,
     width: fit-content;
   }
 
-  .lg\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .lg\:flex-none {
-    flex: none;
-  }
-
   .lg\:basis-2\/3 {
     flex-basis: 66.666667%;
   }
@@ -3578,10 +3578,6 @@ a.ui-button:active,
 
   .lg\:items-start {
     align-items: flex-start;
-  }
-
-  .lg\:items-end {
-    align-items: flex-end;
   }
 
   .lg\:items-center {
@@ -3931,14 +3927,14 @@ a.ui-button:active,
     padding-bottom: 1.5rem;
   }
 
-  .lg\:py-\[114px\] {
-    padding-top: 114px;
-    padding-bottom: 114px;
-  }
-
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:py-\[114px\] {
+    padding-top: 114px;
+    padding-bottom: 114px;
   }
 
   .lg\:pb-0 {
