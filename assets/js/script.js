@@ -1065,7 +1065,7 @@ if ($(".teacher-nav-container").length > 0) {
         let scrollPos = $(document).scrollTop() + $("body > header").innerHeight();
         let sections = $('.naved-sec');
         sections.each(function () {
-            let top = $(this).offset().top - 100;
+            let top = $(this).offset().top - 200;
             let bottom = top + $(this).outerHeight();
             if (scrollPos >= top && scrollPos <= bottom) {
 
