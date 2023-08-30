@@ -1333,6 +1333,10 @@ header .nav-item.active {
   width: 100vw;
 }
 
+.min-w-\[300px\] {
+  min-width: 300px;
+}
+
 .max-w-\[512px\] {
   max-width: 512px;
 }
@@ -1385,14 +1389,6 @@ header .nav-item.active {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.scroll-mt-9 {
-  scroll-margin-top: 2.25rem;
-}
-
-.scroll-mt-10 {
-  scroll-margin-top: 2.5rem;
 }
 
 .scroll-mt-12 {
