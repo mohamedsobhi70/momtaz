@@ -1123,7 +1123,6 @@ if ($(".shed-carousel-container").length > 0) {
         $(".shed-items-container").addClass("hidden");
         $(`.shed-items-container[data-shed=${th.attr("data-shed")}]`).removeClass("hidden");
         $('.show-more').addClass("hidden");
-
     })
 }
 
@@ -1156,4 +1155,13 @@ if ($(".open-search-container").length > 0) {
         $(".mobile-search-container").addClass("hidden");
 
     })
+}
+
+if ($(".shed-filter").length > 0) {
+    $(".shed-filter").on("click", function () {
+        $(this).removeClass("active")
+    })
+    $(".shed-filter > div").click(function (e) {
+        e.stopPropagation();
+    });
 }
