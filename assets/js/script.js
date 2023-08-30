@@ -1139,3 +1139,21 @@ if ($(".all-shed-items").length > 0) {
         }
     });
 }
+if ($(".open-search-container").length > 0) {
+    $(".open-search-container").on("click", function () {
+        $(this).addClass("hidden");
+        $(".mobile-menu-btn").addClass("hidden");
+        $(".mobile-logo").addClass("hidden");
+        $(".search-container").addClass("w-full");
+        $(".mobile-search-container").removeClass("hidden");
+
+    })
+    $(".close-mobile-search-container").on("click", function () {
+        $(".open-search-container").removeClass("hidden");
+        $(".mobile-menu-btn").removeClass("hidden");
+        $(".mobile-logo").removeClass("hidden");
+        $(".search-container").removeClass("w-full");
+        $(".mobile-search-container").addClass("hidden");
+
+    })
+}

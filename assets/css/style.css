@@ -1369,6 +1369,10 @@ header .nav-item.active {
   flex-shrink: 0;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .basis-1\/12 {
   flex-basis: 8.333333%;
 }
@@ -3441,6 +3445,10 @@ a.ui-button:active,
   color: rgb(245 248 255 / var(--tw-text-opacity));
 }
 
+.peer:checked ~ .peer-checked\:text-\[\#09029\] {
+  color: #09029;
+}
+
 :is([dir="ltr"] .ltr\:right-3) {
   right: 0.75rem;
 }
@@ -3726,6 +3734,11 @@ a.ui-button:active,
 
   .lg\:basis-2\/3 {
     flex-basis: 66.666667%;
+  }
+
+  .lg\:translate-y-24 {
+    --tw-translate-y: 6rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:cursor-auto {
