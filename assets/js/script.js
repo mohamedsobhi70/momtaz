@@ -829,7 +829,6 @@ if ($("#cover-img").length > 0) {
     file.addEventListener("change", function () {
 
         const reader = new FileReader();
-        console.log(file);
 
         // listen for 'load' events on the FileReader
         reader.addEventListener("load", function () {
@@ -1125,7 +1124,6 @@ if ($(".shed-carousel-container").length > 0) {
         if (th.attr("data-shed") == "all") {
             $(".shed-items-container").removeClass("hidden");
             $('.show-more').removeClass("hidden");
-            shomoreShed();
         }
         else {
             $(".shed-items-container").addClass("hidden");
@@ -1135,21 +1133,6 @@ if ($(".shed-carousel-container").length > 0) {
     })
 }
 
-function shomoreShed() {
-    if ($(".all-shed-items").length > 0) {
-        // Hide all .shed-items-container except the first three
-        $('.shed-items-container:gt(2)').addClass("hidden");
-
-        // Show/hide items when the .show-more button is clicked
-        $('.show-more').click(function () {
-            $('.shed-items-container:hidden:lt(3)').removeClass("hidden");
-            if ($('.shed-items-container:hidden').length === 0) {
-                $('.show-more').addClass("hidden");
-            }
-        });
-    }
-}
-shomoreShed();
 
 if ($(".open-search-container").length > 0) {
     $(".open-search-container").on("click", function () {
@@ -1177,4 +1160,23 @@ if ($(".shed-filter").length > 0) {
     $(".shed-filter > div").click(function (e) {
         e.stopPropagation();
     });
+}
+
+
+if ($(".momtaz-drop-down").length > 0) {
+    $(".momtaz-drop-down").each(function () {
+        let th = $(this);
+        th.on("click", function () {
+            th.find(".drop-down-options").slideToggle(300);
+        });
+        $(".drop-down-options .dropdown-options").click(function (e) {
+            e.stopPropagation();
+            $(".drop-down-options").slideUp(300);
+            $(".selected-option").html($(this).html())
+
+            $(".filter-container-box .filter-container-item").css("display", "none");
+            $(`.filter-container-box .filter-container-item[data-opt=${$(this).attr('data-opt')}]`).css("display", "grid");
+        });
+
+    })
 }

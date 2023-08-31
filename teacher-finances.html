@@ -282,12 +282,18 @@
         <section>
             <div class="container flex flex-col gap-6 lg:gap-10 lg:py-8">
                 <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-[30px] px-[30px] lg:px-0">
-                    <select name="select-year" id="select-year"
-                        class="order-last lg:order-none lg:col-span-1 border border-[#E8E8E8] text-[#7839EE] text-sm leading-normal font-medium py-3 px-6 rounded-xl">
-                        <option value="2023" selected>2023</option>
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                    </select>
+                    <div
+                        class="momtaz-drop-down relative order-last lg:order-none lg:col-span-1 border border-[#E8E8E8] cursor-pointer text-[#7839EE] text-sm leading-normal font-medium py-3 px-6 rounded-xl flex items-center justify-between">
+                        <span class="selected-option">2023</span>
+                        <img src="assets/images/arrow-down.svg" width="20" height="20" alt="arrow-down">
+                        <ul
+                            class="drop-down-options hidden absolute w-full top-[110%] left-0 bg-white rounded-lg border border-[#DCDFEA] z-10 overflow-hidden">
+                            <li class="dropdown-options py-2 px-3 hover:bg-[#FAF8FE]" data-opt="1">2023</li>
+                            <li class="dropdown-options py-2 px-3 hover:bg-[#FAF8FE]" data-opt="2">2022</li>
+                            <li class="dropdown-options py-2 px-3 hover:bg-[#FAF8FE]" data-opt="3">2021</li>
+                        </ul>
+                    </div>
+
                     <div class="lg:col-span-4 flex flex-col-reverse lg:flex-row gap-4 justify-between">
                         <a href="#"
                             class="flex items-center justify-center gap-2 text-[#7839EE] text-xs leading-normal font-medium bordered-btn py-3 px-4 rounded-lg">
@@ -312,323 +318,767 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-[30px]">
-                    <aside class="lg:col-span-1 items-center gap-3 hidden lg:block px-[30px] lg:px-0 relative">
-                        <div
-                            class="lg:sticky lg:top-20 shed-carousel-container relative lg:overflow-x-visible overflow-x-scroll whitespace-nowrap">
-                            <ul class="shed-tabs-carousel p-0 m-0 lg:block flex">
-                                <li class="shed-tabs cursor-pointer active" data-shed="all">
-                                    الكل
-                                </li>
-                                <li class="shed-tabs cursor-pointer" data-shed="shed-1">
-                                    أغسطس
-                                </li>
-                                <li class="shed-tabs cursor-pointer " data-shed="shed-2">
-                                    يوليو
-                                </li>
-                                <li class="shed-tabs cursor-pointer" data-shed="shed-3">
-                                    يونيو
-                                </li>
-                                <li class="shed-tabs cursor-pointer" data-shed="shed-4">
-                                    مايو
-                                </li>
-                                <li class="shed-tabs cursor-pointer" data-shed="shed-5">
-                                    أبريل
-                                </li>
-                                <li class="shed-tabs cursor-pointer" data-shed="shed-6">
-                                    مارس
-                                </li>
-                                <li class="shed-tabs cursor-pointer" data-shed="shed-7">
-                                    فبراير
-                                </li>
-                                <li class="shed-tabs cursor-pointer" data-shed="shed-8">
-                                    يناير
-                                </li>
-                            </ul>
+                <div class="filter-container-box">
+                    <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-[30px] filter-container-item" data-opt="1">
+
+                        <aside class="lg:col-span-1 items-center gap-3 hidden lg:block px-[30px] lg:px-0 relative">
+                            <div
+                                class="lg:sticky lg:top-20 shed-carousel-container relative lg:overflow-x-visible overflow-x-scroll whitespace-nowrap">
+                                <ul class="shed-tabs-carousel p-0 m-0 lg:block flex">
+                                    <li class="shed-tabs cursor-pointer active" data-shed="all">
+                                        الكل
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-1">
+                                        أغسطس
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer " data-shed="shed-2">
+                                        يوليو
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-3">
+                                        يونيو
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-4">
+                                        مايو
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-5">
+                                        أبريل
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-6">
+                                        مارس
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-7">
+                                        فبراير
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-8">
+                                        يناير
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+
+                        <div class="flex flex-col lg:gap-10 lg:col-span-4">
+
+                            <div class="flex flex-col lg:gap-10 all-shed-items">
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-1">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        أغسطس
+                                    </h2>
+
+                                    <div class="border border-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col p-4">
+                                        <p class="text-[#5A5570] text-xs leading-normal">
+                                            ليس لديك أي دفعات حتى الآن لهذا الشهر.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-2">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        يوليو
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 يوليو - 30 يوليو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            1 يوليو - 30 يوليو
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-3">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        1 يونيو - 30 يونيو
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <p class="text-[#5A5570] text-xs leading-normal">
+                                            ليس لديك أي دفعات حتى الآن لهذا الشهر.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-4">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        مايو
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 مايو - 30 مايو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-5">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        أبريل
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 أبريل - 30 أبريل
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-6">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        مارس
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 مارس - 30 مارس
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-7">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        فبراير
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 يوليو - 30 يوليو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-8">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        يناير
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 يوليو - 30 يوليو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center py-4 lg:py-0">
+                                    <button class="text-[#7839EE] text-base leading-normal font-medium show-more">
+                                        عرض المزيد ....
+                                    </button>
+                                </div>
+
+                            </div>
                         </div>
-                    </aside>
-                    <div class="flex flex-col lg:gap-10 lg:col-span-4">
-
-                        <div class="flex flex-col lg:gap-10 all-shed-items">
-
-                            <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
-                                data-shed="shed-1">
-                                <h2
-                                    class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
-                                    أغسطس
-                                </h2>
-
-                                <div class="border border-[#E8E8E8] rounded-2xl overflow-hidden flex flex-col p-4">
-                                    <p class="text-[#5A5570] text-xs leading-normal">
-                                        ليس لديك أي دفعات حتى الآن لهذا الشهر.
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-[30px] filter-container-item" data-opt="2">
+                        <aside class="lg:col-span-1 items-center gap-3 hidden lg:block px-[30px] lg:px-0 relative">
+                            <div
+                                class="lg:sticky lg:top-20 shed-carousel-container relative lg:overflow-x-visible overflow-x-scroll whitespace-nowrap">
+                                <ul class="shed-tabs-carousel p-0 m-0 lg:block flex">
+                                    <li class="shed-tabs cursor-pointer active" data-shed="all">
+                                        الكل
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer " data-shed="shed-2">
+                                        يوليو
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-3">
+                                        يونيو
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-4">
+                                        مايو
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-5">
+                                        أبريل
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-6">
+                                        مارس
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-7">
+                                        فبراير
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-8">
+                                        يناير
+                                    </li>
+                                </ul>
                             </div>
+                        </aside>
 
-                            <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
-                                data-shed="shed-2">
-                                <h2
-                                    class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
-                                    يوليو
-                                </h2>
+                        <div class="flex flex-col lg:gap-10 lg:col-span-4">
 
-                                <div
-                                    class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
-                                    <div class="flex items-center justify-between pb-3">
-                                        <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                            <div class="flex flex-col lg:gap-10 all-shed-items">
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-2">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        يوليو
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 يوليو - 30 يوليو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
                                             1 يوليو - 30 يوليو
-                                        </h3>
-                                        <span class="text-[#090129] text-sm leading-normal font-medium">
-                                            1500 SAR
-                                        </span>
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
                                     </div>
-                                    <p
-                                        class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
-                                        <span
-                                            class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
-                                            <img src="assets/images/check.svg" width="10" height="10" alt="check">
-                                        </span>
-
-                                        تم إصدار الدفعة في 1 أغسطس 2023
-                                        <img src="assets/images/message-question-circle.svg" width="14" height="14"
-                                            alt="message-question">
-                                        <span
-                                            class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
-                                            قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
-                                        </span>
-                                    </p>
-                                    <a href="#"
-                                        class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
-                                        <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
-                                        تحميل ملف ملخص المدفوعات بصيغة PDF
-                                    </a>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
-                                data-shed="shed-3">
-                                <h2
-                                    class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
-                                    يونيو
-                                </h2>
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-3">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        1 يونيو - 30 يونيو
+                                    </h2>
 
-                                <div
-                                    class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
-                                    <p class="text-[#5A5570] text-xs leading-normal">
-                                        ليس لديك أي دفعات حتى الآن لهذا الشهر.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
-                                data-shed="shed-4">
-                                <h2
-                                    class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
-                                    مايو
-                                </h2>
-
-                                <div
-                                    class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
-                                    <div class="flex items-center justify-between pb-3">
-                                        <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
-                                            1 يوليو - 30 يوليو
-                                        </h3>
-                                        <span class="text-[#090129] text-sm leading-normal font-medium">
-                                            1500 SAR
-                                        </span>
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <p class="text-[#5A5570] text-xs leading-normal">
+                                            ليس لديك أي دفعات حتى الآن لهذا الشهر.
+                                        </p>
                                     </div>
-                                    <p
-                                        class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
-                                        <span
-                                            class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
-                                            <img src="assets/images/check.svg" width="10" height="10" alt="check">
-                                        </span>
-
-                                        تم إصدار الدفعة في 1 أغسطس 2023
-                                        <img src="assets/images/message-question-circle.svg" width="14" height="14"
-                                            alt="message-question">
-                                        <span
-                                            class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
-                                            قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
-                                        </span>
-                                    </p>
-                                    <a href="#"
-                                        class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
-                                        <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
-                                        تحميل ملف ملخص المدفوعات بصيغة PDF
-                                    </a>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
-                                data-shed="shed-5">
-                                <h2
-                                    class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
-                                    أبريل
-                                </h2>
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-4">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        مايو
+                                    </h2>
 
-                                <div
-                                    class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
-                                    <div class="flex items-center justify-between pb-3">
-                                        <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
-                                            1 يوليو - 30 يوليو
-                                        </h3>
-                                        <span class="text-[#090129] text-sm leading-normal font-medium">
-                                            1500 SAR
-                                        </span>
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 مايو - 30 مايو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
                                     </div>
-                                    <p
-                                        class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
-                                        <span
-                                            class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
-                                            <img src="assets/images/check.svg" width="10" height="10" alt="check">
-                                        </span>
-
-                                        تم إصدار الدفعة في 1 أغسطس 2023
-                                        <img src="assets/images/message-question-circle.svg" width="14" height="14"
-                                            alt="message-question">
-                                        <span
-                                            class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
-                                            قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
-                                        </span>
-                                    </p>
-                                    <a href="#"
-                                        class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
-                                        <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
-                                        تحميل ملف ملخص المدفوعات بصيغة PDF
-                                    </a>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
-                                data-shed="shed-6">
-                                <h2
-                                    class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
-                                    مارس
-                                </h2>
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-5">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        أبريل
+                                    </h2>
 
-                                <div
-                                    class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
-                                    <div class="flex items-center justify-between pb-3">
-                                        <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
-                                            1 يوليو - 30 يوليو
-                                        </h3>
-                                        <span class="text-[#090129] text-sm leading-normal font-medium">
-                                            1500 SAR
-                                        </span>
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 أبريل - 30 أبريل
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
                                     </div>
-                                    <p
-                                        class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
-                                        <span
-                                            class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
-                                            <img src="assets/images/check.svg" width="10" height="10" alt="check">
-                                        </span>
-
-                                        تم إصدار الدفعة في 1 أغسطس 2023
-                                        <img src="assets/images/message-question-circle.svg" width="14" height="14"
-                                            alt="message-question">
-                                        <span
-                                            class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
-                                            قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
-                                        </span>
-                                    </p>
-                                    <a href="#"
-                                        class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
-                                        <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
-                                        تحميل ملف ملخص المدفوعات بصيغة PDF
-                                    </a>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
-                                data-shed="shed-7">
-                                <h2
-                                    class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
-                                    فبراير
-                                </h2>
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-6">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        مارس
+                                    </h2>
 
-                                <div
-                                    class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
-                                    <div class="flex items-center justify-between pb-3">
-                                        <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
-                                            1 يوليو - 30 يوليو
-                                        </h3>
-                                        <span class="text-[#090129] text-sm leading-normal font-medium">
-                                            1500 SAR
-                                        </span>
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 مارس - 30 مارس
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
                                     </div>
-                                    <p
-                                        class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
-                                        <span
-                                            class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
-                                            <img src="assets/images/check.svg" width="10" height="10" alt="check">
-                                        </span>
-
-                                        تم إصدار الدفعة في 1 أغسطس 2023
-                                        <img src="assets/images/message-question-circle.svg" width="14" height="14"
-                                            alt="message-question">
-                                        <span
-                                            class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
-                                            قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
-                                        </span>
-                                    </p>
-                                    <a href="#"
-                                        class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
-                                        <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
-                                        تحميل ملف ملخص المدفوعات بصيغة PDF
-                                    </a>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
-                                data-shed="shed-8">
-                                <h2
-                                    class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
-                                    يناير
-                                </h2>
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-7">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        فبراير
+                                    </h2>
 
-                                <div
-                                    class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
-                                    <div class="flex items-center justify-between pb-3">
-                                        <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
-                                            1 يوليو - 30 يوليو
-                                        </h3>
-                                        <span class="text-[#090129] text-sm leading-normal font-medium">
-                                            1500 SAR
-                                        </span>
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 يوليو - 30 يوليو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
                                     </div>
-                                    <p
-                                        class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
-                                        <span
-                                            class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
-                                            <img src="assets/images/check.svg" width="10" height="10" alt="check">
-                                        </span>
-
-                                        تم إصدار الدفعة في 1 أغسطس 2023
-                                        <img src="assets/images/message-question-circle.svg" width="14" height="14"
-                                            alt="message-question">
-                                        <span
-                                            class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
-                                            قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
-                                        </span>
-                                    </p>
-                                    <a href="#"
-                                        class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
-                                        <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
-                                        تحميل ملف ملخص المدفوعات بصيغة PDF
-                                    </a>
                                 </div>
-                            </div>
 
-                            <div class="flex justify-center py-4 lg:py-0">
-                                <button class="text-[#7839EE] text-base leading-normal font-medium show-more">
-                                    عرض المزيد ....
-                                </button>
-                            </div>
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-8">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        يناير
+                                    </h2>
 
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 يوليو - 30 يوليو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center py-4 lg:py-0">
+                                    <button class="text-[#7839EE] text-base leading-normal font-medium show-more">
+                                        عرض المزيد ....
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-[30px] filter-container-item" data-opt="3">
+                        <aside class="lg:col-span-1 items-center gap-3 hidden lg:block px-[30px] lg:px-0 relative">
+                            <div
+                                class="lg:sticky lg:top-20 shed-carousel-container relative lg:overflow-x-visible overflow-x-scroll whitespace-nowrap">
+                                <ul class="shed-tabs-carousel p-0 m-0 lg:block flex">
+                                    <li class="shed-tabs cursor-pointer active" data-shed="all">
+                                        الكل
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-7">
+                                        فبراير
+                                    </li>
+                                    <li class="shed-tabs cursor-pointer" data-shed="shed-8">
+                                        يناير
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+
+                        <div class="flex flex-col lg:gap-10 lg:col-span-4">
+
+                            <div class="flex flex-col lg:gap-10 all-shed-items">
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-7">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        فبراير
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 يوليو - 30 يوليو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-3 shed-items-container pt-4 pb-6 px-[30px] lg:p-0 border-t border-[#E6E6EA] lg:border-none"
+                                    data-shed="shed-8">
+                                    <h2
+                                        class="text-[#090129] text-sm leading-normal lg:text-lg lg:leading-normal font-medium">
+                                        يناير
+                                    </h2>
+
+                                    <div
+                                        class="border border-[#E8E8E8] rounded-2xl flex flex-col p-4 divide-y divide-[#E6E6EA]">
+                                        <div class="flex items-center justify-between pb-3">
+                                            <h3 class="text-[#5A5570] text-xs leading-normal font-semibold">
+                                                1 يوليو - 30 يوليو
+                                            </h3>
+                                            <span class="text-[#090129] text-sm leading-normal font-medium">
+                                                <span class="hidden lg:inline-flex">SAR</span>
+                                                1500
+                                                <span class="lg:hidden">ر.س</span>
+                                            </span>
+                                        </div>
+                                        <p
+                                            class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal py-3 relative group">
+                                            <span
+                                                class="w-4 h-4 rounded-full bg-[#12B76A] flex items-center justify-center">
+                                                <img src="assets/images/check.svg" width="10" height="10" alt="check">
+                                            </span>
+
+                                            تم إصدار الدفعة في 1 أغسطس 2023
+                                            <img src="assets/images/message-question-circle.svg" width="14" height="14"
+                                                alt="message-question">
+                                            <span
+                                                class="tooltip group-hover:bottom-[110%] group-hover:opacity-100 group-hover:visible text-[#5A5570] text-[10px] leading-normal">
+                                                قد يستغرق حتى 10 أيام ليصل المبلغ إلى حسابك البنكي.
+                                            </span>
+                                        </p>
+                                        <a href="#"
+                                            class="flex items-center gap-1 text-[#7839EE] text-xs leading-normal pt-3">
+                                            <img src="assets/images/paperclip.svg" width="16" height="16" alt="file">
+                                            تحميل ملف ملخص المدفوعات بصيغة PDF
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center py-4 lg:py-0">
+                                    <button class="text-[#7839EE] text-base leading-normal font-medium show-more">
+                                        عرض المزيد ....
+                                    </button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- End Page Title Section  -->
