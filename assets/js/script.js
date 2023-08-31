@@ -1094,25 +1094,27 @@ if ($(".teacher-nav-container").length > 0) {
 
 if ($(".shed-carousel-container").length > 0) {
     const carouselContainer = document.querySelector('.shed-carousel-container');
-    const carouselList = document.querySelector('.shed-tabs-carousel');
     const prevButton = document.querySelector('.prev-button');
     const nextButton = document.querySelector('.next-button');
 
-    // Previous button click event
-    prevButton.addEventListener('click', function () {
-        carouselContainer.scrollBy({
-            left: -carouselContainer.offsetWidth,
-            behavior: 'smooth'
+    if ($('.prev-button').length > 0 || $('.prev-button').length > 0) {
+        // Previous button click event
+        prevButton.addEventListener('click', function () {
+            carouselContainer.scrollBy({
+                left: -carouselContainer.offsetWidth,
+                behavior: 'smooth'
+            });
         });
-    });
 
-    // Next button click event
-    nextButton.addEventListener('click', function () {
-        carouselContainer.scrollBy({
-            left: carouselContainer.offsetWidth,
-            behavior: 'smooth'
+        // Next button click event
+        nextButton.addEventListener('click', function () {
+            carouselContainer.scrollBy({
+                left: carouselContainer.offsetWidth,
+                behavior: 'smooth'
+            });
         });
-    });
+
+    }
 
     // ================================================
 
