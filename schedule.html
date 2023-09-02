@@ -269,9 +269,28 @@
                     <!-- Your Childs  -->
                     <div
                         class="lg:sticky lg:top-20 flex flex-wrap lg:flex-col gap-2 h-fit p-2 lg:p-0 border border-[#e6e6ea] lg:border-none rounded-2xl lg:rounded-none">
+                        <!--   -->
+                        <div class="child-item sched-item-tab cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4 active"
+                            data-schedule="all">
+                            <div class="flex flex-col gap-1 flex-1">
+                                <h3
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold line-clamp-1">
+                                    الكل
+                                </h3>
+                            </div>
+
+                            <svg class="hidden lg:block" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9998 19.92L8.47984 13.4C7.70984 12.63 7.70984 11.37 8.47984 10.6L14.9998 4.08002"
+                                    stroke="#090129" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
                         <!-- Child item  -->
-                        <div class="child-item cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4 sch-tabs-item active"
-                            data-child="child-1">
+                        <div class="child-item sched-item-tab cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4"
+                            data-schedule="schd-1">
                             <div class="w-14 h-14 rounded-2xl overflow-hidden hidden lg:block">
                                 <img src="assets/images/child.jpg" width="56" height="56" alt="child">
                             </div>
@@ -279,7 +298,7 @@
                             <div class="flex flex-col gap-1 flex-1">
                                 <h3
                                     class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold line-clamp-1">
-                                    محمد
+                                    فريدة 
                                 </h3>
                                 <p class="text-[#8E8A9D] text-sm left-5 lg:line-clamp-1 hidden lg:block">
                                     الصف الثاني الابتدائي
@@ -294,9 +313,10 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </div>
+
                         <!-- Child item  -->
-                        <div class="child-item cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4 sch-tabs-item"
-                            data-child="child-2">
+                        <div class="child-item sched-item-tab cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4 "
+                            data-schedule="schd-2">
                             <div class="w-14 h-14 rounded-2xl overflow-hidden hidden lg:block">
                                 <img src="assets/images/child.jpg" width="56" height="56" alt="child">
                             </div>
@@ -304,7 +324,7 @@
                             <div class="flex flex-col gap-1 flex-1">
                                 <h3
                                     class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold line-clamp-1">
-                                    مهند
+                                    مهند 
                                 </h3>
                                 <p class="text-[#8E8A9D] text-sm left-5 lg:line-clamp-1 hidden lg:block">
                                     الصف الثاني الابتدائي
@@ -319,9 +339,10 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </div>
+
                         <!-- Child item  -->
-                        <div class="child-item cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4 sch-tabs-item"
-                            data-child="child-3">
+                        <div class="child-item sched-item-tab cursor-pointer py-2 rounded-lg lg:rounded-2xl lg:p-4 "
+                            data-schedule="schd-3">
                             <div class="w-14 h-14 rounded-2xl overflow-hidden hidden lg:block">
                                 <img src="assets/images/child.jpg" width="56" height="56" alt="child">
                             </div>
@@ -329,7 +350,7 @@
                             <div class="flex flex-col gap-1 flex-1">
                                 <h3
                                     class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold line-clamp-1">
-                                    ساره
+                                    ساره 
                                 </h3>
                                 <p class="text-[#8E8A9D] text-sm left-5 lg:line-clamp-1 hidden lg:block">
                                     الصف الثاني الابتدائي
@@ -344,139 +365,230 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </div>
+
                     </div>
 
                     <!-- child-informations  -->
                     <div class="lg:col-span-2 h-fit flex flex-col gap-4">
-                        <div class="sch-tabs-content flex flex-col gap-3 lg:gap-2" data-child="child-1">
-                            <div
-                                class="flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
-                                <div
-                                    class="flex flex-col items-center px-0.5 py-1 bg-[#F9F9FB] border border-[#E6E6EA] rounded-lg w-[44px] lg:w-14">
-                                    <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal font-medium">
-                                        الاحد
-                                    </span>
-                                    <span
-                                        class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-medium">
-                                        04
-                                    </span>
-                                </div>
-                                <div class="flex-1 flex flex-col gap-1.5">
-                                    <span
-                                        class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                                        مهند يوسف
-                                    </span>
 
-                                    <h3
-                                        class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                        أ/ محمد علي - عربي
-                                    </h3>
-                                    <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
-                                        <img src="assets/images/clock.svg" alt="">
-                                        من 01:00 مـ إلي 02:30 مـ
-                                    </p>
+                        <div data-schedule="schd-1" class="sched-item flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
 
+                            <div class="flex-1 flex flex-col gap-1.5">
+                                <span
+                                    class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
+                                    فريدة محمود
+                                </span>
+
+                                <h3
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                    أ/ سيد علي
+                                </h3>
+                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
+                                    <img src="assets/images/clock.svg" width="14" height="14" alt="clock">
+                                    من 01:00 مـ إلي 02:30 مـ
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/calendar.svg" width="14" height="14" alt="calendar">
+                                        السبت / الثلاثاء
+                                    </div>
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/book.svg" width="14" height="14" alt="calendar">
+                                        مادة الرياضيات
+                                    </div>
                                 </div>
-                                <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
-                                    alt="chevron left">
+
                             </div>
+                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
+                                alt="chevron left">
                         </div>
-                        <div class="sch-tabs-content flex flex-col gap-3 lg:gap-2" data-child="child-2">
-                            <div
-                                class="flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
-                                <div
-                                    class="flex flex-col items-center px-0.5 py-1 bg-[#F9F9FB] border border-[#E6E6EA] rounded-lg w-[44px] lg:w-14">
-                                    <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal font-medium">
-                                        الاحد
-                                    </span>
-                                    <span
-                                        class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-medium">
-                                        04
-                                    </span>
-                                </div>
-                                <div class="flex-1 flex flex-col gap-1.5">
-                                    <span
-                                        class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                                        مهند يوسف
-                                    </span>
 
-                                    <h3
-                                        class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                        أ/ محمد علي - عربي
-                                    </h3>
-                                    <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
-                                        <img src="assets/images/clock.svg" alt="">
-                                        من 01:00 مـ إلي 02:30 مـ
-                                    </p>
+                        <div data-schedule="schd-1" class="sched-item flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
 
+                            <div class="flex-1 flex flex-col gap-1.5">
+                                <span
+                                    class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
+                                    فريدة محمود
+                                </span>
+
+                                <h3
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                    أ/ محمد علي
+                                </h3>
+                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
+                                    <img src="assets/images/clock.svg" width="14" height="14" alt="clock">
+                                    من 01:00 مـ إلي 02:30 مـ
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/calendar.svg" width="14" height="14" alt="calendar">
+                                        السبت / الثلاثاء
+                                    </div>
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/book.svg" width="14" height="14" alt="calendar">
+                                        الأحد / الأربعاء
+                                    </div>
                                 </div>
-                                <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
-                                    alt="chevron left">
+
                             </div>
+                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
+                                alt="chevron left">
                         </div>
-                        <div class="sch-tabs-content flex flex-col gap-3 lg:gap-2" data-child="child-3">
-                            <div
-                                class="flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
-                                <div
-                                    class="flex flex-col items-center px-0.5 py-1 bg-[#F9F9FB] border border-[#E6E6EA] rounded-lg w-[44px] lg:w-14">
-                                    <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal font-medium">
-                                        الاحد
-                                    </span>
-                                    <span
-                                        class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-medium">
-                                        04
-                                    </span>
-                                </div>
-                                <div class="flex-1 flex flex-col gap-1.5">
-                                    <span
-                                        class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                                        مهند يوسف
-                                    </span>
 
-                                    <h3
-                                        class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                        أ/ محمد علي - عربي
-                                    </h3>
-                                    <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
-                                        <img src="assets/images/clock.svg" alt="">
-                                        من 01:00 مـ إلي 02:30 مـ
-                                    </p>
+                        <div data-schedule="schd-1" class="sched-item flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
 
+                            <div class="flex-1 flex flex-col gap-1.5">
+                                <span
+                                    class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
+                                    فريدة محمود
+                                </span>
+
+                                <h3
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                    أ/ مصطفي عبد الرحمن
+                                </h3>
+                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
+                                    <img src="assets/images/clock.svg" width="14" height="14" alt="clock">
+                                    من 01:00 مـ إلي 02:30 مـ
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/calendar.svg" width="14" height="14" alt="calendar">
+                                        الاثنين / الثلاثاء / الأربعاء
+                                    </div>
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/book.svg" width="14" height="14" alt="calendar">
+                                        مادة الفيزياء
+                                    </div>
                                 </div>
-                                <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
-                                    alt="chevron left">
+
                             </div>
-                            <div
-                                class="flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
-                                <div
-                                    class="flex flex-col items-center px-0.5 py-1 bg-[#F9F9FB] border border-[#E6E6EA] rounded-lg w-[44px] lg:w-14">
-                                    <span class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal font-medium">
-                                        الاحد
-                                    </span>
-                                    <span
-                                        class="text-[#090129] text-base lg:text-lg leading-normal lg:leading-normal font-medium">
-                                        04
-                                    </span>
-                                </div>
-                                <div class="flex-1 flex flex-col gap-1.5">
-                                    <span
-                                        class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
-                                        مهند يوسف
-                                    </span>
+                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
+                                alt="chevron left">
+                        </div>
+                        <div data-schedule="schd-1" class="sched-item flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
 
-                                    <h3
-                                        class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
-                                        أ/ محمد علي - عربي
-                                    </h3>
-                                    <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
-                                        <img src="assets/images/clock.svg" alt="">
-                                        من 01:00 مـ إلي 02:30 مـ
-                                    </p>
+                            <div class="flex-1 flex flex-col gap-1.5">
+                                <span
+                                    class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
+                                    فريدة محمود
+                                </span>
 
+                                <h3
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                    أ/ محمد مسعد
+                                </h3>
+                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
+                                    <img src="assets/images/clock.svg" width="14" height="14" alt="clock">
+                                    من 01:00 مـ إلي 02:30 مـ
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/calendar.svg" width="14" height="14" alt="calendar">
+                                        الاثنين 22 مارس، 2023
+                                    </div>
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/book.svg" width="14" height="14" alt="calendar">
+                                        مادة الكيمياء
+                                    </div>
                                 </div>
-                                <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
-                                    alt="chevron left">
+
                             </div>
+                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
+                                alt="chevron left">
+                        </div>
+                       
+                        <div data-schedule="schd-2" class="sched-item flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
+
+                            <div class="flex-1 flex flex-col gap-1.5">
+                                <span
+                                    class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
+                                    مهند يوسف
+                                </span>
+
+                                <h3
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                    أ/ مصطفي عبد الرحمن
+                                </h3>
+                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
+                                    <img src="assets/images/clock.svg" width="14" height="14" alt="clock">
+                                    من 01:00 مـ إلي 02:30 مـ
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/calendar.svg" width="14" height="14" alt="calendar">
+                                        الأحد / الأربعاء
+                                    </div>
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/book.svg" width="14" height="14" alt="calendar">
+                                        مادة اللغة العربية
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
+                                alt="chevron left">
+                        </div>
+                       
+                        <div data-schedule="schd-2"  class="sched-item flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
+
+                            <div class="flex-1 flex flex-col gap-1.5">
+                                <span
+                                    class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
+                                    ساره يوسف
+                                </span>
+
+                                <h3
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                    أ/ محمد علي 
+                                </h3>
+                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
+                                    <img src="assets/images/clock.svg" width="14" height="14" alt="clock">
+                                    من 01:00 مـ إلي 02:30 مـ
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/calendar.svg" width="14" height="14" alt="calendar">
+                                        السبت / الثلاثاء
+                                    </div>
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/book.svg" width="14" height="14" alt="calendar">
+                                        مادة اللغة العربية
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
+                                alt="chevron left">
+                        </div>
+                    
+                        <div data-schedule="schd-3"  class="sched-item flex items-center gap-4 p-4 rounded-2xl border border-[#E6E6EA] cursor-pointer open-schedule">
+
+                            <div class="flex-1 flex flex-col gap-1.5">
+                                <span
+                                    class="text-[#8E8A9D] text-[10px] lg:text-xs leading-normal lg:leading-normal">
+                                    ساره يوسف
+                                </span>
+
+                                <h3
+                                    class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-medium">
+                                    أ/ محمد علي 
+                                </h3>
+                                <p class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal ">
+                                    <img src="assets/images/clock.svg" width="14" height="14" alt="clock">
+                                    من 01:00 مـ إلي 02:30 مـ
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/calendar.svg" width="14" height="14" alt="calendar">
+                                        السبت / الثلاثاء
+                                    </div>
+                                    <div class="flex items-center gap-1 text-[#5A5570] text-xs leading-normal">
+                                        <img src="assets/images/book.svg" width="14" height="14" alt="calendar">
+                                        مادة اللغة العربية
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/images/chevron-left.svg" class="w-4 lg:w-6" width="24" height="24"
+                                alt="chevron left">
                         </div>
 
                         <div class="py-4 sticky bottom-0 lg:static bg-white">
@@ -486,7 +598,6 @@
                                 مزامنة مع التقويم
                             </a>
                         </div>
-
                     </div>
 
                     <!-- Start popups -->
@@ -503,45 +614,79 @@
                                 </button>
                             </div>
                             <div class="border border-[#E6E6EA] rounded-3xl p-4 flex flex-col gap-4">
-
                                 <div class="flex items-center gap-4">
-                                    <div class="rounded-2xl overflow-hidden border border-[#E6E6EA]">
-                                        <img src="assets/images/team-3.png" width="48" height="48" alt="">
+                                    <div class="flex items-center gap-4 flex-1">
+                                        <div class="rounded-2xl overflow-hidden border border-[#E6E6EA] shrink-0">
+                                            <img src="assets/images/team-3.png" width="48" height="48" alt="">
+                                        </div>
+                                        <div class="flex flex-col gap-1">
+                                            <p
+                                                class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                                الأستاذ
+                                            </p>
+                                            <p
+                                                class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold">
+                                                مينا رافت لوكاس
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="flex flex-col gap-1">
-                                        <p class="text-[#8E8A9D] text-xs lg:text-sm leading-normal lg:leading-normal">
-                                            الأستاذ
-                                        </p>
-                                        <p
-                                            class="text-[#090129] text-sm lg:text-base leading-normal lg:leading-normal font-semibold">
-                                            مينا رافت لوكاس
-                                        </p>
+                                    <div class="flex items-center gap-1">
+                                        <a href="tel:01010101010" class="p-2.5">
+                                            <img src="assets/images/call.png" width="20" height="20" alt="">
+                                        </a>
+                                        <a href="#" class="p-2.5">
+                                            <img src="assets/images/message.svg" width="20" height="20" alt="">
+                                        </a>
                                     </div>
                                 </div>
-                                <div
-                                    class="pt-4 lg:pt-6 border-t border-[#DFE9F5] grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+                                <div class="pt-4 lg:pt-6 border-t border-[#DFE9F5] grid grid-cols-2 gap-4">
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
+                                        <p class="text-[#8E8A9D] text-xs leading-normal lg:leading-normal">
+                                            مدة الحصة
+                                        </p>
+                                        <p class="text-[#090129] text-xs leading-normal font-medium">
+                                            60 دقيقة
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <p class="text-[#8E8A9D] text-xs leading-normal lg:leading-normal">
+                                            المادة
+                                        </p>
+                                        <p class="text-[#090129] text-xs leading-normal font-medium">
+                                            الجبر
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <p class="text-[#8E8A9D] text-xs leading-normal lg:leading-normal">
+                                            أيام الحصص
+                                        </p>
+                                        <p class="text-[#090129] text-xs leading-normal font-medium">
+                                            السبت / الثلاثاء
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <p class="text-[#8E8A9D] text-xs leading-normal lg:leading-normal">
                                             الساعة
                                         </p>
-                                        <p class="text-[#090129] text-xs lg:text-base leading-normal font-medium">
+                                        <p class="text-[#090129] text-xs leading-normal font-medium">
                                             10:00ص صباحا
                                         </p>
                                     </div>
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                            التاريخ
+                                        <p class="text-[#8E8A9D] text-xs leading-normal lg:leading-normal">
+                                            الطالبة
                                         </p>
-                                        <p class="text-[#090129] text-xs lg:text-base leading-normal font-medium">
-                                            الاثنين 22 مارس ، 2023
+                                        <p class="text-[#090129] text-xs leading-normal font-medium">
+                                            فريدة محمود
                                         </p>
                                     </div>
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#8E8A9D] text-xs lg:text-base leading-normal lg:leading-normal">
-                                            مدة الحصة
+                                        <p class="text-[#8E8A9D] text-xs leading-normal lg:leading-normal">
+                                            السعر
                                         </p>
-                                        <p class="text-[#090129] text-xs lg:text-base leading-normal font-medium">
-                                            60 دقيقة
+                                        <p class="text-[#090129] text-xs leading-normal font-medium">
+                                            499.0 ر.س
                                         </p>
                                     </div>
                                 </div>
@@ -559,6 +704,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="change-schedule-popup">
                         <div class="bg-white p-6 lg:p-8 w-full lg:w-[600px] rounded-2xl flex flex-col gap-6">
                             <div class="flex items-center gap-3 justify-between">
@@ -597,6 +743,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="select-date-popup">
                         <div class="bg-white p-6 lg:p-8 w-full lg:w-[600px] rounded-2xl flex flex-col gap-6">
                             <div class="flex items-center gap-3 justify-between">

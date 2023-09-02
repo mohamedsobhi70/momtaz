@@ -772,7 +772,6 @@ header .nav-item.active {
   align-items: center;
   gap: 1rem;
   border-radius: 1rem;
-  border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(230 230 234 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -790,11 +789,24 @@ header .nav-item.active {
   background-color: rgb(250 248 254 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 1024px) {
+  .child-item {
+    border-width: 1px;
+  }
+}
+
 .child-item.active {
   --tw-border-opacity: 1;
   border-color: rgb(209 182 241 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(250 248 254 / var(--tw-bg-opacity));
+  background-color: rgb(234 221 249 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px) {
+  .child-item.active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 248 254 / var(--tw-bg-opacity));
+  }
 }
 
 .form-checkbox {
@@ -2104,16 +2116,6 @@ header .nav-item.active {
 
 .p-8 {
   padding: 2rem;
-}
-
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.px-0\.5 {
-  padding-left: 0.125rem;
-  padding-right: 0.125rem;
 }
 
 .px-10 {
@@ -3728,10 +3730,6 @@ a.ui-button:active,
   .lg\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
-  }
-
-  .lg\:w-14 {
-    width: 3.5rem;
   }
 
   .lg\:w-16 {

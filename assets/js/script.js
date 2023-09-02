@@ -740,6 +740,28 @@ if ($(".sch-tabs").length > 0) {
     })
 }
 
+
+if ($(".sch-tabs").length > 0) {
+    $(".sch-tabs").each(function () {
+        let th = $(this);
+
+        th.find(".sched-item-tab").on("click", function () {
+            let atr = $(this).attr("data-schedule");
+
+            $(".sched-item-tab").removeClass("active");
+            $(this).addClass("active");
+
+            if (atr == "all") {
+                th.find(".sched-item").removeClass("hidden");
+            }
+            else {
+                th.find(".sched-item").addClass("hidden");
+                th.find(`.sched-item[data-schedule=${atr}]`).removeClass("hidden");
+            }
+        })
+    })
+}
+
 if ($(".child-title").length > 0) {
     $(".child-title").on("click", function () {
         if ($(window).width() < 1024) {
