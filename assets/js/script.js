@@ -16,6 +16,13 @@ if ($(".profile-menu-btn").length > 0) {
         $(".profile-menu").removeClass("active")
     })
 }
+if ($(".nav-sub-menu-container").length > 0) {
+    $(".nav-sub-menu-container").on("mouseenter", function () {
+        $(".nav-sub-menu").addClass("active")
+    }).on("mouseleave", function () {
+        $(".nav-sub-menu").removeClass("active")
+    })
+}
 
 
 

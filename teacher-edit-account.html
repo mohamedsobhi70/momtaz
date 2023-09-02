@@ -24,7 +24,6 @@
     <!-- Start Momtaz Header  -->
     <header class="sticky top-0 bg-[#FAF8FE] lg:bg-white z-40">
         <div class=" container flex items-center justify-between gap-12 py-4 lg:py-3 px-[30px] lg:p-x relative">
-
             <!-- mobile menu btn  -->
             <button class="mobile-menu-btn lg:hidden" aria-label="menu-btn">
                 <img src="assets/images/pop-teacher-5.jpg" class="rounded-xl" width="32" height="32" alt="profile">
@@ -37,10 +36,7 @@
                 <img src="assets/images/mob-logo.svg" class="lg:hidden" width="22" height="32" alt="">
                 <span class="sr-only">Momtaz Logo</span>
             </a>
-
-            <span class="lg:hidden">
-
-            </span>
+            <span class="lg:hidden"> </span>
             <!-- navigation  -->
             <div class="mobile-menu">
 
@@ -68,6 +64,10 @@
                             <span class="flex-1">
                                 أجندة العمل
                             </span>
+                            <span
+                                class="rounded-full bg-[#F1E8FB] lg:hidden flex items-center justify-center py-0.5 px-2 text-[#090129] font-medium text-xs">
+                                10
+                            </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
@@ -77,27 +77,72 @@
                             <span class="flex-1">
                                 الحجوزات
                             </span>
+                            <span
+                                class="rounded-full bg-[#F1E8FB] lg:hidden flex items-center justify-center py-0.5 px-2 text-[#090129] font-medium text-xs">
+                                5
+                            </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <a href="teacher-reports.html" class="nav-item flex items-center gap-4">
+                        <a href="teacher-finances.html" class="nav-item flex items-center gap-4">
                             <img src="assets/images/tick-circle.svg" class="lg:hidden" width="24" height="24"
                                 alt="icon">
                             <span class="flex-1">
-                                التقارير
+                                الماليات
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
                         </a>
-                        <a href="teacher-students.html" class="nav-item flex items-center gap-4">
-                            <img src="assets/images/people.svg" class="lg:hidden" width="24" height="24" alt="icon">
-                            <span class="flex-1">
-                                طلابك
-                            </span>
-                            <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
-                                alt="arrow">
-                        </a>
-                        <a href="taecher-stages.html" class="nav-item flex items-center gap-4">
+                        <div class="relative nav-sub-menu-container">
+                            <div class="nav-item hidden lg:flex items-center gap-2 cursor-pointer justify-between ">
+                                <img src="assets/images/user.svg" class="lg:hidden" width="24" alt="icon">
+                                <span class="flex-1">
+                                    الإعدادات
+                                </span>
+                                <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
+                                    alt="arrow">
+                                <svg class="hidden lg:block rotate-180" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2154 12.5415L11.782 7.1082C11.1404 6.46654 10.0904 6.46654 9.44871 7.1082L4.01538 12.5415"
+                                        stroke="#8E8A9D" stroke-width="1.25" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div
+                                class="nav-sub-menu lg:invisible lg:opacity-0 transition-all duration-300 lg:absolute lg:top-[80%] lg:bg-white lg:p-3 lg:min-w-[300px] lg:border border-[#E8E8E8] lg:rounded-lg">
+                                <div class="flex flex-col lg:gap-2">
+                                    <a href="teacher-availability.html"
+                                        class="flex items-center gap-4 py-4 lg:py-3 border-b lg:border-none border-[#E6E6EA]">
+                                        <img src="assets/images/clock-1.svg" width="24" height="24" alt="icon">
+                                        <span class="flex-1 text-[#5A5570]">
+                                            مواعيد العمل
+                                        </span>
+                                        <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24"
+                                            height="24" alt="arrow">
+                                    </a>
+                                    <a href="taecher-classes-pricing.html"
+                                        class="flex items-center gap-4 py-4 lg:py-3 border-b lg:border-none border-[#E6E6EA]">
+                                        <img src="assets/images/shop.svg" width="24" height="24" alt="icon">
+                                        <span class="flex-1 text-[#5A5570]">
+                                            المنتجات والتسعير
+                                        </span>
+                                        <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24"
+                                            height="24" alt="arrow">
+                                    </a>
+                                    <a href="teacher-reports.html"
+                                        class="flex items-center gap-4 py-4 lg:py-3 border-b lg:border-none border-[#E6E6EA]">
+                                        <img src="assets/images/shop.svg" width="24" height="24" alt="icon">
+                                        <span class="flex-1 text-[#5A5570]">
+                                            التقارير
+                                        </span>
+                                        <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24"
+                                            height="24" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="taecher-stages.html" class="nav-item flex items-center gap-4">
                             <img src="assets/images/flash.svg" class="lg:hidden" width="24" height="24" alt="icon">
                             <span class="flex-1">
                                 المراحل والمواد
@@ -112,7 +157,7 @@
                             </span>
                             <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                 alt="arrow">
-                        </a>
+                        </a> -->
 
                     </nav>
 
@@ -127,13 +172,13 @@
                                 <span class="flex-1 lg:hidden">
                                     الاشعارات
                                 </span>
+                                <span
+                                    class="lg:absolute lg:-top-2 lg:-right-2 rounded-full bg-[#F1E8FB] lg:bg-[#C5221F] flex items-center justify-center py-0.5 px-2 lg:p-0 lg:w-5 lg:h-5 text-[#090129] lg:text-white font-medium text-xs">
+                                    1
+                                </span>
                                 <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                     alt="arrow">
                             </a>
-                            <span
-                                class="absolute -top-2 -right-2 rounded-full bg-[#C5221F] flex items-center justify-center w-5 h-5 text-white font-medium text-xs">
-                                1
-                            </span>
                         </div>
                         <!-- Messages  -->
                         <div class="relative">
@@ -144,13 +189,14 @@
                                 <span class="flex-1 lg:hidden">
                                     الرسائل
                                 </span>
+                                <span
+                                    class="lg:absolute lg:-top-2 lg:-right-2 rounded-full bg-[#F1E8FB] lg:bg-[#C5221F] flex items-center justify-center py-0.5 px-2 lg:p-0 lg:w-5 lg:h-5 text-[#090129] lg:text-white font-medium text-xs">
+                                    1
+                                </span>
                                 <img src="assets/images/chevron-left.svg" class="lg:hidden" width="24" height="24"
                                     alt="arrow">
                             </a>
-                            <span
-                                class="absolute -top-2 -right-2 rounded-full bg-[#C5221F] flex items-center justify-center w-5 h-5 text-white font-medium text-xs">
-                                1
-                            </span>
+
                         </div>
                         <!-- Profile  -->
                         <div class="profile-menu-btn relative">
@@ -161,7 +207,7 @@
                             </div>
 
                             <div
-                                class="profile-menu transition-all duration-300 lg:pt-6 lg:absolute lg:left-0 lg:top-[80%] lg:invisible lg:opacity-0 min-w-[300px] min-w-[300px]">
+                                class="profile-menu transition-all duration-300 lg:pt-6 lg:absolute lg:left-0 lg:top-[80%] lg:invisible lg:opacity-0 min-w-[300px]">
                                 <div
                                     class="bg-white lg:rounded-3xl lg:p-5 lg:border border-[#DCDFEA] flex flex-col lg:gap-4">
                                     <div class="hidden lg:flex items-center gap-5">
@@ -225,7 +271,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </header>
     <!-- End Momtaz Header  -->

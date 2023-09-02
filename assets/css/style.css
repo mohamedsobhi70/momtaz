@@ -660,6 +660,12 @@ header .nav-item.active {
   }
 }
 
+.nav-sub-menu.active {
+  visibility: visible;
+  top: 100%;
+  opacity: 1;
+}
+
 .secondary-btn {
   --tw-bg-opacity: 1;
   background-color: rgb(234 221 249 / var(--tw-bg-opacity));
@@ -877,6 +883,10 @@ header .nav-item.active {
   border-width: 0;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
 }
@@ -913,10 +923,6 @@ header .nav-item.active {
   left: -18rem;
 }
 
-.-right-2 {
-  right: -0.5rem;
-}
-
 .-right-52 {
   right: -13rem;
 }
@@ -927,10 +933,6 @@ header .nav-item.active {
 
 .-top-12 {
   top: -3rem;
-}
-
-.-top-2 {
-  top: -0.5rem;
 }
 
 .-top-24 {
@@ -1937,11 +1939,6 @@ header .nav-item.active {
   background-color: rgb(190 166 219 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#C5221F\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(197 34 31 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#D1B6F1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(209 182 241 / var(--tw-bg-opacity));
@@ -2171,6 +2168,16 @@ header .nav-item.active {
 .px-\[30px\] {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
 }
 
 .py-1 {
@@ -2559,6 +2566,10 @@ header .nav-item.active {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .opacity-10 {
@@ -3579,6 +3590,14 @@ a.ui-button:active,
     position: sticky;
   }
 
+  .lg\:-right-2 {
+    right: -0.5rem;
+  }
+
+  .lg\:-top-2 {
+    top: -0.5rem;
+  }
+
   .lg\:left-0 {
     left: 0px;
   }
@@ -3681,6 +3700,10 @@ a.ui-button:active,
 
   .lg\:h-36 {
     height: 9rem;
+  }
+
+  .lg\:h-5 {
+    height: 1.25rem;
   }
 
   .lg\:h-52 {
@@ -3827,6 +3850,10 @@ a.ui-button:active,
   .lg\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:min-w-\[300px\] {
+    min-width: 300px;
   }
 
   .lg\:max-w-\[600px\] {
@@ -4066,6 +4093,11 @@ a.ui-button:active,
   .lg\:bg-\[\#090129\] {
     --tw-bg-opacity: 1;
     background-color: rgb(9 1 41 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-\[\#C5221F\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(197 34 31 / var(--tw-bg-opacity));
   }
 
   .lg\:bg-\[\#EFF1F5\] {
