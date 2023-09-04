@@ -229,7 +229,8 @@
     <div class="py-4 container flex-col flex gap-4">
 
         <!-- error message  -->
-        <div class="p-6 border border-[#FF4747] bg-[#FFEBEB] rounded-2xl flex items-center gap-3 mt-6 lg:mt-0">
+        <div
+            class="p-6 border border-[#FF4747] bg-[#FFEBEB] rounded-2xl flex items-center gap-3 mt-6 lg:mt-0">
             <span class="w-6 h-6 rounded-full bg-[#DC2626] flex justify-center items-center">
                 <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -270,6 +271,15 @@
             </p>
         </div>
 
+        <div class="fixed top-0 left-0 w-screen h-screen bg-white flex justify-center items-center">
+            <!-- Outer Ring-->
+            <div class="w-32 h-32 rounded-full absolute border-[12px] border-dashed border-gray-50"></div>
+
+            <!-- Inner Ring -->
+            <div
+                class="w-32 h-32 rounded-full animate-spin absolute border-[12px] border-dashed border-[#DAC5F4] border-t-transparent">
+            </div>
+        </div>
     </div>
     <!-- Start Momtaz footer  -->
     <footer>
