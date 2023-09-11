@@ -1027,14 +1027,6 @@ header .nav-item.active {
   top: 110%;
 }
 
-.top-40 {
-  top: 10rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -1165,10 +1157,6 @@ header .nav-item.active {
   height: 0.5rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-24 {
   height: 6rem;
 }
@@ -1256,6 +1244,18 @@ header .nav-item.active {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[360px\] {
+  height: 360px;
+}
+
+.h-\[243px\] {
+  height: 243px;
 }
 
 .max-h-\[98\%\] {
@@ -1755,18 +1755,6 @@ header .nav-item.active {
   border-width: 4px;
 }
 
-.border-8 {
-  border-width: 8px;
-}
-
-.border-\[20px\] {
-  border-width: 20px;
-}
-
-.border-\[14px\] {
-  border-width: 14px;
-}
-
 .border-\[12px\] {
   border-width: 12px;
 }
@@ -1786,10 +1774,6 @@ header .nav-item.active {
 
 .border-t {
   border-top-width: 1px;
-}
-
-.border-solid {
-  border-style: solid;
 }
 
 .border-dashed {
@@ -1824,6 +1808,11 @@ header .nav-item.active {
 .border-\[\#BEA6DB\] {
   --tw-border-opacity: 1;
   border-color: rgb(190 166 219 / var(--tw-border-opacity));
+}
+
+.border-\[\#DAC5F4\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(218 197 244 / var(--tw-border-opacity));
 }
 
 .border-\[\#DCDFEA\] {
@@ -1890,6 +1879,11 @@ header .nav-item.active {
   border-color: ;
 }
 
+.border-gray-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 250 251 / var(--tw-border-opacity));
+}
+
 .border-transparent {
   border-color: transparent;
 }
@@ -1897,40 +1891,6 @@ header .nav-item.active {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-yellow-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(234 179 8 / var(--tw-border-opacity));
-}
-
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
-.border-purple-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(168 85 247 / var(--tw-border-opacity));
-}
-
-.border-\[FAF8FE\] {
-  border-color: FAF8FE;
-}
-
-.border-\[\#FAF8FE\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(250 248 254 / var(--tw-border-opacity));
-}
-
-.border-\[\#DAC5F4\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(218 197 244 / var(--tw-border-opacity));
-}
-
-.border-gray-50 {
-  --tw-border-opacity: 1;
-  border-color: rgb(249 250 251 / var(--tw-border-opacity));
 }
 
 .border-t-transparent {
@@ -3829,6 +3789,10 @@ a.ui-button:active,
   .lg\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .lg\:h-\[360px\] {
+    height: 360px;
   }
 
   .lg\:w-16 {
